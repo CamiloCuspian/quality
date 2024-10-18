@@ -1,0 +1,123 @@
+.menu-top {
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-white);
+    gap: 10px; 
+    padding: 10px;
+}
+
+.logo {
+    max-height: 50px;
+    flex-shrink: 0; 
+    margin-right: auto; 
+    width: 120px; 
+}
+
+.contact-info {
+    display: flex;
+    gap: 20px; 
+    flex-grow: 1; 
+    justify-content: flex-end; 
+    flex-wrap: wrap;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    min-width: 180px; 
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    width: 40px;
+    height: auto;
+}
+
+
+/* Estilos Generales de Navegación */
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-main);
+    border-radius: 5px;
+    position: sticky;
+    z-index: 999;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav li a {
+    color: var(--color-white);
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Ocultamos el checkbox de control */
+.menu-toggle {
+    display: none;
+}
+
+/* Estilo del Icono de Menú */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px;
+    background-color: var(--color-white);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Activamos el Icono de Menú en Pantallas Pequeñas */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    /* Mostrar el menú al hacer clic */
+    .menu-toggle:checked ~ #menu-items {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--color-main);
+        flex-direction: column;
+    }
+
+    /* Cambiar a "X" el icono de menú al abrirlo */
+    .menu-toggle:checked + .menu-icon span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .menu-toggle:checked + .menu-icon span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-toggle:checked + .menu-icon span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
+
+

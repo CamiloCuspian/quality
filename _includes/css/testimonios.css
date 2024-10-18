@@ -1,0 +1,38 @@
+
+/* Grid de testimonios */
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+/* Tarjeta de testimonio */
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+/* Imagen de perfil */
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+/* Nombre del cliente */
+.client-name {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+/* Estrellas de calificación */
+.rating {
+    color: #FFD700;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+/* Texto del testimonio */
+.testimonial-text {
+    font-style: italic;
+    margin-bottom: 1rem;
+}

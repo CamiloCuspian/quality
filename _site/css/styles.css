@@ -1,0 +1,641 @@
+.menu-top {
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-white);
+    gap: 10px; 
+    padding: 10px;
+}
+
+.logo {
+    max-height: 50px;
+    flex-shrink: 0; 
+    margin-right: auto; 
+    width: 120px; 
+}
+
+.contact-info {
+    display: flex;
+    gap: 20px; 
+    flex-grow: 1; 
+    justify-content: flex-end; 
+    flex-wrap: wrap;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    min-width: 180px; 
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    width: 40px;
+    height: auto;
+}
+
+
+/* Estilos Generales de Navegación */
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-main);
+    border-radius: 5px;
+    position: sticky;
+    z-index: 999;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav li a {
+    color: var(--color-white);
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Ocultamos el checkbox de control */
+.menu-toggle {
+    display: none;
+}
+
+/* Estilo del Icono de Menú */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px;
+    background-color: var(--color-white);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Activamos el Icono de Menú en Pantallas Pequeñas */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    /* Mostrar el menú al hacer clic */
+    .menu-toggle:checked ~ #menu-items {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--color-main);
+        flex-direction: column;
+    }
+
+    /* Cambiar a "X" el icono de menú al abrirlo */
+    .menu-toggle:checked + .menu-icon span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .menu-toggle:checked + .menu-icon span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-toggle:checked + .menu-icon span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
+
+
+
+/* Estructura del header */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-white); 
+    flex-wrap: wrap; /* Permite que el contenido se ajuste en pantallas pequeñas */
+}
+
+/* Contenedor del contenido de texto */
+.hero-content {
+    display: grid;
+    place-items: center;
+    padding: 2em;
+    flex: 1; /* El contenido ocupa todo el espacio disponible */
+    min-width: 300px; /* Asegura que el contenido tenga suficiente espacio en pantallas pequeñas */
+}
+
+/* Botones en el hero section */
+.hero-buttons {
+    display: flex;
+    gap: 1em;
+    margin-top: 1.5em;
+}
+
+/* Estilos para los botones */
+.cta-button {
+    background-color: #006400;
+    color: white;
+    padding: 1em 2em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.learn-more {
+    background-color: transparent;
+    color: #006400;
+    padding: 1em 2em;
+    border: 2px solid #006400;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Imagen del hero */
+.hero-image {
+    flex: 1; 
+    min-width: 300px; 
+    padding: 2em;
+}
+
+.hero-image img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsividad sin media queries */
+.hero-section {
+    flex-wrap: wrap; 
+}
+
+.cta-button{
+    display: inline-block;
+    padding: 1rem 3vw;
+    background-color: var(--color-complement);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: var(--shadow);
+    object-fit: contain;
+    color: var(--grey-1);
+    margin: 1rem;
+}
+
+.cta-button:hover{
+    background-color: var(--color-white);
+    transform: translateY(-0.2rem);
+}
+
+.cta-button:active {
+    background-color: var(--btn);
+    transform: translateY(0.1rem);
+}
+.about {
+    display: flex;
+    flex-wrap: wrap; /* Ajusta los elementos automáticamente */
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.about-content {
+    flex: 1 1 300px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adaptable a diferentes tamaños de pantalla */
+    gap: 0.5rem 2rem;
+}
+
+.about-list li {
+    display: flex;
+    align-items: center;
+}
+
+.about-image {
+    flex: 1 1 300px;
+    max-width: 400px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Botón (asumiendo que está en el archivo button-main.html) */
+button {
+    background-color: #FFC107; /* Color amarillo para el botón */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FFA000; /* Color más oscuro al pasar el mouse */
+}
+
+/* Estilos del Footer */
+.footer {
+    padding: 1rem;
+    background-color: var(--color-main); /* Color de fondo del footer */
+    color: var(--color-white); /* Color del texto */
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos a los lados */
+    align-items: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: clamp(0.8rem, 1vw, 1rem); /* Tamaño de fuente responsivo */
+}
+
+.footer img {
+    width: 24px; /* Tamaño del ícono */
+    height: auto;
+}
+
+:root {
+    --color-white: #fefefe;
+    --color-main: #006400;
+    --color-complement: #FFA500;
+    --color-fonts: #7C7A7A;
+    --color-btn: #d8251e;
+    --grey-1: #e2e6e9;
+    --grey-2: #495057;
+    --grey-3: #212529;
+
+
+    --shadow: rgba(0, 0, 0, 0.15) 0px 6px 20px 2px;
+    --radius: 12px;
+    --fuente: "Monstserrat", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: 6em;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--color-fonts);
+  font-family: var(--fuente);
+  background-color: var(--color-white);
+}
+
+h1, h2, h3, h4, h5 {
+  text-transform: none;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: var(--grey-3);
+}
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+h1::after {
+  content: '';
+  display: block;
+  width: 200px;
+  height: 2px;
+  
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h2 {
+  position: relative;
+  display: inline-block;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  color: var(--color-complement);
+  max-width: 30ch;
+  font-weight: 700;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  height: 4px;
+  display: block;
+  width: 200px;
+  margin: 10px auto;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--color-main);
+  max-width: 30ch;
+}
+
+h4 {
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  color: var(--color-main);
+}
+
+h5 {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  color: var(--color-main);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 900;
+}
+
+p, li {
+  font-size: clamp(1.1rem, 1.1vw, 1.2rem);
+  max-width: 70ch;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: re;
+}
+
+a {
+    color: var(--grey-2);
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  a:hover {
+    color: var(--color-complement);
+    font-weight: 900;
+  }
+
+small {
+  font-size: 85%;
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+  margin-left: 0.5rem;
+}
+
+ol li {
+  margin-left: 3em;
+  list-style: decimal;
+}
+
+::marker {
+  font-size: 2rem;
+  color: var(--color-secundario);
+  font-family: var(--fuente);
+}
+
+.wrapper {
+  padding: 6em 0;
+  width: min(calc(100% - 2rem), 1200px);
+  margin-inline: auto;
+  
+}
+
+.wrapper-nav{
+  padding-top: 1rem;
+  width: min(calc(100% - 2rem), 1200px);
+  margin-inline: auto;
+}
+
+.bgr{
+  background-color: var(--grey-1);
+  box-shadow: 0 0 0 100vmax var(--grey-1);
+  clip-path: inset(0 -100vmax);
+}
+
+.dos_columnas_izquierda{
+  flex-direction: row-reverse;
+  gap: 1em;
+}
+
+strong {
+  color: var(--color-main);
+}
+
+.services {
+    text-align: center;
+    padding: 2rem;
+}
+
+.intro-text {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    font-size: clamp(1rem, 2vw, 1.2rem); /* Fuente responsiva */
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajuste automático de columnas */
+    gap: 1rem;
+    justify-items: center; /* Centra las tarjetas en cada columna */
+}
+
+.service-card {
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 300px; /* Limita el ancho de las tarjetas */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.service-card p {
+    text-align: center;
+    font-size: clamp(0.9rem, 1.5vw, 1rem); /* Fuente responsiva */
+}
+
+.service-card button {
+    margin-top: auto; /* Asegura que el botón quede al final */
+}
+
+/* Contenedor principal */
+.booking-process {
+    text-align: center;
+}
+
+.process-intro {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+
+/* Estilo de los pasos */
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta columnas según espacio */
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+.step {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contenedor redondo para los iconos */
+.icon-container {
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-white);
+    border-radius: 50%; /* Hace el contenedor circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon-container img {
+    width: 50px; /* Tamaño del ícono */
+    height: auto;
+}
+
+
+
+
+        /* Grid para el layout principal */
+        .payment-conditions {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+
+        /* Grid para las imágenes */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 1rem;
+            height: 100%;
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Imagen grande */
+        .image-grid img:nth-child(3) {
+            grid-column: 1 / -1;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 768px) {
+            .payment-conditions {
+                grid-template-columns: 1fr;
+            }
+
+            .image-grid {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto;
+            }
+
+            .image-grid img:nth-child(3) {
+                grid-column: auto;
+            }
+        }
+
+/* Grid de testimonios */
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+/* Tarjeta de testimonio */
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+/* Imagen de perfil */
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+/* Nombre del cliente */
+.client-name {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+/* Estrellas de calificación */
+.rating {
+    color: #FFD700;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+/* Texto del testimonio */
+.testimonial-text {
+    font-style: italic;
+    margin-bottom: 1rem;
+}

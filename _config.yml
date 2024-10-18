@@ -1,0 +1,35 @@
+baseurl: ''
+url: ''
+title: 'Agenciadeturismo.com'
+author: Agencia de Turismo
+tel1: "573160520942"
+tel2: "573224736189"
+whatsapp: ""
+email: ""
+maps: https://maps.app.goo.gl/LAmA8gQZFBxwKak28
+facebook_url: https://www.facebook.com/lebeninmobiliaria
+
+markdown: kramdown
+
+permalink: :slug
+
+compress_html:
+    clippings: []
+    comments: []
+    endings: []
+    ignore:
+    envs: []
+    blanklines: false
+    profile: false
+    startings: []
+
+collections:
+  ventas:
+    output: true
+    permalink: /ventas/:path
+  arriendo:
+    output: true
+    permalink: /arriendo/:path
+  posts:
+    output: true
+    permalink: /blog/:slug

@@ -1,0 +1,62 @@
+/* Estructura del header */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-white); 
+    flex-wrap: wrap; /* Permite que el contenido se ajuste en pantallas pequeñas */
+}
+
+/* Contenedor del contenido de texto */
+.hero-content {
+    display: grid;
+    place-items: center;
+    padding: 2em;
+    flex: 1; /* El contenido ocupa todo el espacio disponible */
+    min-width: 300px; /* Asegura que el contenido tenga suficiente espacio en pantallas pequeñas */
+}
+
+/* Botones en el hero section */
+.hero-buttons {
+    display: flex;
+    gap: 1em;
+    margin-top: 1.5em;
+}
+
+/* Estilos para los botones */
+.cta-button {
+    background-color: #006400;
+    color: white;
+    padding: 1em 2em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.learn-more {
+    background-color: transparent;
+    color: #006400;
+    padding: 1em 2em;
+    border: 2px solid #006400;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Imagen del hero */
+.hero-image {
+    flex: 1; 
+    min-width: 300px; 
+    padding: 2em;
+}
+
+.hero-image img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsividad sin media queries */
+.hero-section {
+    flex-wrap: wrap; 
+}
