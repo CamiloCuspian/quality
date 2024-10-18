@@ -1,9 +1,9 @@
-baseurl: '/quality'
+baseurl: '/quality/'
 url: ''
-title: 'Agenciadeturismo.com'
-author: Agencia de Turismo
-tel1: "573160520942"
-tel2: "573224736189"
+title: ''
+author: 
+tel1: ""
+tel2: ""
 whatsapp: ""
 email: ""
 maps: https://maps.app.goo.gl/LAmA8gQZFBxwKak28
