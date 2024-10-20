@@ -1,23 +1,23 @@
-.cta-button{
+.cta-buttonl{
     display: inline-block;
     padding: 1rem 3vw;
     background-color: var(--color-complement);
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 700;
     text-align: center;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: var(--shadow);
     object-fit: contain;
-    color: var(--grey-1);
-    margin: 1rem;
+    color: var(--grey-2);
+    margin-bottom: 1rem;
 }
 
-.cta-button:hover{
-    background-color: var(--color-white);
+.cta-buttonl:hover{
+    background-color: var(--color-btn);
     transform: translateY(-0.2rem);
+    color: var(--color-white)
 }
 
-.cta-button:active {
-    background-color: var(--btn);
+.cta-buttonl:active {
+    background-color: var(--color-btn);
     transform: translateY(0.1rem);
 }

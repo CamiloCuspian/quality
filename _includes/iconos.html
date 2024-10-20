@@ -5,24 +5,48 @@
     <div class="steps">
         <div class="step">
             <div class="icon-container">
-                <img src="{{'/img/calendar.avif' | relative_url}}" alt="Book Online Icon">
+                <img src="{{ '/img/calendar.avif' | relative_url }}" alt="Book Online Icon">
             </div>
             <h5>BOOK ONLINE</h5>
             <p>Reserve and pay for your services online.</p>
         </div>
         <div class="step">
             <div class="icon-container">
-                <img src="{{'/img/email.avif' | relative_url}}" alt="Get Confirmed Icon">
+                <img src="{{ '/img/email.avif' | relative_url }}" alt="Get Confirmed Icon">
             </div>
             <h5>GET CONFIRMED</h5>
             <p>Receive a reminder of your service 24 hours before the scheduled time.</p>
         </div>
         <div class="step">
             <div class="icon-container">
-                <img src="{{'/img/like.avif' | relative_url}}" alt="Enjoy Our Services Icon">
+                <img src="{{ '/img/like.avif' | relative_url }}" alt="Enjoy Our Services Icon">
             </div>
             <h5>ENJOY OUR SERVICES</h5>
             <p>Lay back and relax while our team handles all your needs.</p>
         </div>
     </div>
 </section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const iconContainers = document.querySelectorAll('.icon-container');
+
+    iconContainers.forEach(iconContainer => {
+        iconContainer.addEventListener('mousemove', (e) => {
+            const rect = iconContainer.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            const moveX = (x - rect.width / 2) / 10; 
+            const moveY = (y - rect.height / 2) / 10;
+
+            iconContainer.style.transform = `translate(${moveX}px, ${moveY}px) rotate(${moveX * 2}deg)`;
+        });
+
+        iconContainer.addEventListener('mouseleave', () => {
+            iconContainer.style.transform = 'translate(0, 0) rotate(0deg)';
+        });
+    });
+});
+
+</script>

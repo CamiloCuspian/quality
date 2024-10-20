@@ -16,8 +16,13 @@
 
 .about-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adaptable a diferentes tamaños de pantalla */
-    gap: 0.5rem 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.5rem 1rem;
+
+    span{
+        color: var(--color-btn);
+        margin-right: 5px;
+    }
 }
 
 .about-list li {
@@ -25,10 +30,6 @@
     align-items: center;
 }
 
-.about-image {
-    flex: 1 1 300px;
-    max-width: 400px;
-}
 
 .about-image img {
     width: 100%;

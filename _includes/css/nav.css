@@ -5,14 +5,8 @@
     align-items: center;
     background-color: var(--color-white);
     gap: 10px; 
-    padding: 10px;
-}
-
-.logo {
-    max-height: 50px;
-    flex-shrink: 0; 
-    margin-right: auto; 
-    width: 120px; 
+    padding: 12px;
+    top:0;
 }
 
 .contact-info {
@@ -31,8 +25,7 @@
 }
 
 .text {
-    display: flex;
-    flex-direction: column;
+    display: grid;
 }
 
 .icon {
@@ -50,18 +43,17 @@
     border-radius: 5px;
     position: sticky;
     z-index: 999;
+    padding: 12px;
 }
 
 nav ul {
     display: flex;
     align-items: center;
-    list-style: none;
 }
 
 nav li a {
     color: var(--color-white);
-    padding: 10px;
-    text-decoration: none;
+    padding: 12px 20px;
     font-size: 1rem;
 }
 
@@ -87,6 +79,13 @@ nav li a {
 
 /* Activamos el Icono de Menú en Pantallas Pequeñas */
 @media (max-width: 768px) {
+    .menu-top{
+        display: none;
+    }
+    .nav-menu{
+        display: flex;
+        flex-direction: row-reverse;
+    }
     nav ul {
         display: none;
     }
