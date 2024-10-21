@@ -1,6 +1,10 @@
 /* Contenedor principal */
 .booking-process {
     text-align: center;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 0 100vmax #f7f7f7;
+    -webkit-clip-path: inset(0 -100vmax);
+    clip-path: inset(0 -100vmax);
 }
 
 .process-intro {
@@ -18,13 +22,12 @@
     background-image: url("{{ '/img/section-fondo.avif' | relative_url }}");
     background-repeat: no-repeat;
     background-size: contain; /* Ajusta el tamaño para que se vea completa */
-    background-position: center; /* Centra la imagen */
+    background-position: top center; /* Centra la imagen */
     min-height: 400px; /* Ajusta la altura mínima según sea necesario */
 }
 
 .step {
     padding: 20px 0;
-    background: var(--color-white);
     border-radius: 8px;
     text-align: center;
     max-width: 300px;
@@ -73,5 +76,9 @@
 
 
 
-
+@media (max-width: 839px) {
+    .steps{
+        background-image: none;
+    }
+}
 

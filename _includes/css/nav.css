@@ -40,9 +40,10 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-main);
-    border-radius: 5px;
+    border-radius: 8px;
     position: sticky;
     z-index: 999;
+    top: 0;
     padding: 12px;
 }
 
@@ -82,9 +83,10 @@ nav li a {
     .menu-top{
         display: none;
     }
-    .nav-menu{
+    .nav-menu {
         display: flex;
         flex-direction: row-reverse;
+        top: 0; /* Mantener el sticky en la parte superior */
     }
     nav ul {
         display: none;
@@ -103,6 +105,7 @@ nav li a {
         right: 0;
         background-color: var(--color-main);
         flex-direction: column;
+        z-index: 998; /* Asegurar que el menú desplegable no interfiera con el sticky */
     }
 
     /* Cambiar a "X" el icono de menú al abrirlo */

@@ -1,19 +1,28 @@
-<footer class="footer ">
-  <section class="footer-content wrapper">
+<footer class="footer wrapper">
+  <div>
+  <a href="/" target="_blank" title="Página de inicio Holographic">
+    <img src="{{'img/logo-quality.avif'|relative_url}}" alt="Logo de Quality.com" width="120" loading="lazy">
+  </a>
+</div>
     <div>
-      <span>Contáctanos</span>
+      <h5>Contáctanos</h5>
       <a href="tel:{{site.telefono}}" title="" rel="nofollow noopener noreferrer"
         id="lead_whatsapp">{{site.telefono}}</a>
       <a href="{{site.whatsapp}}" title="WhatsApp de Holographic para pedir tus stickers holográficos"
-        rel="nofollow noopener noreferrer" target="_blank" id="lead_whatsapp">WhatsApp</a>
-    </div>
-    <div>
+        rel="nofollow noopener noreferrer" target="_blank" id="lead_whatsapp"> <span> WhatsApp </span></a>
+      <span>Dirección</span>
       <span>Dirección</span>
       <a href="{{site.maps}}" title="Dirección de Holographic" rel="nofollow noopener noreferrer"
         target="_blank">{{site.direccion}}</a>
     </div>
+    <div>
+      <h5>Lorem, ipsum.</h5>
+      <span>Lorem, ipsum dolor.</span>
+      <span>Lorem, ipsum dolor.</span>
+      <span>Lorem, ipsum dolor.</span>
+    </div>
     <div class="redes">
-      <span>Enlaces</span>
+      <h5>Enlaces</h5>
       <a href="{{'quienes-somos'|relative_url}}" title="Nosotros">®️ Quality S.A.S.</a>
       <a href="{{site.instagram}}" rel="nofollow noreferrer" target="_blank">
         <svg fill="#FFc30b" width="20px" height="20px" viewBox="0 0 256 256" id="Flat"
@@ -49,14 +58,11 @@
         </svg> Facebook
       </a>
     </div>
-    <div>
-      <a href="/" target="_blank" title="Página de inicio Holographic">
-        <img src="{{'img/logo.avif'|relative_url}}" alt="Logo de Quality.com" width="120" loading="lazy">
-      </a>
-      <small><b>&copy; Quality &#174; | {{ "now" | date:"%Y"}} - Todos los derechos reservados.</b> <a
-          href="{{site.baseurl}}/legal" target="_blank" title="Términos y condiciones de Quality">Términos y condiciones
-        </a> y <a href="{{site.baseurl}}/politica-de-privacidad" target="_blank"
-          title="Políticas de privacidad">Políticas de privacidad</a></small>
-    </div>
-  </section>
-</footer>
+  </footer>
+  <div class="derechos wrapper-nav">
+    
+    <small><b>&copy; Quality &#174; | {{ "now" | date:"%Y"}} - Todos los derechos reservados.</b> <a
+        href="{{site.baseurl}}/legal" target="_blank" title="Términos y condiciones de Quality">Términos y condiciones
+      </a> y <a href="{{site.baseurl}}/politica-de-privacidad" target="_blank"
+        title="Políticas de privacidad">Políticas de privacidad</a></small>
+  </div>

@@ -40,9 +40,10 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-main);
-    border-radius: 5px;
+    border-radius: 8px;
     position: sticky;
     z-index: 999;
+    top: 0;
     padding: 12px;
 }
 
@@ -82,9 +83,10 @@ nav li a {
     .menu-top{
         display: none;
     }
-    .nav-menu{
+    .nav-menu {
         display: flex;
         flex-direction: row-reverse;
+        top: 0; /* Mantener el sticky en la parte superior */
     }
     nav ul {
         display: none;
@@ -103,6 +105,7 @@ nav li a {
         right: 0;
         background-color: var(--color-main);
         flex-direction: column;
+        z-index: 998; /* Asegurar que el menú desplegable no interfiera con el sticky */
     }
 
     /* Cambiar a "X" el icono de menú al abrirlo */
@@ -164,28 +167,29 @@ nav li a {
     flex-wrap: wrap; 
 }
 
-.cta-button{
+.cta-button {
     display: inline-block;
     padding: 1rem 3vw;
     background-color: var(--color-complement);
     font-size: 1.05rem;
     font-weight: 900;
     text-align: center;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.5s ease, transform 0.5s ease;
     object-fit: contain;
     color: var(--grey-2);
+    border-radius: 8px;
 }
 
-.cta-button:hover{
-    background-color: var(--color-btn);
+.cta-button:hover {
+    background-color: var(--color-main);
     transform: translateY(-0.2rem);
     color: var(--color-white);
 }
 
 .cta-button:active {
-    background-color: var(--btn);
     transform: translateY(0.1rem);
 }
+
 .about {
     display: flex;
     flex-wrap: wrap; /* Ajusta los elementos automáticamente */
@@ -208,7 +212,7 @@ nav li a {
     gap: 0.5rem 1rem;
 
     span{
-        color: var(--color-btn);
+        color: var(--color-main);
         margin-right: 5px;
     }
 }
@@ -225,42 +229,21 @@ nav li a {
     border-radius: 8px;
 }
 
-/* Botón (asumiendo que está en el archivo button-main.html) */
-button {
-    background-color: #FFC107; /* Color amarillo para el botón */
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #FFA000; /* Color más oscuro al pasar el mouse */
-}
 
 .footer{
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 40px;
   padding-left: 40px;
   padding-right: 40px;
   border-radius: var(--radius);
-  background-color: var(--color-btn);
+  background-color: var(--color-main);
+  box-shadow: 0 0 0 100vmax var(--color-main);
+  -webkit-clip-path: inset(0 -100vmax);
+  clip-path: inset(0 -100vmax);
 }
-.footer-content{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
-  border-radius: var(--radius);
-  background-color: var(--color-btn);
-}
+
 .footer div{
   display: grid;
   gap: 8px;
@@ -268,9 +251,12 @@ button:hover {
   max-width: 240px;
 }
 
-.footer div:last-child{
-  margin-left: auto;
+.redes{
+  a:hover {
+    color: var(--color-complement);
+  }
 }
+
 
 .footer div span{
   font-weight: 900;
@@ -288,15 +274,27 @@ button:hover {
   color: var(--grey-1);
   font-family: var(--fuente);
 }
+.derechos{
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-main);
+  box-shadow: 0 0 0 100vmax var(--color-main);
+  -webkit-clip-path: inset(0 -100vmax);
+  clip-path: inset(0 -100vmax);
+
+  small{
+    color: var(--color-fonts);
+  }
+}
 :root {
     --color-white: #fefefe;
     --color-main: #008037;
     --color-complement: #FFc30b;
-    --color-fonts: #7C7A7A;
+    --color-fonts: #212529;
     --color-btn: #095329;
     --grey-1: #e2e6e9;
-    --grey-2: #495057;
-    --grey-3: #212529;
+    --grey-2: #7C7A7A;
+    --grey-3: #495057;
 
 
     --shadow: rgba(0, 0, 0, 0.15) 0px 6px 20px 2px;
@@ -375,27 +373,25 @@ h2::after {
 
 h3 {
   font-size: clamp(1.5rem, 3vw, 2rem);
-  color: var(--color-main);
+  color: var(--grey-3);
   max-width: 30ch;
 }
 
 h4 {
   font-size: clamp(1.25rem, 2vw, 1.75rem);
-  color: var(--color-main);
+  color: var(--grey-3);
 }
 
 h5 {
   font-size: clamp(1rem, 1.5vw, 1.25rem);
-  color: var(--color-main);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 p, li {
   font-size: clamp(1.1rem, 1.1vw, 1.2rem);
   max-width: 70ch;
-  font-weight: 700;
 }
 
 a {
@@ -405,13 +401,11 @@ a {
     transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
   
-  a:hover {
-    color: var(--color-complement);
-    font-weight: 900;
-  }
+  
 
 small {
   font-size: 85%;
+  
 }
 
 img {
@@ -505,6 +499,10 @@ strong {
 /* Contenedor principal */
 .booking-process {
     text-align: center;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 0 100vmax #f7f7f7;
+    -webkit-clip-path: inset(0 -100vmax);
+    clip-path: inset(0 -100vmax);
 }
 
 .process-intro {
@@ -522,13 +520,12 @@ strong {
     background-image: url("/quality/img/section-fondo.avif");
     background-repeat: no-repeat;
     background-size: contain; /* Ajusta el tamaño para que se vea completa */
-    background-position: center; /* Centra la imagen */
+    background-position: top center; /* Centra la imagen */
     min-height: 400px; /* Ajusta la altura mínima según sea necesario */
 }
 
 .step {
     padding: 20px 0;
-    background: var(--color-white);
     border-radius: 8px;
     text-align: center;
     max-width: 300px;
@@ -577,7 +574,11 @@ strong {
 
 
 
-
+@media (max-width: 839px) {
+    .steps{
+        background-image: none;
+    }
+}
 
 
 
@@ -665,23 +666,24 @@ strong {
 .cta-buttonl{
     display: inline-block;
     padding: 1rem 3vw;
-    background-color: var(--color-complement);
+    background-color: var(--color-white);
     font-size: 1rem;
     font-weight: 700;
     text-align: center;
     transition: background-color 0.3s ease, transform 0.3s ease;
     object-fit: contain;
-    color: var(--grey-2);
+    color: var(--color-main);
     margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 5px solid var(--color-main);
 }
 
 .cta-buttonl:hover{
-    background-color: var(--color-btn);
     transform: translateY(-0.2rem);
-    color: var(--color-white)
+    color: var(--color-btn)
 }
 
 .cta-buttonl:active {
-    background-color: var(--color-btn);
+    background-color: var(--color-main);
     transform: translateY(0.1rem);
 }

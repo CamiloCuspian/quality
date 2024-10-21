@@ -20,7 +20,7 @@
     gap: 0.5rem 1rem;
 
     span{
-        color: var(--color-btn);
+        color: var(--color-main);
         margin-right: 5px;
     }
 }
@@ -37,18 +37,3 @@
     border-radius: 8px;
 }
 
-/* Botón (asumiendo que está en el archivo button-main.html) */
-button {
-    background-color: #FFC107; /* Color amarillo para el botón */
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #FFA000; /* Color más oscuro al pasar el mouse */
-}
