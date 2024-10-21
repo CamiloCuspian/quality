@@ -1,21 +1,47 @@
-/* Estilos del Footer */
-.footer {
-    padding: 1rem;
-    background-color: var(--color-main); /* Color de fondo del footer */
-    color: var(--color-white); /* Color del texto */
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: var(--radius);
+  background-color: var(--color-btn);
 }
 .footer-content{
-    display: flex;
-    justify-content: space-between; /* Distribuye los elementos a los lados */
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: var(--radius);
+  background-color: var(--color-btn);
+}
+.footer div{
+  display: grid;
+  gap: 8px;
+  place-content: flex-start;
+  max-width: 240px;
 }
 
-.footer p {
-    margin: 0;
-    font-size: clamp(0.8rem, 1vw, 1rem); /* Tamaño de fuente responsivo */
+.footer div:last-child{
+  margin-left: auto;
 }
 
-.footer img {
-    width: 24px; /* Tamaño del ícono */
-    height: auto;
+.footer div span{
+  font-weight: 900;
+  font-size: 18px;
+  color: var(--color-white);
+  font-family: var(--fuente);
+}
+
+.footer a{
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--grey-1);
+  font-family: var(--fuente);
 }
