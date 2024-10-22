@@ -49,6 +49,7 @@
   box-shadow: 0 0 0 100vmax var(--color-main);
   -webkit-clip-path: inset(0 -100vmax);
   clip-path: inset(0 -100vmax);
+  padding: 2rem 0;
 
   small{
     color: var(--color-fonts);

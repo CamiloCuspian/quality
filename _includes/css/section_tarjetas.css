@@ -28,12 +28,14 @@
 
 .service-card img {
     width: 100%;
-    height: auto;
+    height: 240px;
     border-radius: 8px 8px 0 0;
+    object-fit: cover;
 }
 
 .service-card p {
     text-align: center;
-    font-size: clamp(0.9rem, 1.5vw, 1rem); /* Fuente responsiva */
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
+    padding: 0 12px;
 }
 
