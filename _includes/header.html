@@ -1,10 +1,29 @@
-<header class="hero-section wrapper">
-    <div class="hero-content">
-        <h1>We’re building the future banking just for you</h1>
-        <p>Easy and fast international business account that saves you money whenever you need it.</p>
-        {% include botton-main.html %}
-    </div>
-    <div class="hero-image">
-        <img src="{{'img/img-hero.avif' | relative_url}}" width="600" alt="Equipo de limpieza quality">
-    </div>
-</header>
+{% assign layout = page.layout %}
+{% case layout %}
+  {% when "default" %}
+  <header class="hero-section wrapper">
+      <div class="hero-content">
+          <h1>We’re building the future banking just for you</h1>
+          <p>Easy and fast international business account that saves you money whenever you need it.</p>
+          {% include botton-main.html %}
+      </div>
+      <div class="hero-image">
+          <img src="{{ 'img/img-hero.avif' | relative_url }}" width="600" alt="Equipo de limpieza quality">
+      </div>
+  </header>
+
+  {% when "category" %}
+  <section class="about wrapper dos_columnas_izquierda">
+      <div class="about-content">
+          <h2>Property Maintenance</h2>
+          <p>At Quality Standard Ohio, we specialize in offering a wide range of services tailored to apartment complexes and living communities. Our primary goal is to enhance tenant satisfaction, which, in turn, leads to a significant upturn in occupancy levels. Ultimately contributing to the growth of your community's revenue streams.</p>
+
+          <div>
+              {% include botton-main.html %}
+          </div>
+      </div>
+      <div class="about-image">
+          <img src="{{'img/property-maintenance.avif' | relative_url}}" height="600" width="600" alt="Team in red uniforms">
+      </div>
+  </section>
+{% endcase %}

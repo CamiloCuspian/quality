@@ -1,6 +1,6 @@
 <section class="wrapper-nav">
     <div class="menu-top">
-        <img src="{{'/img/logo_quality.avif' | relative_url}}"  alt="Quality Standard Ohio Logo" width="70" class="logo">
+        <img src="{{'/img/logo_quality.avif' | relative_url}}" alt="Quality Standard Ohio Logo" width="70" class="logo">
         <div class="contact-info">
             <div class="info">
                 <img src="{{'/img/phone.avif' | relative_url}}" width="40" height="40" alt="Phone Icon" class="icon">
@@ -22,10 +22,37 @@
     <nav class="nav-menu">
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
         <ul id="menu-items">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Property Maintenance</a></li>
-            <li><a href="#">Commercial Services</a></li>
-            <li><a href="#">Residential Services</a></li>
+            <li><a href="{{'/index.html' | relative_url}}">Home</a></li>
+            <li class="dropdown">
+                <a href="{{'/property-maintenance.html' | relative_url}}">Property Maintenance</a>
+                <div class="submenu-wrapper">
+                    <ul class="submenu">
+                        <li><a href="/servicio1/">Servicio 1</a></li>
+                        <li><a href="/servicio2/">Servicio 2</a></li>
+                        <li><a href="/servicio3/">Servicio 3</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Commercial Services</a>
+                <div class="submenu-wrapper">
+                    <ul class="submenu">
+                        <li><a href="/servicio1/">Servicio 1</a></li>
+                        <li><a href="/servicio2/">Servicio 2</a></li>
+                        <li><a href="/servicio3/">Servicio 3</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">Residential Services</a>
+                <div class="submenu-wrapper">
+                    <ul class="submenu">
+                        <li><a href="/servicio1/">Servicio 1</a></li>
+                        <li><a href="/servicio2/">Servicio 2</a></li>
+                        <li><a href="/servicio3/">Servicio 3</a></li>
+                    </ul>
+                </div>
+            </li>
             <li><a href="#">About</a></li>
         </ul>
         {% include botton-main.html %}
@@ -35,7 +62,4 @@
             <span></span>
         </label>
     </nav>
-</section>    
-    
-    
-    
+</section>

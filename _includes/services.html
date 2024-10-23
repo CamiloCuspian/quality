@@ -1,0 +1,24 @@
+    
+<div class="titulo wrapper">
+    <h2>Discover how our comprehensive solutions can positively impact your community today!</h2>
+</div>
+<section class="service-cards wrapper">
+    {% for service in site.data.services %}
+    <div class="card">
+      <!-- Contenedor del icono y subtema alineados horizontalmente -->
+      <div class="icon-subtitle">
+        <img class="icon" src="{{ service.icon }}" width="100" alt="{{ service.title }}">
+        <h3 class="title">{{ service.title }}</h3>
+      </div>
+      
+      <!-- Título -->
+      
+      <!-- Descripción -->
+      <p class="description">{{ service.description }}</p>
+      
+      <!-- Botón de llamada a la acción -->
+      {% include botton-main.html %}
+    </div>
+    {% endfor %}
+  </section>
+  
