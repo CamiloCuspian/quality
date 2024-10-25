@@ -17,7 +17,7 @@
     flex-wrap: wrap;
 
     a{
-        color: var(--negro);
+        color: var(--black);
     }
 }
 
@@ -44,7 +44,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-main);
-    border-radius: 8px;
+    border-radius: var(--radius);
     position: sticky;
     z-index: 999;
     top: 0;
@@ -386,11 +386,12 @@ nav li a {
     --grey-1: #e2e6e9;
     --grey-2: #7C7A7A;
     --grey-3: #495057;
-    --negro: #18181a;
+    --black: #18181a;
 
 
     --shadow: rgba(0, 0, 0, 0.15) 0px 6px 20px 2px;
-    --radius: 12px;
+    --radius: 8px;
+    --radius-cards: 12px;
     --fuente: "Monstserrat", sans-serif;
 }
 

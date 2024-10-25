@@ -17,7 +17,7 @@
     flex-wrap: wrap;
 
     a{
-        color: var(--negro);
+        color: var(--black);
     }
 }
 
@@ -44,7 +44,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-main);
-    border-radius: 8px;
+    border-radius: var(--radius);
     position: sticky;
     z-index: 999;
     top: 0;
