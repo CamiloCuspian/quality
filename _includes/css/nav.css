@@ -46,9 +46,13 @@
     background-color: var(--color-main);
     border-radius: var(--radius);
     position: sticky;
-    z-index: 999;
     top: 0;
     padding: 12px;
+    z-index: 999;
+
+    .button-main:hover{
+        background-color: var(--color-complement);
+      }
 }
 
 nav ul {
