@@ -26,4 +26,32 @@
         <img src="{{ page.hero | relative_url }}" height="600" width="600" alt="{{page.alt}}">
       </div>
     </header>
+  {% when "service" %}
+    <header class="wrap-hero wrapper dos_columnas_izquierda">
+      <div class="hero-category">
+        <h1>{{ page.h1 }}</h1>
+        <p>{{ page.text }}</p>
+
+        <div>
+          {% include botton-main.html %}
+        </div>
+      </div>
+      <div class="about-image">
+        <img src="{{ page.hero | relative_url }}" height="600" width="600" alt="{{page.alt}}">
+      </div>
+    </header>
+  {% else %}
+    <header class="wrap-hero wrapper dos_columnas_izquierda">
+      <div class="hero-category">
+        <h1>{{ page.h1 }}</h1>
+        <p>{{ page.text }}</p>
+
+        <div>
+          {% include botton-main.html %}
+        </div>
+      </div>
+      <div class="about-image">
+        <img src="{{ page.hero | relative_url }}" height="600" width="600" alt="{{page.alt}}">
+      </div>
+    </header>
 {% endcase %}
