@@ -1,5 +1,9 @@
-.services {
+.servicios {
     text-align: center;
+
+    h2{
+        margin-bottom: 2rem;
+    }
 }
 
 .intro-text {
@@ -10,7 +14,7 @@
 
 .service-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); /* Ajuste automático de columnas */
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
     gap: 1rem;
     justify-items: center;
 

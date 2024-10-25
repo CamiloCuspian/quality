@@ -24,12 +24,15 @@ compress_html:
     startings: []
 
 collections:
-  ventas:
+  property:
     output: true
-    permalink: /ventas/:path
-  arriendo:
+    permalink: /property/:path
+  commercial:
     output: true
-    permalink: /arriendo/:path
+    permalink: /commercial/:path
+  residential:
+    output: true
+    permalink: /residential/:path
   posts:
     output: true
     permalink: /blog/:slug

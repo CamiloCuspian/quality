@@ -1,13 +1,57 @@
 ---
 layout: default
 ---
-
-{% include nav.html %}
 {% include header.html %}
+
 {% include iconos.html %}
-{% include section_tarjetas.html %}
-{% include section_dos_columnas.html %}
-{% include footer.html %}
 
+<!--tarjetas-->
 
+<section class="servicios wrapper">
+    <h2>Explore Our Top Services</h2>
+    <p class="intro-text">
+        Our team delivers top-tier home and commercial cleaning services, ensuring that every surface sparkles, every room shines, and every client smiles with satisfaction. We take pride in every job we do, because for us, it’s not just a service; it’s a commitment to your well-being.
+    </p>
+    <div class="service-cards">
+        <div class="service-card">
+            <img src="{{'img/doorstep-trash-pickup.avif' | relative_url}}" alt="Doorstep Trash Pickup">
+            <h3>Doorstep Trash Pickup</h3>
+            <p>Our operations are built around convenience for the residents and cleanliness of the community, guaranteeing higher and steady percentages of occupancy.</p>
+            {% include boton-learn.html %}
+        </div>
+        <div class="service-card">
+            <img src="{{'img/carpet-cleaning.avif' | relative_url}}" alt="Carpet Cleaning">
+            <h3>Carpet Cleaning</h3>
+            <p>Our professional team provides deep carpet cleaning solutions to remove dirt, allergens, and stains, ensuring a fresh and hygienic living environment for your residents.</p>
+            {% include boton-learn.html %}
+        </div>
+        <div class="service-card">
+            <img src="{{'img/parking-lot -ine-striping-and-maintenance.avif' | relative_url}}" alt="Parking lot line-striping and maintenance">
+            <h3>Parking lot line-striping and maintenance</h3>
+            <p>Enhance the appearance and safety of the apartment complex’s parking areas with line-striping painting services.</p>
+            {% include boton-learn.html %}
+        </div>
+    </div>
+</section>
 
+<!--dos columnas-->
+
+<section class="about wrapper">
+    <div class="about-content">
+        <h2>About Us</h2>
+        <h3>10+ years of experience in residential and commercial property maintenance</h3>
+        <p>We hold ourselves to the highest standards at every stage of the process, refusing to compromise quality. Our commitment to excellence extends beyond the field, as we ensure outstanding service through every communication channel with our clients. We not only implement environmentally responsible practices but also adhere to the codes and guidelines of every community in the state.</p>
+        <ul class="about-list">
+            <li><span>✔</span> Experienced Team</li>
+            <li><span>✔</span> Environmentally responsible.</li>
+            <li><span>✔</span> Book, manage & pay online.</li>
+            <li><span>✔</span> Outstanding customer service.</li>
+        </ul>
+        <div>
+            {% include botton-main.html %}
+        </div>
+    </div>
+    <div class="about-image">
+        <img src="{{'img/about-us.avif' | relative_url}}" height="600" width="600" alt="Team in red uniforms">
+    </div>
+</section>

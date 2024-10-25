@@ -1,6 +1,34 @@
 ---
 layout: default
 ---
-{% include nav.html %}
+{% include header.html %}
 
 {{ content }}
+
+<!-- Cargar el archivo de datos correspondiente a la página actual -->
+{% assign services = site.data[page.name] %}
+{% if services and services.size > 0 %}
+  <!-- Mostrar el h2 si está presente en el primer servicio -->
+  {% if services[0].h2 %}
+    <div class="titulo-services wrapper">
+      <h2>{{ services[0].h2 }}</h2>
+    </div>
+  {% endif %}
+
+  <!-- Renderizar las tarjetas de servicios -->
+  <section class="service-cards wrapper">
+    {% for service in services %}
+      <div class="card">
+        <div class="icon-subtitle">
+          <img class="icon" src="{{ service.icon }}" width="100" alt="{{ service.title }}">
+          <h3 class="title">{{ service.title }}</h3>
+        </div>
+        
+        <p class="description">{{ service.description }}</p>
+        {% include botton-main.html %}
+      </div>
+    {% endfor %}
+  </section>
+{% else %}
+  <p>No services found for this page.</p>
+{% endif %}

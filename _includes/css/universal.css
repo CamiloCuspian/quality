@@ -147,9 +147,12 @@ ol li {
   margin-inline: auto;
   
 }
+.flow > * + * {
+  margin-bottom: 1.5em;
+}
 
 .wrapper-nav{
-  width: min(calc(100% - 2rem), 1200px);
+  width: min(calc(100% - 2rem), 1200px); 
   margin-inline: auto;
 }
 

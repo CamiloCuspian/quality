@@ -3,6 +3,13 @@
     place-content: center;
     text-align: center;
 }
+.titulo-services{
+
+  display: grid;
+  place-content: center;
+  text-align: center;
+
+}
 
 /* Contenedor principal de las tarjetas */
 .service-cards {

@@ -1,4 +1,5 @@
 - title: "Doorstep Trash Pick up"
+  h2: "Discover how our comprehensive solutions can positively impact your community today!"
   description: "Experience dependable waste collection from designated spots within your apartment community, ensuring a cleaner living environment with every pickup."
   icon: "img/cleaning.avif"
   link: "/services/trash-pickup"
@@ -11,7 +12,7 @@
 - title: "Carpet Cleaning"
   description: "Our professional team provides deep carpet cleaning solutions to remove dirt, allergens, and stains."
   icon: "img/cleaning.avif"
-  link: "/services/carpet-cleaning" 
+  link: "/services/carpet-cleaning"
 
 - title: "Cleaning and Disinfecting"
   description: "Dive deep into cleanliness with our specialized deep cleaning service."
@@ -38,7 +39,7 @@
   icon: "img/cleaning.avif"
   link: "/services/carpet-cleaning"
 
-- title: "Pool Maintanence"
-  description: "Experience the Ultimate Peace of Mind with Our Comprehensive Pool Maintenance Services"
+- title: "Pool Maintenance"
+  description: "Experience the Ultimate Peace of Mind with Our Comprehensive Pool Maintenance Services."
   icon: "img/cleaning.avif"
   link: "/services/carpet-cleaning"
