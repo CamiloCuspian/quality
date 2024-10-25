@@ -1,7 +1,7 @@
 <section class="booking-process wrapper">
     <h2>Our Booking Process</h2>
     <p class="process-intro">Our streamlined process ensures that you have a hassle-free experience.</p>
-    {% include botton-main.html %}
+    {% include button.html %}
     <div class="steps">
         <div class="step">
             <div class="icon-container">
@@ -27,26 +27,3 @@
     </div>
 </section>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-    const iconContainers = document.querySelectorAll('.icon-container');
-
-    iconContainers.forEach(iconContainer => {
-        iconContainer.addEventListener('mousemove', (e) => {
-            const rect = iconContainer.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-
-            const moveX = (x - rect.width / 2) / 10; 
-            const moveY = (y - rect.height / 2) / 10;
-
-            iconContainer.style.transform = `translate(${moveX}px, ${moveY}px) rotate(${moveX * 2}deg)`;
-        });
-
-        iconContainer.addEventListener('mouseleave', () => {
-            iconContainer.style.transform = 'translate(0, 0) rotate(0deg)';
-        });
-    });
-});
-
-</script>
