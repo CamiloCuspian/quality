@@ -1,97 +1,98 @@
 .menu-top {
-    display: flex;
-    flex-flow: row wrap; 
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--color-white);
-    gap: 10px; 
-    padding: 12px;
-    top:0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
 }
 
 .contact-info {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  
+  .info {
     display: flex;
-    gap: 20px; 
-    flex-grow: 1; 
-    justify-content: flex-end; 
-    flex-wrap: wrap;
-
-    a{
-        color: var(--black);
+    align-items: center;
+    gap: 10px;
+    min-width: 180px;
+    
+    .icon {
+      width: 40px;
+      height: auto;
     }
-}
-
-.info {
-    display: flex;
-    align-items: center;
-    gap: 10px; 
-    min-width: 180px; 
-}
-
-.text {
-    display: grid;
-}
-
-.icon {
-    width: 40px;
-    height: auto;
-}
-
-
-/* Estilos Generales de Navegación */
-.nav-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--color-main);
-    border-radius: var(--radius);
-    position: sticky;
-    top: 0;
-    padding: 12px;
-    z-index: 999;
-
-    .button-main:hover{
-        background-color: var(--color-complement);
+    
+    .text {
+      display: grid;
+      
+      a {
+        color: var(--color-main);
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
       }
+    }
+  }
 }
 
-nav ul {
+/* Nav Styles */
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-main);
+  border-radius: var(--radius);
+  position: sticky;
+  top: 0;
+  padding: 12px;
+  z-index: 999;
+  align-self: flex-start;
+  
+  > ul {
     display: flex;
     align-items: center;
+  
+    & > li{
+      margin: 0;
+      
+      & > a {
+        color: #ffffff;
+        padding: 12px 20px;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .button-main:hover {
+    background-color: var(--color-complement);
+  }
 }
 
-nav li a {
-    color: var(--color-white);
-    padding: 12px 20px;
-    font-size: 1rem;
-}
 
 /* Ocultamos el checkbox de control */
 .menu-toggle {
-    display: none;
+  display: none;
 }
 
 /* Estilo del Icono de Menú */
 .menu-icon {
-    display: none;
-    cursor: pointer;
+  display: none;
+  cursor: pointer;
 }
 
 .menu-icon span {
-    display: block;
-    width: 25px;
-    height: 2px;
-    margin: 5px;
-    background-color: var(--color-white);
-    transition: transform 0.3s ease, opacity 0.3s ease;
+  display: block;
+  width: 24px;
+  height: 2px;
+  margin: 4px;
+  background-color: #ffffff;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 /* Estilos del contenedor del submenú */
 .submenu-wrapper {
-    position: relative;
-}
-
-.submenu {
+  position: relative;
+  
+  .submenu {
     list-style: none;
     position: absolute;
     top: 100%;
@@ -102,86 +103,86 @@ nav li a {
     z-index: 10000;
     min-width: 260px; /* Asegura un ancho suficiente para el submenú */
     border: 1px solid var(--color-main); /* Borde fino alrededor del submenú */
-}
-
-.submenu li {
-    border-bottom: 1px solid var(--color-main); /* Línea divisoria entre elementos */
-}
-
-.submenu li:last-child {
-    border-bottom: none; /* Eliminar la línea divisoria del último elemento */
-}
-
-.submenu li a {
-    padding: 8px 16px; /* Espaciado interno para las opciones */
-    color: var(--color-fonts);
-    text-decoration: none;
-    display: block;
+    
+    li {
+      border-bottom: 1px solid var(--color-main); /* Línea divisoria entre elementos */
+      
+      &:last-child {
+        border-bottom: none; /* Eliminar la línea divisoria del último elemento */
+      }
+      
+      a {
+        padding: 8px 16px; /* Espaciado interno para las opciones */
+        color: var(--color-main);
+        text-decoration: none;
+        display: block;
+        
+        &:hover {
+          background-color: var(--color-main); /* Fondo diferente al pasar el cursor */
+          color: var(--color-white); /* Texto blanco al pasar el cursor */
+          font-weight: 700;
+        }
+      }
+    }
+  }
 }
 
 /* Mostrar el submenú al pasar el cursor sobre el elemento principal */
 .dropdown:hover .submenu {
-    display: block;
+  display: block;
 }
 
 .dropdown > a {
-    position: relative;
-}
-
-.submenu li a:hover {
-    background-color: var(--color-main); /* Fondo diferente al pasar el cursor */
-    color: var(--color-white); /* Texto blanco al pasar el cursor */
-    font-weight: 700;
+  position: relative;
 }
 
 /* Cambiar el color de fondo del enlace principal al pasar el cursor */
 .dropdown:hover > a {
-    background-color: var(--color-main);
-    color: var(--color-white);
+  background-color: var(--color-main);
+  color: var(--color-white);
 }
 
 /* Activamos el Icono de Menú en Pantallas Pequeñas */
-@media (max-width: 768px) {
-    .menu-top{
-        display: none;
-    }
-    .nav-menu {
-        display: flex;
-        flex-direction: row-reverse;
-        top: 0; /* Mantener el sticky en la parte superior */
-    }
-    nav ul {
-        display: none;
-    }
-
-    .menu-icon {
-        display: block;
-    }
-
-    /* Mostrar el menú al hacer clic */
-    .menu-toggle:checked ~ #menu-items {
-        display: block;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: var(--color-main);
-        flex-direction: column;
-        z-index: 998; /* Asegurar que el menú desplegable no interfiera con el sticky */
-    }
-
-    /* Cambiar a "X" el icono de menú al abrirlo */
-    .menu-toggle:checked + .menu-icon span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
+@media screen and (max-width: 768px) {
+  .menu-top {
+    display: none;
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: row-reverse;
+    top: 0; /* Mantener el sticky en la parte superior */
     
-    .menu-toggle:checked + .menu-icon span:nth-child(2) {
-        opacity: 0;
-    }
+      .menu-icon {
+        display: block;
+      }
     
-    .menu-toggle:checked + .menu-icon span:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -5px);
+    ul {
+      display: none;
     }
+  }
+
+  /* Mostrar el menú al hacer clic */
+  .menu-toggle:checked ~ #menu-items {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--color-main);
+    flex-direction: column;
+    z-index: 998; /* Asegurar que el menú desplegable no interfiera con el sticky */
+  }
+
+  /* Cambiar a "X" el icono de menú al abrirlo */
+  .menu-toggle:checked + .menu-icon span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .menu-toggle:checked + .menu-icon span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle:checked + .menu-icon span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
 }
-
-

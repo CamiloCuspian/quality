@@ -2,11 +2,14 @@
 {% case layout %}
   {% when "default" %}
     <header class="header_home wrapper">
-      <div class="hero-content">
+      <div class="header_home_text">
         <h1>Lorem ipsum dolor sit amet</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed illo provident aliquid sint eaque veritatis, deleniti amet ex?</p>
         {% include button.html
-           
+           url="#"
+           title="Book your cleaning service"
+           text="→ Book now"
+           class="buttons button-main"
         %}
       </div>
       <div class="hero-image">

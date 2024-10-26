@@ -1,35 +1,29 @@
 .footer{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   gap: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
-  border-radius: var(--radius);
   background-color: var(--color-main);
   box-shadow: 0 0 0 100vmax var(--color-main);
   -webkit-clip-path: inset(0 -100vmax);
-  clip-path: inset(0 -100vmax);
+  clip-path: inset(0 -100vmax);
 }
 
-.footer div{
+.footer div:not(.derechos){
   display: grid;
   gap: 8px;
-  place-content: flex-start;
-  max-width: 240px;
+  place-content: start;
 }
 
-.redes{
-  a:hover {
-    color: var(--color-complement);
-  }
+.redes a:hover {
+  color: var(--color-complement);
 }
 
 
 .footer div span{
   font-weight: 900;
   font-size: 18px;
-  color: var(--color-white);
+  color: #ffffff;
   font-family: var(--fuente);
 }
 
@@ -42,16 +36,17 @@
   color: var(--grey-1);
   font-family: var(--fuente);
 }
+
 .derechos{
-  display: flex;
-  justify-content: center;
-  background-color: var(--color-main);
-  box-shadow: 0 0 0 100vmax var(--color-main);
-  -webkit-clip-path: inset(0 -100vmax);
-  clip-path: inset(0 -100vmax);
-  padding: 2rem 0;
+  width: 100%;
+  display: grid;
+  gap: 8px;
+  place-items: center;
+
+  a{display: inline;}
 
   small{
     color: var(--color-fonts);
+    display: block;
   }
 }

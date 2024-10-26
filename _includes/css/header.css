@@ -9,17 +9,11 @@
 
 /* Contenedor del contenido de texto */
 
-.hero-content {
-    justify-self: end;
+.header_home_text {
     display: grid;
     place-items: center;
     flex: 1; 
     min-width: 300px;
-
-    p{
-        margin-bottom: 1rem;
-        
-    }
 }
 
 /* Imagen del hero */
