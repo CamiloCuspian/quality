@@ -1,8 +1,8 @@
 /* Contenedor principal que usa Flexbox para alinear la imagen y el contenido */
 .encabezado-section {
-    display: flex; /* Flexbox para alineación en fila */
-    gap: 1rem; /* Espacio entre la imagen y el contenido */
-    align-items: center; /* Alineación vertical centrada */
+    display: flex;
+    gap: 1rem;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -20,8 +20,8 @@
 /* Contenedor de texto */
 .encabezado-content {
     display: grid;
-    gap: 1rem; /* Espacio entre elementos de texto */
-    flex: 1; /* Se expande para llenar el espacio restante */
+    gap: 1rem; 
+    flex: 1;
     min-width: 300px;
 
     h1{
@@ -31,15 +31,15 @@
 
 /* Párrafos de contenido */
 .encabezado-content p {
-    display: flex; /* Flexbox para alinear el texto e íconos */
-    gap: 0.5rem; /* Espacio entre ícono y texto */
-    align-items: center; /* Alineación centrada del ícono y texto */
-    margin: 0; /* Elimina el margen por defecto */
-    line-height: 1.5; /* Mejora la legibilidad */
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin: 0;
+    line-height: 1.5;
 }
 
 /* Estilo del ícono de verificación */
 .encabezado-content span {
-    color: var(--color-btn); /* Color del ícono según tu variable */
-    font-size: 1.2em; /* Tamaño ligeramente mayor para el ícono */
+    color: var(--color-btn);
+    font-size: 1.2em; 
 }

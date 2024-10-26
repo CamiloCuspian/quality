@@ -1,45 +1,35 @@
 .servicios {
-    text-align: center;
+  text-align: center;
 
-    h2{
-        margin-bottom: 2rem;
-    }
-}
-
-.intro-text {
-    max-width: 600px;
-    margin: 0 auto 2rem;
-    font-size: clamp(1rem, 2vw, 1.2rem); /* Fuente responsiva */
-}
-
-.service-cards {
+  p {
+    margin-inline: auto;
+  }
+  & a{
+    margin-bottom: 24px;
+  }
+  & div {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
-    gap: 1rem;
-    justify-items: center;
-
-}
-
-.service-card {
-    background: var(--color-white);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    border-radius: 8px;
-    display: grid;
-    place-items: center;
-    gap: 20px;
-    
-}
-
-.service-card img {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
     width: 100%;
-    height: auto;
-    border-radius: 8px 8px 0 0;
-    object-fit: cover;
-}
 
-.service-card p {
-    text-align: center;
-    font-size: clamp(0.9rem, 1.5vw, 1rem);
-    padding: 0 12px;
-}
+    & div {
+      background: var(--color-white);
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      gap: 20px;
 
+      & img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px 8px 0 0;
+        object-fit: cover;
+      }
+      p {
+        padding: 0 12px;
+      }
+    }
+  }
+}

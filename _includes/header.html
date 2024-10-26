@@ -38,7 +38,12 @@
         <p>{{ page.text }}</p>
 
         <div>
-          {% include button.html %}
+          {% include button.html 
+            class="buttons button-main"
+            url="#"
+            title="Book your cleaning service"
+            text="→ Book now"
+          %}
         </div>
       </div>
       <div class="about-image">
