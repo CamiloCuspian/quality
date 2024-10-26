@@ -158,3 +158,9 @@ ol li {
 strong {
   color: var(--color-main);
 }
+
+.gallery_services{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+  gap: 2em;
+}
