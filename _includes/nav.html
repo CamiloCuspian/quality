@@ -19,70 +19,72 @@
     </div>
   </div>
 
-  <nav class="nav-menu">
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <nav class="nav-menu" role="navigation" aria-label="Main Menu">
+    <!-- Checkbox único para controlar el menú hamburguesa -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle Navigation">
+    <label for="menu-toggle" class="menu-icon" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
     <ul id="menu-items">
       <li><a href="{{'/index.html' | relative_url}}">Home</a></li>
       <li class="dropdown">
-        <a href="{{'/property-maintenance.html' | relative_url}}">Property Maintenance</a>
+        <a href="{{'/property-maintenance.html' | relative_url}}" aria-haspopup="true" aria-expanded="false">Property Maintenance</a>
+        <span class="toggle-arrow" role="button" aria-label="Toggle Submenu">&#9662;</span>
         <div class="submenu-wrapper">
-          <ul class="submenu">
+          <ul class="submenu" aria-label="Property Maintenance Submenu">
             <li><a href="{{'/property/doorstep-trash.html' | relative_url}}">Doorstep trash Pickup</a></li>
-            <li><a href="{{'/property/parking-lot-line.html' | relative_url}}">parking lot line-striping and mantenance</a></li>
-            <li><a href="{{'/property/cleaning-and-disinfecting.html' | relative_url}}">Cleaning and desinfecting</a>
-            </li>
+            <li><a href="{{'/property/parking-lot-line.html' | relative_url}}">Parking lot line-striping</a></li>
+            <li><a href="{{'/property/cleaning-and-disinfecting.html' | relative_url}}">Cleaning and disinfecting</a></li>
             <li><a href="{{'/property/carpet-cleaning.html' | relative_url}}">Carpet Cleaning</a></li>
             <li><a href="{{'/property/window-cleaning.html' | relative_url}}">Window Cleaning</a></li>
             <li><a href="{{'/property/handyman-services.html' | relative_url}}">Handyman Services</a></li>
             <li><a href="{{'/property/bulk-item.html' | relative_url}}">Bulk Item pick up</a></li>
             <li><a href="{{'/property/power-washing.html' | relative_url}}">Power Washing</a></li>
-            <li><a href="{{'/property/pool-maintenance.html' | relative_url}}">Pool Maintenence</a></li>
+            <li><a href="{{'/property/pool-maintenance.html' | relative_url}}">Pool Maintenance</a></li>
           </ul>
         </div>
       </li>
       <li class="dropdown">
-        <a href="{{'/commercial-services.html' | relative_url}}">Commercial Services</a>
+        <a href="{{'/commercial-services.html' | relative_url}}" aria-haspopup="true" aria-expanded="false">Commercial Services</a>
+        <span class="toggle-arrow" role="button" aria-label="Toggle Submenu">&#9662;</span>
         <div class="submenu-wrapper">
-          <ul class="submenu">
-            <li><a href="{{'/commercial/doorstep-trash-pick-up.html' | relative_url}}"> Doorstep Trash Pick Up </a></li>
-            <li><a href="{{'/commercial/cleaning-and-disinfecting.html' | relative_url}}"> Cleaning and disinfecting </a></li>
-            <li><a href="{{'/commercial/window-cleaning.html' | relative_url}}"> Window Cleaning </a></li>
-            <li><a href="{{'/commercial/carpet-cleaning.html' | relative_url}}"> Carpet Cleaning </a></li>
-            <li><a href="{{'/commercial/handyman-services.html' | relative_url}}"> Handyman Services </a></li>
-            <li><a href="{{'/commercial/bulk-item.html' | relative_url}}"> Bulk Item pick up </a></li>
+          <ul class="submenu" aria-label="Commercial Services Submenu">
+            <li><a href="{{'/commercial/doorstep-trash-pick-up.html' | relative_url}}">Doorstep Trash Pick Up</a></li>
+            <li><a href="{{'/commercial/cleaning-and-disinfecting.html' | relative_url}}">Cleaning and disinfecting</a></li>
+            <li><a href="{{'/commercial/window-cleaning.html' | relative_url}}">Window Cleaning</a></li>
+            <li><a href="{{'/commercial/carpet-cleaning.html' | relative_url}}">Carpet Cleaning</a></li>
+            <li><a href="{{'/commercial/handyman-services.html' | relative_url}}">Handyman Services</a></li>
+            <li><a href="{{'/commercial/bulk-item.html' | relative_url}}">Bulk Item pick up</a></li>
             <li><a href="{{'/commercial/power-washing.html' | relative_url}}">Power Washing</a></li>
-            <li><a href="{{'/commercial/pool-maintenance.html' | relative_url}}">Pool Maintenence</a></li>
-            <li><a href="{{'/property/parking-lot-line.html' | relative_url}}">parking lot line-striping and mantenance</a></li>
-
+            <li><a href="{{'/commercial/pool-maintenance.html' | relative_url}}">Pool Maintenance</a></li>
           </ul>
         </div>
       </li>
       <li class="dropdown">
-        <a href="{{'/residential-services.html' | relative_url}}">Residential Services</a>
+        <a href="{{'/residential-services.html' | relative_url}}" aria-haspopup="true" aria-expanded="false">Residential Services</a>
+        <span class="toggle-arrow" role="button" aria-label="Toggle Submenu">&#9662;</span>
         <div class="submenu-wrapper">
-          <ul class="submenu">
-            <li><a href="{{'/residential/window-cleaning.html' | relative_url}}"> Window Cleaning </a></li>
-            <li><a href="{{'/residential/carpet-cleaning.html' | relative_url}}"> Carpet Cleaning </a></li>
-            <li><a href="{{'/residential/handyman-services.html' | relative_url}}"> Handyman Services </a></li>
-            <li><a href="{{'/residential/bulk-item.html' | relative_url}}"> Bulk Item pick up </a></li>
-            <li><a href="{{'/residential/power-washing.html' | relative_url}}"> Power Washing </a></li>
-            <li><a href="{{'/residential/pool-maintenance.html' | relative_url}}"> Pool Maintenence </a></li>
-            <li><a href="{{'/residential/cleaning-and-disinfecting.html' | relative_url}}"> Cleaning and disinfecting </a></li>
+          <ul class="submenu" aria-label="Residential Services Submenu">
+            <li><a href="{{'/residential/window-cleaning.html' | relative_url}}">Window Cleaning</a></li>
+            <li><a href="{{'/residential/carpet-cleaning.html' | relative_url}}">Carpet Cleaning</a></li>
+            <li><a href="{{'/residential/handyman-services.html' | relative_url}}">Handyman Services</a></li>
+            <li><a href="{{'/residential/bulk-item.html' | relative_url}}">Bulk Item pick up</a></li>
+            <li><a href="{{'/residential/power-washing.html' | relative_url}}">Power Washing</a></li>
+            <li><a href="{{'/residential/pool-maintenance.html' | relative_url}}">Pool Maintenance</a></li>
           </ul>
         </div>
       </li>
       <li><a href="#">About</a></li>
     </ul>
+
     {% include button.html
       url="#"
       title="Book your cleaning service"
       text="→ Book now"
       class="buttons button-main"
     %}
-    <label for="menu-toggle" class="menu-icon">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
   </nav>
 </section>

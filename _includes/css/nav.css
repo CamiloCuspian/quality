@@ -1,3 +1,9 @@
+/* Estilos generales de la navegación */
+.wrapper-nav {
+  width: min(calc(100% - 2rem), 1200px);
+  margin-inline: auto;
+}
+
 .menu-top {
   display: flex;
   flex-wrap: wrap;
@@ -10,31 +16,31 @@
   display: flex;
   gap: 20px;
   justify-content: flex-end;
-  
-  .info {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    min-width: 180px;
-    
-    .icon {
-      width: 40px;
-      height: auto;
-    }
-    
-    .text {
-      display: grid;
-      
-      a {
-        color: var(--color-main);
-        text-decoration: underline;
-        text-decoration-thickness: 2px;
-      }
-    }
-  }
 }
 
-/* Nav Styles */
+.info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 180px;
+}
+
+.icon {
+  width: 40px;
+  height: auto;
+}
+
+.text {
+  display: grid;
+}
+
+.text a {
+  color: var(--color-main);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+/* Estilos del nav-menu */
 .nav-menu {
   display: flex;
   justify-content: space-between;
@@ -43,37 +49,32 @@
   border-radius: var(--radius);
   position: sticky;
   top: 0;
+  z-index: 1000;
   padding: 12px;
-  z-index: 999;
-  align-self: flex-start;
-  
-  > ul {
-    display: flex;
-    align-items: center;
-  
-    & > li{
-      margin: 0;
-      
-      & > a {
-        color: #ffffff;
-        padding: 12px 20px;
-        font-size: 1rem;
-      }
-    }
-  }
-
-  .button-main:hover {
-    background-color: var(--color-complement);
-  }
 }
 
+.nav-menu > ul {
+  display: flex;
+}
 
-/* Ocultamos el checkbox de control */
+.nav-menu > ul > li {
+  margin: 0;
+}
+
+.nav-menu > ul > li > a {
+  color: #ffffff;
+  padding: 12px 20px;
+  font-size: 1rem;
+}
+
+.button-main:hover {
+  background-color: var(--color-complement);
+}
+
 .menu-toggle {
-  display: none;
+  display: none; /* Ocultar el checkbox */
 }
 
-/* Estilo del Icono de Menú */
 .menu-icon {
   display: none;
   cursor: pointer;
@@ -91,86 +92,94 @@
 /* Estilos del contenedor del submenú */
 .submenu-wrapper {
   position: relative;
-  
-  .submenu {
-    list-style: none;
-    position: absolute;
-    top: 100%;
-    background-color: var(--color-white);
-    padding: 0;
-    margin: 0;
-    display: none; /* El submenú está oculto inicialmente */
-    z-index: 10000;
-    min-width: 260px; /* Asegura un ancho suficiente para el submenú */
-    border: 1px solid var(--color-main); /* Borde fino alrededor del submenú */
-    
-    li {
-      border-bottom: 1px solid var(--color-main); /* Línea divisoria entre elementos */
-      
-      &:last-child {
-        border-bottom: none; /* Eliminar la línea divisoria del último elemento */
-      }
-      
-      a {
-        padding: 8px 16px; /* Espaciado interno para las opciones */
-        color: var(--color-main);
-        text-decoration: none;
-        display: block;
-        
-        &:hover {
-          background-color: var(--color-main); /* Fondo diferente al pasar el cursor */
-          color: var(--color-white); /* Texto blanco al pasar el cursor */
-          font-weight: 700;
-        }
-      }
-    }
-  }
 }
 
-/* Mostrar el submenú al pasar el cursor sobre el elemento principal */
-.dropdown:hover .submenu {
+.submenu {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  background-color: var(--color-white);
+  padding: 0;
+  margin: 0;
+  display: none;
+  z-index: 10000;
+  min-width: 260px;
+  border: 1px solid var(--color-main);
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.submenu.open {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.submenu li {
+  border-bottom: 1px solid var(--color-main);
+}
+
+.submenu li:last-child {
+  border-bottom: none;
+}
+
+.submenu a {
+  padding: 8px 16px;
+  color: var(--color-main);
+  text-decoration: none;
   display: block;
 }
 
-.dropdown > a {
-  position: relative;
-}
-
-/* Cambiar el color de fondo del enlace principal al pasar el cursor */
-.dropdown:hover > a {
+.submenu a:hover {
   background-color: var(--color-main);
   color: var(--color-white);
+  font-weight: 700;
 }
 
-/* Activamos el Icono de Menú en Pantallas Pequeñas */
+.rotated {
+  transform: rotate(180deg);
+}
+
+/* Mostrar el submenú al hacer hover en pantallas grandes */
+@media screen and (min-width: 769px) {
+  .dropdown:hover .submenu {
+    display: block; /* Mostrar el submenú */
+    max-height: 500px; /* Deslizar hasta su altura máxima */
+    opacity: 1; /* Hacerlo visible */
+  }
+}
+
+/* Estilos para pantallas pequeñas */
 @media screen and (max-width: 768px) {
   .menu-top {
     display: none;
   }
+
   .nav-menu {
-    display: flex;
-    flex-direction: row-reverse;
-    top: 0; /* Mantener el sticky en la parte superior */
-    
-      .menu-icon {
-        display: block;
-      }
-    
-    ul {
-      display: none;
-    }
+    top: 0;
   }
 
-  /* Mostrar el menú al hacer clic */
-  .menu-toggle:checked ~ #menu-items {
+  .menu-icon {
     display: block;
+  }
+
+  /* Ocultar el menú por defecto en pantallas pequeñas */
+  ul#menu-items {
+    display: none;
+    flex-direction: column;
+    background-color: var(--color-main);
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
-    background-color: var(--color-main);
-    flex-direction: column;
-    z-index: 998; /* Asegurar que el menú desplegable no interfiera con el sticky */
+    z-index: 1200;
+    border-radius: 8px;
+  }
+
+  /* Mostrar el menú cuando el checkbox esté marcado */
+  .menu-toggle:checked ~ #menu-items {
+    display: flex;
   }
 
   /* Cambiar a "X" el icono de menú al abrirlo */
@@ -184,5 +193,28 @@
 
   .menu-toggle:checked + .menu-icon span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .toggle-arrow {
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+  }
+
+  .submenu {
+    display: none;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .submenu.open {
+    display: flex;
   }
 }
