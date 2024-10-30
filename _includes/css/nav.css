@@ -62,7 +62,7 @@
 }
 
 .nav-menu > ul > li > a {
-  color: #ffffff;
+  color: var(--color-white);
   padding: 12px 20px;
   font-size: 1rem;
 }
@@ -92,20 +92,17 @@
 /* Estilos del contenedor del submenú */
 .submenu-wrapper {
   position: relative;
+  
 }
 
 .submenu {
-  list-style: none;
   position: absolute;
   top: 100%;
-  background-color: var(--color-white);
   padding: 0;
   margin: 0;
   display: none;
   z-index: 10000;
   min-width: 260px;
-  border: 1px solid var(--color-main);
-  overflow: hidden;
   max-height: 0;
   opacity: 0;
   transition: max-height 0.3s ease, opacity 0.3s ease;
@@ -116,8 +113,14 @@
   opacity: 1;
 }
 
+.submenu li a {
+  border: 1px solid var(--color-main);
+  background-color: var(--color-white);
+  border-radius: var(--radius);
+}
 .submenu li {
-  border-bottom: 1px solid var(--color-main);
+  margin: 0;
+  padding: 0;
 }
 
 .submenu li:last-child {
@@ -139,6 +142,9 @@
 
 .rotated {
   transform: rotate(180deg);
+}
+.toggle-arrow{
+  display: none;
 }
 
 /* Mostrar el submenú al hacer hover en pantallas grandes */
