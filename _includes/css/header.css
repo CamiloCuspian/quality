@@ -16,19 +16,6 @@
     min-width: 300px;
 }
 
-/* Imagen del hero */
-.hero-image {
-    flex: 1; 
-    min-width: 300px; 
-}
-
-.hero-image img {
-    max-width: 100%; 
-    height: auto;
-    border-radius: 10px;
-    mask-image: linear-gradient(white 80%, transparent);
-}
-
 /* Responsividad sin media queries */
 .hero-section {
     flex-wrap: wrap; 

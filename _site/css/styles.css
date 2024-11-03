@@ -1,15 +1,15 @@
 /* Estilos generales de la navegación */
-.wrapper-nav {
-  width: min(calc(100% - 2rem), 1200px);
-  margin-inline: auto;
-}
-
-.menu-top {
+.menu__top {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  padding: 12px;
+  div{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+  }
 }
 
 .contact-info {
@@ -241,19 +241,6 @@
     place-items: center;
     flex: 1; 
     min-width: 300px;
-}
-
-/* Imagen del hero */
-.hero-image {
-    flex: 1; 
-    min-width: 300px; 
-}
-
-.hero-image img {
-    max-width: 100%; 
-    height: auto;
-    border-radius: 10px;
-    mask-image: linear-gradient(white 80%, transparent);
 }
 
 /* Responsividad sin media queries */

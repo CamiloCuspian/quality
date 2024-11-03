@@ -18,3 +18,40 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+// Mostrar fecha y horario de atención en el nav
+document.addEventListener("DOMContentLoaded", function() {
+  const dayElement = document.getElementById("current-day");
+
+  // Formato de días y meses en inglés
+  const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  
+  // Obtener la fecha y hora actuales
+  const currentDate = new Date();
+  const currentDayName = daysOfWeek[currentDate.getDay()];
+  const currentMonth = monthNames[currentDate.getMonth()];
+  const currentDay = currentDate.getDate();
+  const currentYear = currentDate.getFullYear();
+  const currentHour = currentDate.getHours();
+
+  // Horario de apertura y cierre
+  const openHour = 8;
+  const closeHour = 17;
+
+  // Formato de la fecha
+  const formattedDate = `${currentMonth} ${currentDay}, ${currentYear}`;
+  let message;
+
+  // Lógica para mostrar si está abierto o cerrado
+  if (currentDayName !== "Sunday" && currentHour >= openHour && currentHour < closeHour) {
+      message = `${formattedDate} - ${openHour}:00 - ${closeHour}:00`;
+  } else if (currentDayName !== "Sunday") {
+      message = `${formattedDate} - Outside business hours`;
+  } else {
+      message = `${formattedDate} - Today we relax`;
+  }
+
+  // Mostrar el mensaje en el elemento <small>
+  dayElement.textContent = message;
+});

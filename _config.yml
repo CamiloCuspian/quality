@@ -1,13 +1,10 @@
 baseurl: '/quality'
-url: ''
-title: ''
-author: 
-tel1: ""
-tel2: ""
-whatsapp: ""
-email: ""
+url: 'https://qualitystandardohio.com/'
+title: 'Quality Standard Ohio'
+telefono: "(614) 602-5494"
+whatsapp: "+16143843087"
+email: "support@qualitystandardoh.com"
 maps: https://maps.app.goo.gl/LAmA8gQZFBxwKak28
-facebook_url: https://www.facebook.com/lebeninmobiliaria
 
 markdown: kramdown
 
