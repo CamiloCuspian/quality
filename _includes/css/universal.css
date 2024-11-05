@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5 {
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.2;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 h1 {
@@ -61,7 +61,7 @@ h2 {
   font-weight: 700;
 }
 
-h2::after {
+/* h2::after {
   content: '';
   position: absolute;
   bottom: -20px;
@@ -70,7 +70,7 @@ h2::after {
   width: 200px;
   margin: 10px auto;
   background-color: var(--color-accent);
-}
+} */
 
 h3 {
   font-size: clamp(1.5rem, 3vw, 2rem);
@@ -90,9 +90,8 @@ h5 {
 }
 
 p, li {
-  font-size: clamp(1.1rem, 1.1vw, 1.2rem);
+  font-size: clamp(1.4rem, 1.1vw, 0.6rem);
   max-width: 70ch;
-  margin-bottom: 1em;
   color: var(--color-fonts)
 }
 
@@ -107,8 +106,10 @@ a {
 
 small {
   font-size: 85%;
+  font-weight: 900;
   
 }
+
 
 img {
   border-style: none;

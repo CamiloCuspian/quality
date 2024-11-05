@@ -187,9 +187,6 @@ nav .icono-nav .line {
       flex: 1 1 400px;
       max-width: 720px;
 
-      small {
-        font-weight: 900;
-      }
     }
 
     img {
@@ -279,47 +276,43 @@ nav .icono-nav .line {
 }
 
 .about {
-    display: flex;
-    flex-wrap: wrap; /* Ajusta los elementos automáticamente */
-    align-items: center;
-    gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2.5rem;
 
-    & img {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-    }
-    
-    & div {
-        flex: 1 1 300px;
-        max-width: 600px;
-        display: grid;
-        place-content: center;
-        gap: 1rem;
-        
-        & ul {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 0.5rem 1rem;
-        
-            & span{
-                color: var(--color-main);
-                margin-right: 5px;
-                
-                & li {
-                    display: flex;
-                    align-items: center;
-                }
-            }
+  img {
+    flex: 1 1 300px;
+    min-width: clamp(250px, 35vw, 600px);
+    height: auto;
+    border-radius: var(--radius);
+  }
+
+  .about-content {
+    flex: 1 1 300px;
+    max-width: 600px;
+    display: grid;
+    place-content: center;
+    gap: 1rem;
+    justify-items: start;
+
+    ul {
+      display: grid;
+
+      span {
+        color: var(--color-main);
+        margin-right: 5px;
+        font-size: 2rem;
+        font-weight: bold;
+
+        li {
+          display: flex;
+          align-items: center;
         }
+      }
     }
+  }
 }
-
-
-
-
-
-
 
 .footer {
   display: flex;
@@ -414,7 +407,7 @@ h1, h2, h3, h4, h5 {
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.2;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 h1 {
@@ -431,7 +424,7 @@ h2 {
   font-weight: 700;
 }
 
-h2::after {
+/* h2::after {
   content: '';
   position: absolute;
   bottom: -20px;
@@ -440,7 +433,7 @@ h2::after {
   width: 200px;
   margin: 10px auto;
   background-color: var(--color-accent);
-}
+} */
 
 h3 {
   font-size: clamp(1.5rem, 3vw, 2rem);
@@ -460,9 +453,8 @@ h5 {
 }
 
 p, li {
-  font-size: clamp(1.1rem, 1.1vw, 1.2rem);
+  font-size: clamp(1.4rem, 1.1vw, 0.6rem);
   max-width: 70ch;
-  margin-bottom: 1em;
   color: var(--color-fonts)
 }
 
@@ -477,8 +469,10 @@ a {
 
 small {
   font-size: 85%;
+  font-weight: 900;
   
 }
+
 
 img {
   border-style: none;

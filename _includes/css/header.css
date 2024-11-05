@@ -17,9 +17,6 @@
       flex: 1 1 400px;
       max-width: 720px;
 
-      small {
-        font-weight: 900;
-      }
     }
 
     img {
