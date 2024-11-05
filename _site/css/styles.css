@@ -170,21 +170,27 @@ nav .icono-nav .line {
 
 /* Estructura del header */
 .header_home {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap; 
     gap: 2em;
+
+    .header_home_text {
+        display: grid;
+        place-items: center;
+        width: clamp(300px, 100%, 800px);
+    }
+
+    img{
+        position: absolute;
+        right: 0;
+    }
 }
 
-/* Contenedor del contenido de texto */
 
-.header_home_text {
-    display: grid;
-    place-items: center;
-    flex: 1; 
-    min-width: 300px;
-}
+
 
 /* Responsividad sin media queries */
 .hero-section {
