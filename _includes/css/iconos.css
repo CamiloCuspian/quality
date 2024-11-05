@@ -4,10 +4,7 @@
   place-items: center;
   gap: 2em;
   text-align: center;
-  background-color: #f7f7f7;
-  box-shadow: 0 0 0 100vmax #f7f7f7;
-  -webkit-clip-path: inset(0 -100vmax);
-  clip-path: inset(0 -100vmax);
+  
 
   p {
     max-width: 600px;

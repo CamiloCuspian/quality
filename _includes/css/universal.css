@@ -1,13 +1,13 @@
 :root {
     --color-white: #fefefe;
     --color-main: #008037;
-    --color-complement: #FFc30b;
-    --color-fonts: #212529;
+    --color-complement: #ffce00;
+    --bgr: #fafafa;
+    --color-fonts: #111313;
     --color-btn: #005123;
-    --color-accent: #00803754;
-    --grey-1: #e2e6e9;
-    --grey-2: #7C7A7A;
-    --grey-3: #495057;
+    --color-accent: #008037;
+    --grey-1: #7C7A7A;
+    --grey-2: #495057;
     --black: #18181a;
 
 
@@ -93,6 +93,7 @@ p, li {
   font-size: clamp(1.1rem, 1.1vw, 1.2rem);
   max-width: 70ch;
   margin-bottom: 1em;
+  color: var(--color-fonts)
 }
 
 a {

@@ -1,25 +1,32 @@
 /* Estructura del header */
 .header_home {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 2em;
+  background-color: var(--bgr);
+  box-shadow: 0 0 0 100vmax var(--bgr);
+  clip-path: inset(0-100vmax);
 
-  .header_home_text {
-    flex: 1 1 400px;
-    max-width: 720px;
+  .wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 0;
 
-    small {
-      font-weight: 900;
+    .header_home_text {
+      flex: 1 1 400px;
+      max-width: 720px;
+
+      small {
+        font-weight: 900;
+      }
     }
-  }
 
-  img {
-    flex: 1 1 300px;
-    min-width: clamp(250px, 35vw, 600px);
-    height: auto;
+    img {
+      flex: 1 1 300px;
+      min-width: clamp(250px, 35vw, 600px);
+      height: auto;
+    }
   }
 }
 

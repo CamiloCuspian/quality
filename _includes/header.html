@@ -1,23 +1,25 @@
 {% assign layout = page.layout %}
 {% case layout %}
 {% when "default" %}
-<header class="header_home wrapper">
-  <div class="header_home_text">
-    <small> WE ARE QUALITY STANDARD OHIO </small>
-    <h1>Professional cleaning service for your home</h1>
-    <p>Columbus' trusted cleaning service provides
-      professional residential and commercial solutions.
-      Schedule today!</p>
-    {% include button.html
-    url="#"
-    title="Book your cleaning service"
-    text="→ Take our service"
-    class="buttons button-main"
-    %}
+<header class="header_home">
+  <div class="wrapper">
+    <div class="header_home_text">
+      <small> WE ARE QUALITY STANDARD OHIO </small>
+      <h1>Professional cleaning service for your home</h1>
+      <p>Columbus' trusted cleaning service provides
+        professional residential and commercial solutions.
+        Schedule today!</p>
+      {% include button.html
+      url="#"
+      title="Book your cleaning service"
+      text="→ Take our service"
+      class="buttons button-main"
+      %}
+    </div>
+    <img src="{{ 'img/lady-cleaning-a-house.avif' | relative_url }}" width="600" height="474" loading="eager"
+      alt="Equipo de limpieza quality"
+      title="Girl who belongs to the Quality Standard Ohio team, cleaning a house in Columbus">
   </div>
-  <img src="{{ 'img/lady-cleaning-a-house.avif' | relative_url }}" width="600" height="474" loading="eager"
-    alt="Equipo de limpieza quality"
-    title="Girl who belongs to the Quality Standard Ohio team, cleaning a house in Columbus">
 </header>
 
 {% when "category" %}
