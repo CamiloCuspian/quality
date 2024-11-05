@@ -132,7 +132,7 @@ ol li {
 
 .wrapper {
   padding: 6em 0;
-  width: min(calc(100% - 2rem), 1200px);
+  width: min(calc(100% - 2rem), 1320px);
   margin-inline: auto;
   
 }
@@ -141,7 +141,7 @@ ol li {
 }
 
 .wrapper-nav{
-  width: min(calc(100% - 2rem), 1200px); 
+  width: min(calc(100% - 2rem), 1320px); 
   margin-inline: auto;
 }
 

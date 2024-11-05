@@ -14,12 +14,12 @@
 }
 
 .button-main {
-  color: #ffffff;
   transition: background-color 0.5s ease, transform 0.5s ease;
   background-color: var(--color-complement);
 }
 
 .button-main:hover{
+  color: #ffffff;
   background-color: var(--color-main);
 }
 

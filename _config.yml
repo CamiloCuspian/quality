@@ -11,14 +11,14 @@ markdown: kramdown
 permalink: :slug
 
 compress_html:
-    clippings: []
-    comments: []
-    endings: []
-    ignore:
-    envs: []
-    blanklines: false
-    profile: false
-    startings: []
+  clippings: []
+  comments: []
+  endings: []
+  ignore:
+  envs: []
+  blanklines: false
+  profile: false
+  startings: []
 
 collections:
   property:

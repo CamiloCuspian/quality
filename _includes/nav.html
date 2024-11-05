@@ -1,79 +1,73 @@
   <aside class="menu__top">
     <div class="menu__top--time">
-      <small id="current-day"></small>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="#212529" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 7v5l1.5 2.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+      <span id="current-day"></span>
+      <span class="time__email">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><g stroke="#212529" stroke-linecap="round" stroke-width="2"><path stroke-linejoin="round" d="m4 7 6.2 4.65a3 3 0 0 0 3.6 0L20 7"/><rect width="18" height="14" x="3" y="5" rx="2"/></g></svg>
+        {{site.email}}
+      </span>
     </div>
     <div class="menu__top--whatsapp">
-      <small>{{site.whatsapp}}</small>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><g fill="#212529"><path d="M6.014 8.006c.114-.904 1.289-2.132 2.22-1.996V6.01c.907.172 1.625 1.734 2.03 2.436.286.509.1 1.025-.167 1.243-.361.29-.926.692-.808 1.095C9.5 11.5 12 14 13.23 14.711c.466.269.804-.44 1.092-.804.21-.28.726-.447 1.234-.171.759.442 1.474.956 2.135 1.534.33.276.408.684.179 1.115-.403.76-1.569 1.76-2.415 1.557C13.976 17.587 8 15.27 6.08 8.558c-.108-.318-.08-.438-.066-.552Z"/><path fill-rule="evenodd" d="M12 23c-1.224 0-1.9-.131-3-.5l-2.106 1.053A2 2 0 0 1 4 21.763V19.5c-2.153-2.008-3-4.323-3-7.5C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11Zm-6-4.37-.636-.593C3.691 16.477 3 14.733 3 12a9 9 0 1 1 9 9c-.986 0-1.448-.089-2.364-.396l-.788-.264L6 21.764V18.63Z" clip-rule="evenodd"/></g></svg>
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><g fill="#fefefe"><path d="M6.014 8.006c.114-.904 1.289-2.132 2.22-1.996V6.01c.907.172 1.625 1.734 2.03 2.436.286.509.1 1.025-.167 1.243-.361.29-.926.692-.808 1.095C9.5 11.5 12 14 13.23 14.711c.466.269.804-.44 1.092-.804.21-.28.726-.447 1.234-.171.759.442 1.474.956 2.135 1.534.33.276.408.684.179 1.115-.403.76-1.569 1.76-2.415 1.557C13.976 17.587 8 15.27 6.08 8.558c-.108-.318-.08-.438-.066-.552Z"/><path fill-rule="evenodd" d="M12 23c-1.224 0-1.9-.131-3-.5l-2.106 1.053A2 2 0 0 1 4 21.763V19.5c-2.153-2.008-3-4.323-3-7.5C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11Zm-6-4.37-.636-.593C3.691 16.477 3 14.733 3 12a9 9 0 1 1 9 9c-.986 0-1.448-.089-2.364-.396l-.788-.264L6 21.764V18.63Z" clip-rule="evenodd"/></g></svg>
+        <a href="#" id="lead_whatsapp" title="Quality Standard Ohio WhatsApp" class="boton">{{site.whatsapp}}</a>
+      </span>
     </div>
   </aside>
 
-  <nav class="nav-menu" role="navigation" aria-label="Main Menu">
-    <!-- Checkbox único para controlar el menú hamburguesa -->
-    <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle Navigation">
-    <label for="menu-toggle" class="menu-icon" aria-hidden="true">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-
-    <ul id="menu-items">
-      <li><a href="{{'/index.html' | relative_url}}">Home</a></li>
+  <nav>
+    <input id="nav-toggle" type="checkbox">
+    <a href="{{site.baseurl}}/" title="Inicio" class="inicio">
+      <img src="{{'img/logo-quality.avif'|relative_url}}" alt="Quality Standard Ohio Logo" height="75" width="179" title="Quality Standard Ohio" loading="eager"></span>
+    </a>
+      
+    <ul class="navegacion">
       <li class="dropdown">
-        <a href="{{'/property-maintenance.html' | relative_url}}" aria-haspopup="true" aria-expanded="false">Property Maintenance</a>
-        <span class="toggle-arrow" role="button" aria-label="Toggle Submenu">&#9662;</span>
-        <div class="submenu-wrapper">
-          <ul class="submenu" aria-label="Property Maintenance Submenu">
-            <li><a href="{{'/property/doorstep-trash.html' | relative_url}}">Doorstep trash Pickup</a></li>
-            <li><a href="{{'/property/parking-lot-line.html' | relative_url}}">Parking lot line-striping</a></li>
-            <li><a href="{{'/property/cleaning-and-disinfecting.html' | relative_url}}">Cleaning and disinfecting</a></li>
-            <li><a href="{{'/property/carpet-cleaning.html' | relative_url}}">Carpet Cleaning</a></li>
-            <li><a href="{{'/property/window-cleaning.html' | relative_url}}">Window Cleaning</a></li>
-            <li><a href="{{'/property/handyman-services.html' | relative_url}}">Handyman Services</a></li>
-            <li><a href="{{'/property/bulk-item.html' | relative_url}}">Bulk Item pick up</a></li>
-            <li><a href="{{'/property/power-washing.html' | relative_url}}">Power Washing</a></li>
-            <li><a href="{{'/property/pool-maintenance.html' | relative_url}}">Pool Maintenance</a></li>
-          </ul>
+        <span>Residential Services</span>
+        <div class="dropdown-content">
+          <a href="{{'residential/regular'|relative_url}}" title="Regular home cleaning service Ohio">Regular</a>
+          <a href="{{'residential/deep-cleaning'|relative_url}}" title="Deep home cleaning service Ohio">Deep cleaning</a>
+          <a href="{{'residential/move-in-out'|relative_url}}" title="Move in/out cleaning service Ohio">Move in/out</a>
+          <a href="{{'residential/apartment'|relative_url}}" title="Apartment cleaning service Ohio">Apartment</a>
         </div>
       </li>
       <li class="dropdown">
-        <a href="{{'/commercial-services.html' | relative_url}}" aria-haspopup="true" aria-expanded="false">Commercial Services</a>
-        <span class="toggle-arrow" role="button" aria-label="Toggle Submenu">&#9662;</span>
-        <div class="submenu-wrapper">
-          <ul class="submenu" aria-label="Commercial Services Submenu">
-            <li><a href="{{'/commercial/doorstep-trash-pick-up.html' | relative_url}}">Doorstep Trash Pick Up</a></li>
-            <li><a href="{{'/commercial/cleaning-and-disinfecting.html' | relative_url}}">Cleaning and disinfecting</a></li>
-            <li><a href="{{'/commercial/window-cleaning.html' | relative_url}}">Window Cleaning</a></li>
-            <li><a href="{{'/commercial/carpet-cleaning.html' | relative_url}}">Carpet Cleaning</a></li>
-            <li><a href="{{'/commercial/handyman-services.html' | relative_url}}">Handyman Services</a></li>
-            <li><a href="{{'/commercial/bulk-item.html' | relative_url}}">Bulk Item pick up</a></li>
-            <li><a href="{{'/commercial/power-washing.html' | relative_url}}">Power Washing</a></li>
-            <li><a href="{{'/commercial/pool-maintenance.html' | relative_url}}">Pool Maintenance</a></li>
-          </ul>
+        <span>Commercial Services</span>
+        <div class="dropdown-content">
+          <a href="{{'commercial/office'|relative_url}}" title="Office cleaning service Ohio">Office cleaning</a>
+          <a href="{{'commercial/medical'|relative_url}}" title="Medical office cleaning service Ohio">Medical facilities</a>
+          <a href="{{'commercial/retail'|relative_url}}" title="Retail store cleaning service Ohio">Retail cleaning</a>
+          <a href="{{'commercial/restaurant'|relative_url}}" title="Restaurant cleaning service Ohio">Restaurant cleaning</a>
         </div>
       </li>
       <li class="dropdown">
-        <a href="{{'/residential-services.html' | relative_url}}" aria-haspopup="true" aria-expanded="false">Residential Services</a>
-        <span class="toggle-arrow" role="button" aria-label="Toggle Submenu">&#9662;</span>
-        <div class="submenu-wrapper">
-          <ul class="submenu" aria-label="Residential Services Submenu">
-            <li><a href="{{'/residential/window-cleaning.html' | relative_url}}">Window Cleaning</a></li>
-            <li><a href="{{'/residential/carpet-cleaning.html' | relative_url}}">Carpet Cleaning</a></li>
-            <li><a href="{{'/residential/handyman-services.html' | relative_url}}">Handyman Services</a></li>
-            <li><a href="{{'/residential/bulk-item.html' | relative_url}}">Bulk Item pick up</a></li>
-            <li><a href="{{'/residential/power-washing.html' | relative_url}}">Power Washing</a></li>
-            <li><a href="{{'/residential/pool-maintenance.html' | relative_url}}">Pool Maintenance</a></li>
-          </ul>
+        <span>Specialized Services</span>
+        <div class="dropdown-content">
+          <a href="{{'blog'|relative_url}}" title="Blog de Turbo Diésel de Colombia DG">Blog</a>
+          <a href="{{'servicios/mantenimiento'|relative_url}}" title="Preguntas de los clientes de Turbo Diésel DG">Preguntas frecuentes</a>
+          <a href="{{'servicios/mantenimiento'|relative_url}}" title="Recursos gratis de turbo diésel DG">Recursos gratuitos</a>
         </div>
       </li>
-      <li><a href="#">About</a></li>
+      <li class="dropdown">
+        <span>Areas</span>
+        <div class="dropdown-content">
+          <a href="{{'quienes-somos'|relative_url}}" title="Sobre Turbo Diésel de Colombia DG">Quiénes somos</a>
+          <a href="{{'contacto'|relative_url}}" title="Contacta con Turbo diésel DG">Contacto</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <span>Get Informed</span>
+        <div class="dropdown-content">
+          <a href="{{'quienes-somos'|relative_url}}" title="Sobre Turbo Diésel de Colombia DG">Quiénes somos</a>
+          <a href="{{'contacto'|relative_url}}" title="Contacta con Turbo diésel DG">Contacto</a>
+        </div>
+      </li>
+      <li>
+        <a href="#" title="Escribe al WhatsApp de Turbo Diesel de Colombia GD" rel="nofollow noopener noreferrer" target="_blank" class="buttons button-main" id="lead_whatsapp">Get a quote</a>
+      </li>
     </ul>
-
-    {% include button.html
-      url="#"
-      title="Book your cleaning service"
-      text="→ Book now"
-      class="buttons button-main"
-    %}
+    <label for="nav-toggle" class="icono-nav">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </label>
   </nav>
