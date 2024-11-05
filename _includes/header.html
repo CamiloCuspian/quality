@@ -1,65 +1,70 @@
 {% assign layout = page.layout %}
 {% case layout %}
-  {% when "default" %}
-    <header class="header_home wrapper">
-      <div class="header_home_text">
-        <h1>Professional cleaning service for your home</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed illo provident aliquid sint eaque veritatis, deleniti amet ex?</p>
-        {% include button.html
-           url="#"
-           title="Book your cleaning service"
-           text="→ Book now"
-           class="buttons button-main"
-        %}
-      </div>
-      <img src="{{ 'img/lady-cleaning-a-house.avif' | relative_url }}" width="600" height="474" loading="eager" alt="Equipo de limpieza quality" title="Girl who belongs to the Quality Standard Ohio team, cleaning a house in Columbus">
-    </header>
+{% when "default" %}
+<header class="header_home wrapper">
+  <div class="header_home_text">
+    <small> WE ARE QUALITY STANDARD OHIO </small>
+    <h1>Professional cleaning service for your home</h1>
+    <p>Columbus' trusted cleaning service provides
+      professional residential and commercial solutions.
+      Schedule today!</p>
+    {% include button.html
+    url="#"
+    title="Book your cleaning service"
+    text="→ Take our service"
+    class="buttons button-main"
+    %}
+  </div>
+  <img src="{{ 'img/lady-cleaning-a-house.avif' | relative_url }}" width="600" height="474" loading="eager"
+    alt="Equipo de limpieza quality"
+    title="Girl who belongs to the Quality Standard Ohio team, cleaning a house in Columbus">
+</header>
 
-  {% when "category" %}
-    <header class="wrap-hero wrapper dos_columnas_izquierda">
-      <div class="hero-category">
-        <h1>{{ page.h1 }}</h1>
-        <p>{{ page.text }}</p>
+{% when "category" %}
+<header class="wrap-hero wrapper dos_columnas_izquierda">
+  <div class="hero-category">
+    <h1>{{ page.h1 }}</h1>
+    <p>{{ page.text }}</p>
 
-        <div>
-          {% include button.html %}
-        </div>
-      </div>
-      <div class="about-image">
-        <img src="{{ page.hero | relative_url }}" height="600" width="600" alt="{{page.alt}}">
-      </div>
-    </header>
-  {% when "service" %}
-    <header class="wrap-hero wrapper dos_columnas_izquierda">
-      <div class="hero-category">
-        <h1>{{ page.h1 }}</h1>
-        <p>{{ page.text }}</p>
+    <div>
+      {% include button.html %}
+    </div>
+  </div>
+  <div class="about-image">
+    <img src="{{ page.hero | relative_url }}" height="600" width="600" alt="{{page.alt}}">
+  </div>
+</header>
+{% when "service" %}
+<header class="wrap-hero wrapper dos_columnas_izquierda">
+  <div class="hero-category">
+    <h1>{{ page.h1 }}</h1>
+    <p>{{ page.text }}</p>
 
-        <div>
-          {% include button.html 
-            class="buttons button-main"
-            url="#"
-            title="Book your cleaning service"
-            text="→ Book now"
-          %}
-        </div>
-      </div>
-      <div class="about-image">
-        <img src="{{ page.hero | relative_url }}" height="600" width="600" alt="{{page.alt}}">
-      </div>
-    </header>
-  {% else %}
-    <header class="wrap-hero wrapper dos_columnas_izquierda">
-      <div class="hero-category">
-        <h1>{{ page.h1 }}</h1>
-        <p>{{ page.text }}</p>
+    <div>
+      {% include button.html
+      class="buttons button-main"
+      url="#"
+      title="Book your cleaning service"
+      text="→ Book now"
+      %}
+    </div>
+  </div>
+  <div class="about-image">
+    <img src="{{ page.hero | relative_url }}" height="600" width="600" alt="{{page.alt}}">
+  </div>
+</header>
+{% else %}
+<header class="wrap-hero wrapper dos_columnas_izquierda">
+  <div class="hero-category">
+    <h1>{{ page.h1 }}</h1>
+    <p>{{ page.text }}</p>
 
-        <div>
-          {% include button.html %}
-        </div>
-      </div>
-      <div class="about-image">
-        <img src="{{ page.hero | relative_url }}" height="600" width="600" alt="{{page.alt}}">
-      </div>
-    </header>
+    <div>
+      {% include button.html %}
+    </div>
+  </div>
+  <div class="about-image">
+    <img src="{{ page.hero | relative_url }}" height="600" width="600" alt="{{page.alt}}">
+  </div>
+</header>
 {% endcase %}
