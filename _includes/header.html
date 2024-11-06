@@ -6,57 +6,31 @@
     <div class="header__home--text flow">
       <small>We are Quality Standar Ohio</small>
       <h1>Professional cleaning service for your home</h1>
-      <p>Columbus' trusted cleaning service provides professional residential and commercial solutions. Schedule today!</p>
+      <p>Columbus' trusted cleaning service provides professional residential and commercial solutions. Schedule today!
+      </p>
       {% include button.html text="→ Take our service" %}
     </div>
-    <img src="{{ 'img/lady-cleaning-a-house.avif' | relative_url }}" width="861" height="680" loading="eager" alt="Equipo de limpieza quality" title="Girl who belongs to the Quality Standard Ohio team, cleaning a house in Columbus">
+    <img src="{{ 'img/lady-cleaning-a-house.avif' | relative_url }}" width="600" height="474" loading="eager"
+      alt="Equipo de limpieza quality"
+      title="Girl who belongs to the Quality Standard Ohio team, cleaning a house in Columbus">
   </div>
 </header>
 
-{% when "category" %}
-<header class="wrap-hero wrapper dos_columnas_izquierda">
-  <div class="hero-category">
-    <h1>{{ page.h1 }}</h1>
-    <p>{{ page.text }}</p>
-
-    <div>
-      {% include button.html %}
-    </div>
-  </div>
-  <div class="about-image">
-    <img src="{{ page.hero | relative_url }}" height="600" width="600" alt="{{page.alt}}">
-  </div>
-</header>
-{% when "service" %}
-<header class="wrap-hero wrapper dos_columnas_izquierda">
-  <div class="hero-category">
-    <h1>{{ page.h1 }}</h1>
-    <p>{{ page.text }}</p>
-
-    <div>
-      {% include button.html
-      class="buttons button-main"
-      url="#"
-      title="Book your cleaning service"
-      text="→ Book now"
-      %}
-    </div>
-  </div>
-  <div class="about-image">
-    <img src="{{ page.hero | relative_url }}" height="600" width="600" alt="{{page.alt}}">
-  </div>
-</header>
 {% else %}
-<header class="wrap-hero wrapper dos_columnas_izquierda">
-  <div class="hero-category">
-    <h1>{{ page.h1 }}</h1>
-    <p>{{ page.text }}</p>
+<header class="">
+  <div class="wrapper two_columns bgr-hero">
+    <div class="">
+      {% if page.small %}
+      <small>{{ page.small }}</small>
+      {% endif %}
+      <h1>{{ page.h1 }}</h1>
+      <p>{{ page.text }}</p>
 
-    <div>
+      {% if page.button %}
       {% include button.html %}
+      {% endif %}
     </div>
-  </div>
-  <div class="about-image">
+
     <img src="{{ page.hero | relative_url }}" height="600" width="600" alt="{{page.alt}}">
   </div>
 </header>
