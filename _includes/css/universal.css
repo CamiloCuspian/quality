@@ -1,20 +1,19 @@
 :root {
-    --color-white: #fefefe;
-    --color-main: #008037;
-    --color-complement: #ffce00;
-    --bgr: #fafafa;
-    --color-fonts: #111313;
-    --color-btn: #005123;
-    --color-accent: #008037;
-    --grey-1: #7C7A7A;
-    --grey-2: #495057;
-    --black: #18181a;
+  --color-white: #fefefe;
+  --color-main: #008037;
+  --color-complement: #ffce00;
+  --bgr: #fafafa;
+  --color-fonts: #111313;
+  --color-btn: #005123;
+  --color-accent: #008037;
+  --grey-1: #7c7a7a;
+  --grey-2: #495057;
+  --black: #18181a;
 
-
-    --shadow: rgba(0, 0, 0, 0.15) 0px 6px 20px 2px;
-    --radius: 8px;
-    --radius-cards: 12px;
-    --fuente: "Monstserrat", sans-serif;
+  --shadow: rgba(0, 0, 0, 0.15) 0px 6px 20px 2px;
+  --radius: 8px;
+  --radius-cards: 12px;
+  --fuente: "Monstserrat", sans-serif;
 }
 
 *,
@@ -39,7 +38,11 @@ body {
   background-color: var(--color-white);
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   text-transform: none;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -89,31 +92,30 @@ h5 {
   font-weight: 900;
 }
 
-p, li {
+p,
+li {
   font-size: clamp(1.4rem, 1.1vw, 0.6rem);
   max-width: 70ch;
-  color: var(--color-fonts)
+  color: var(--color-fonts);
 }
 
 a {
-    color: var(--color-btn);
-    text-decoration: none;
-    font-weight: 700;
-    transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  
-  
+  color: var(--color-btn);
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
 
 small {
   font-size: 85%;
   font-weight: 900;
-  
 }
-
 
 img {
   border-style: none;
   max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 li {
@@ -136,24 +138,24 @@ ol li {
   padding: 6em 0;
   width: min(calc(100% - 2rem), 1320px);
   margin-inline: auto;
-  
 }
 .flow > * + * {
-  margin-bottom: 1.5em;
+  margin-top: 1em;
 }
 
-.wrapper-nav{
-  width: min(calc(100% - 2rem), 1320px); 
+.wrapper-nav {
+  width: min(calc(100% - 2rem), 1320px);
   margin-inline: auto;
 }
 
-.bgr{
+.bgr {
   background-color: var(--grey-1);
   box-shadow: 0 0 0 100vmax var(--grey-1);
-  clip-path: inset(0 -100vmax);
+  -webkit-clip-path: inset(0 -100vmax);
+          clip-path: inset(0 -100vmax);
 }
 
-.dos_columnas_izquierda{
+.dos_columnas_izquierda {
   flex-direction: row-reverse;
 }
 
@@ -161,7 +163,7 @@ strong {
   color: var(--color-main);
 }
 
-.gallery_services{
+.gallery_services {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
   gap: 2em;
