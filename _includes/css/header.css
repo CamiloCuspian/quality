@@ -9,7 +9,7 @@
     padding: 0;
 
     .header__home--text {
-
+      padding: 6em 0 4em;
       small{
         text-transform: uppercase;
       }
@@ -26,7 +26,8 @@
     img {
       flex: 1 1 400px;
       min-width: clamp(250px, 35vw, 600px);
-      height: 100%;
+      overflow: unset;
+      z-index: -1;
     }
   }
 }
