@@ -152,7 +152,7 @@ ol li {
   background-color: var(--grey-1);
   box-shadow: 0 0 0 100vmax var(--grey-1);
   -webkit-clip-path: inset(0 -100vmax);
-          clip-path: inset(0 -100vmax);
+  clip-path: inset(0 -100vmax);
 }
 
 .two_columns{

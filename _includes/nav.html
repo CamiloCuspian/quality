@@ -1,76 +1,94 @@
-  <aside class="menu__top">
-    <div class="menu__top--time">
-      <span id="current-day"></span>
-      <span class="time__email">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><g stroke="#212529" stroke-linecap="round" stroke-width="2"><path stroke-linejoin="round" d="m4 7 6.2 4.65a3 3 0 0 0 3.6 0L20 7"/><rect width="18" height="14" x="3" y="5" rx="2"/></g></svg>
-        {{site.email}}
-      </span>
-    </div>
-    <div class="menu__top--whatsapp">
-      <span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><g fill="#fefefe"><path d="M6.014 8.006c.114-.904 1.289-2.132 2.22-1.996V6.01c.907.172 1.625 1.734 2.03 2.436.286.509.1 1.025-.167 1.243-.361.29-.926.692-.808 1.095C9.5 11.5 12 14 13.23 14.711c.466.269.804-.44 1.092-.804.21-.28.726-.447 1.234-.171.759.442 1.474.956 2.135 1.534.33.276.408.684.179 1.115-.403.76-1.569 1.76-2.415 1.557C13.976 17.587 8 15.27 6.08 8.558c-.108-.318-.08-.438-.066-.552Z"/><path fill-rule="evenodd" d="M12 23c-1.224 0-1.9-.131-3-.5l-2.106 1.053A2 2 0 0 1 4 21.763V19.5c-2.153-2.008-3-4.323-3-7.5C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11Zm-6-4.37-.636-.593C3.691 16.477 3 14.733 3 12a9 9 0 1 1 9 9c-.986 0-1.448-.089-2.364-.396l-.788-.264L6 21.764V18.63Z" clip-rule="evenodd"/></g></svg>
-        <a href="#" id="lead_whatsapp" title="Quality Standard Ohio WhatsApp" class="boton">{{site.whatsapp}}</a>
-      </span>
-    </div>
-  </aside>
+<aside class="menu__top">
+  <div class="menu__top--time">
+    <span id="current-day"></span>
+    <span class="time__email">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+        <g stroke="#212529" stroke-linecap="round" stroke-width="2">
+          <path stroke-linejoin="round" d="m4 7 6.2 4.65a3 3 0 0 0 3.6 0L20 7" />
+          <rect width="18" height="14" x="3" y="5" rx="2" />
+        </g>
+      </svg>
+      {{site.email}}
+    </span>
+  </div>
+  <div class="menu__top--whatsapp">
+    <span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+        <g fill="#fefefe">
+          <path
+            d="M6.014 8.006c.114-.904 1.289-2.132 2.22-1.996V6.01c.907.172 1.625 1.734 2.03 2.436.286.509.1 1.025-.167 1.243-.361.29-.926.692-.808 1.095C9.5 11.5 12 14 13.23 14.711c.466.269.804-.44 1.092-.804.21-.28.726-.447 1.234-.171.759.442 1.474.956 2.135 1.534.33.276.408.684.179 1.115-.403.76-1.569 1.76-2.415 1.557C13.976 17.587 8 15.27 6.08 8.558c-.108-.318-.08-.438-.066-.552Z" />
+          <path fill-rule="evenodd"
+            d="M12 23c-1.224 0-1.9-.131-3-.5l-2.106 1.053A2 2 0 0 1 4 21.763V19.5c-2.153-2.008-3-4.323-3-7.5C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11Zm-6-4.37-.636-.593C3.691 16.477 3 14.733 3 12a9 9 0 1 1 9 9c-.986 0-1.448-.089-2.364-.396l-.788-.264L6 21.764V18.63Z"
+            clip-rule="evenodd" />
+        </g>
+      </svg>
+      <a href="#" id="lead_whatsapp" title="Quality Standard Ohio WhatsApp" class="boton">{{site.whatsapp}}</a>
+    </span>
+  </div>
+</aside>
 
-  <nav>
-    <input id="nav-toggle" type="checkbox">
-    <a href="{{site.baseurl}}/" title="Inicio" class="inicio">
-      <img src="{{'img/logo-quality.avif'|relative_url}}" alt="Quality Standard Ohio Logo" height="75" width="179" title="Quality Standard Ohio" loading="eager"></span>
-    </a>
-      
-    <ul class="navegacion">
-      <li class="dropdown">
-        <span>Residential Services</span>
-        <div class="dropdown-content">
-          <a href="{{'residential/regular'|relative_url}}" title="Regular home cleaning service Ohio">Regular</a>
-          <a href="{{'residential/deep-cleaning'|relative_url}}" title="Deep home cleaning service Ohio">Deep cleaning</a>
-          <a href="{{'residential/move-in-out'|relative_url}}" title="Move in/out cleaning service Ohio">Move in/out</a>
-          <a href="{{'residential/apartment'|relative_url}}" title="Apartment cleaning service Ohio">Apartment</a>
-        </div>
-      </li>
-      <li class="dropdown">
-        <span>Commercial Services</span>
-        <div class="dropdown-content">
-          <a href="{{'commercial/office'|relative_url}}" title="Office cleaning service Ohio">Office cleaning</a>
-          <a href="{{'commercial/medical'|relative_url}}" title="Medical office cleaning service Ohio">Medical facilities</a>
-          <a href="{{'commercial/retail'|relative_url}}" title="Retail store cleaning service Ohio">Retail cleaning</a>
-          <a href="{{'commercial/restaurant'|relative_url}}" title="Restaurant cleaning service Ohio">Restaurant cleaning</a>
-        </div>
-      </li>
-      <li class="dropdown">
-        <span>Specialized Services</span>
-        <div class="dropdown-content">
-          <a href="{{'specialized/carpet'|relative_url}}" title="Carpet cleaning company Columbus">Recursos gratuitos</a>
-        </div>
-      </li>
-      <li class="dropdown">
-        <span>Areas</span>
-        <div class="dropdown-content">
-          <a href="{{'columbus'|relative_url}}" title="Service area Columbus">Columbus</a>
-          <a href="{{'columbus'|relative_url}}" title="Service area Columbus">Columbus</a>
-          <a href="{{'columbus'|relative_url}}" title="Service area Columbus">Columbus</a>
-          <a href="{{'columbus'|relative_url}}" title="Service area Columbus">Columbus</a>
-          <a href="{{'columbus'|relative_url}}" title="Service area Columbus">Columbus</a>
-        </div>
-      </li>
-      <li class="dropdown">
-        <span>Get Informed</span>
-        <div class="dropdown-content">
-          <a href="{{'blog'|relative_url}}" title="Blog's Quality Standard Ohio">Blog</a>
-          <a href="{{'faqs'|relative_url}}" title="FAQs section">FAQs</a>
-          <a href="{{'about-us'|relative_url}}" title="About Quality Standard Ohio">About Us</a>
-          <a href="{{'contact'|relative_url}}" title="Contact with Quality Standard Ohio">Contact</a>
-        </div>
-      </li>
-      <li>
-        <a href="#" title="Quality Standard Ohio WhatsApp" rel="nofollow noopener noreferrer" target="_blank" class="buttons button-main" id="lead_whatsapp">Get a quote</a>
-      </li>
-    </ul>
-    <label for="nav-toggle" class="icono-nav">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </label>
-  </nav>
+<nav>
+  <input id="nav-toggle" type="checkbox">
+  <a href="{{site.baseurl}}/" title="Inicio" class="inicio">
+    <img src="{{'img/logo-quality.avif'|relative_url}}" alt="Quality Standard Ohio Logo" height="75" width="179"
+      title="Quality Standard Ohio" loading="eager"></span>
+  </a>
+
+  <ul class="navegacion">
+    <li class="dropdown">
+      <span>Residential Services</span>
+      <div class="dropdown-content">
+        <a href="{{'residential/regular'|relative_url}}" title="Regular home cleaning service Ohio">Regular</a>
+        <a href="{{'residential/deep-cleaning'|relative_url}}" title="Deep home cleaning service Ohio">Deep cleaning</a>
+        <a href="{{'residential/move-in-out'|relative_url}}" title="Move in/out cleaning service Ohio">Move in/out</a>
+        <a href="{{'residential/apartment'|relative_url}}" title="Apartment cleaning service Ohio">Apartment</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <span>Commercial Services</span>
+      <div class="dropdown-content">
+        <a href="{{'commercial/office'|relative_url}}" title="Office cleaning service Ohio">Office cleaning</a>
+        <a href="{{'commercial/medical'|relative_url}}" title="Medical office cleaning service Ohio">Medical
+          facilities</a>
+        <a href="{{'commercial/retail'|relative_url}}" title="Retail store cleaning service Ohio">Retail cleaning</a>
+        <a href="{{'commercial/restaurant'|relative_url}}" title="Restaurant cleaning service Ohio">Restaurant
+          cleaning</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <span>Specialized Services</span>
+      <div class="dropdown-content">
+        <a href="{{'specialized/carpet'|relative_url}}" title="Carpet cleaning company Columbus">Recursos gratuitos</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <span>Areas</span>
+      <div class="dropdown-content">
+        <a href="{{'columbus'|relative_url}}" title="Service area Columbus">Columbus</a>
+        <a href="{{'columbus'|relative_url}}" title="Service area Columbus">Columbus</a>
+        <a href="{{'columbus'|relative_url}}" title="Service area Columbus">Columbus</a>
+        <a href="{{'columbus'|relative_url}}" title="Service area Columbus">Columbus</a>
+        <a href="{{'columbus'|relative_url}}" title="Service area Columbus">Columbus</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <span>Get Informed</span>
+      <div class="dropdown-content">
+        <a href="{{'pricing.html'|relative_url}}" title="Regular home cleaning service Ohio">Pricing</a>
+        <a href="{{'blog'|relative_url}}" title="Blog's Quality Standard Ohio">Blog</a>
+        <a href="{{'faqs'|relative_url}}" title="FAQs section">FAQs</a>
+        <a href="{{'about-us'|relative_url}}" title="About Quality Standard Ohio">About Us</a>
+        <a href="{{'contact'|relative_url}}" title="Contact with Quality Standard Ohio">Contact</a>
+      </div>
+    </li>
+    <li>
+      <a href="#" title="Quality Standard Ohio WhatsApp" rel="nofollow noopener noreferrer" target="_blank"
+        class="buttons button-main" id="lead_whatsapp">Get a quote</a>
+    </li>
+  </ul>
+  <label for="nav-toggle" class="icono-nav">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </label>
+</nav>
