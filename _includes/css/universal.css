@@ -155,7 +155,18 @@ ol li {
           clip-path: inset(0 -100vmax);
 }
 
-.dos_columnas_izquierda {
+.two_columns{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2em;
+
+  div{
+    flex: 1 0 480px;
+  }
+}
+
+.two_columns_left {
   flex-direction: row-reverse;
 }
 

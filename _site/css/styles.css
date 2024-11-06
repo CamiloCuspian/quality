@@ -287,45 +287,6 @@ nav .icono-nav .line {
   transform: translateY(0.1rem);
 }
 
-.about {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 2.5rem;
-
-  img {
-    flex: 1 1 300px;
-    min-width: clamp(250px, 35vw, 600px);
-    height: auto;
-    border-radius: var(--radius);
-  }
-
-  .about-content {
-    flex: 1 1 300px;
-    max-width: 600px;
-    display: grid;
-    place-content: center;
-    gap: 1rem;
-    justify-items: start;
-
-    ul {
-      display: grid;
-
-      span {
-        color: var(--color-main);
-        margin-right: 5px;
-        font-size: 2rem;
-        font-weight: bold;
-
-        li {
-          display: flex;
-          align-items: center;
-        }
-      }
-    }
-  }
-}
-
 .footer {
   display: flex;
   justify-content: space-around;
@@ -530,7 +491,18 @@ ol li {
           clip-path: inset(0 -100vmax);
 }
 
-.dos_columnas_izquierda {
+.two_columns{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2em;
+
+  div{
+    flex: 1 0 480px;
+  }
+}
+
+.two_columns_left {
   flex-direction: row-reverse;
 }
 
