@@ -177,16 +177,9 @@ nav .icono-nav .line {
 
   .wrapper {
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2em;
     padding: 0;
 
     .header__home--text {
-      flex: 1 1 400px;
-      max-width: 720px;
 
       small{
         text-transform: uppercase;
