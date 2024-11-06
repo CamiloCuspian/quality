@@ -534,14 +534,14 @@ ol li {
   flex-direction: row-reverse;
 }
 
-strong {
-  color: var(--color-main);
-}
-
-.gallery_services {
+.three_columns {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
   gap: 2em;
+}
+
+.text_center{
+  text-align: center;
 }
 
 .servicios {
