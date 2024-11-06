@@ -502,6 +502,12 @@ ol li {
   -webkit-clip-path: inset(0 -100vmax);
   clip-path: inset(0 -100vmax);
 }
+.bgr-hero {
+  background-color: var(--bgr);
+  box-shadow: 0 0 0 100vmax var(--bgr);
+  -webkit-clip-path: inset(0 -100vmax);
+  clip-path: inset(0 -100vmax);
+}
 
 .two_columns{
   display: flex;
