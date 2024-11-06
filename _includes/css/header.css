@@ -31,9 +31,9 @@
     }
 
     img {
-      flex: 1 1 300px;
+      flex: 1 1 400px;
       min-width: clamp(250px, 35vw, 600px);
-      height: auto;
+      height: 100%;
     }
   }
 }
