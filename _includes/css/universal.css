@@ -159,7 +159,7 @@ ol li {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 2em;
+  gap: 3em;
 
   div{
     flex: 1 0 480px;

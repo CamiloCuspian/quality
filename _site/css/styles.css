@@ -281,6 +281,24 @@ nav .icono-nav .line {
   transform: translateY(0.1rem);
 }
 
+.about{
+  img{
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+  } 
+
+  .about_content{
+    display: grid;
+    gap: 24px;
+    place-items: center left;
+  }
+
+  .about_list span{
+    color: var(--color-main);
+    font-weight: 700;
+    font-size: 1.5em;
+  }
+}
+
 .footer {
   display: flex;
   justify-content: space-around;
@@ -489,7 +507,7 @@ ol li {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 2em;
+  gap: 3em;
 
   div{
     flex: 1 0 480px;
@@ -770,52 +788,6 @@ ol li {
     margin-bottom: 1rem;
     line-height: 1.4;
   }
-
-/* Contenedor principal que usa Flexbox para alinear la imagen y el contenido */
-.encabezado-section {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-/* Imagen fluida para adaptarse al espacio disponible */
-.encabezado-image{
-    flex: 1; 
-    min-width: 300px;
-}
-.encabezado-image img {
-    max-width: 100%; 
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Contenedor de texto */
-.encabezado-content {
-    display: grid;
-    gap: 1rem; 
-    flex: 1;
-    min-width: 300px;
-
-    h1{
-        font-size: 3rem;
-    }
-}
-
-/* Párrafos de contenido */
-.encabezado-content p {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-    margin: 0;
-    line-height: 1.5;
-}
-
-/* Estilo del ícono de verificación */
-.encabezado-content span {
-    color: var(--color-btn);
-    font-size: 1.2em; 
-}
 
 @media screen and (width <= 1200px) {
   nav ul {

@@ -1,0 +1,17 @@
+.about{
+  img{
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+  } 
+
+  .about_content{
+    display: grid;
+    gap: 24px;
+    place-items: center left;
+  }
+
+  .about_list span{
+    color: var(--color-main);
+    font-weight: 700;
+    font-size: 1.5em;
+  }
+}
