@@ -1,77 +1,67 @@
 .gallery-slider {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: min-content;
-  padding: 2em 0;
   width: 100%;
-  margin-inline: auto;
-  border-radius: 8px;
+  padding-block: 2rem;
 }
-/* 
-.gallery-slider span {
-  position: absolute;
-  background-color: var(--clr2);
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  padding: 2px;
-  z-index: 10;
-  cursor: pointer;
-}
-
-.gallery-slider span:first-child {
-  left: 0;
-}
-
-.gallery-slider span:last-child {
-  right: 0;
-} */
 
 .slider-container {
   display: flex;
-  gap: 1em;
-  overflow: hidden;
-  white-space: nowrap;
-  scroll-behavior: smooth;
-}
-
-.slider-container.dragging {
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
   cursor: grab;
-  scroll-behavior: auto;
-}
-
-.slider-container.dragging img {
-  pointer-events: none;
+  padding-inline: 1rem;
+  scrollbar-width: none;
+  scroll-behavior: smooth; /* Asegura transiciones suaves */
+  -webkit-overflow-scrolling: touch; /* Mejor scroll en iOS */
+  
+  /* Ocultar scrollbar pero mantener funcionalidad */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  
+  &.dragging {
+    cursor: grabbing;
+    scroll-behavior: auto;
+    
+    * {
+      pointer-events: none;
+      user-select: none;
+    }
+  }
 }
 
 .slider-container article {
-  display: inline-block; /* Asegura que los artículos estén en una fila */
-  flex: 0 0 auto; /* Evita que los artículos se encojan o crezcan */
-  margin-left: 16px;
+  flex: 0 0 360px;
+  scroll-snap-align: start;
+  background-color: var(--color-white);
   border-radius: var(--radius-cards);
-  background-color: #ffffff;
-  width: 360px;
   overflow: hidden;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-4px);
+  }
   
   img {
+    width: 100%;
     height: 200px;
-    line-height: 0;
     object-fit: cover;
-    object-position: top;
   }
+}
 
-  .slider-container__text{
-    padding: 16px;
-    text-align: center;
-
-    h4{
-      font-size: 20px;
-      color: var(--color-main);
-    }
-    p{
-      font-size: 16px;
-    }
+.slider-container__text {
+  padding: 1rem;
+  text-align: center;
+  
+  h4 {
+    color: var(--color-main);
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    color: var(--color-fonts);
+    font-size: 1rem;
   }
 }

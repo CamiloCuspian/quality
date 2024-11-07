@@ -11,52 +11,74 @@ layout: compress
   <!-- Código del slider -->
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  const carousel = document.querySelector(".slider-container");
-  const firstImg = carousel.querySelectorAll("img")[0];
-  const arrowIcons = document.querySelectorAll(".gallery-slider span");
-  let isDragStart = false,
-    isDragging = false,
-    prevPageX,
-    prevScrollLeft;
-  const firstImgWidth = firstImg.clientWidth + 7;
+  const sliders = document.querySelectorAll('.slider-container');
+  
+  sliders.forEach(slider => {
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+    let momentum = 0;
+    let lastX;
+    let requestId;
 
-  arrowIcons.forEach((icon) => {
-    icon.addEventListener("click", () => {
-      carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
-    });
+    const start = (e) => {
+      isDown = true;
+      slider.classList.add('dragging');
+      startX = e.pageX || e.touches?.[0].pageX;
+      lastX = startX;
+      scrollLeft = slider.scrollLeft;
+      momentum = 0;
+      
+      if (requestId) {
+        cancelAnimationFrame(requestId);
+      }
+    };
+
+    const move = (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX || e.touches?.[0].pageX;
+      const walk = (x - startX) * 1.5; 
+
+      momentum = x - lastX;
+      lastX = x;
+      
+      slider.scrollLeft = scrollLeft - walk;
+    };
+
+    const end = () => {
+      if (!isDown) return;
+      isDown = false;
+      slider.classList.remove('dragging');
+      
+      if (Math.abs(momentum) > 1) {
+        applyMomentum();
+      }
+    };
+
+    const applyMomentum = () => {
+      const deceleration = 0.95; 
+      
+      const animate = () => {
+        if (Math.abs(momentum) > 0.1) {
+          slider.scrollLeft -= momentum;
+          momentum *= deceleration;
+          requestId = requestAnimationFrame(animate);
+        }
+      };
+      
+      requestId = requestAnimationFrame(animate);
+    };
+
+    slider.addEventListener('mousedown', start);
+    slider.addEventListener('mousemove', move);
+    slider.addEventListener('mouseleave', end);
+    slider.addEventListener('mouseup', end);
+
+    slider.addEventListener('touchstart', start);
+    slider.addEventListener('touchmove', move);
+    slider.addEventListener('touchend', end);
   });
-
-  const dragStart = (e) => {
-    isDragStart = true;
-    isDragging = false;
-    prevPageX = e.pageX || e.touches[0].pageX;
-    prevScrollLeft = carousel.scrollLeft;
-  };
-
-  const dragging = (e) => {
-    if (!isDragStart) return;
-    isDragging = true;
-    e.preventDefault();
-    carousel.classList.add("dragging");
-    const positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
-    carousel.scrollLeft = prevScrollLeft - positionDiff;
-  };
-
-  const dragStop = () => {
-    isDragStart = false;
-    carousel.classList.remove("dragging");
-    if (!isDragging) return;
-    isDragging = false;
-  };
-
-  carousel.addEventListener("mousedown", dragStart);
-  carousel.addEventListener("touchstart", dragStart);
-  carousel.addEventListener("mousemove", dragging);
-  carousel.addEventListener("touchmove", dragging);
-  carousel.addEventListener("mouseup", dragStop);
-  carousel.addEventListener("mouseleave", dragStop);
-  carousel.addEventListener("touchend", dragStop);
-  carousel.addEventListener("dragstart", (e) => e.preventDefault());
 });
 </script>
 </body>
