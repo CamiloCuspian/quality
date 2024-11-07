@@ -195,6 +195,7 @@ ol li {
   margin-bottom: 4em;
 }
 
+
 /* Estilos generales de la navegación */
 .menu__top {
   display: flex;
@@ -420,10 +421,12 @@ nav .icono-nav .line {
       }
     }
     img {
+      position: relative;
+      bottom: -32px;
       flex: 1 1 400px;
       min-width: clamp(250px, 35vw, 600px);
       overflow: unset;
-      z-index: -1;
+      z-index: 2;
       
     }
   }
