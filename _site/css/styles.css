@@ -80,11 +80,12 @@ h3 {
   font-size: clamp(1.5rem, 3vw, 2rem);
   color: var(--grey-2);
   max-width: 30ch;
+  margin-bottom: 1.5rem;
 }
 
 h4 {
   font-size: clamp(1.25rem, 2vw, 1.75rem);
-  color: var(--grey-3);
+  color: var(--grey-2);
 }
 
 h5 {
@@ -180,9 +181,22 @@ ol li {
 }
 
 .three_columns {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 2em;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    color: var(--color-main);
+    font-weight: 700;
+  }
+}
+
+.three_columns > * {
+  flex: 1 1 308px;
+  text-align: center;
 }
 
 .text_center {
@@ -193,6 +207,7 @@ ol li {
   text-align: center;
   margin-bottom: 4em;
 }
+
 
 
 /* Estilos generales de la navegación */
@@ -421,7 +436,7 @@ nav .icono-nav .line {
     }
     img {
       position: relative;
-      bottom: -32px;
+      bottom: calc(-92px + 2vw);
       flex: 1 1 400px;
       min-width: clamp(250px, 35vw, 600px);
       overflow: unset;
@@ -619,42 +634,6 @@ nav .icono-nav .line {
   }
 }
 
-.servicios {
-  text-align: center;
-
-  p {
-    margin-inline: auto;
-  }
-  & a{
-    margin-bottom: 24px;
-  }
-  & div {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-    width: 100%;
-
-    & div {
-      background: var(--color-white);
-      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-      border-radius: 8px;
-      display: grid;
-      place-items: center;
-      gap: 20px;
-
-      & img {
-        width: 100%;
-        height: auto;
-        border-radius: 8px 8px 0 0;
-        object-fit: cover;
-      }
-      p {
-        padding: 0 12px;
-      }
-    }
-  }
-}
-
 /* Contenedor principal */
 .booking-process {
   display: grid;
@@ -818,67 +797,6 @@ nav .icono-nav .line {
     font-style: italic;
     margin-bottom: 1rem;
 }
-.titulo{
-    display: grid;
-    place-content: center;
-    text-align: center;
-}
-.titulo-services{
-
-  display: grid;
-  place-content: center;
-  text-align: center;
-
-}
-
-/* Contenedor principal de las tarjetas */
-.service-cards {
-    display: grid;
-    gap: 3rem;
-    grid-template-columns: repeat(auto-fit, minmax(clamp(200px, 30%, 300px), 1fr));
-    justify-items: center;
-    align-items: stretch;
-  }
-  
-  /* Estilo de cada tarjeta */
-  .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    gap: 0.5rem;
-    width: 100%;
-    max-width: 100%;
-    transition: transform 0.2s;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  
-  /* Contenedor del icono y subtema alineados */
-  .icon-subtitle {
-    display: flex;
-    align-items: center; /* Alinea verticalmente el icono y el subtema */
-    gap: 0.5rem; /* Espacio entre el icono y el subtema */
-    margin-bottom: 1rem;
-
-    img{
-        width: 100px;
-        height: auto;
-    }
-  }
-  
-  /* Estilo de la descripción */
-  .description {
-    margin-bottom: 1rem;
-    line-height: 1.4;
-  }
-
 @media screen and (width <= 1200px) {
   nav ul {
     float: none;
@@ -954,3 +872,108 @@ nav .icono-nav .line {
     }
   }
 }
+/* tarjests */
+.servicios {
+  text-align: center;
+
+  p {
+    margin-inline: auto;
+  }
+  & a{
+    margin-bottom: 24px;
+  }
+  & div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+
+    & div {
+      background: var(--color-white);
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      gap: 20px;
+
+      & img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px 8px 0 0;
+        object-fit: cover;
+      }
+      p {
+        padding: 0 12px;
+      }
+    }
+  }
+}
+/* services */
+.titulo{
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+.titulo-services{
+
+display: grid;
+place-content: center;
+text-align: center;
+
+}
+
+/* Contenedor principal de las tarjetas */
+.service-cards {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(clamp(200px, 30%, 300px), 1fr));
+  justify-items: center;
+  align-items: stretch;
+}
+
+/* Estilo de cada tarjeta */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 100%;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Contenedor del icono y subtema alineados */
+.icon-subtitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; 
+  margin-bottom: 1rem;
+
+  img{
+      width: 100px;
+      height: auto;
+  }
+}
+
+/* Estilo de la descripción */
+.description {
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+/* cards */
+.cards {
+  .wrapper {
+    padding: 0 0 4em;
+  }
+}
+
