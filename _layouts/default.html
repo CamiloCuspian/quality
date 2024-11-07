@@ -11,71 +11,73 @@ layout: compress
   <!-- Código del slider -->
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  class Slider {
-    constructor(element) {
-      this.slider = element;
-      this.container = element.querySelector('.slider-container');
-      this.slides = this.container.querySelectorAll('article');
-      this.prevBtn = element.querySelector('[data-direction="prev"]');
-      this.nextBtn = element.querySelector('[data-direction="next"]');
-      
-      this.isDragging = false;
-      this.startPos = 0;
-      this.currentTranslate = 0;
-      this.prevTranslate = 0;
-      this.animationID = 0;
-      this.slideWidth = this.slides[0].offsetWidth + parseInt(getComputedStyle(this.slides[0]).marginRight);
-      
-      this.init();
-    }
-    
-    init() {
-      if (this.prevBtn && this.nextBtn) {
-        this.prevBtn.addEventListener('click', () => this.slide('prev'));
-        this.nextBtn.addEventListener('click', () => this.slide('next'));
-      }
-      
-      this.container.addEventListener('mousedown', this.startDragging.bind(this));
-      this.container.addEventListener('touchstart', this.startDragging.bind(this));
-      this.container.addEventListener('mousemove', this.drag.bind(this));
-      this.container.addEventListener('touchmove', this.drag.bind(this));
-      this.container.addEventListener('mouseup', this.stopDragging.bind(this));
-      this.container.addEventListener('mouseleave', this.stopDragging.bind(this));
-      this.container.addEventListener('touchend', this.stopDragging.bind(this));
-      this.container.addEventListener('dragstart', (e) => e.preventDefault());
-    }
-    
-    startDragging(e) {
-      this.isDragging = true;
-      this.container.classList.add('dragging');
-      this.startPos = e.type.includes('mouse') ? e.pageX : e.touches[0].pageX;
-      this.prevTranslate = this.container.scrollLeft;
-    }
-    
-    drag(e) {
-      if (!this.isDragging) return;
-      e.preventDefault();
-      const currentPosition = e.type.includes('mouse') ? e.pageX : e.touches[0].pageX;
-      const diff = this.startPos - currentPosition;
-      this.container.scrollLeft = this.prevTranslate + diff;
-    }
-    
-    stopDragging() {
-      this.isDragging = false;
-      this.container.classList.remove('dragging');
-    }
-    
-    slide(direction) {
-      const scrollAmount = direction === 'next' ? this.slideWidth : -this.slideWidth;
-      this.container.scrollBy({
-        left: scrollAmount,
-        behavior: 'smooth'
-      });
-    }
-  }
+  const sliders = document.querySelectorAll('.slider-container');
+  
+  sliders.forEach(slider => {
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+    let momentum = 0;
+    let lastX;
+    let requestId;
 
-  document.querySelectorAll('.gallery-slider').forEach(slider => {
-    new Slider(slider);
+    const start = (e) => {
+      isDown = true;
+      slider.classList.add('dragging');
+      startX = e.pageX || e.touches?.[0].pageX;
+      lastX = startX;
+      scrollLeft = slider.scrollLeft;
+      momentum = 0;
+      
+      if (requestId) {
+        cancelAnimationFrame(requestId);
+      }
+    };
+
+    const move = (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX || e.touches?.[0].pageX;
+      const walk = (x - startX) * 1.5; 
+
+      momentum = x - lastX;
+      lastX = x;
+      
+      slider.scrollLeft = scrollLeft - walk;
+    };
+
+    const end = () => {
+      if (!isDown) return;
+      isDown = false;
+      slider.classList.remove('dragging');
+      
+      if (Math.abs(momentum) > 1) {
+        applyMomentum();
+      }
+    };
+
+    const applyMomentum = () => {
+      const deceleration = 0.95; 
+      
+      const animate = () => {
+        if (Math.abs(momentum) > 0.1) {
+          slider.scrollLeft -= momentum;
+          momentum *= deceleration;
+          requestId = requestAnimationFrame(animate);
+        }
+      };
+      
+      requestId = requestAnimationFrame(animate);
+    };
+
+    slider.addEventListener('mousedown', start);
+    slider.addEventListener('mousemove', move);
+    slider.addEventListener('mouseleave', end);
+    slider.addEventListener('mouseup', end);
+
+    slider.addEventListener('touchstart', start);
+    slider.addEventListener('touchmove', move);
+    slider.addEventListener('touchend', end);
   });
 });
 </script>
