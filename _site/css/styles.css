@@ -78,7 +78,7 @@ h2 {
 
 h3 {
   font-size: clamp(1.5rem, 3vw, 2rem);
-  color: var(--grey-3);
+  color: var(--grey-2);
   max-width: 30ch;
 }
 
@@ -145,9 +145,9 @@ ol li {
   margin-top: 1em;
 }
 
-.wrapper-nav {
-  width: min(calc(100% - 2rem), 1320px);
-  margin-inline: auto;
+.section {
+  display: grid;
+  gap: 2em;
 }
 
 .bgr {
@@ -497,12 +497,12 @@ nav .icono-nav .line {
   align-items: center;
   justify-content: center;
   min-height: min-content;
-  padding: 2rem 0;
-  width: min(100%, 1200px);
+  padding: 2em 0;
+  width: 100%;
   margin-inline: auto;
   border-radius: 8px;
 }
-
+/* 
 .gallery-slider span {
   position: absolute;
   background-color: var(--clr2);
@@ -520,43 +520,53 @@ nav .icono-nav .line {
 
 .gallery-slider span:last-child {
   right: 0;
-}
+} */
 
-.slide-container {
+.slider-container {
   display: flex;
   gap: 1em;
   overflow: hidden;
   white-space: nowrap;
-  padding: 2rem ;
   scroll-behavior: smooth;
 }
 
-.slide-container.dragging {
+.slider-container.dragging {
   cursor: grab;
   scroll-behavior: auto;
 }
 
-.slide-container.dragging img {
+.slider-container.dragging img {
   pointer-events: none;
 }
 
-.slide-container figure {
+.slider-container article {
   display: inline-block; /* Asegura que los artículos estén en una fila */
   flex: 0 0 auto; /* Evita que los artículos se encojan o crezcan */
   margin-left: 16px;
-  border-radius: 8px;
-  box-shadow: var(--shadow);
-  line-height: 0;
-}
+  border-radius: var(--radius-cards);
+  background-color: #ffffff;
+  width: 360px;
+  overflow: hidden;
+  
+  img {
+    height: 200px;
+    line-height: 0;
+    object-fit: cover;
+    object-position: top;
+  }
 
-.slide-container figure:first-child {
-  margin-left: 0;
-}
+  .slider-container__text{
+    padding: 16px;
+    text-align: center;
 
-.slide-container img {
-  max-width: 490px;
-  height: auto;
-  object-fit: cover;
+    h4{
+      font-size: 20px;
+      color: var(--color-main);
+    }
+    p{
+      font-size: 16px;
+    }
+  }
 }
 
 .footer {

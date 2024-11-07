@@ -1,16 +1,19 @@
 <div class="gallery-slider">
-  <span id="left" class="next">
+  <!-- <span id="left" class="next">
     <img src="{{'img/prev-black.svg' | relative_url }}" alt="Prev button" width="32" height="32">
-  </span>
-  <div class="slide-container">
+  </span> -->
+  <div class="slider-container">
     {% for service in site[{{include.src}}] %}
-    <figure>
+    <article>
       <img src="{{service.hero | relative_url}}" alt="{{service.alt}}" title="{{service.title}}" loading="lazy" width="360" height="200">
-      <figcaption>{{service.h1}}</figcaption>
-    </figure>
+      <div class="slider-container__text">
+        <h4>{{service.h1}}</h4>
+        <p>{{service.excerpt}}</p>
+      </div>
+    </article>
     {% endfor %}
   </div>
-  <span id="right" class="prev">
+  <!-- <span id="right" class="prev">
     <img src="{{'img/next-black.svg' | relative_url }}" alt="Next button" width="32" height="32">
-  </span>
+  </span> -->
 </div>

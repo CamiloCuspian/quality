@@ -78,7 +78,7 @@ h2 {
 
 h3 {
   font-size: clamp(1.5rem, 3vw, 2rem);
-  color: var(--grey-3);
+  color: var(--grey-2);
   max-width: 30ch;
 }
 
@@ -145,9 +145,9 @@ ol li {
   margin-top: 1em;
 }
 
-.wrapper-nav {
-  width: min(calc(100% - 2rem), 1320px);
-  margin-inline: auto;
+.section {
+  display: grid;
+  gap: 2em;
 }
 
 .bgr {
