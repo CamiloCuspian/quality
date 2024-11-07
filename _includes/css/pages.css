@@ -101,4 +101,15 @@ text-align: center;
   .wrapper {
     padding: 0 0 4em;
   }
+  
+}
+.cards__bg {
+  .wrapper {
+    padding: 8em 0 4em;
+
+    .text_center {
+      margin-top: 4em;
+    }
+  }
+  
 }
