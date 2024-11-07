@@ -1,11 +1,12 @@
 ---
 ---
+{% include css/universal.css %}
 {% include css/nav.css  %}
 {% include css/header.css  %}
 {% include css/buttons.css %}
 {% include css/home.css %}
+{% include css/slider.css %}
 {% include css/footer.css %}
-{% include css/universal.css %}
 {% include css/section_tarjetas.css %}
 {% include css/iconos.css %}
 {% include css/grilla_img.css %}

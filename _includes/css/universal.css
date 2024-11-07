@@ -3,6 +3,7 @@
   --color-main: #008037;
   --color-complement: #ffce00;
   --bgr: #fafafa;
+  --bg-grey: #e7e7e7;
   --color-fonts: #111313;
   --color-btn: #005123;
   --color-accent: #008037;
@@ -115,7 +116,7 @@ img {
   border-style: none;
   max-width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 li {
@@ -135,10 +136,11 @@ ol li {
 }
 
 .wrapper {
-  padding: 6em 0;
+  padding: 8em 0 4em;
   width: min(calc(100% - 2rem), 1320px);
   margin-inline: auto;
 }
+
 .flow > * + * {
   margin-top: 1em;
 }
@@ -161,13 +163,13 @@ ol li {
   clip-path: inset(0 -100vmax);
 }
 
-.two_columns{
+.two_columns {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 3em;
 
-  div{
+  div {
     flex: 1 0 480px;
     max-width: 100%;
   }
@@ -183,6 +185,11 @@ ol li {
   gap: 2em;
 }
 
-.text_center{
+.text_center {
+  display: grid;
+  place-items: center;
+  width: min(100%, 720px);
+  margin-inline: auto;
   text-align: center;
+  margin-bottom: 4em;
 }
