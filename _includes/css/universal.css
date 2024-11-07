@@ -187,6 +187,7 @@ ol li {
 
 .text_center {
   display: grid;
+  gap: 1em;
   place-items: center;
   width: min(100%, 720px);
   margin-inline: auto;

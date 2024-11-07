@@ -1,77 +1,163 @@
+/* Contenedor principal del slider */
 .gallery-slider {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: min-content;
-  padding: 2em 0;
-  width: 100%;
-  margin-inline: auto;
-  border-radius: 8px;
-}
-/* 
-.gallery-slider span {
-  position: absolute;
-  background-color: var(--clr2);
   display: grid;
   place-items: center;
-  border-radius: 50%;
-  padding: 2px;
-  z-index: 10;
-  cursor: pointer;
+  width: 100%;
+  padding-block: 2rem;
+  margin-block: 2rem;
 }
 
-.gallery-slider span:first-child {
-  left: 0;
-}
-
-.gallery-slider span:last-child {
-  right: 0;
-} */
-
+/* Contenedor de las tarjetas */
 .slider-container {
   display: flex;
-  gap: 1em;
+  gap: 1rem;
   overflow: hidden;
   white-space: nowrap;
   scroll-behavior: smooth;
-}
+  -ms-scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-inline: 1rem;
+  width: 100%;
 
-.slider-container.dragging {
-  cursor: grab;
-  scroll-behavior: auto;
-}
+  /* Estilizado del scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-main) transparent;
 
-.slider-container.dragging img {
-  pointer-events: none;
-}
-
-.slider-container article {
-  display: inline-block; /* Asegura que los artículos estén en una fila */
-  flex: 0 0 auto; /* Evita que los artículos se encojan o crezcan */
-  margin-left: 16px;
-  border-radius: var(--radius-cards);
-  background-color: #ffffff;
-  width: 360px;
-  overflow: hidden;
-  
-  img {
-    height: 200px;
-    line-height: 0;
-    object-fit: cover;
-    object-position: top;
+  &::-webkit-scrollbar {
+    height: 8px;
   }
 
-  .slider-container__text{
-    padding: 16px;
-    text-align: center;
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
 
-    h4{
-      font-size: 20px;
-      color: var(--color-main);
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color-main);
+    border-radius: 20px;
+  }
+
+  /* Estado de arrastre */
+  &.dragging {
+    cursor: -webkit-grab;
+    cursor: grab;
+    scroll-behavior: auto;
+
+    & img {
+      pointer-events: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
     }
-    p{
-      font-size: 16px;
+  }
+}
+
+/* Tarjetas individuales */
+.slider-container article {
+  display: inline-block;
+  flex: 0 0 clamp(300px, 30vw, 360px);
+  scroll-snap-align: start;
+  background-color: #fff;
+  border-radius: var(--radius-cards);
+  overflow: hidden;
+  white-space: normal;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+
+  & img {
+    height: clamp(180px, 20vw, 200px);
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    vertical-align: middle;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    &:hover {
+      transform: scale(1.05);
     }
+  }
+}
+
+/* Contenido de texto */
+.slider-container__text {
+  padding: 1rem;
+  text-align: center;
+
+  & h4 {
+    font-size: clamp(1.125rem, 1rem + 2vw, 1.25rem);
+    color: var(--color-main);
+    -webkit-margin-after: 0.5em;
+    margin-block-end: 0.5em;
+    line-height: 1.2;
+  }
+
+  & p {
+    font-size: clamp(0.875rem, 0.8rem + 1vw, 1rem);
+    line-height: 1.5;
+    color: var(--color-fonts);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: normal;
+  }
+}
+
+/* Botones de navegación */
+.slider-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--color-main);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 10;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &.prev {
+    left: 0.5rem;
+  }
+
+  &.next {
+    right: 0.5rem;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+/* Soporte para prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .slider-container,
+  .slider-container article,
+  .slider-container img {
+    transition: none;
+  }
+}
+
+/* Soporte para dark mode */
+@media (prefers-color-scheme: dark) {
+  .slider-container article {
+    background-color: rgb(30 41 59);
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.2);
+  }
+
+  .slider-container__text p {
+    color: rgb(203 213 225);
   }
 }

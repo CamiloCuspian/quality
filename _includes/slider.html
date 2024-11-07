@@ -1,11 +1,17 @@
-<div class="gallery-slider">
-  <!-- <span id="left" class="next">
-    <img src="{{'img/prev-black.svg' | relative_url }}" alt="Prev button" width="32" height="32">
-  </span> -->
+<!-- Slider 1 -->
+<div class="gallery-slider" data-slider-id="{{include.number}}">
+  <span class="slider-nav-btn prev" data-direction="prev">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+  </span>
   <div class="slider-container">
     {% for service in site[{{include.src}}] %}
     <article>
-      <img src="{{service.hero | relative_url}}" alt="{{service.alt}}" title="{{service.title}}" loading="lazy" width="360" height="200">
+      <img src="{{service.hero | relative_url}}" 
+           alt="{{service.alt}}" 
+           title="{{service.title}}" 
+           loading="lazy" 
+           width="360" 
+           height="200">
       <div class="slider-container__text">
         <h4>{{service.h1}}</h4>
         <p>{{service.excerpt}}</p>
@@ -13,7 +19,7 @@
     </article>
     {% endfor %}
   </div>
-  <!-- <span id="right" class="prev">
-    <img src="{{'img/next-black.svg' | relative_url }}" alt="Next button" width="32" height="32">
-  </span> -->
+  <span class="slider-nav-btn next" data-direction="next">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+  </span>
 </div>
