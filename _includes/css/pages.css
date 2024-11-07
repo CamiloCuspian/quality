@@ -103,3 +103,13 @@ text-align: center;
   }
   
 }
+.cards__bg {
+  .wrapper {
+    padding: 8em 0 4em;
+
+    .text_center {
+      margin-top: 4em;
+    }
+  }
+  
+}
