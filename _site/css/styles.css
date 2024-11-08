@@ -537,6 +537,7 @@ nav .icono-nav .line {
     color: var(--color-main);
     font-weight: 700;
     font-size: 1.5em;
+    vertical-align: middle;
   }
 }
 
