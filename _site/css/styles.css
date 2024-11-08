@@ -171,6 +171,7 @@ ol li {
     position: relative;
     margin-bottom: 1.5rem;
   }
+
   h2::after {
     content: "";
     position: absolute;
@@ -203,20 +204,21 @@ ol li {
 .three_columns {
   display: flex;
   flex-wrap: wrap;
-  gap: 2em;
+  gap: 3em;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 4em;
 
-  > div {
-    flex: 1 1 308px;
-    max-width: 100%;
-    text-align: center;
+  &> div {
     position: relative;
-    transition: transform 0.3s ease;
+    width: min(100%, 320px);
+    text-align: center;
     display: grid;
-    place-items: center;
     gap: 2em;
+    place-items: center;
+    border-radius: var(--radius-cards);
+    transition: transform 0.3s ease;
+    overflow: hidden;
 
     span {
       font-size: clamp(1.8rem, 4vw, 2.8rem);
@@ -225,7 +227,6 @@ ol li {
     }
 
     p {
-      opacity: 0;
       transform: translateY(10px);
       transition: opacity 0.3s ease, transform 0.3s ease;
     }
@@ -237,6 +238,7 @@ ol li {
     }
   }
 }
+
 .three_columns > div img:hover + p {
   opacity: 1;
   transform: translateY(0);
@@ -1064,8 +1066,7 @@ text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   gap: 0.5rem;
-  width: 100%;
-  max-width: 100%;
+  width: min(100%, 320px);
   transition: transform 0.2s;
 }
 
@@ -1112,8 +1113,10 @@ text-align: center;
 
 .two_columns {
   
-  div {
-    .faq-item::before{
+  .faq-item {
+    margin-bottom: 12px;
+    
+    &::before{
     content: "?";
     margin-right: 0.2em;
     color: #ffce00;
@@ -1121,5 +1124,24 @@ text-align: center;
     vertical-align: middle;
     }
 
+  }
+}
+
+.categories__service{
+  box-shadow: var(--shadow);
+  
+  img{
+    height: 200px;
+  }
+
+  div{
+    padding: 8px;
+
+    h3{
+      color: var(--color-main);
+      font-size: 1.5rem;
+      margin: 0;
+    }
+    p{font-size: 16px;}
   }
 }
