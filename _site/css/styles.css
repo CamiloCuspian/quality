@@ -163,10 +163,36 @@ ol li {
   -webkit-clip-path: inset(0 -100vmax);
   clip-path: inset(0 -100vmax);
 }
+.bgr_cta {
+  background: rgb(0, 9, 4);
+  background: linear-gradient(
+    292deg,
+    rgba(0, 9, 4, 1) 0%,
+    rgba(11, 152, 103, 1) 100%,
+    rgba(6, 241, 124, 0.8603816526610644) 100%
+  );
+  
+  h2{
+    color:var(--color-white);
+    position: relative;
+    margin-bottom: 1.5rem
+  }
+  h2::after {
+    content: "";
+    position: absolute;
+    bottom: -0.2em;
+    left: 0;
+    width: 3em;
+    height: 4px;
+    background-color: #ffce00;
+    border-radius: 2px;
+  }
+}
 
 .two_columns {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
   gap: 3em;
 
@@ -187,12 +213,12 @@ ol li {
   justify-content: center;
   align-items: center;
 
-  div {
+  > div {
     flex: 1 1 308px;
     text-align: center;
     position: relative;
     transition: transform 0.3s ease;
-    
+
     span {
       font-size: clamp(1.8rem, 4vw, 2.8rem);
       color: var(--color-main);
@@ -211,7 +237,6 @@ ol li {
   transform: translateY(0);
 }
 
-
 .text_center {
   display: grid;
   gap: 1em;
@@ -221,8 +246,6 @@ ol li {
   text-align: center;
   margin-bottom: 4em;
 }
-
-
 
 /* Estilos generales de la navegación */
 .menu__top {
@@ -762,44 +785,56 @@ nav .icono-nav .line {
                 grid-column: auto;
             }
         }
-
-/* Grid de testimonios */
+/* Contenedor principal */
 .testimonials {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+  .wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 4em;
+  padding: 0 0 40px;
+  width: min(calc(100% - 2rem), 1120px);
 }
-/* Tarjeta de testimonio */
-.testimonial {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+
 }
-/* Imagen de perfil */
-.profile-img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1rem;
+
+/* Tarjeta individual de cada testimonio */
+.testimonial-card {
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  flex: 1 0 332px;
+  max-width: 100%;
+  padding: 2em;
+  background-color: #fff;
 }
-/* Nombre del cliente */
-.client-name {
-    font-weight: bold;
-    margin-bottom: 0.5rem;
+
+/* Perfil del usuario */
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  margin-bottom: 1em;
 }
-/* Estrellas de calificación */
-.rating {
-    color: #FFD700;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+
+.profile img {
+  border-radius: 50%;
+  object-fit: cover;
 }
-/* Texto del testimonio */
-.testimonial-text {
-    font-style: italic;
-    margin-bottom: 1rem;
+
+
+.profile span {
+  font-size: clamp(0.875rem, 1vw, 1rem);
+  color: #666;
 }
+
+/* Estrellas */
+.stars {
+  font-size: 1.2rem;
+  color: #ffd700;
+  margin: 0.5em 0;
+}
+
 @media screen and (width <= 1200px) {
   nav ul {
     float: none;
@@ -989,4 +1024,18 @@ text-align: center;
     }
   }
   
+}
+
+.two_columns {
+  
+  div {
+    .faq-item::before{
+    content: "?";
+    margin-right: 0.2em;
+    color: #ffce00;
+    font-size: 1.5em;
+    vertical-align: middle;
+    }
+
+  }
 }

@@ -113,3 +113,17 @@ text-align: center;
   }
   
 }
+
+.two_columns {
+  
+  div {
+    .faq-item::before{
+    content: "?";
+    margin-right: 0.2em;
+    color: #ffce00;
+    font-size: 1.5em;
+    vertical-align: middle;
+    }
+
+  }
+}

@@ -1,38 +1,49 @@
-
-/* Grid de testimonios */
+/* Contenedor principal */
 .testimonials {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+  .wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 4em;
+  padding: 0 0 40px;
+  width: min(calc(100% - 2rem), 1120px);
 }
-/* Tarjeta de testimonio */
-.testimonial {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+
 }
-/* Imagen de perfil */
-.profile-img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1rem;
+
+/* Tarjeta individual de cada testimonio */
+.testimonial-card {
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  flex: 1 0 332px;
+  max-width: 100%;
+  padding: 2em;
+  background-color: #fff;
 }
-/* Nombre del cliente */
-.client-name {
-    font-weight: bold;
-    margin-bottom: 0.5rem;
+
+/* Perfil del usuario */
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  margin-bottom: 1em;
 }
-/* Estrellas de calificación */
-.rating {
-    color: #FFD700;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+
+.profile img {
+  border-radius: 50%;
+  object-fit: cover;
 }
-/* Texto del testimonio */
-.testimonial-text {
-    font-style: italic;
-    margin-bottom: 1rem;
+
+
+.profile span {
+  font-size: clamp(0.875rem, 1vw, 1rem);
+  color: #666;
+}
+
+/* Estrellas */
+.stars {
+  font-size: 1.2rem;
+  color: #ffd700;
+  margin: 0.5em 0;
 }
