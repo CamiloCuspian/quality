@@ -1005,7 +1005,7 @@ nav .icono-nav .line {
   p {
     margin-inline: auto;
   }
-  & a{
+  & a {
     margin-bottom: 24px;
   }
   & div {
@@ -1026,7 +1026,8 @@ nav .icono-nav .line {
         width: 100%;
         height: auto;
         border-radius: 8px 8px 0 0;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
       }
       p {
         padding: 0 12px;
@@ -1035,24 +1036,25 @@ nav .icono-nav .line {
   }
 }
 /* services */
-.titulo{
+.titulo {
   display: grid;
   place-content: center;
   text-align: center;
 }
-.titulo-services{
-
-display: grid;
-place-content: center;
-text-align: center;
-
+.titulo-services {
+  display: grid;
+  place-content: center;
+  text-align: center;
 }
 
 /* Contenedor principal de las tarjetas */
 .service-cards {
   display: grid;
   gap: 3rem;
-  grid-template-columns: repeat(auto-fit, minmax(clamp(200px, 30%, 300px), 1fr));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(clamp(200px, 30%, 300px), 1fr)
+  );
   justify-items: center;
   align-items: stretch;
 }
@@ -1080,12 +1082,12 @@ text-align: center;
 .icon-subtitle {
   display: flex;
   align-items: center;
-  gap: 0.5rem; 
+  gap: 0.5rem;
   margin-bottom: 1rem;
 
-  img{
-      width: 100px;
-      height: auto;
+  img {
+    width: 100px;
+    height: auto;
   }
 }
 
@@ -1100,7 +1102,6 @@ text-align: center;
   .wrapper {
     padding: 0 0 4em;
   }
-  
 }
 .cards__bg {
   .wrapper {
@@ -1110,40 +1111,47 @@ text-align: center;
       margin-top: 4em;
     }
   }
-  
 }
 
 .two_columns {
-  
   .faq-item {
     margin-bottom: 12px;
-    
-    &::before{
-    content: "?";
-    margin-right: 0.2em;
-    color: #ffce00;
-    font-size: 1.5em;
-    vertical-align: middle;
-    }
 
+    &::before {
+      content: "?";
+      margin-right: 0.2em;
+      color: #ffce00;
+      font-size: 1.5em;
+      vertical-align: middle;
+    }
   }
 }
 
-.categories__service{
-  box-shadow: var(--shadow);
-  
-  img{
-    height: 200px;
+.three_columns {
+  .categories__service {
+    box-shadow: var(--shadow);
+
+    img {
+      height: 200px;
+    }
+
+    div {
+      padding: 8px;
+
+      h3 {
+        color: var(--color-main);
+        font-size: 1.5rem;
+        margin: 0;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
   }
 
-  div{
-    padding: 8px;
-
-    h3{
-      color: var(--color-main);
-      font-size: 1.5rem;
-      margin: 0;
-    }
-    p{font-size: 16px;}
+  .card__contact {
+    padding: 2em 20px;
+    gap: 8px;
   }
 }
+
