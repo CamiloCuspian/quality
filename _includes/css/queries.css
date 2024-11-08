@@ -72,4 +72,17 @@
       }
     }
   }
+
+  .footer_links {
+    width: 100%;
+
+    & > div{
+      max-width: 100%;
+    }
+  }
+
+  .footer_legal{
+    flex: 1 0 280px;
+    width: 100%;
+  }
 }

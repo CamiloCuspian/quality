@@ -11,12 +11,12 @@
 }
 
 .footer_links {
+  width: 70%;
   background-color: var(--color-complement);
   padding-left: 20px;
   display: flex;
   gap: 2em;
   flex-wrap: wrap;
-  width: min(100%, 1024px);
 
   & > div{
     min-width: 220px;
@@ -37,7 +37,7 @@
 }
 
 .footer_legal{
-  flex: 1 0 280px;
+  width: 30%;
   background-color: var(--color-main);
   display: grid;
   place-items: center;

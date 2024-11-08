@@ -124,10 +124,6 @@ ol li {
   list-style: decimal;
 }
 
-span{
-  display: block;
-}
-
 ::marker {
   font-size: 2rem;
   color: var(--color-secundario);
