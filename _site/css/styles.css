@@ -151,12 +151,14 @@ ol li {
   -webkit-clip-path: inset(0 -100vmax);
   clip-path: inset(0 -100vmax);
 }
+
 .bgr-hero {
   background-color: var(--bgr);
   box-shadow: 0 0 0 100vmax var(--bgr);
   -webkit-clip-path: inset(0 -100vmax);
   clip-path: inset(0 -100vmax);
 }
+
 .bgr_cta {
   background: rgb(0, 9, 4);
   background: linear-gradient(
@@ -735,10 +737,10 @@ nav .icono-nav .line {
 }
 /* Contenedor principal */
 .booking-process {
+  background-color: #F7F7F7;
   display: grid;
   place-items: center;
   gap: 2em;
-  text-align: center;
   
 
   p {

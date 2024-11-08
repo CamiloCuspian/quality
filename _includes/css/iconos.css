@@ -1,9 +1,9 @@
 /* Contenedor principal */
 .booking-process {
+  background-color: #F7F7F7;
   display: grid;
   place-items: center;
   gap: 2em;
-  text-align: center;
   
 
   p {
