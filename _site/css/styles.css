@@ -82,7 +82,7 @@ h4 {
 }
 
 h5 {
-  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-size: clamp(1rem, 1.3vw, 1.15rem);
   color: var(--gris2);
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -109,6 +109,7 @@ a {
 small {
   font-size: 85%;
   font-weight: 900;
+  display: block;
 }
 
 img {
@@ -121,6 +122,10 @@ img {
 ol li {
   margin-left: 3em;
   list-style: decimal;
+}
+
+span{
+  display: block;
 }
 
 ::marker {
@@ -191,7 +196,7 @@ ol li {
 
   &> div {
     flex: 1 0 480px;
-    width: min(100%, 520px);
+    max-width: 100%;
   }
 }
 
@@ -560,6 +565,48 @@ nav .icono-nav .line {
   clip-path: inset(0-100vmax);
 }
 
+.carousel_container {
+  padding: 4em 0;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.carousel {
+  display: flex;
+  -webkit-animation: scroll 50s linear infinite;
+  animation: scroll 50s linear infinite;
+  width: calc(424px * 7);
+  overflow: hidden;
+}
+.carousel .item {
+  width: 424px;
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+}
+.carousel .item img {
+  width: 424px;
+  height: auto;
+  border-radius: var(--radius);
+  aspect-ratio: 1/1;
+}
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-424px * 7));
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-424px * 7));
+  }
+}
+
 .gallery-slider {
   position: relative;
   width: 100%;
@@ -627,53 +674,67 @@ nav .icono-nav .line {
     font-size: 1rem;
   }
 }
-.footer {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 40px;
-  background-color: var(--color-main);
-  box-shadow: 0 0 0 100vmax var(--color-main);
-  -webkit-clip-path: inset(0 -100vmax);
-  clip-path: inset(0 -100vmax);
-
-  a {
-    display: flex;
-    gap: 4px;
-    align-items: center;
-    text-decoration: none;
-    font-weight: 700;
-    font-family: var(--fuente);
-    color: var(--color-complement);
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-  }
-}
-
-.footer div:not(.derechos) {
-  display: grid;
-  gap: 8px;
-  place-content: start;
-}
-
-.derechos {
+.footer{
   width: 100%;
-  display: grid;
-  gap: 8px;
-  place-items: center;
+  display: flex;
+  flex-wrap: wrap;
 
-  a {
-    display: inline;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-  }
-
-  small {
-    color: var(--color-fonts);
-    display: block;
+  small{font-weight: normal;}
+  
+  & > div{
+    padding: 80px 20px 60px;
   }
 }
 
+.footer_links {
+  background-color: var(--color-complement);
+  padding-left: 20px;
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  width: min(100%, 1024px);
+
+  & > div{
+    min-width: 220px;
+    max-width: 400px;
+    display: grid;
+    align-content: start;
+  }
+
+  h5{text-transform: capitalize;}
+
+  .footer__facebook{
+    width: max-content;
+    background-color: var(--color-main);
+    border: 2px solid #ffffff;
+    border-radius: var(--radius);
+    padding: 8px 8px 0;
+  }
+}
+
+.footer_legal{
+  flex: 1 0 280px;
+  background-color: var(--color-main);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: #ffffff;
+
+  p{margin: 0;}
+
+  a{
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-thickness: 2.4px;
+    text-underline-offset: 2px;
+  }
+}
+
+.redes{
+  display: flex;
+  gap: 1em;
+  align-items: flex-start;
+}
 /* Contenedor principal */
 .booking-process {
   display: grid;

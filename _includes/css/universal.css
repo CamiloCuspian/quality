@@ -82,7 +82,7 @@ h4 {
 }
 
 h5 {
-  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-size: clamp(1rem, 1.3vw, 1.15rem);
   color: var(--gris2);
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -109,6 +109,7 @@ a {
 small {
   font-size: 85%;
   font-weight: 900;
+  display: block;
 }
 
 img {
@@ -121,6 +122,10 @@ img {
 ol li {
   margin-left: 3em;
   list-style: decimal;
+}
+
+span{
+  display: block;
 }
 
 ::marker {
@@ -191,7 +196,7 @@ ol li {
 
   &> div {
     flex: 1 0 480px;
-    width: min(100%, 520px);
+    max-width: 100%;
   }
 }
 
