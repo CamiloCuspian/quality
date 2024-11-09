@@ -4,7 +4,7 @@
   gap: 10px;
   background-color: #fff;
   padding: 20px;
-  border-radius: 20px;
+  border-radius: var(--radius-cards);
   position: relative;
 }
 

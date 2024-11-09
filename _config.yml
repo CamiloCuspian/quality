@@ -33,3 +33,16 @@ collections:
   posts:
     output: true
     permalink: /blog/:slug
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+paginate: 10  # Número de posts por página
+paginate_path: "/blog/page/:num/"  # URL para las páginas
+plugins:
+  - jekyll-paginate

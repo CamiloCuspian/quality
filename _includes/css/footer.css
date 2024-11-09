@@ -25,7 +25,10 @@
     align-content: start;
   }
 
-  h5{text-transform: capitalize;}
+  h5{
+    font-weight: 900;
+    text-transform: capitalize;
+  }
 
   .footer__facebook{
     width: max-content;
