@@ -366,3 +366,10 @@
   margin: 2em 0;
   border-radius: var(--radius);
 }
+
+.porcent div {
+  width: min(100%, 150px);
+}
+.h2_grey{
+  color: var(--grey-2);
+}

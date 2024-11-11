@@ -53,7 +53,6 @@
     }
     img {
       position: relative;
-      bottom: calc(-92px + 2vw);
       flex: 1 1 400px;
       min-width: clamp(250px, 35vw, 600px);
       overflow: unset;

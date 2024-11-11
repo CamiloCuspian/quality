@@ -482,7 +482,6 @@ nav .icono-nav .line {
     }
     img {
       position: relative;
-      bottom: calc(-92px + 2vw);
       flex: 1 1 400px;
       min-width: clamp(250px, 35vw, 600px);
       overflow: unset;
@@ -1485,4 +1484,11 @@ nav .icono-nav .line {
   height: auto;
   margin: 2em 0;
   border-radius: var(--radius);
+}
+
+.porcent div {
+  width: min(100%, 150px);
+}
+.h2_grey{
+  color: var(--grey-2);
 }
