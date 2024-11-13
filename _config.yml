@@ -30,6 +30,9 @@ collections:
   residential:
     output: true
     permalink: /residential/:path
+  areas:
+    output: true
+    permalink: /areas/:path
   posts:
     output: true
     permalink: /blog/:slug
