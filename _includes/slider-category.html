@@ -14,7 +14,8 @@
       {% for item in page.slider %}
       <div class="carousel__slide" id="slide1-content">
         <img src="{{ item.img | relative_url}}" alt="{{item.alt}}">
-        <div class="carousel__caption"> <p> {{item.p}} </p>
+        <div class="carousel__caption">
+          <p> {{item.p}} </p>
         </div>
       </div>
       {% endfor %}
