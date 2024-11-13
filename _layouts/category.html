@@ -2,13 +2,14 @@
 layout: default
 ---
 <main class=" wrapper">
-  
-{{ content }}
+
+  {{ content }}
 
   <div class="three_columns">
     {% for item in site.commercial %}
     <div class="categories__service">
-      <img src="{{ item.hero | relative_url }}" width="360" height="200" alt="{{item.alt}}" loading="lazy" title="{{item.title}}">
+      <img src="{{ item.hero | relative_url }}" width="360" height="200" alt="{{item.alt}}" loading="lazy"
+        title="{{item.title}}">
       <div>
         <h3>{{item.h1}}</h3>
         <p>{{item.excerpt}}</p>
@@ -16,23 +17,27 @@ layout: default
     </div>
     {% endfor %}
   </div>
-  <div class="text_center ">
+  <!-- <div class="text_center ">
     {% include button.html text='→ Take our service' %}
-  </div>
+  </div> -->
 </main>
 {% include cta.html title="Lorem ao ap w abu fa fbieb bfab fabfuiaeb uaf e" %}
-<section class="bgr">
-  {% include faqs.html small="O dao w na afw naowf" title="Row apa nfo afenon a nfn fb e bfa fbweub" %}
-</section>
+
+
+{% include slider-category.html 
+  title= "Lorem kjhgk kfhws" 
+  text= "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, nesciunt!"
+%}
+
 <section class="wrapper two_columns">
-  <div>
+  <div class="">
     <h3>{{page.title}}</h3>
     <p>{{page.description}}</p>
-    <div>
-      <a href="#" title="Lorem" class="buttons button-secondary">→ FAQ's section</a>
-      <a href="#" title="Lorem" class="buttons button-secondary">→ Know about us</a>
-      <a href="#" title="Lorem" class="buttons button-secondary">→ Let's chat</a>
-      <a href="#" title="Lorem" class="buttons button-main">→ Take our service</a>
-    </div>
+  </div>
+  <div class="two_columns">
+    <a href="#" title="Lorem" class="buttons button-secondary">→ FAQ's section</a>
+    <a href="#" title="Lorem" class="buttons button-secondary">→ Know about us</a>
+    <a href="#" title="Lorem" class="buttons button-secondary">→ Let's chat</a>
+    <a href="#" title="Lorem" class="buttons button-main">→ Take our service</a>
   </div>
 </section>

@@ -1146,7 +1146,7 @@ nav .icono-nav .line {
         height: auto;
         border-radius: 8px 8px 0 0;
         -o-object-fit: cover;
-           object-fit: cover;
+        object-fit: cover;
       }
       p {
         padding: 0 12px;
@@ -1249,6 +1249,10 @@ nav .icono-nav .line {
 .three_columns {
   .categories__service {
     box-shadow: var(--shadow);
+    box-shadow: var(--shadow);
+    height: 550px;
+    display: grid;
+    align-items: start;
 
     img {
       height: 200px;
@@ -1256,7 +1260,7 @@ nav .icono-nav .line {
 
     div {
       padding: 8px;
-
+			
       h3 {
         color: var(--color-main);
         font-size: 1.5rem;
@@ -1274,12 +1278,12 @@ nav .icono-nav .line {
     box-shadow: var(--shadow);
     border-radius: var(--radius-cards);
     overflow: hidden;
-    
-    div{
+
+    div {
       padding: 12px;
     }
 
-    h3{
+    h3 {
       font-size: 1.5rem;
       margin: 12px 0 0;
       color: var(--color-main);
@@ -1341,7 +1345,9 @@ nav .icono-nav .line {
   gap: 1em;
 }
 
-.post-date, .post-author, .post-categories {
+.post-date,
+.post-author,
+.post-categories {
   display: inline-flex;
   align-items: center;
   gap: 0.5em;
@@ -1373,7 +1379,7 @@ nav .icono-nav .line {
 }
 
 .read-more::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1397,7 +1403,8 @@ nav .icono-nav .line {
   flex-wrap: wrap;
 }
 
-.pagination a, .pagination .current-page {
+.pagination a,
+.pagination .current-page {
   padding: 0.5em 1em;
   border-radius: var(--radius);
   min-width: 2.5em;
@@ -1442,7 +1449,8 @@ nav .icono-nav .line {
     gap: 0.5em;
   }
 
-  .pagination a, .pagination .current-page {
+  .pagination a,
+  .pagination .current-page {
     padding: 0.4em 0.8em;
     min-width: 2em;
   }
@@ -1489,6 +1497,87 @@ nav .icono-nav .line {
 .porcent div {
   width: min(100%, 150px);
 }
-.h2_grey{
+.h2_grey {
   color: var(--grey-2);
 }
+
+.section-carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel__slides {
+  position: relative;
+  width: 100%;
+}
+
+.carousel__slide {
+  width: 100%;
+  height: 400px; /* Ajusta la altura según tus necesidades */
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+#slide1:checked ~ .carousel__slides #slide1-content,
+#slide2:checked ~ .carousel__slides #slide2-content,
+#slide3:checked ~ .carousel__slides #slide3-content,
+#slide4:checked ~ .carousel__slides #slide4-content {
+  opacity: 1; /* Muestra solo el slide seleccionado */
+  position: static;
+}
+
+.carousel__slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.carousel__caption {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  width: 100%;
+  background: rgb(21 75 38 / 60%); /* Fondo semitransparente */
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.carousel__nav {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.carousel__nav label {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ddd;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+  background: #333;
+}
+
+
+
