@@ -1,8 +1,9 @@
 <section class="wrapper two_columns bgr">
   <div class="">
-    <h2>{{ include.title }}</h2>
-    <p>{{ include.text }}</p>
+    <h2>{{ page.slider-title[0].title }}</h2>
+    <p>{{ page.slider-title[0].text }}</p>
   </div>
+  
 
   <div class="section-carousel">
     {% for item in page.slider %}
