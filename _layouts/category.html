@@ -6,7 +6,7 @@ layout: default
   {{ content }}
 
   <div class="three_columns">
-    {% for item in site.commercial %}
+    {% for item in site[page.category] %}
     <div class="categories__service">
       <img src="{{ item.hero | relative_url }}" width="360" height="200" alt="{{item.alt}}" loading="lazy"
         title="{{item.title}}">
