@@ -127,17 +127,11 @@
   }
 }
 
-.three_columns {
-  .categories__service {
+.three_columns .categories__service {
     box-shadow: var(--shadow);
-    box-shadow: var(--shadow);
-    height: 550px;
+    min-height: 440px;
     display: grid;
     align-items: start;
-
-    img {
-      height: 200px;
-    }
 
     div {
       padding: 8px;
@@ -153,7 +147,7 @@
     }
   }
 
-  .card__contact {
+.three_columns .card__contact {
     padding: 20px 8px;
     gap: 8px;
     box-shadow: var(--shadow);
@@ -170,7 +164,6 @@
       color: var(--color-main);
     }
   }
-}
 
 /* Estilos para el contenedor principal del blog */
 .blog-container {
