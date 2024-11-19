@@ -126,24 +126,21 @@
     }
   }
 }
-
-.three_columns .categories__service {
-    box-shadow: var(--shadow);
-    min-height: 440px;
-    display: grid;
-    align-items: start;
-
-    div {
-      padding: 8px;
-			
-      h3 {
-        color: var(--color-main);
-        font-size: 1.5rem;
-        margin: 0;
-      }
-      p {
-        font-size: 16px;
-      }
+ 
+.categories__service{
+  box-shadow: var(--shadow);
+  
+  div {
+    padding: 8px;
+    
+    h3 {
+      color: var(--color-main);
+      font-size: 1.5rem;
+      margin: 0;
+    }
+    p {
+      font-size: 16px;
+    }
     }
   }
 
@@ -163,6 +160,7 @@
       margin: 12px 0 0;
       color: var(--color-main);
     }
+
   }
 
 /* Estilos para el contenedor principal del blog */
