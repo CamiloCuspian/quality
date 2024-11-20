@@ -673,6 +673,12 @@ nav .icono-nav .line {
     font-size: 1rem;
   }
 }
+
+.text{
+  display: grid;
+  place-items: center;
+  place-content: center;
+}
 .form {
   width: min(100%, 424px);
   display: grid;
