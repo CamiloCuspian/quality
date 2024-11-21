@@ -1,35 +1,92 @@
 ---
 layout: category
 category: residential
-title: House Cleaning Services Columbus OH | Quality Standard Ohio
-description: "Transform your home with our professional cleaning services. Trusted by 1000+ Columbus families. ☎️ +16143843087 ¡Get a quote today! Schedule Online"
-small: Get your spotless home without lifting a finger
+small: "Get your spotless home without lifting a finger"
 h1: "House cleaning services in Columbus Ohio"
+text: Imagine coming home to a perfectly clean space every time - no effort required. That's what we do. Stop wasting precious hours on housework. Focus on what truly matters to you with our <strong> residential cleaning service </strong>near you.
+description: "Lorem ipsum dolor asaua afope. Lorem ipsum dolor sit amet, consectetur adipisicing."
 hero: "img/residential-services.avif"
 button: true
-excerpt: "Lorem ipsum dolor Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit facere, aperiam ab ea cumque nostrum."
+title: "Commercial Cleaning Columbus | Quality Standard Ohio"
+excerpt: "Imagine coming home to a perfectly clean space every time - no effort required. That's what we do. Stop wasting precious hours on housework. Focus on what truly matters to you with our <strong> residential cleaning service </strong>near you."
 alt: Lorem ipsum dolor
-text: "Imagine coming home to a perfectly clean space every time - no effort required. That's what we do. Stop wasting precious hours on housework. <strong>Focus on what truly matters to you with our residential cleaning service</strong> near you."
 slider-title:
-  - title: "Commercial Cleaning"
-    text: "Lorem ipsum dolor Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum sequi, obcaecati mollitia"
+  - title: "Life is too short to spend it cleaning... Trust the professionals"
+    text: "Getting started takes just 5 minutes:"
 slider:
   - img: "img/commercial-services.avif"
     alt: "Lorem ipsum dolor"
-    p: "Use the app and schedule your cleaning service with Quality Standard Ohio"
+    p: "Click below"
   - img: 'img/cleaning_services.avif'
     alt: "Lorem ipsum dolor"
-    p: "Use the app and schedule your cleaning service with Quality Standard Ohio"
+    p: "Pick your preferred time"
   - img: 'img/person_service.avif'
     alt: "Lorem ipsum dolor"
-    p: "Use the app and schedule your cleaning service with Quality Standard Ohio"
-  - img: "img/commercial-services.avif"
-    alt: "Lorem ipsum dolor"
-    p: "Use the app and schedule your cleaning service with Quality Standard Ohio"
+    p: "Relax while we handle the rest"
+  
 ---
 
-<div class=" wrapper text_center">
-  <small>Your home is your family's sanctuary</small>
-  <h2>Quality Standard Ohio: Our house cleaning services</h2>
-  <h3>Feel confident knowing it's in the hands of a trusted residential cleaning company</h3>
-</div>
+<main class=" wrapper">
+  <div class="text_center ">
+    <small>Quality Standard Ohio: Our house cleaning services</small>
+    <h2>Your home is your family's sanctuary. Feel confident knowing it's in the hands of a trusted residential cleaning company.</h2>
+    <h3>Here's what we can do for you:</h3>
+  </div>
+  <div class="three_columns">
+    {% for item in site[page.category] %}
+    <div class="categories__service">
+      <img src="{{ item.hero | relative_url }}" width="360" height="200" alt="{{item.alt}}" loading="lazy"
+        title="{{item.title}}">
+      <div>
+        <h3>{{item.h1}}</h3>
+        <p>{{item.excerpt}}</p>
+        <br>
+        <h4> Learn more... → </h4>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</main>
+{% include cta.html title="Serving Columbus and surrounding areas with pride" %}
+<section class="two_columns wrapper about">
+  <img src="{{'img/deep-cleaning-house.avif' | relative_url}}" height="520" width="520" alt="Quality Standard Ohio making a apartment deep cleaning" title="Deep cleaning on Columbus" loading="lazy">
+  <div class="about_content">
+    <h2>Is our house cleaning service right for you?</h2>
+    <p>It's perfect for:</p>
+    <ul class="about_list">
+      <li><span>&check;</span> <b>Busy families:</b> Because choosing between family time and cleaning shouldn't be a choice.</li>
+      <li><span>&check;</span> <b>Career-focused professionals: </b> NAfter a long workday, the last thing you need is more work</li>
+      <li><span>&check;</span> <b>Active seniors: </b> Enjoy your freedom without the physical demands of housework</li>
+      <li><span>&check;</span> <b>Property owners:</b> Impress potential buyers or tenants with a spotlessly clean space</li>
+    </ul>
+    <a href="{{'contact'|relative_url}}" title="Quality Standard Ohio contact page" class="buttons button-secondary">→ Book your cleaning</a>
+  </div>
+</section>
+<section class="two_columns two_columns_left wrapper about">
+  <img src="{{'img/house-after-deep-cleaning-service.avif' | relative_url}}" height="520" width="520" alt="Photo in an house after a deep cleanign service of Quality Standard Ohio, in Columbus" title="Deep cleaning finished in Columbus Ohio" loading="lazy">
+  <div class="about_content">
+    <small>What makes Quality Standard Ohio different?</small>
+    <h2>Common concerns about residential cleaning in Columbus (and why you shouldn't worry)</h2>
+    <ul class="about_list">
+      <li><span>&check;</span> <b>"I'm careful about who enters my home"</b> We get it - trust is essential. That's why every team member passes strict background checks and we're fully insured. Your peace of mind is our priority.</li>
+      <li><span>&check;</span> <b>"What about the cost?"</b> Our residential cleaning prices are transparent and competitive. No hidden fees, no surprises - just honest pricing that fits your budget.</li>
+      <li><span>&check;</span> <b>"I need cleaning on my schedule"</b> Your schedule is our schedule. Weekly, bi-weekly, or monthly visits - we work around your life, not the other way around.</li>
+    </ul>
+    <a href="{{'contact'|relative_url}}" title="Quality Standard Ohio contact page" class="buttons button-secondary">→ Book your cleaning</a>
+  </div>
+</section>
+
+{% include slider-category.html %}
+
+<section class="wrapper two_columns">
+  <div class="">
+    <h3>{{page.title}}</h3>
+    <p>{{page.description}}</p>
+  </div>
+  <div class="two_columns">
+    <a href="#" title="Lorem" class="buttons button-secondary">→ FAQ's section</a>
+    <a href="#" title="Lorem" class="buttons button-secondary">→ Know about us</a>
+    <a href="#" title="Lorem" class="buttons button-secondary">→ Let's chat</a>
+    <a href="#" title="Lorem" class="buttons button-main">→ Take our service</a>
+  </div>
+</section>

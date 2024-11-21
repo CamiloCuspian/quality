@@ -129,6 +129,7 @@
  
 .categories__service{
   box-shadow: var(--shadow);
+  height: 580px;
   
   div {
     padding: 8px;
