@@ -5,25 +5,12 @@ small: "Get your spotless home without lifting a finger"
 h1: "House cleaning services in Columbus Ohio"
 text: Imagine coming home to a perfectly clean space every time - no effort required. That's what we do. Stop wasting precious hours on housework. Focus on what truly matters to you with our <strong> residential cleaning service </strong>near you.
 description: "Lorem ipsum dolor asaua afope. Lorem ipsum dolor sit amet, consectetur adipisicing."
-hero: "img/residential-services.avif"
+hero: "img/service-residential-cleaning-columbus-ohio.avif"
 button: true
 title: "Commercial Cleaning Columbus | Quality Standard Ohio"
 excerpt: "Imagine coming home to a perfectly clean space every time - no effort required. That's what we do. Stop wasting precious hours on housework. Focus on what truly matters to you with our <strong> residential cleaning service </strong>near you."
 alt: Lorem ipsum dolor
-slider-title:
-  - title: "Life is too short to spend it cleaning... Trust the professionals"
-    text: "Getting started takes just 5 minutes:"
-slider:
-  - img: "img/commercial-services.avif"
-    alt: "Lorem ipsum dolor"
-    p: "Click below"
-  - img: 'img/cleaning_services.avif'
-    alt: "Lorem ipsum dolor"
-    p: "Pick your preferred time"
-  - img: 'img/person_service.avif'
-    alt: "Lorem ipsum dolor"
-    p: "Relax while we handle the rest"
-  
+
 ---
 
 <main class=" wrapper">
@@ -49,7 +36,7 @@ slider:
 </main>
 {% include cta.html title="Serving Columbus and surrounding areas with pride" %}
 <section class="two_columns wrapper about">
-  <img src="{{'img/deep-cleaning-house.avif' | relative_url}}" height="520" width="520" alt="Quality Standard Ohio making a apartment deep cleaning" title="Deep cleaning on Columbus" loading="lazy">
+  <img src="{{'img/home-claning-service.avif' | relative_url}}" height="520" width="520" alt="Quality Standard Ohio making a apartment deep cleaning" title="Deep cleaning on Columbus" loading="lazy">
   <div class="about_content">
     <h2>Is our house cleaning service right for you?</h2>
     <p>It's perfect for:</p>
@@ -62,8 +49,43 @@ slider:
     <a href="{{'contact'|relative_url}}" title="Quality Standard Ohio contact page" class="buttons button-secondary">→ Book your cleaning</a>
   </div>
 </section>
-<section class="two_columns two_columns_left wrapper about">
-  <img src="{{'img/house-after-deep-cleaning-service.avif' | relative_url}}" height="520" width="520" alt="Photo in an house after a deep cleanign service of Quality Standard Ohio, in Columbus" title="Deep cleaning finished in Columbus Ohio" loading="lazy">
+<section class="two_columns two_columns_left wrapper about bgr">
+  <div class="section-carousel">
+    <!-- Inputs for slides -->
+    <input type="radio" name="carousel" id="slide1" checked>
+    <input type="radio" name="carousel" id="slide2">
+    <input type="radio" name="carousel" id="slide3">
+    
+    <!-- Slides -->
+    <div class="carousel__slides">
+      <div class="carousel__slide" id="slide1-content">
+        <img src="{{'img/house-cleaning-service.avif' | relative_url}}" alt="House cleaning in Columbus Ohio">
+        <div class="carousel__caption">
+          <p>First Slide: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="carousel__slide" id="slide2-content">
+        <img src="{{'img/office-cleaning-service.avif' | relative_url}}" alt="Office cleaning in Columbus Ohio">
+        <div class="carousel__caption">
+          <p>Second Slide: Aliquam tincidunt mauris eu risus.</p>
+        </div>
+      </div>
+      <div class="carousel__slide" id="slide3-content">
+        <img src="{{'img/retail-cleaning.avif' | relative_url}}" alt="Window cleaning in Columbus Ohio">
+        <div class="carousel__caption">
+          <p>Third Slide: Curabitur vestibulum aliquam leo.</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Navigation -->
+    <div class="carousel__nav">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+    </div>
+  </div>
+  
   <div class="about_content">
     <small>What makes Quality Standard Ohio different?</small>
     <h2>Common concerns about residential cleaning in Columbus (and why you shouldn't worry)</h2>
@@ -76,7 +98,6 @@ slider:
   </div>
 </section>
 
-{% include slider-category.html %}
 
 <section class="wrapper two_columns">
   <div class="">
