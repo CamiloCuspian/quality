@@ -213,24 +213,26 @@ ol li {
 
   &> div {
     position: relative;
-    width: min(100%, 320px);
+    width: min(100%, 400px);
     text-align: center;
     display: grid;
     gap: 2em;
     place-items: center;
     border-radius: var(--radius-cards);
-    transition: transform 0.3s ease;
     overflow: hidden;
-
-    span {
-      font-size: clamp(1.8rem, 4vw, 2.8rem);
+    
+    /* span {
+       font-size: clamp(1.8rem, 4vw, 2.8rem);
       color: var(--color-main);
       font-weight: 700;
+    } */
+    
+    img{
+      transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
 
-    p {
-      transform: translateY(10px);
-      transition: opacity 0.3s ease, transform 0.3s ease;
+    img:hover {
+      transform: scale(1.015);
     }
 
     h4{
@@ -239,11 +241,6 @@ ol li {
       margin: 0;
     }
   }
-}
-
-.three_columns > div img:hover + p {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .text_center {
@@ -1260,8 +1257,8 @@ nav .icono-nav .line {
     p {
       font-size: 16px;
     }
-    }
   }
+}
 
 .three_columns .card__contact {
     padding: 20px 8px;
