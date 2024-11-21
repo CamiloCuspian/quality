@@ -26,9 +26,42 @@ slider:
     alt: "Lorem ipsum dolor"
     p: "Use the app and schedule your cleaning service with Quality Standard Ohio"
 ---
-<div class="text_center">
-  <small>Hire your cleaning service in just 3 steps</small>
-  <h2>Use the app and schedule your cleaning service with Quality Standard Ohio</h2>
-  <h3>Lorem ipsum dolor asaua afope</h3>
-</div>
+<main class=" wrapper">
+  <div class="text_center">
+    <small>Hire your cleaning service in just 3 steps</small>
+    <h2>Use the app and schedule your cleaning service with Quality Standard Ohio</h2>
+    <h3>Lorem ipsum dolor asaua afope</h3>
+  </div>
   
+  <div class="three_columns">
+    {% for item in site[page.category] %}
+    <div class="categories__service">
+      <img src="{{ item.hero | relative_url }}" width="360" height="200" alt="{{item.alt}}" loading="lazy"
+        title="{{item.title}}">
+      <div>
+        <h3>{{item.h1}}</h3>
+        <p>{{item.excerpt}}</p>
+        <a href="#" title="Lorem" class="buttons button-secondary">→ Schedule now</a>
+
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</main>
+
+{% include cta.html title="Lorem ao ap w abu fa fbieb bfab fabfuiaeb uaf e" %}
+
+{% include slider-category.html %}
+
+<section class="wrapper two_columns">
+  <div class="">
+    <h3>{{page.title}}</h3>
+    <p>{{page.description}}</p>
+  </div>
+  <div class="two_columns">
+    <a href="#" title="Lorem" class="buttons button-secondary">→ FAQ's section</a>
+    <a href="#" title="Lorem" class="buttons button-secondary">→ Know about us</a>
+    <a href="#" title="Lorem" class="buttons button-secondary">→ Let's chat</a>
+    <a href="#" title="Lorem" class="buttons button-main">→ Take our service</a>
+  </div>
+</section>
