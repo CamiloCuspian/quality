@@ -44,9 +44,9 @@ document.addEventListener("DOMContentLoaded", function() {
   if (currentDayName !== "Sunday" && currentHour >= openHour && currentHour < closeHour) {
       message = `${formattedDate} ${openIcon} - ${openHour}:00 - ${closeHour}:00`;
   } else if (currentDayName !== "Sunday") {
-      message = `${formattedDate} ${closedIcon} - Today we relax`;
-  } else {
       message = `${formattedDate} ${closedIcon} - Now we're relax`;
+  } else {
+      message = `${formattedDate} ${closedIcon} - Today we relax`;
   }
 
   dayElement.innerHTML = message;

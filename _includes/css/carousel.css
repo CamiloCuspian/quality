@@ -6,19 +6,19 @@
 }
 .carousel {
   display: flex;
-  -webkit-animation: scroll 50s linear infinite;
-  animation: scroll 50s linear infinite;
-  width: calc(424px * 7);
+  -webkit-animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite;
+  width: calc(520px * 9);
   overflow: hidden;
 }
 .carousel .item {
-  width: 424px;
+  width: 520px;
   padding: 1rem;
   display: grid;
   place-items: center;
 }
 .carousel .item img {
-  width: 424px;
+  width: 520px;
   height: auto;
   border-radius: var(--radius);
   aspect-ratio: 1/1;
@@ -28,7 +28,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-424px * 7));
+    transform: translateX(calc(-520px * 9));
   }
 }
 @keyframes scroll {
@@ -36,6 +36,6 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-424px * 7));
+    transform: translateX(calc(-520px * 9));
   }
 }
