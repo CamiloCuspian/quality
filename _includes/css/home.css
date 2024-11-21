@@ -5,7 +5,6 @@
 
   .about_content{
     display: grid;
-    gap: 24px;
     place-items: center left;
 
     .benefits_item{
@@ -32,6 +31,6 @@
   clip-path: inset(0-100vmax);
 
   .services_home{
-    padding-top: 3em;
+    padding: 3em 0;
   }
 }
