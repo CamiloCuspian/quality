@@ -7,11 +7,11 @@ layout: default
   <div>
     <h3>{{page.title}}</h3>
     <p>{{page.description}}</p>
-  </div>
-  <div class="two_columns">
-    <a href="#" title="Lorem" class="buttons button-secondary">→ FAQ's section</a>
-    <a href="#" title="Lorem" class="buttons button-secondary">→ Know about us</a>
-    <a href="#" title="Lorem" class="buttons button-secondary">→ Let's chat</a>
-    <a href="#" title="Lorem" class="buttons button-main">→ Take our service</a>
+    <div>
+      <a href="{{'faqs' | relative_url}}" title="FAQs Quality section" class="buttons button-secondary">→ FAQ's section</a>
+      <a href="{{'about-us' | relative_url}}" title="About Quality Standard Ohio in Columbus" class="buttons button-secondary">→ About us</a>
+      <a href="#" id="lead_whatsapp" title="Quality Standard Ohio WhatsApp" class="buttons button-secondary" target="_blank" rel="nofollo noopener noreferrer">→ Let's chat</a>
+      {% include button.html text="Take our service →" %}
+    </div>
   </div>
 </section>

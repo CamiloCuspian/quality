@@ -126,15 +126,14 @@
 
 .categories__service {
   box-shadow: var(--shadow);
-  height: 580px;
 
   div {
-    padding: 8px;
+    padding: 12px;
 
     h3 {
       color: var(--color-main);
       font-size: 1.5rem;
-      margin: 0;
+      margin-bottom: 1em;
     }
     p {
       font-size: 16px;

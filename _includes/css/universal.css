@@ -212,7 +212,7 @@ ol li {
 
   &> div {
     position: relative;
-    width: min(100%, 400px);
+    width: min(100%, 376px);
     text-align: center;
     display: grid;
     gap: 2em;

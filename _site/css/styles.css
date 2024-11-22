@@ -212,7 +212,7 @@ ol li {
 
   &> div {
     position: relative;
-    width: min(100%, 400px);
+    width: min(100%, 376px);
     text-align: center;
     display: grid;
     gap: 2em;
@@ -1247,15 +1247,14 @@ nav .icono-nav .line {
 
 .categories__service {
   box-shadow: var(--shadow);
-  height: 580px;
 
   div {
-    padding: 8px;
+    padding: 12px;
 
     h3 {
       color: var(--color-main);
       font-size: 1.5rem;
-      margin: 0;
+      margin-bottom: 1em;
     }
     p {
       font-size: 16px;
