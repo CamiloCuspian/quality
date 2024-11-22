@@ -37,13 +37,11 @@ slider:
   <div class="three_columns">
     {% for item in site[page.category] %}
     <div class="categories__service">
-      <img src="{{ item.hero | relative_url }}" width="360" height="200" alt="{{item.alt}}" loading="lazy"
-        title="{{item.title}}">
+      <img src="{{ item.hero | relative_url }}" width="376" height="200" alt="{{item.alt}}" loading="lazy" title="{{item.title}}">
       <div>
         <h3>{{item.h1}}</h3>
         <p>{{item.excerpt}}</p>
-        <a href="#" title="Lorem" class="buttons button-secondary">→ Schedule now</a>
-
+        <a href="{{item.url | relative_url}}" title="{{item.title}}" target="_blank">Learn more → </a>
       </div>
     </div>
     {% endfor %}
