@@ -2,17 +2,18 @@ source "https://rubygems.org"
 
 # Core gems
 gem "jekyll"
-gem "faraday-retry"
-gem "github-pages", group: :jekyll_plugins
+gem "github-pages"
 
 # Jekyll plugins
 group :jekyll_plugins do
   gem "jekyll-redirect-from"
-  gem 'jekyll-livereload'
+  gem "faraday-retry"
 end
 
-# Windows specific gem
-gem 'wdm', '>= 0.1.0', platforms: [:mingw, :mswin]
+# Platform specific
+platforms :mingw, :mswin do
+  gem "wdm", ">= 0.1.0"
+end
 
-# Added for compatibility
+# Compatibility
 gem "public_suffix", "~> 5.1"

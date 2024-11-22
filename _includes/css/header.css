@@ -11,19 +11,21 @@
     .header__home--text {
       padding: 6em 0 4em;
       flex: 1 0 320px;
-      
+
       h1 {
         font-size: 16px;
         margin-bottom: 1em;
       }
 
-      h2{font-size: clamp(2.5rem, 5vw, 4rem);}
-      
+      h2 {
+        font-size: clamp(2.5rem, 5vw, 4rem);
+      }
+
       p {
         width: min(100%, 520px);
       }
     }
-    
+
     img {
       width: min(100%, 600px);
       overflow: unset;
@@ -46,15 +48,15 @@
         margin-bottom: 1em;
       }
 
-      h2{font-size: clamp(2.5rem, 5vw, 4rem);}
-
+      h2 {
+        font-size: clamp(2.5rem, 5vw, 4rem);
+      }
     }
     img {
       width: min(100%, 600px);
       position: relative;
       overflow: unset;
       z-index: 2;
-      
     }
   }
 }
