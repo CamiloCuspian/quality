@@ -58,7 +58,6 @@ h2 {
   font-size: clamp(2rem, 1.692rem + 1.54vw, 3rem);
   color: var(--color-main);
   max-width: 30ch;
-  margin-bottom: 2rem;
 }
 
 h2::after {

@@ -58,7 +58,6 @@ h2 {
   font-size: clamp(2rem, 1.692rem + 1.54vw, 3rem);
   color: var(--color-main);
   max-width: 30ch;
-  margin-bottom: 2rem;
 }
 
 h2::after {
@@ -436,22 +435,22 @@ nav .icono-nav .line {
 
     .header__home--text {
       padding: 6em 0 4em;
-      small {
-        text-transform: uppercase;
-      }
-
+      flex: 1 0 320px;
+      
       h1 {
-        margin-top: 16px;
+        font-size: 16px;
+        margin-bottom: 1em;
       }
 
+      h2{font-size: clamp(2.5rem, 5vw, 4rem);}
+      
       p {
         width: min(100%, 520px);
       }
     }
-
+    
     img {
-      flex: 1 1 400px;
-      min-width: clamp(250px, 35vw, 600px);
+      width: min(100%, 600px);
       overflow: unset;
       z-index: -1;
     }
@@ -465,22 +464,19 @@ nav .icono-nav .line {
 
     .header__home--text {
       padding: 6em 0 4em;
-      small {
-        text-transform: uppercase;
-      }
+      flex: 1 1 400px;
 
       h1 {
-        margin-top: 16px;
+        font-size: 16px;
+        margin-bottom: 1em;
       }
 
-      p {
-        width: min(100%, 520px);
-      }
+      h2{font-size: clamp(2.5rem, 5vw, 4rem);}
+
     }
     img {
+      width: min(100%, 600px);
       position: relative;
-      flex: 1 1 400px;
-      min-width: clamp(250px, 35vw, 600px);
       overflow: unset;
       z-index: 2;
       

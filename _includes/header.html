@@ -3,9 +3,9 @@
 {% when "default" %}
 <header class="header_home">
   <div class="wrapper two_columns">
-    <div class="header__home--text flow">
-      <small>We are Quality Standard Ohio</small>
-      <h1>Professional cleaning service for your home</h1>
+    <div class="header__home--text">
+      <h1>Cleaning agency Quality Standard Ohio</h1>
+      <h2>Professional cleaning service for your home</h2>
       <p>Columbus' trusted cleaning service provides professional residential and commercial solutions. Schedule today!
       </p>
       {% include button.html text="Take our service →" %}
@@ -17,13 +17,10 @@
 {% else %}
 <header class="header__services">
   <div class="wrapper two_columns bgr-hero">
-    <div class="">
-      {% if page.small %}
-      <small>{{ page.small }}</small>
-      {% endif %}
+    <div class="header__home--text">
       <h1>{{ page.h1 }}</h1>
+      <h2>{{ page.h2 }}</h2>
       <p>{{ page.excerpt }}</p>
-
       {% if page.button %}
       {% include button.html text="Take our service →" %}
       {% endif %}
