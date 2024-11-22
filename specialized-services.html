@@ -3,56 +3,96 @@ layout: category
 category: specialized
 title: "Specialized cleaning services | Quality Standard Ohio"
 description: "Professional cleaning services for all types of commercial facilities in Columbus Ohio. Write us and get our commercial cleaning solutions."
-h1: "Specialized cleaning service"
-h2: "Enjoy our cleaning system specialists and professional cleaning service"
-hero: "img/property-maintenance.avif"
+h1: "Specialized Cleaning Services in Columbus, Ohio"
+h2: "Professional cleaning solutions for every need"
+hero: "img/specialized-cleaning-services.avif"
+alt: "Specialized cleaning in a Columbus Ohio warehouse"
+excerpt: When ordinary cleaning doesn’t cut it, our <strong>specialized cleaning services</strong> step in to deliver exceptional results.
 button: true
-alt: "Business cleaning and maintenance in Columbus Ohio"
-h2_gallery: "lore ana sfans fas anbud f"
-text: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum sequi, obcaecati mollitia amet numquam nisi eligendi.
-slider-title:
-  - title: "Commercial Cleaning"
-    text: "Lorem ipsum dolor Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum sequi, obcaecati mollitia"
-slider:
-  - img: "img/commercial-services.avif"
-    alt: "Lorem ipsum dolor"
-    p: "Use the app and schedule your cleaning service with Quality Standard Ohio"
-  - img: 'img/cleaning_services.avif'
-    alt: "Lorem ipsum dolor"
-    p: "Use the app and schedule your cleaning service with Quality Standard Ohio"
-  - img: 'img/person_service.avif'
-    alt: "Lorem ipsum dolor"
-    p: "Use the app and schedule your cleaning service with Quality Standard Ohio"
-  - img: "img/commercial-services.avif"
-    alt: "Lorem ipsum dolor"
-    p: "Use the app and schedule your cleaning service with Quality Standard Ohio"
 ---
 <main class=" wrapper">
-  <div class="text_center">
-    <small>Hire your cleaning service in just 3 steps</small>
-    <h2>Use the app and schedule your cleaning service with Quality Standard Ohio</h2>
-    <h3>Lorem ipsum dolor asaua afope</h3>
+  <div class="text_center ">
+    <small>Quality Standard Ohio: Our specialized cleaning services</small>
+    <h2>We’ve got you covered with expert care and unmatched attention to cleaning detail</h2>
   </div>
-  
   <div class="three_columns">
     {% for item in site[page.category] %}
     <div class="categories__service">
-      <img src="{{ item.hero | relative_url }}" width="360" height="200" alt="{{item.alt}}" loading="lazy"
+      <img src="{{ item.hero | relative_url }}" width="376" height="200" alt="{{item.alt}}" loading="lazy"
         title="{{item.title}}">
-      <div>
+      <div class="services__list">
         <h3>{{item.h1}}</h3>
         <p>{{item.excerpt}}</p>
-        <a href="#" title="Lorem" class="buttons button-secondary">→ Schedule now</a>
-
+        <a href="{{item.url | relative_url}}" title="{{item.title}}" target="_blank">Learn more <span>→</span></a>
       </div>
     </div>
     {% endfor %}
   </div>
 </main>
+{% include cta.html title="Serving Columbus and surrounding areas with pride" %}
+<section class="two_columns wrapper about">
+  <img src="{{'img/home-claning-service.avif' | relative_url}}" height="520" width="520" alt="Quality Standard Ohio making a apartment deep cleaning" title="Deep cleaning on Columbus" loading="lazy">
+  <div class="about_content">
+    <h2>Is our house cleaning service right for you?</h2>
+    <p>It's perfect for:</p>
+    <ul class="about_list">
+      <li><span>&check;</span> <b>Busy families:</b> Because choosing between family time and cleaning shouldn't be a choice.</li>
+      <li><span>&check;</span> <b>Career-focused professionals: </b> NAfter a long workday, the last thing you need is more work</li>
+      <li><span>&check;</span> <b>Active seniors: </b> Enjoy your freedom without the physical demands of housework</li>
+      <li><span>&check;</span> <b>Property owners:</b> Impress potential buyers or tenants with a spotlessly clean space</li>
+    </ul>
+    <a href="{{'contact'|relative_url}}" title="Quality Standard Ohio contact page" class="buttons button-secondary">→ Book your cleaning</a>
+  </div>
+</section>
+<section class="two_columns two_columns_left wrapper about bgr">
+  <div class="section-carousel">
+    <!-- Inputs for slides -->
+    <input type="radio" name="carousel" id="slide1" checked>
+    <input type="radio" name="carousel" id="slide2">
+    <input type="radio" name="carousel" id="slide3">
+    
+    <!-- Slides -->
+    <div class="carousel__slides">
+      <div class="carousel__slide" id="slide1-content">
+        <img src="{{'img/house-cleaning-service.avif' | relative_url}}" alt="House cleaning in Columbus Ohio">
+        <div class="carousel__caption">
+          <p>First Slide: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="carousel__slide" id="slide2-content">
+        <img src="{{'img/office-cleaning-service.avif' | relative_url}}" alt="Office cleaning in Columbus Ohio">
+        <div class="carousel__caption">
+          <p>Second Slide: Aliquam tincidunt mauris eu risus.</p>
+        </div>
+      </div>
+      <div class="carousel__slide" id="slide3-content">
+        <img src="{{'img/retail-cleaning.avif' | relative_url}}" alt="Window cleaning in Columbus Ohio">
+        <div class="carousel__caption">
+          <p>Third Slide: Curabitur vestibulum aliquam leo.</p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Navigation -->
+    <div class="carousel__nav">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+    </div>
+  </div>
+  
+  <div class="about_content">
+    <small>What makes Quality Standard Ohio different?</small>
+    <h2>Common concerns about residential cleaning in Columbus (and why you shouldn't worry)</h2>
+    <ul class="about_list">
+      <li><span>&check;</span> <b>"I'm careful about who enters my home"</b> We get it - trust is essential. That's why every team member passes strict background checks and we're fully insured. Your peace of mind is our priority.</li>
+      <li><span>&check;</span> <b>"What about the cost?"</b> Our residential cleaning prices are transparent and competitive. No hidden fees, no surprises - just honest pricing that fits your budget.</li>
+      <li><span>&check;</span> <b>"I need cleaning on my schedule"</b> Your schedule is our schedule. Weekly, bi-weekly, or monthly visits - we work around your life, not the other way around.</li>
+    </ul>
+    <a href="{{'contact'|relative_url}}" title="Quality Standard Ohio contact page" class="buttons button-secondary">→ Book your cleaning</a>
+  </div>
+</section>
 
-{% include cta.html title="Lorem ao ap w abu fa fbieb bfab fabfuiaeb uaf e" %}
-
-{% include slider-category.html %}
 
 <section class="wrapper two_columns">
   <div class="">
@@ -66,5 +106,3 @@ slider:
     <a href="#" title="Lorem" class="buttons button-main">→ Take our service</a>
   </div>
 </section>
-
-

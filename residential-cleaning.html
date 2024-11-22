@@ -16,19 +16,18 @@ alt: Lorem ipsum dolor
 <main class=" wrapper">
   <div class="text_center ">
     <small>Quality Standard Ohio: Our house cleaning services</small>
-    <h2>Your home is your family's sanctuary. Feel confident knowing it's in the hands of a trusted residential cleaning company.</h2>
+    <h2>Feel confident knowing it's in the hands of a trusted residential cleaning company</h2>
     <h3>Here's what we can do for you:</h3>
   </div>
   <div class="three_columns">
     {% for item in site[page.category] %}
     <div class="categories__service">
-      <img src="{{ item.hero | relative_url }}" width="360" height="200" alt="{{item.alt}}" loading="lazy"
+      <img src="{{ item.hero | relative_url }}" width="376" height="200" alt="{{item.alt}}" loading="lazy"
         title="{{item.title}}">
-      <div>
+      <div class="services__list">
         <h3>{{item.h1}}</h3>
         <p>{{item.excerpt}}</p>
-        <br>
-        <h4> Learn more... → </h4>
+        <a href="{{item.url | relative_url}}" title="{{item.title}}" target="_blank">Learn more → </a>
       </div>
     </div>
     {% endfor %}

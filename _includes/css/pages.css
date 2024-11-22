@@ -95,11 +95,10 @@
 }
 
 /* cards */
-.cards {
-  .wrapper {
-    padding: 0 0 4em;
-  }
+.cards .wrapper {
+  padding: 0 0 4em;
 }
+
 .cards__bg {
   .wrapper {
     padding: 8em 0 4em;
@@ -137,6 +136,20 @@
     }
     p {
       font-size: 16px;
+    }
+
+    a {
+      transition: all 0.4s ease-in;
+    }
+  }
+
+  .services__list a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2.4px;
+    text-underline-offset: 4px;
+
+    & span{
+      transform: translateY(2px) scale(1.05);
     }
   }
 }
@@ -365,6 +378,7 @@
 .porcent div {
   width: min(100%, 150px);
 }
+
 .h2_grey {
   color: var(--grey-2);
 }

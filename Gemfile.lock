@@ -313,6 +313,7 @@ DEPENDENCIES
   jekyll-redirect-from
   public_suffix (~> 5.1)
   wdm (>= 0.1.0)
+  webrick (~> 1.8)
 
 BUNDLED WITH
    2.5.23
