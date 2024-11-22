@@ -126,6 +126,10 @@
 .categories__service {
   box-shadow: var(--shadow);
 
+  img{
+    object-position: top right;
+  }
+
   div {
     padding: 12px;
 
