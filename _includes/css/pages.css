@@ -147,12 +147,9 @@
     text-decoration: underline;
     text-decoration-thickness: 2.4px;
     text-underline-offset: 4px;
-
-    & span{
-      transform: translateY(2px) scale(1.05);
-    }
   }
 }
+
 
 .three_columns .card__contact {
   padding: 20px 8px;
