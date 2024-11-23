@@ -12,7 +12,7 @@
     height: auto;
     overflow: auto;
     transition: all 0.4s ease-out;
-    background-color: var(--grey-1);
+    background-color: var(--bg-grey);
     align-items: center;
   }
 
