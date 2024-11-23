@@ -1,10 +1,59 @@
 ---
-title: A title
-description: A description
-h1: A title
-hero: img/lady-cleaning-a-house.avif
-alt: a alt text
-excerpt: A excerpt text
+# SEO Metadata
+title: "Your Post Title - Quality Standard Ohio" # 50-60 characters
+description: "Your meta description that includes target keywords and encourages clicks" # 150-160 characters
+permalink: /blog/:categories/:title/ # URL structure
+
+# Content Info
+author: "Author Name"
+author_image: "/img/authors/author-name.jpg" # Optional
+author_bio: "Brief author bio" # Optional
+date: YYYY-MM-DD
+read_time: X # Estimated reading time in minutes
+last_modified_at: YYYY-MM-DD # Update when content changes
+
+# Categorization
+category: "cleaning-tips" # Main category (single)
+tags: # Multiple tags for better searchability
+  - "deep cleaning"
+  - "cleaning tips"
+  - "home maintenance"
+  
+# Images
+hero_image: "/img/posts/post-title-hero.jpg"
+hero_alt: "Descriptive alt text for hero image"
+image: "/img/posts/post-title-thumbnail.jpg" # Thumbnail for listings
+image_alt: "Descriptive alt text for thumbnail"
+
+# Social Sharing
+social_title: "Shorter title optimized for social sharing" # Optional, defaults to title
+social_description: "Engaging description for social media" # Optional, defaults to description
+social_image: "/img/posts/post-title-social.jpg" # Optional, defaults to hero_image
+
+# Schema.org Article Markup
+article_type: "BlogPosting" # Options: BlogPosting, TechnicalArticle, HowTo
+published: true # Set to false for drafts
+
+# Optional HowTo Structure (for how-to articles)
+howto:
+  time_needed: "30 minutes"
+  cost: "No additional cost"
+  materials:
+    - "Material 1"
+    - "Material 2"
+  tools:
+    - "Tool 1"
+    - "Tool 2"
+  steps:
+    - title: "Step 1 Title"
+      description: "Step 1 description"
+    - title: "Step 2 Title"
+      description: "Step 2 description"
+
+# Custom Metadata
+featured: false # Set to true for featured posts
+sidebar_promotion: true # Enable/disable sidebar promotional content
+noindex: false # Set to true to exclude from search indexing
 ---
 ## Lorem ipsum dolor
 

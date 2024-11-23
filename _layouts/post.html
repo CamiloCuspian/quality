@@ -1,4 +1,88 @@
 ---
 layout: default
 ---
-{{content}}
+<article class="post-container">
+  <div class="section wrapper">
+    <header class="post-header">
+      <div class="text_center">
+        <small>{{ page.category | capitalize }}</small>
+        <h1>{{ page.title }}</h1>
+        <div class="post-meta">
+          <span class="post-date">
+            <img src="{{ 'img/calendar-icon.svg' | relative_url }}" alt="Date" width="16" height="16">
+            {{ page.date | date: "%B %d, %Y" }}
+          </span>
+          {% if page.author %}
+            <span class="post-author">
+              <img src="{{ 'img/author-icon.svg' | relative_url }}" alt="Author" width="16" height="16">
+              {{ page.author }}
+            </span>
+          {% endif %}
+          {% if page.read_time %}
+            <span class="post-read">
+              <img src="{{ 'img/clock-icon.svg' | relative_url }}" alt="Read time" width="16" height="16">
+              {{ page.read_time }} min read
+            </span>
+          {% endif %}
+        </div>
+      </div>
+
+      {% if page.hero_image %}
+        <img src="{{ page.hero_image | relative_url }}" alt="{{ page.hero_alt }}" class="post-hero" loading="eager">
+      {% endif %}
+    </header>
+
+    <div class="post-content">
+      {{ content }}
+    </div>
+
+    {% if page.tags.size > 0 %}
+      <div class="post-tags">
+        {% for tag in page.tags %}
+          <a href="/blog/tag/{{ tag | slugify }}" class="post-tag">{{ tag }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="section wrapper bgr">
+    <div class="text_center">
+      <h2>Related Articles</h2>
+    </div>
+    <div class="three_columns">
+      {% assign related_posts = site.posts | where: "category", page.category | where_exp: "post", "post.url != page.url" | limit: 3 %}
+      {% for post in related_posts %}
+        <div class="categories__service card__contact">
+          {% if post.image %}
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
+          {% endif %}
+          <div>
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.excerpt | truncatewords: 25 }}</p>
+            <a href="{{ post.url | relative_url }}" class="buttons button-secondary">Read more →</a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="section wrapper">
+    <div class="two_columns">
+      <div class="about_content">
+        <small>Never miss a cleaning tip</small>
+        <h2>Get expert advice in your inbox</h2>
+        <p>Join our newsletter for professional cleaning tips, seasonal guides, and exclusive offers.</p>
+        {% include form.html %}
+      </div>
+      {% if page.author_image %}
+        <div class="author-bio">
+          <img src="{{ page.author_image }}" alt="{{ page.author }}" class="author-image">
+          <h3>About {{ page.author }}</h3>
+          <p>{{ page.author_bio }}</p>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</article>
+
+{% include cta.html title="Let our experts handle your cleaning needs" %}

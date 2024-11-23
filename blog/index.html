@@ -1,36 +1,83 @@
 ---
 layout: general
-title: Blog | Quality Standard Ohio
-description: Blog sobre limpieza y mantenimiento
+title: "Cleaning Tips & Insights | Quality Standard Ohio"
+description: "Expert cleaning guides, maintenance tips, and professional advice from Columbus's trusted cleaning experts. Making your space shine between services."
+h1: "Professional cleaning insights"
+h2: "Expert tips from Columbus's trusted cleaners"
 ---
 
 <div class="blog-container">
-  <div class="posts-list">
-    {% for post in paginator.posts %}
-      <article class="post-item">
-        <h2 class="post-title">
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        </h2>
-        
-        <div class="post-meta">
-          <span class="post-date">{{ post.date | date: "%d-%m-%Y" }}</span>
-        </div>
-
-        {% if post.excerpt %}
-          <div class="post-excerpt">
-            {{ post.excerpt }}
+  <div class="section wrapper">
+    <div class="text_center">
+      <small>Cleaning wisdom that works</small>
+      <h2>Latest cleaning tips & guides</h2>
+      <p>Discover professional techniques and insider knowledge from Columbus's most experienced cleaning team.</p>
+    </div>
+  
+    <div class="three_columns">
+      {% for post in paginator.posts limit:3 %}
+        <div class="categories__service card__contact">
+          {% if post.image %}
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
+          {% endif %}
+          
+          <div>
+            <h3>{{ post.title }}</h3>
+            <div class="post-meta">
+              <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
+              {% if post.categories %}
+                <span class="post-categories">
+                  {% for category in post.categories %}
+                    <a href="{{ '/blog/category/' | append: category | slugify | relative_url }}">{{ category }}</a>
+                  {% endfor %}
+                </span>
+              {% endif %}
+            </div>
+            <p>{{ post.excerpt | truncatewords: 25 }}</p>
+            <a href="{{ post.url | relative_url }}" class="buttons button-secondary">Read more →</a>
           </div>
-        {% endif %}
-        
-        <a href="{{ post.url | relative_url }}" class="read-more">Leer más</a>
-      </article>
-    {% endfor %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="section wrapper bgr">
+    <div class="text_center">
+      <h2>More cleaning insights</h2>
+    </div>
+
+    <div class="service-cards">
+      {% for post in paginator.posts offset:3 %}
+        <div class="card">
+          {% if post.image %}
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="card-image" loading="lazy">
+          {% endif %}
+          
+          <div class="card-content">
+            <div class="post-meta">
+              <span class="post-date">{{ post.date | date: "%B %d" }}</span>
+              {% if post.categories %}
+                <span class="post-categories">
+                  {% for category in post.categories limit:1 %}
+                    <a href="{{ '/blog/category/' | append: category | slugify | relative_url }}">{{ category }}</a>
+                  {% endfor %}
+                </span>
+              {% endif %}
+            </div>
+            
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.excerpt | truncatewords: 15 }}</p>
+            <a href="{{ post.url | relative_url }}" class="read-more">Read article →</a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 
   {% if paginator.total_pages > 1 %}
     <div class="pagination">
       {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Anterior</a>
+        <a href="{{ paginator.previous_page_path | relative_url }}" class="previous">&laquo; Previous</a>
       {% endif %}
 
       {% for page in (1..paginator.total_pages) %}
@@ -44,15 +91,20 @@ description: Blog sobre limpieza y mantenimiento
       {% endfor %}
 
       {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | relative_url }}">Siguiente &raquo;</a>
+        <a href="{{ paginator.next_page_path | relative_url }}" class="next">Next &raquo;</a>
       {% endif %}
     </div>
   {% endif %}
+
+  <div class="section wrapper two_columns bgr">
+    <div class="about_content">
+      <small>Never miss a cleaning tip</small>
+      <h2>Get expert advice in your inbox</h2>
+      <p>Join our newsletter for professional cleaning tips, seasonal guides, and exclusive offers.</p>
+      {% include form.html %}
+    </div>
+    <img src="{{ 'img/cleaning-tips.avif' | relative_url }}" alt="Professional cleaning tips from Quality Standard Ohio" loading="lazy">
+  </div>
 </div>
 
-{% include cta.html title="Schedule your clean with Quality Standard Ohio" %}
-
-<div class="section wrapper two_columns bgr">
-  {% include form.html %}
-  <img src="{{ 'img/cleaning_services.avif' | relative_url }}" alt="Lorem" loading="lazy">
-</div>
+{% include cta.html title="Let the experts handle your cleaning needs" %}
