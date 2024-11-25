@@ -3,14 +3,14 @@ layout: post
 title: "Ultimate Deep Cleaning Guide 2024 - Step by Step Professional Tips"
 description: "Transform your home with this comprehensive deep cleaning guide. Professional techniques, checklists & expert tips from Columbus's top cleaners."
 h1: Deep cleaning guide for your housework
-h2: 
+h2: Tips to make a professional cleaning in your house
 excerpt: "Master the art of deep cleaning with our room-by-room guide. Learn the exact methods professional cleaners use to achieve that perfect clean."
 hero: 'img/posts/deep-cleaning-guide.avif'
 alt: "Professional deep cleaning demonstration with before and after results"
 date: 2024-11-22
-author: "Sarah Mitchell"
+author: "Angelo Torres"
 category: "cleaning-guides"
-social_image: 'img/posts/deep-cleaning-guide-social.avif'
+social_image: 'img/posts/deep-cleaning-guide-social.jpg'
 social_title: "The Ultimate Deep Cleaning Guide That Will Transform Your Home"
 social_description: "Learn professional deep cleaning secrets that actually work. Room-by-room checklist included!"
 button: true

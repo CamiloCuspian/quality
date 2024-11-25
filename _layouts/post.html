@@ -5,16 +5,15 @@ layout: default
   <div class="section wrapper">
     <header class="post-header">
       <div class="text_center">
-        <small>{{ page.category | capitalize | relative_url }}</small>
-        <h1>{{ page.title }}</h1>
+        <small><a href="/">Home</a><a href="{{'blog'|relative_url}}"> / Blog</a><a href="{{ page.category | relative_url }}"> / {{ page.category | capitalize }}</a> / {{page.title}}</small>
         <div class="post-meta">
           <span class="post-date">
-            <img src="{{ 'img/calendar-icon.svg' | relative_url }}" alt="Date" width="16" height="16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"><path stroke="#7c7a7a" stroke-linecap="round" stroke-width="2" d="M3 9h18M7 3v2m10-2v2M6 12h2m3 0h2m3 0h2M6 15h2m3 0h2m3 0h2M6 18h2m3 0h2m3 0h2M6.2 21h11.6c1.12 0 1.68 0 2.108-.218a2 2 0 0 0 .874-.874C21 19.48 21 18.92 21 17.8V8.2c0-1.12 0-1.68-.218-2.108a2 2 0 0 0-.874-.874C19.48 5 18.92 5 17.8 5H6.2c-1.12 0-1.68 0-2.108.218a2 2 0 0 0-.874.874C3 6.52 3 7.08 3 8.2v9.6c0 1.12 0 1.68.218 2.108a2 2 0 0 0 .874.874C4.52 21 5.08 21 6.2 21Z"/></svg>
             {{ page.date | date: "%B %d, %Y" }}
           </span>
           {% if page.author %}
             <span class="post-author">
-              <img src="{{ 'img/author-icon.svg' | relative_url }}" alt="Author" width="16" height="16">
+              <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="16" height="16" fill="#7c7a7a" viewBox="0 0 511.999 511.999"><path d="M489.194 474.529h-377.58l55.961-23.531c2.258-.903 4.648-2.525 6.251-4.133l332.686-332.686c7.315-7.314 7.315-19.174 0-26.49L424.316 5.493c-7.314-7.314-19.175-7.314-26.49 0L65.14 338.179c-1.696 1.693-3.284 4.12-4.132 6.247L1.527 485.883c-5.281 12.299 3.787 26.109 17.218 26.109h470.449c10.345 0 18.731-8.387 18.731-18.731s-8.387-18.732-18.731-18.732zM411.071 45.226l55.707 55.707-40.787 40.787-55.707-55.707 40.787-40.787zm-67.276 67.277 55.707 55.707-238.92 238.92-55.707-55.707 238.92-238.92zM84.848 384.376l42.78 42.781-73.82 31.04 31.04-73.821z"/></svg>
               {{ page.author }}
             </span>
           {% endif %}
