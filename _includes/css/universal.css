@@ -147,6 +147,33 @@ hr {
   margin: 2rem auto; /* Centrado con espacio arriba y abajo */
 }
 
+table {
+  width: 100%;
+  margin: 2em 0 4em;
+}
+
+table tr {
+  border-bottom: 2px dotted var(--grey-1);
+  display: flex;
+  padding: 1.2em 0;
+  flex-wrap: wrap;
+  gap: 1em;
+  width: 100%;
+}
+
+table tr:nth-child(even) {
+  background-color: var(--bg-grey);
+}
+
+table th {
+  font-weight: 900;
+}
+
+table td,
+table th {
+  flex: 1 0 200px;
+}
+
 .wrapper {
   padding: 8em 0 4em;
   width: min(calc(100% - 2rem), 1320px);
