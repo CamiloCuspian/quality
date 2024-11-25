@@ -60,6 +60,8 @@ Forget those lengthy product lists that drain your wallet. Here's what Columbus'
    - Knee protection
    - Proper face protection
 
+![Deep cleaning guide draw]({{'img/posts/deep-cleaning-guide-draw.avif' | relative_url}})
+
 ## The room-by-room deep cleaning system that transformed 10,000 Columbus homes
 
 ### Kitchen deep clean: The heart of your home
