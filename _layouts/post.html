@@ -17,12 +17,15 @@ layout: default
               {{ page.author }}
             </span>
           {% endif %}
-          {% if page.read_time %}
-            <span class="post-read">
-              <img src="{{ 'img/clock-icon.svg' | relative_url }}" alt="Read time" width="16" height="16">
-              {{ page.read_time }} min read
-            </span>
-          {% endif %}
+          <span class="post-read">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"><path stroke="#7c7a7a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.062 12A8.001 8.001 0 0 1 21 13a8 8 0 0 1-8 8H8m5-8V9m-2-6h4M3 15h5m-3 3h5"/></svg>
+            {% capture words %}
+            {{ content | number_of_words | minus: 180 }}
+            {% endcapture %}
+            {% unless words contains '-' %}
+            {{ words | plus: 150 | divided_by: 150 | append: ' min read' }}
+            {% endunless %}
+          </span>
         </div>
       </div>
 

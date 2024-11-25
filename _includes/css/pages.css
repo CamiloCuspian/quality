@@ -384,6 +384,12 @@
   border-radius: var(--radius);
 }
 
+.post-content a:not(.buttons){
+  text-decoration: underline;
+  text-decoration-thickness: 2.4px;
+  text-underline-offset: 4px;
+}
+
 .porcent div {
   width: min(100%, 150px);
 }
