@@ -6,9 +6,6 @@ layout: null
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-
-  {% assign collections_to_process = "" | split: "" %}
-  {% assign collections_to_process = collections_to_process | push: site.specialized | push: site.commercial | push: site.residential | push: site.areas | push: site.posts %}
   
   <!-- Home page -->
   <url>
@@ -18,74 +15,117 @@ layout: null
     <priority>1.0</priority>
   </url>
 
-  <!-- Process all collections -->
-  {% for collection in collections_to_process %}
-    {% for page in collection %}
-      {% unless page.noindex or page.url contains '.xml' or page.url contains 'assets' or page.url contains '.css' %}
-        <url>
-          <loc>{{ site.url }}{{ site.baseurl }}{{ page.url }}</loc>
-          
-          {% if page.last_modified_at %}
-            <lastmod>{{ page.last_modified_at | date_to_xmlschema }}</lastmod>
-          {% elsif page.date %}
-            <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
-          {% else %}
-            <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-          {% endif %}
-
-          {% assign page_priority = '0.7' %}
-          {% if page.collection == 'posts' %}
-            {% assign page_priority = '0.6' %}
-            <changefreq>monthly</changefreq>
-          {% elsif page.collection == 'areas' %}
-            {% assign page_priority = '0.8' %}
-            <changefreq>weekly</changefreq>
-          {% elsif page.collection == 'residential' or page.collection == 'commercial' %}
-            {% assign page_priority = '0.9' %}
-            <changefreq>weekly</changefreq>
-          {% else %}
-            <changefreq>monthly</changefreq>
-          {% endif %}
-          <priority>{{ page_priority }}</priority>
-
-          {% if page.hero %}
-            <image:image>
-              <image:loc>{{ site.url }}{{ site.baseurl }}/{{ page.hero }}</image:loc>
-              <image:title>{% if page.title_hero %}{{ page.title_hero }}{% else %}{{ page.title }}{% endif %}</image:title>
-              <image:caption>{{ page.alt }}</image:caption>
-            </image:image>
-          {% endif %}
-
-          {% if page.image %}
-            <image:image>
-              <image:loc>{{ site.url }}{{ site.baseurl }}/{{ page.image }}</image:loc>
-              <image:title>{{ page.title }}</image:title>
-              <image:caption>{{ page.image_alt | default: page.alt | default: page.title }}</image:caption>
-            </image:image>
-          {% endif %}
-
-        </url>
-      {% endunless %}
-    {% endfor %}
+  <!-- Specialized Services -->
+  {% for page in site.specialized %}
+    {% unless page.noindex %}
+    <url>
+      <loc>{{ site.url }}{{ site.baseurl }}{{ page.url }}</loc>
+      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.9</priority>
+      {% if page.hero %}
+      <image:image>
+        <image:loc>{{ site.url }}{{ site.baseurl }}/{{ page.hero }}</image:loc>
+        <image:title>{{ page.title | xml_escape }}</image:title>
+        <image:caption>{{ page.alt | xml_escape }}</image:caption>
+      </image:image>
+      {% endif %}
+    </url>
+    {% endunless %}
   {% endfor %}
 
-  <!-- Individual pages -->
+  <!-- Commercial Services -->
+  {% for page in site.commercial %}
+    {% unless page.noindex %}
+    <url>
+      <loc>{{ site.url }}{{ site.baseurl }}{{ page.url }}</loc>
+      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.9</priority>
+      {% if page.hero %}
+      <image:image>
+        <image:loc>{{ site.url }}{{ site.baseurl }}/{{ page.hero }}</image:loc>
+        <image:title>{{ page.title | xml_escape }}</image:title>
+        <image:caption>{{ page.alt | xml_escape }}</image:caption>
+      </image:image>
+      {% endif %}
+    </url>
+    {% endunless %}
+  {% endfor %}
+
+  <!-- Residential Services -->
+  {% for page in site.residential %}
+    {% unless page.noindex %}
+    <url>
+      <loc>{{ site.url }}{{ site.baseurl }}{{ page.url }}</loc>
+      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.9</priority>
+      {% if page.hero %}
+      <image:image>
+        <image:loc>{{ site.url }}{{ site.baseurl }}/{{ page.hero }}</image:loc>
+        <image:title>{{ page.title | xml_escape }}</image:title>
+        <image:caption>{{ page.alt | xml_escape }}</image:caption>
+      </image:image>
+      {% endif %}
+    </url>
+    {% endunless %}
+  {% endfor %}
+
+  <!-- Service Areas -->
+  {% for page in site.areas %}
+    {% unless page.noindex %}
+    <url>
+      <loc>{{ site.url }}{{ site.baseurl }}{{ page.url }}</loc>
+      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+      {% if page.hero %}
+      <image:image>
+        <image:loc>{{ site.url }}{{ site.baseurl }}/{{ page.hero }}</image:loc>
+        <image:title>{{ page.title | xml_escape }}</image:title>
+        <image:caption>{{ page.alt | xml_escape }}</image:caption>
+      </image:image>
+      {% endif %}
+    </url>
+    {% endunless %}
+  {% endfor %}
+
+  <!-- Blog Posts -->
+  {% for post in site.posts %}
+    {% unless post.noindex %}
+    <url>
+      <loc>{{ site.url }}{{ site.baseurl }}{{ post.url }}</loc>
+      <lastmod>{% if post.last_modified_at %}{{ post.last_modified_at | date_to_xmlschema }}{% else %}{{ post.date | date_to_xmlschema }}{% endif %}</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.6</priority>
+      {% if post.hero %}
+      <image:image>
+        <image:loc>{{ site.url }}{{ site.baseurl }}/{{ post.hero }}</image:loc>
+        <image:title>{{ post.title | xml_escape }}</image:title>
+        <image:caption>{{ post.alt | xml_escape }}</image:caption>
+      </image:image>
+      {% endif %}
+    </url>
+    {% endunless %}
+  {% endfor %}
+
+  <!-- Regular Pages -->
   {% for page in site.html_pages %}
     {% unless page.noindex or page.url contains '.xml' or page.url contains 'assets' or page.url contains '.css' %}
-      <url>
-        <loc>{{ site.url }}{{ site.baseurl }}{{ page.url | replace: 'index.html', '' }}</loc>
-        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-
-        {% if page.hero %}
-          <image:image>
-            <image:loc>{{ site.url }}{{ site.baseurl }}/{{ page.hero }}</image:loc>
-            <image:title>{% if page.title_hero %}{{ page.title_hero }}{% else %}{{ page.title }}{% endif %}</image:title>
-            <image:caption>{{ page.alt }}</image:caption>
-          </image:image>
-        {% endif %}
-      </url>
+    <url>
+      <loc>{{ site.url }}{{ site.baseurl }}{{ page.url | replace: 'index.html', '' }}</loc>
+      <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+      {% if page.hero %}
+      <image:image>
+        <image:loc>{{ site.url }}{{ site.baseurl }}/{{ page.hero }}</image:loc>
+        <image:title>{{ page.title | xml_escape }}</image:title>
+        <image:caption>{{ page.alt | xml_escape }}</image:caption>
+      </image:image>
+      {% endif %}
+    </url>
     {% endunless %}
   {% endfor %}
 
