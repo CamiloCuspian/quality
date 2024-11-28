@@ -1,177 +1,92 @@
-{% comment %}schema.html{% endcomment %}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "LocalBusiness",
-      "@id": "{{ site.url }}{{ site.baseurl }}/#business",
-      "name": "{{ site.title }}",
-      "image": "{{ site.url }}{{ site.baseurl }}/img/logo-quality.avif",
-      "description": "{{ site.description }}",
-      "url": "{{ site.url }}{{ site.baseurl }}/",
-      "telephone": "{{ site.telefono }}",
-      "email": "{{ site.email }}",
-      "priceRange": "$$",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "123 Cleaning Excellence Way",
-        "addressLocality": "Columbus",
-        "addressRegion": "OH",
-        "postalCode": "43215",
-        "addressCountry": "US"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "39.9612",
-        "longitude": "-82.9988"
-      },
-      "areaServed": [
-        {
-          "@type": "City",
-          "name": "Columbus",
-          "containsPlace": [
-            {
-              "@type": "Neighborhood",
-              "name": "German Village"
-            },
-            {
-              "@type": "Neighborhood",
-              "name": "Short North"
-            },
-            {
-              "@type": "Neighborhood",
-              "name": "Victorian Village"
-            }
-          ]
-        },
-        {
-          "@type": "City",
-          "name": "Dublin"
-        },
-        {
-          "@type": "City",
-          "name": "Worthington"
-        }
-      ],
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
-      "sameAs": [
-        "{{ site.maps }}"
-      ]
-    },
-    {
-      "@type": "Organization",
-      "@id": "{{ site.url }}{{ site.baseurl }}/#organization",
-      "name": "{{ site.title }}",
-      "url": "{{ site.url }}{{ site.baseurl }}/",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "{{ site.url }}{{ site.baseurl }}/img/logo-quality.avif",
-        "width": "179",
-        "height": "75"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "{{ site.telefono }}",
-        "contactType": "customer service",
-        "areaServed": "Columbus, OH",
-        "availableLanguage": ["English", "Spanish"],
-        "contactOption": "TollFree"
-      }
-    }
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-    {% if page.layout == "post" %}
-    ,{
-      "@type": "Article",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "{{ site.url }}{{ site.baseurl }}{{ page.url }}"
-      },
-      "headline": "{{ page.title }}",
-      "description": "{{ page.description }}",
-      "image": "{{ site.url }}{{ site.baseurl }}/{{ page.hero }}",
-      "datePublished": "{{ page.date | date_to_xmlschema }}",
-      "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
-      "author": {
-        "@type": "Person",
-        "name": "{{ page.author }}"
-      },
-      "publisher": {
-        "@id": "{{ site.url }}{{ site.baseurl }}/#organization"
-      }
-    }
-    {% endif %}
+  {% assign collections_to_process = "" | split: "" %}
+  {% assign collections_to_process = collections_to_process | push: site.specialized | push: site.commercial | push: site.residential | push: site.areas | push: site.posts %}
+  
+  <!-- Home page -->
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
 
-    {% if page.layout == "service" %}
-    ,{
-      "@type": "Service",
-      "name": "{{ page.title }}",
-      "description": "{{ page.description }}",
-      "provider": {
-        "@id": "{{ site.url }}{{ site.baseurl }}/#organization"
-      },
-      "areaServed": {
-        "@type": "City",
-        "name": "Columbus"
-      },
-      "serviceType": "Cleaning Service",
-      {% if page.faqs %}
-      "mainEntity": [
-        {% for faq in page.faqs %}
-        {
-          "@type": "Question",
-          "name": "{{ faq.pregunta }}",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "{{ faq.respuesta }}"
-          }
-        }{% unless forloop.last %},{% endunless %}
-        {% endfor %}
-      ],
-      {% endif %}
-      "offers": {
-        "@type": "Offer",
-        "price": "129.00",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock"
-      }
-    }
-    {% endif %}
+  <!-- Process all collections -->
+  {% for collection in collections_to_process %}
+    {% for page in collection %}
+      {% unless page.noindex or page.url contains '.xml' or page.url contains 'assets' or page.url contains '.css' %}
+        <url>
+          <loc>{{ site.url }}{{ site.baseurl }}{{ page.url }}</loc>
+          
+          {% if page.last_modified_at %}
+            <lastmod>{{ page.last_modified_at | date_to_xmlschema }}</lastmod>
+          {% elsif page.date %}
+            <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+          {% else %}
+            <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+          {% endif %}
 
-    {% if page.layout == "category" %}
-    ,{
-      "@type": "ItemList",
-      "itemListElement": [
-      {% assign services = site[page.category] %}
-      {% for service in services %}
-        {
-          "@type": "ListItem",
-          "position": {{ forloop.index }},
-          "item": {
-            "@type": "Service",
-            "name": "{{ service.title }}",
-            "description": "{{ service.description }}",
-            "url": "{{ site.url }}{{ site.baseurl }}{{ service.url }}"
-          }
-        }{% unless forloop.last %},{% endunless %}
-      {% endfor %}
-      ]
-    }
-    {% endif %}
+          {% assign page_priority = '0.7' %}
+          {% if page.collection == 'posts' %}
+            {% assign page_priority = '0.6' %}
+            <changefreq>monthly</changefreq>
+          {% elsif page.collection == 'areas' %}
+            {% assign page_priority = '0.8' %}
+            <changefreq>weekly</changefreq>
+          {% elsif page.collection == 'residential' or page.collection == 'commercial' %}
+            {% assign page_priority = '0.9' %}
+            <changefreq>weekly</changefreq>
+          {% else %}
+            <changefreq>monthly</changefreq>
+          {% endif %}
+          <priority>{{ page_priority }}</priority>
 
-  ]
-}
-</script>
+          {% if page.hero %}
+            <image:image>
+              <image:loc>{{ site.url }}{{ site.baseurl }}/{{ page.hero }}</image:loc>
+              <image:title>{% if page.title_hero %}{{ page.title_hero }}{% else %}{{ page.title }}{% endif %}</image:title>
+              <image:caption>{{ page.alt }}</image:caption>
+            </image:image>
+          {% endif %}
+
+          {% if page.image %}
+            <image:image>
+              <image:loc>{{ site.url }}{{ site.baseurl }}/{{ page.image }}</image:loc>
+              <image:title>{{ page.title }}</image:title>
+              <image:caption>{{ page.image_alt | default: page.alt | default: page.title }}</image:caption>
+            </image:image>
+          {% endif %}
+
+        </url>
+      {% endunless %}
+    {% endfor %}
+  {% endfor %}
+
+  <!-- Individual pages -->
+  {% for page in site.html_pages %}
+    {% unless page.noindex or page.url contains '.xml' or page.url contains 'assets' or page.url contains '.css' %}
+      <url>
+        <loc>{{ site.url }}{{ site.baseurl }}{{ page.url | replace: 'index.html', '' }}</loc>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+
+        {% if page.hero %}
+          <image:image>
+            <image:loc>{{ site.url }}{{ site.baseurl }}/{{ page.hero }}</image:loc>
+            <image:title>{% if page.title_hero %}{{ page.title_hero }}{% else %}{{ page.title }}{% endif %}</image:title>
+            <image:caption>{{ page.alt }}</image:caption>
+          </image:image>
+        {% endif %}
+      </url>
+    {% endunless %}
+  {% endfor %}
+
+</urlset>
