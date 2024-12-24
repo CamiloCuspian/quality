@@ -1,28 +1,15 @@
 <!DOCTYPE html>
-<html lang="es-CO">
+<html lang="en-US">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
   <title>{{ page.title | default: site.title }}</title>
   <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   
-  <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-
-  <!-- Canonical URL -->
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-  
-  <!-- Alternate languages -->
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | absolute_url }}">
-  
-  <!-- Sitemap -->
   <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ '/sitemap.xml' | absolute_url }}">
-  
-  <!-- Language and locale -->
-  <meta property="og:locale" content="es_CO">
+  <meta property="og:locale" content="en_US">
   
   <!-- Favicon -->
   <link rel="shortcut icon" href="{{ '/img/iconified/favicon.ico' | relative_url }}" type="image/x-icon" />
@@ -37,7 +24,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="{{ /img/iconified/apple-touch-icon-180x180.png' | relative_url }}" />
   
   <!-- Theme color -->
-  <meta name="theme-color" content="#454546">
+  <meta name="theme-color" content="#008037">
   
   <!-- Generator -->
   <meta name="generator" content="Jekyll {{ jekyll.version }}">
@@ -88,6 +75,83 @@
   <link rel="preload" as="font" href="{{ 'css/fonts/montserrat-v26-latin-regular.woff2' | relative_url }}" type="font/woff2" crossorigin>
   
   <!-- CSS -->
+  <style>
+     :root {
+  --color-white: #fefefe;
+  --color-main: #008037;
+  --color-complement: #ffce00;
+  --bgr: #f3f3f3;
+  --bg-grey: #e7e7e7;
+  --color-fonts: #111313;
+  --color-btn: #005123;
+  --color-accent: #00803736;
+  --grey-1: #7c7a7a;
+  --grey-2: #495057;
+  --black: #18181a;
+
+  --shadow: rgba(0, 0, 0, 0.15) 0px 6px 20px 2px;
+  --radius: 8px;
+  --radius-cards: 12px;
+  --fuente: "Monstserrat", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: 6em;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--color-fonts);
+  font-family: var(--fuente);
+  background-color: #fdfdfd;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: none;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.12;
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: var(--color-main);
+}
+
+h2 {
+  position: relative;
+  display: inline-block;
+  font-size: clamp(2rem, 1.692rem + 1.54vw, 3rem);
+  color: var(--color-main);
+  max-width: 30ch;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background-color: var(--color-accent);
+}
+  </style>
 
   <link href="{{ 'css/styles.css' | relative_url }}" rel="stylesheet">
 
