@@ -30,13 +30,6 @@
     text-transform: capitalize;
   }
 
-  .footer__facebook{
-    width: max-content;
-    background-color: var(--color-main);
-    border: 2px solid #ffffff;
-    border-radius: var(--radius);
-    padding: 8px 8px 0;
-  }
 }
 
 .footer_legal{
