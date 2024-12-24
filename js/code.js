@@ -51,3 +51,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
   dayElement.innerHTML = message;
 });
+
+
+
+document.addEventListener('scroll', function() {
+  const postContainer = document.querySelector('.post-container');
+  
+  if (!postContainer) return;
+  
+  const socialFloat = document.querySelector('.social-float');
+  const postHeader = document.querySelector('.post-header');
+  const footer = document.querySelector('.footer');
+  
+  if (!socialFloat || !postHeader || !footer) return;
+  
+  const headerBottom = postHeader.offsetTop + postHeader.offsetHeight;
+  const footerTop = footer.offsetTop;
+  const scrollPosition = window.scrollY;
+  
+  if (scrollPosition > headerBottom && scrollPosition < footerTop - 500) {
+    socialFloat.style.opacity = '1';
+    socialFloat.style.visibility = 'visible';
+  } else {
+    socialFloat.style.opacity = '0';
+    socialFloat.style.visibility = 'hidden';
+  }
+});
