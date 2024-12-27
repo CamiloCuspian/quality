@@ -112,7 +112,7 @@ layout: null
 
   <!-- Regular Pages -->
   {% for page in site.html_pages %}
-    {% unless page.noindex or page.url contains '.xml' or page.url contains 'assets' or page.url contains '.css' %}
+    {% unless page.noindex or page.url contains '.xml' or page.url contains 'assets' or page.url contains '.css' or page.url contains '.js' %}
     <url>
       <loc>{{ site.url }}{{ site.baseurl }}{{ page.url | replace: 'index.html', '' }}</loc>
       <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
