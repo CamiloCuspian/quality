@@ -3,25 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+  <meta name="robots" content="index, follow">
+  <meta name="geo.region" content="US-OH">
+  <meta name="geo.placename" content="Columbus">
   <title>{{ page.title | default: site.title }}</title>
   <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | absolute_url }}">
   <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ '/sitemap.xml' | absolute_url }}">
   <meta property="og:locale" content="en_US">
   
   <!-- Favicon -->
-  <link rel="shortcut icon" href="{{ '/img/iconified/favicon.ico' | relative_url }}" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="{{ /img/iconified/apple-touch-icon.png' | relative_url }}" />
-  <link rel="apple-touch-icon" sizes="57x57" href="{{ /img/iconified/apple-touch-icon-57x57.png' | relative_url }}" />
-  <link rel="apple-touch-icon" sizes="72x72" href="{{ /img/iconified/apple-touch-icon-72x72.png' | relative_url }}" />
-  <link rel="apple-touch-icon" sizes="76x76" href="{{ /img/iconified/apple-touch-icon-76x76.png' | relative_url }}" />
-  <link rel="apple-touch-icon" sizes="114x114" href="{{ /img/iconified/apple-touch-icon-114x114.png' | relative_url }}" />
-  <link rel="apple-touch-icon" sizes="120x120" href="{{ /img/iconified/apple-touch-icon-120x120.png' | relative_url }}" />
-  <link rel="apple-touch-icon" sizes="144x144" href="{{ /img/iconified/apple-touch-icon-144x144.png' | relative_url }}" />
-  <link rel="apple-touch-icon" sizes="152x152" href="{{ /img/iconified/apple-touch-icon-152x152.png' | relative_url }}" />
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ /img/iconified/apple-touch-icon-180x180.png' | relative_url }}" />
+  <link rel="shortcut icon" href="{{ '/img/iconified/favicon.ico' | relative_url }}" type="image/x-icon" >
+  <link rel="apple-touch-icon" href="{{ '/img/iconified/apple-touch-icon.png' | relative_url }}" >
+  <link rel="apple-touch-icon" sizes="57x57" href="{{ '/img/iconified/apple-touch-icon-57x57.png' | relative_url }}" >
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ '/img/iconified/apple-touch-icon-72x72.png' | relative_url }}" >
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ '/img/iconified/apple-touch-icon-76x76.png' | relative_url }}" >
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ '/img/iconified/apple-touch-icon-114x114.png' | relative_url }}" >
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ '/img/iconified/apple-touch-icon-120x120.png' | relative_url }}" >
+  <link rel="apple-touch-icon" sizes="144x144" href="{{ '/img/iconified/apple-touch-icon-144x144.png' | relative_url }}" >
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ '/img/iconified/apple-touch-icon-152x152.png' | relative_url }}" >
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/img/iconified/apple-touch-icon-180x180.png' | relative_url }}" >
   
   <!-- Theme color -->
   <meta name="theme-color" content="#008037">
@@ -76,84 +78,86 @@
   
   <!-- CSS -->
   <style>
-     :root {
-  --color-white: #fefefe;
-  --color-main: #008037;
-  --color-complement: #ffce00;
-  --bgr: #f3f3f3;
-  --bg-grey: #e7e7e7;
-  --color-fonts: #111313;
-  --color-btn: #005123;
-  --color-accent: #00803736;
-  --grey-1: #7c7a7a;
-  --grey-2: #495057;
-  --black: #18181a;
+    :root {
+      --color-white: #fefefe;
+      --color-main: #008037;
+      --color-complement: #ffce00;
+      --bgr: #f3f3f3;
+      --bg-grey: #e7e7e7;
+      --color-fonts: #111313;
+      --color-btn: #005123;
+      --color-accent: #00803736;
+      --grey-1: #7c7a7a;
+      --grey-2: #495057;
+      --black: #18181a;
 
-  --shadow: rgba(0, 0, 0, 0.15) 0px 6px 20px 2px;
-  --radius: 8px;
-  --radius-cards: 12px;
-  --fuente: "Monstserrat", sans-serif;
-}
+      --shadow: rgba(0, 0, 0, 0.15) 0px 6px 20px 2px;
+      --radius: 8px;
+      --radius-cards: 12px;
+      --fuente: "Monstserrat", sans-serif;
+    }
 
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    *,
+    *::after,
+    *::before {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-html {
-  scroll-behavior: smooth;
-  -webkit-text-size-adjust: 100%;
-  scroll-padding-top: 6em;
-}
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+      scroll-padding-top: 6em;
+    }
 
-body {
-  font-size: 16px;
-  line-height: 1.8;
-  color: var(--color-fonts);
-  font-family: var(--fuente);
-  background-color: #fdfdfd;
-}
+    body {
+      font-size: 16px;
+      line-height: 1.8;
+      color: var(--color-fonts);
+      font-family: var(--fuente);
+      background-color: #fdfdfd;
+    }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  text-transform: none;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 1.12;
-  margin-bottom: 1em;
-}
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      text-transform: none;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.12;
+      margin-bottom: 1em;
+    }
 
-h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  color: var(--color-main);
-}
+    h1 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      color: var(--color-main);
+    }
 
-h2 {
-  position: relative;
-  display: inline-block;
-  font-size: clamp(2rem, 1.692rem + 1.54vw, 3rem);
-  color: var(--color-main);
-  max-width: 30ch;
-}
+    h2 {
+      position: relative;
+      display: inline-block;
+      font-size: clamp(2rem, 1.692rem + 1.54vw, 3rem);
+      color: var(--color-main);
+      max-width: 30ch;
+    }
 
-h2::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 60px;
-  height: 4px;
-  background-color: var(--color-accent);
-}
+    h2::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background-color: var(--color-accent);
+    }
   </style>
 
-  <link href="{{ 'css/styles.css' | relative_url }}" rel="stylesheet">
+  <!-- Preloads and Links -->
+  <link rel="preload" href="{{ 'css/style.css' | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ 'css/style.css' | relative_url }}"></noscript>
 
   <!-- Structured Data -->
   {% include schema.html %}
