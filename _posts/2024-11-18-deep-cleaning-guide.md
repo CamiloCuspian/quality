@@ -9,7 +9,7 @@ hero: 'img/posts/deep-cleaning-guide.avif'
 alt: "Before and after results of professional deep cleaning transformation"
 date: 2024-11-25
 author: "Angelo Torres"
-category: "cleaning-guides"
+category: "Cleaning guides"
 social_image: 'img/posts/deep-cleaning-guide-social.jpg'
 social_title: "The Deep Cleaning Truth That Columbus Cleaning Companies Don't Want You to Know"
 social_description: "Discover the professional deep cleaning system that transformed 10,000+ Columbus homes. Step-by-step guide with insider secrets revealed."

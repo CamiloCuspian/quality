@@ -31,7 +31,7 @@ redirect_from:
               {% if post.categories %}
                 <span class="post-categories">
                   {% for category in post.categories %}
-                    <a href="{{ '/blog/category/' | append: category | slugify | relative_url }}">{{ category }}</a>
+                    | {{ category }}
                   {% endfor %}
                 </span>
               {% endif %}
