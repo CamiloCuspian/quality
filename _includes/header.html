@@ -14,6 +14,12 @@
   </div>
 </header>
 
+{% when "post" %}
+<header class="wrapper bgr-hero flow header_post">
+  <h1>{{ page.h1 }}</h1>
+  <p>{{ page.excerpt }}</p>
+  <img src="{{ page.hero | relative_url }}" height="680" width="1280" loading="eager" alt="{{page.alt}}">
+</header>
 {% else %}
 <header class="header__services">
   <div class="wrapper two_columns bgr-hero">
@@ -26,7 +32,7 @@
       {% endif %}
     </div>
 
-    <img src="{{ page.hero | relative_url }}" height="600" width="600" alt="{{page.alt}}">
+    <img src="{{ page.hero | relative_url }}" height="600" width="600" alt="{{page.alt}}" loading="eager">
   </div>
 </header>
 {% endcase %}

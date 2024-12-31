@@ -60,3 +60,11 @@
     }
   }
 }
+
+.header_post{
+  display: grid;
+  text-align: center;
+  place-items: center;
+
+  img{height: auto;}
+}

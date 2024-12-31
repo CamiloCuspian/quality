@@ -22,8 +22,8 @@ redirect_from:
     <div class="three_columns">
       {% for post in paginator.posts limit:3 %}
         <div class="categories__service card__contact">
-          {% if post.image %}
-            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
+          {% if post.hero %}
+            <img src="{{ post.hero | relative_url }}" alt="{{ post.alt }}" loading="lazy">
           {% endif %}
           
           <div>
