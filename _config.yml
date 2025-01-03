@@ -1,7 +1,7 @@
 baseurl: ''
 url: 'https://qualitystandardohio.com'
 title: 'Quality Standard Ohio'
-telefono: "(614) 602-5494"
+telefono: "(614) 384-3087"
 whatsapp: "+16143843087"
 address: 2211 Dublin Rd Unit 467 Columbus, Ohio 43228
 email: "support@qualitystandardoh.com"
@@ -10,7 +10,6 @@ markdown: kramdown
 
 permalink: :slug
 
-compress_html:
   clippings: []
   comments: []
   endings: []
