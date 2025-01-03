@@ -1,69 +1,110 @@
-<!-- Archivo: _includes/cookie-banner.html -->
 <div id="cookie-banner" class="cookie-banner">
   <div class="cookie-content">
-      <p>This website uses its own and third-party cookies to improve the user experience and obtain navigation statistics. 
-          <a href="/legal/cookies/">More info</a>
-      </p>
-      <div class="cookie-buttons">
-          <button onclick="acceptCookies()" class="button-accept">Accept all</button>
-          <button onclick="rejectCookies()" class="button-reject">Only essentials</button>
-      </div>
+    <p>
+      This website uses its own and third-party cookies to improve the user
+      experience and obtain navigation statistics.
+      <a href="/legal/cookies/">More info</a>
+    </p>
+    <div class="cookie-buttons">
+      <button onclick="acceptCookies()" class="button-accept">
+        Accept all
+      </button>
+      <button onclick="rejectCookies()" class="button-reject">
+        Only essentials
+      </button>
+    </div>
   </div>
 </div>
 
 <script>
-function setCookie(name, value, days) {
-  var expires = "";
-  if (days) {
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  gtag("consent", "default", {
+    ad_storage: "denied",
+    ad_user_data: "denied",
+    ad_personalization: "denied",
+    analytics_storage: "denied",
+  });
+
+  function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
       var date = new Date();
-      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
       expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
   }
-  document.cookie = name + "=" + (value || "") + expires + "; path=/";
-}
 
-function getCookie(name) {
-  var nameEQ = name + "=";
-  var ca = document.cookie.split(';');
-  for(var i=0; i < ca.length; i++) {
+  function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(";");
+    for (var i = 0; i < ca.length; i++) {
       var c = ca[i];
-      while (c.charAt(0)==' ') c = c.substring(1,c.length);
-      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+      while (c.charAt(0) == " ") c = c.substring(1, c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
   }
-  return null;
-}
 
-function acceptCookies() {
-  setCookie('cookie-consent', 'full', 365);
-  document.getElementById('cookie-banner').style.display = 'none';
-  
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({
-      'event': 'cookieConsentFull',
-      'cookieConsent': 'accepted'
-  });
-}
+  function acceptCookies() {
+    setCookie("cookie-consent", "full", 365);
+    document.getElementById("cookie-banner").style.display = "none";
 
-function rejectCookies() {
-  setCookie('cookie-consent', 'essential', 365);
-  document.getElementById('cookie-banner').style.display = 'none';
-  
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({
-      'event': 'cookieConsentEssential',
-      'cookieConsent': 'rejected'
-  });
-}
+    gtag("consent", "update", {
+      ad_storage: "granted",
+      ad_user_data: "granted",
+      ad_personalization: "granted",
+      analytics_storage: "granted",
+    });
 
-window.onload = function() {
-  if (!getCookie('cookie-consent')) {
-      document.getElementById('cookie-banner').style.display = 'block';
-  } else {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: "cookieConsentFull",
+      cookieConsent: "accepted",
+    });
+  }
+
+  function rejectCookies() {
+    setCookie("cookie-consent", "essential", 365);
+    document.getElementById("cookie-banner").style.display = "none";
+
+    gtag("consent", "update", {
+      ad_storage: "denied",
+      ad_user_data: "denied",
+      ad_personalization: "denied",
+      analytics_storage: "denied",
+    });
+
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: "cookieConsentEssential",
+      cookieConsent: "rejected",
+    });
+  }
+
+  window.onload = function () {
+    var existingConsent = getCookie("cookie-consent");
+    if (!existingConsent) {
+      document.getElementById("cookie-banner").style.display = "block";
+    } else {
+      if (existingConsent === "full") {
+        gtag("consent", "update", {
+          ad_storage: "granted",
+          ad_user_data: "granted",
+          ad_personalization: "granted",
+          analytics_storage: "granted",
+        });
+      }
+
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({
-          'event': 'cookieConsentExisting',
-          'cookieConsent': getCookie('cookie-consent')
+        event: "cookieConsentExisting",
+        cookieConsent: existingConsent,
       });
-  }
-};
+    }
+  };
 </script>
