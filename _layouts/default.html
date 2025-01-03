@@ -3,21 +3,22 @@ layout: compress
 ---
 {% include head.html %}
 <body>
-  {% include banner.html %}
+  {% include cookie-banner.html %}
+  
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSV8QLBF"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
+  
   {% include nav.html %}
   {% include header.html %}
   {{ content }}
   {% include footer.html %}
+  
+  <!-- Cookie Consent Script -->
+  <script src="{{ '/js/consent.js' | relative_url }}" defer></script>
+  <!-- Functions Scripts -->
   <script src="{{ '/js/code.js' | relative_url }}" defer></script>
-  <!-- Código del slider -->
-<script>
-
-
-
-</script>
+  
 </body>
 </html>

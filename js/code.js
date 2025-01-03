@@ -1,5 +1,7 @@
+// WhatsApp functionality
 document.addEventListener("DOMContentLoaded",function(){var e=/iPhone|Android|iPad|iPod|Windows Phone|webOS|BlackBerry|Opera Mini|IEMobile|Mobile/i.test(navigator.userAgent),t=window.location.href,o=document.querySelectorAll("a#lead_whatsapp");o.forEach(function(o){var n="Hi! I need more info about this: "+encodeURIComponent(t),a="https://wa.me/16143843087?text="+n,r="https://web.whatsapp.com/send?phone=16143843087&text="+n;e?o.setAttribute("href",a):o.setAttribute("href",r)})});
 
+// Toggle submenu functionality
 document.addEventListener('DOMContentLoaded', () => {
   const arrows = document.querySelectorAll('.toggle-arrow');
 
@@ -19,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// Current day functionality
 document.addEventListener("DOMContentLoaded", function() {
   const dayElement = document.getElementById("current-day");
 
@@ -52,8 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
   dayElement.innerHTML = message;
 });
 
-
-
+// Social float functionality
 document.addEventListener('scroll', function() {
   const postContainer = document.querySelector('.post-container');
   
@@ -78,8 +80,7 @@ document.addEventListener('scroll', function() {
   }
 });
 
-
-
+// Slider functionality
 document.addEventListener("DOMContentLoaded", () => {
   const sliders = document.querySelectorAll('.slider-container');
   
