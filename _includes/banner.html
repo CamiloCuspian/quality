@@ -1,0 +1,69 @@
+<!-- Archivo: _includes/cookie-banner.html -->
+<div id="cookie-banner" class="cookie-banner">
+  <div class="cookie-content">
+      <p>This website uses its own and third-party cookies to improve the user experience and obtain navigation statistics. 
+          <a href="/legal/cookies/">More info</a>
+      </p>
+      <div class="cookie-buttons">
+          <button onclick="acceptCookies()" class="button-accept">Accept all</button>
+          <button onclick="rejectCookies()" class="button-reject">Only essentials</button>
+      </div>
+  </div>
+</div>
+
+<script>
+function setCookie(name, value, days) {
+  var expires = "";
+  if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      expires = "; expires=" + date.toUTCString();
+  }
+  document.cookie = name + "=" + (value || "") + expires + "; path=/";
+}
+
+function getCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for(var i=0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0)==' ') c = c.substring(1,c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+  }
+  return null;
+}
+
+function acceptCookies() {
+  setCookie('cookie-consent', 'full', 365);
+  document.getElementById('cookie-banner').style.display = 'none';
+  
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+      'event': 'cookieConsentFull',
+      'cookieConsent': 'accepted'
+  });
+}
+
+function rejectCookies() {
+  setCookie('cookie-consent', 'essential', 365);
+  document.getElementById('cookie-banner').style.display = 'none';
+  
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+      'event': 'cookieConsentEssential',
+      'cookieConsent': 'rejected'
+  });
+}
+
+window.onload = function() {
+  if (!getCookie('cookie-consent')) {
+      document.getElementById('cookie-banner').style.display = 'block';
+  } else {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+          'event': 'cookieConsentExisting',
+          'cookieConsent': getCookie('cookie-consent')
+      });
+  }
+};
+</script>
