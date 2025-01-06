@@ -184,7 +184,7 @@ When situations arise that demand immediate attention, we're ready to help maint
 
 **Your business reputation is too important to leave to chance**.
 
-CTA 2: Learn more about our comercial cleaning services
+[Learn more about our comercial cleaning services]({{'commercial-cleaning' | relative_url}} "Contact us"){:class="buttons button-secondary"}
 
 ## Why professional office cleaning isn't just about cleanliness
 
