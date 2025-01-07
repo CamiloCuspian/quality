@@ -116,7 +116,7 @@ We developed a customized cleaning schedule that:
 
 *The result? Even during their peak season, their office remained immaculate.*
 
-CTA: Take our office cleaning service in Columbus
+[Take our office cleaning service in Columbus]({{'commercial-cleaning' | relative_url}} "Contact us"){:class="buttons button-secondary"}
 
 ## Professional workspace maintenance plans that work
 
