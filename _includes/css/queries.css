@@ -21,3 +21,13 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .price-plan-item--featured {
+    transform: scale(1);
+  }
+  
+  .price-plan-item--featured:hover {
+    transform: translateY(-8px);
+  }
+}
