@@ -2,7 +2,8 @@
 .header_home {
   background-color: var(--bgr);
   box-shadow: 0 0 0 100vmax var(--bgr);
-  clip-path: inset(0-100vmax);
+  -webkit-clip-path: inset(0-100vmax);
+          clip-path: inset(0-100vmax);
 
   .wrapper {
     position: relative;

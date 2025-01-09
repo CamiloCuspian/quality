@@ -127,7 +127,8 @@
   box-shadow: var(--shadow);
 
   img{
-    object-position: top right;
+    -o-object-position: top right;
+       object-position: top right;
   }
 
   div {

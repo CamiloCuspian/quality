@@ -4,7 +4,8 @@
   font-size: 1.05rem;
   font-weight: 700;
   text-align: center;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   color: var(--negro);
   border-radius: var(--radius);
   box-sizing: border-box;

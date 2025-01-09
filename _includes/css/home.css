@@ -1,6 +1,7 @@
 .about{
   img{
-    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+    -webkit-filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+            filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
   } 
 
   .about_content{
@@ -28,7 +29,8 @@
 .services{
   background-color: var(--bg-grey);
   box-shadow: 0 0 0 100vmax var(--bg-grey);
-  clip-path: inset(0-100vmax);
+  -webkit-clip-path: inset(0-100vmax);
+          clip-path: inset(0-100vmax);
 
   .services_home{
     padding: 3em 0;
