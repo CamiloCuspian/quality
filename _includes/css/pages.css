@@ -437,3 +437,328 @@
   background: var(--color-complement);
 }
 
+/* scrool top */
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--color-main);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-to-top:hover {
+  background-color: var(--color-complement);
+  transform: translateY(-3px);
+}
+
+/* button float */
+.message-button {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: var(--color-main);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.message-button:hover {
+  background-color: var(--color-complement);
+  transform: translateY(-3px);
+}
+
+/* seccion precios */
+
+/* Renombrando las clases para evitar conflictos */
+.pricing-plans-section {
+  padding: 4em 0;
+}
+
+.pricing-plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.price-plan-item {
+  background-color: var(--color-white);
+  border-radius: var(--radius-cards);
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow);
+}
+
+.price-plan-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.price-plan-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--bg-grey);
+}
+
+.price-plan-header h3 {
+  color: var(--color-main);
+  margin-bottom: 1rem;
+}
+
+.price-amount {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-main);
+}
+
+.price-period {
+  font-size: 1rem;
+  color: var(--grey-1);
+}
+
+.price-plan-features {
+  margin: 0 0 2rem;
+}
+
+.price-plan-features li {
+  margin: 1rem 0;
+  color: var(--grey-2);
+  font-size: 1rem;
+  list-style: none;
+}
+
+.price-plan-features li::before {
+  content: "✓";
+  color: var(--color-complement);
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+.price-plan-item--featured {
+  border: 2px solid var(--color-complement);
+  transform: scale(1.05);
+}
+
+.price-plan-item--featured:hover {
+  transform: scale(1.05) translateY(-8px);
+}
+
+.price-plan-tag {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-complement);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+
+/* grid */
+
+.checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.checklist-card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-cards);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.checklist-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.checklist-card:hover .card-icon {
+  background-color: var(--color-main);
+  transform: scale(1.1);
+}
+
+.checklist-card:hover .card-icon svg {
+  color: white;
+}
+
+.card-icon {
+  width: 48px;
+  height: 48px;
+  background-color: var(--bg-grey);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.card-icon svg {
+  color: var(--color-main);
+  transition: all 0.3s ease;
+}
+
+.checklist-card h3 {
+  color: var(--color-main);
+  margin-bottom: 1.5rem;
+}
+
+.checklist-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.checklist-card li {
+  color: var(--grey-2);
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Posts Relacionados */
+.related-posts {
+  margin-top: 4rem;
+  padding: 2rem 0;
+  border-top: 1px solid var(--bg-grey);
+}
+
+/* Usamos tu clase text_center existente */
+.related-posts h2 {
+  margin-bottom: 2rem;
+  color: var(--color-main);
+}
+
+/* Usamos tu estilo de grid existente similar a .checklist-grid */
+.related-posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Usamos estilos similares a tus .card existentes */
+.related-post-card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-cards);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
+.related-post-card:hover {
+  transform: translateY(-5px);
+}
+
+.related-post-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.related-post-content {
+  padding: 1.5rem;
+}
+
+/* Usamos tus estilos de título existentes */
+.related-post-content h3 {
+  margin: 0 0 1rem 0;
+  color: var(--color-main);
+}
+
+.related-post-content a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Usamos tus variables de color existentes */
+.related-post-meta {
+  color: var(--grey-1);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.related-post-excerpt {
+  color: var(--grey-2);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.price-plan-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius-cards) var(--radius-cards) 0 0;
+  margin-bottom: 1rem;
+}
+
+.price-plan-item {
+  padding: 0;
+}
+
+.price-plan-header {
+  padding: 0 2rem;
+}
+
+.price-plan-features {
+  padding: 0 2rem;
+}
+
+.price-plan-item .buttons {
+  margin: 2rem;
+}
+
+/*  add services */
+.service-subtitle {
+  font-size: 1.2rem;
+  color: var(--grey-1);
+  margin-bottom: 0.5rem;
+}
+
+.service-price {
+  font-size: 1.5rem;
+  color: var(--color-main);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+

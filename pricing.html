@@ -30,107 +30,172 @@ redirect_from:
   <p>Choose the perfect service plan for your needs and save up to 25% with regular cleaning packages. All prices include equipment, eco-friendly supplies, and our satisfaction guarantee.</p>
 </section>
 
-<section class="cards">
+<section class="wrapper">
   <div class="wrapper">
-    <h3>Residential Cleaning Services - Regular Service Pricing</h3>
-    <div class="three_columns">
-      <div>
-        <img src="{{ 'img/small-home-cleaning.avif' | relative_url }}" width="360" height="200"
-          alt="Perfect for small homes and apartments in Columbus">
-        <p>Weekly service saves 25% per cleaning</p>
-        <h4>Small Home/Apartment (1-2 BR, 1 BA)</h4>
-        <span>From $130</span>
-        <ul>
-          <li>✓ Complete cleaning</li>
-          <li>✓ All supplies included</li>
-          <li>✓ Same team every visit</li>
+    <div class="text_center">
+      <h3>Residential Cleaning Services - Regular Service Pricing</h3>
+      <p>Choose your perfect cleaning plan tailored to your home size and needs.</p>
+    </div>
+    
+    <div class="pricing-plans-grid">
+      <!-- Studio -->
+      <div class="price-plan-item">
+        <img src="{{ 'img/small-home-cleaning.avif' | relative_url }}" width="360" height="200" alt="Perfect for studios">
+        <div class="price-plan-header">
+          <h3>Studio/1 Room</h3>
+          <p>Perfect for small spaces</p>
+          <div class="price-amount">
+            $100
+            <span class="price-period">/visit</span>
+          </div>
+        </div>
+        <ul class="price-plan-features">
+          <li>1 Bathroom</li>
+          <li>All supplies included</li>
+          <li>Same team every visit</li>
         </ul>
+        <a href="/contact" class="buttons button-main">Book Now</a>
       </div>
-      <div> 
-        <img src="{{ 'img/medium-home-cleaning.avif' | relative_url }}" width="360" height="200"
-          alt="Ideal for medium-sized homes in Columbus">
-        <p>Most popular choice for families</p>
-        <h4>Medium Home (2-3 BR, 1-2 BA)</h4>
-        <span>From $150</span>
-        <ul>
-          <li>✓ Deep cleaning options</li>
-          <li>✓ Pet-friendly service</li>
-          <li>✓ Flexible scheduling</li>
+ 
+      <!-- Small Home -->
+      <div class="price-plan-item">
+        <img src="{{ 'img/medium-home-cleaning.avif' | relative_url }}" width="360" height="200" alt="2 rooms cleaning">
+        <div class="price-plan-header">
+          <h3>Small Home</h3>
+          <p>Ideal for couples</p>
+          <div class="price-amount">
+            $120
+            <span class="price-period">/visit</span>
+          </div>
+        </div>
+        <ul class="price-plan-features">
+          <li>2 Rooms</li>
+          <li>1 Bathroom</li>
+          <li>Weekly service available</li>
         </ul>
+        <a href="/contact" class="buttons button-main">Book Now</a>
       </div>
-      <div>
-        <img src="{{ 'img/large-home-cleaning.avif' | relative_url }}" width="360" height="200"
-          alt="Comprehensive cleaning for larger Columbus homes">
-        <p>Perfect for larger family homes</p>
-        <h4>Large Home (3+ BR, 2+ BA)</h4>
-        <span>From $170</span>
-        <ul>
-          <li>✓ Custom cleaning plans</li>
-          <li>✓ Multiple teams available</li>
-          <li>✓ Priority service</li>
+ 
+      <!-- Medium Home -->
+      <div class="price-plan-item price-plan-item--featured">
+        <span class="price-plan-tag">Most Popular</span>
+        <img src="{{ 'img/medium-home-cleaning.avif' | relative_url }}" width="360" height="200" alt="2 rooms 2 baths">
+        <div class="price-plan-header">
+          <h3>Medium Home</h3>
+          <p>Most popular choice</p>
+          <div class="price-amount">
+            $140
+            <span class="price-period">/visit</span>
+          </div>
+        </div>
+        <ul class="price-plan-features">
+          <li>2 Rooms</li>
+          <li>2 Bathrooms</li>
+          <li>Flexible scheduling</li>
         </ul>
+        <a href="/contact" class="buttons button-main">Book Now</a>
+      </div>
+ 
+      <!-- Large Home -->
+      <div class="price-plan-item">
+        <img src="{{ 'img/large-home-cleaning.avif' | relative_url }}" width="360" height="200" alt="3 rooms cleaning">
+        <div class="price-plan-header">
+          <h3>Large Home</h3>
+          <p>Perfect for families</p>
+          <div class="price-amount">
+            $160
+            <span class="price-period">/visit</span>
+          </div>
+        </div>
+        <ul class="price-plan-features">
+          <li>3 Rooms</li>
+          <li>2 Bathrooms</li>
+          <li>Priority service</li>
+        </ul>
+        <a href="/contact" class="buttons button-main">Book Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="text_center">
+    <a href="/contact" class="buttons button-main">→ Save 25% on regular service</a>
+  </div>
+ </section>
+
+<section class="bgr wrapper cards__bg">
+  <div class="wrapper">
+    <div class="text_center">
+      <h3>Deep Cleaning & Special Services</h3>
+    </div>
+    
+    <div class="pricing-plans-grid">
+      <div class="price-plan-item">
+        <img src="{{ 'img/deep-cleaning-service.avif' | relative_url }}" width="360" height="200" alt="Thorough deep cleaning service">
+        <div class="price-plan-header">
+          <h3>Deep Clean (Any Size)</h3>
+          <p>Perfect for spring cleaning or reset</p>
+          <div class="price-amount">
+            From $190
+            <span class="price-period">/service</span>
+          </div>
+        </div>
+        <ul class="price-plan-features">
+          <li>Baseboards & details</li>
+          <li>Inside appliances</li>
+          <li>Window cleaning</li>
+        </ul>
+        <a href="/contact" class="buttons button-main">Book Now</a>
+      </div>
+
+      <div class="price-plan-item price-plan-item--featured">
+        <span class="price-plan-tag">Most Popular</span>
+        <img src="{{ 'img/move-cleaning-service.avif' | relative_url }}" width="360" height="200" alt="Professional move-in/out cleaning">
+        <div class="price-plan-header">
+          <h3>Move In/Out Clean</h3>
+          <p>Guaranteed deposit return</p>
+          <div class="price-amount">
+            From $210
+            <span class="price-period">/service</span>
+          </div>
+        </div>
+        <ul class="price-plan-features">
+          <li>Full property cleaning</li>
+          <li>Inspection checklist</li>
+          <li>72-hour guarantee</li>
+        </ul>
+        <a href="/contact" class="buttons button-main">Book Now</a>
+      </div>
+
+      <div class="price-plan-item">
+        <img src="{{ 'img/commercial-cleaning-service.avif' | relative_url }}" width="360" height="200" alt="Commercial cleaning solutions">
+        <div class="price-plan-header">
+          <h3>Commercial Service</h3>
+          <p>Custom commercial solutions</p>
+          <div class="price-amount">
+            Custom Quote
+            <span class="price-period">/service</span>
+          </div>
+        </div>
+        <ul class="price-plan-features">
+          <li>After-hours service</li>
+          <li>Daily/weekly plans</li>
+          <li>OSHA compliant</li>
+        </ul>
+        <a href="/contact" class="buttons button-main">Get Quote</a>
       </div>
     </div>
   </div>
   <div class="text_center">
     {% include button.html
-    text = '→ Save 25% on regular service'
+    text = '→ Get your custom quote'
     %}
-  </div>
-</section>
-
-<section class="bgr cards__bg">
-  <div class="wrapper">
-    <h3>Deep Cleaning & Special Services</h3>
-    <div class="three_columns">
-      <div>
-        <img src="{{ 'img/deep-cleaning-service.avif' | relative_url }}" width="360" height="200"
-          alt="Thorough deep cleaning service in Columbus">
-        <p>Perfect for spring cleaning or reset</p>
-        <h4>Deep Clean (Any Size)</h4>
-        <span>From $190</span>
-        <ul>
-          <li>✓ Baseboards & details</li>
-          <li>✓ Inside appliances</li>
-          <li>✓ Window cleaning</li>
-        </ul>
-      </div>
-      <div>
-        <img src="{{ 'img/move-cleaning-service.avif' | relative_url }}" width="360" height="200"
-          alt="Professional move-in/out cleaning in Columbus">
-        <p>Guaranteed deposit return</p>
-        <h4>Move In/Out Clean</h4>
-        <span>From $210</span>
-        <ul>
-          <li>✓ Full property cleaning</li>
-          <li>✓ Inspection checklist</li>
-          <li>✓ 72-hour guarantee</li>
-        </ul>
-      </div>
-      <div>
-        <img src="{{ 'img/commercial-cleaning-service.avif' | relative_url }}" width="360" height="200"
-          alt="Commercial cleaning solutions in Columbus">
-        <p>Custom commercial solutions</p>
-        <h4>Commercial Service</h4>
-        <span>Custom Quote</span>
-        <ul>
-          <li>✓ After-hours service</li>
-          <li>✓ Daily/weekly plans</li>
-          <li>✓ OSHA compliant</li>
-        </ul>
-      </div>
-    </div>
-    <div class="text_center">
-      {% include button.html
-      text = '→ Get your custom quote'
-      %}
-    </div>
   </div>
 </section>
 
 <section class="section wrapper">
   <small>Customize your cleaning experience</small>
   <h2>ADD EXTRA SERVICES</h2>
+  <p class="service-subtitle">Enhance your cleaning service with our add-ons</p>
+  <p class="service-price">All additional services $25 each</p>
 
   <div >
     <p>Enhance your regular cleaning service with our specialized add-ons. Each additional service is performed by our trained professionals using eco-friendly products and proven techniques to deliver outstanding results.</p>
@@ -186,8 +251,6 @@ redirect_from:
   </div>
   
   <div class="text_center">
-    <h3>$25</h3>
-    <h4>per service</h4>
     {% include button.html
       text = '→ Get your custom quote'
       %}
@@ -265,10 +328,10 @@ redirect_from:
   </div>
 </section>
 
-{% include faqs.html small="Common pricing questions" title="Everything you need to know about our cleaning service rates" %}
 {% include cta.html title="Book today and save up to 25% on your first clean" %}
+{% include faqs.html small="Common pricing questions" title="Everything you need to know about our cleaning service rates" %}
 
-<section class="section wrapper">
+<!-- <section class="section wrapper">
   <small>See why Columbus trusts us for cleaning</small>
   <h2>Over 10,000 five-star reviews and counting</h2>
 </section>
@@ -307,4 +370,4 @@ redirect_from:
       <p>"Quality Standard Ohio keeps our restaurant spotless with their nightly cleaning service. Their rates are competitive, and the quality is unmatched. Worth every penny."</p>
     </div>
   </div>
-</section>
+</section> -->
