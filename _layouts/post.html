@@ -60,6 +60,45 @@ layout: default
       <h2>Related Articles</h2>
     </div>
     <div class="three_columns">
+      {% assign related_posts = '' | split: '' %}
+      {% for post in site.posts %}
+        {% if post.category[0] == page.category[0] and post.url != page.url %}
+          {% assign related_posts = related_posts | push: post %}
+        {% endif %}
+      {% endfor %}
+  
+      {% if related_posts.size > 0 %}
+        {% for post in related_posts limit:3 %}
+          <div class="categories__service card__contact">
+            {% if post.hero %}
+              <img 
+                src="{{ post.hero | relative_url }}" 
+                alt="{{ post.alt }}" 
+                loading="lazy"
+                width="376"
+                height="200"
+              >
+            {% endif %}
+            <div>
+              <h3>{{ post.title | remove: '🌬️' | remove: '💼' | remove: '🏢' }}</h3>
+              <p>{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+              <a href="{{ post.url | relative_url }}" class="buttons button-secondary">Read more →</a>
+            </div>
+          </div>
+        {% endfor %}
+      {% else %}
+        <div class="text_center w-full">
+          <p>No related articles found in this category.</p>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- <div class="section wrapper bgr">
+    <div class="text_center">
+      <h2>Related Articles</h2>
+    </div>
+    <div class="three_columns">
       {% assign related_posts = site.posts | where: "category", page.category | where_exp: "post", "post.url != page.url" | limit: 3 %}
       {% for post in related_posts %}
         <div class="categories__service card__contact">
@@ -74,7 +113,7 @@ layout: default
         </div>
       {% endfor %}
     </div>
-  </div>
+  </div> -->
 
   <div class="section wrapper">
     <div class="two_columns">
@@ -94,5 +133,7 @@ layout: default
     </div>
   </div>
 </article>
+
+
 
 {% include cta.html title="Let our experts handle your cleaning needs" %}
