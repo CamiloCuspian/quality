@@ -15,38 +15,6 @@ h5 {
   letter-spacing: 0.05em;
 }
 
-p,
-li {
-  font-size: clamp(1.1rem, 1.1vw, 1.2rem);
-  max-width: 70ch;
-  margin-bottom: 1rem;
-}
-
-li {
-  list-style: none;
-  margin-left: 0.5rem;
-}
-
-a {
-  color: var(--color-btn);
-  text-decoration: none;
-  font-weight: 700;
-  transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-small {
-  font-size: 90%;
-  font-weight: 900;
-  display: block;
-}
-
-img {
-  border-style: none;
-  max-width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
 ol li {
   margin-left: 3em;
   list-style: decimal;
@@ -96,35 +64,6 @@ table th {
 table td,
 table th {
   flex: 1 0 200px;
-}
-
-.wrapper {
-  padding: 8em 0 4em;
-  width: min(calc(100% - 2rem), 1320px);
-  margin-inline: auto;
-}
-
-.flow > * + * {
-  margin-top: 1em;
-}
-
-.section {
-  display: grid;
-  gap: 2em;
-}
-
-.bgr {
-  background-color: var(--bg-grey);
-  box-shadow: 0 0 0 100vmax var(--bg-grey);
-  -webkit-clip-path: inset(0 -100vmax);
-  clip-path: inset(0 -100vmax);
-}
-
-.bgr-hero {
-  background-color: var(--bgr);
-  box-shadow: 0 0 0 100vmax var(--bgr);
-  -webkit-clip-path: inset(0 -100vmax);
-  clip-path: inset(0 -100vmax);
 }
 
 .bgr_cta {

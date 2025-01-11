@@ -24,8 +24,6 @@ layout: compress
   src: url('montserrat-v26-latin-900.woff2') format('woff2');
 }
 {% include css/universal.css %}
-{% include css/nav.css  %}
-{% include css/header.css  %}
 {% include css/buttons.css %}
 {% include css/home.css %}
 {% include css/carousel.css %}
