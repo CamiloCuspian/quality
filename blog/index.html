@@ -32,11 +32,11 @@ redirect_from:
             <div class="post-meta">
               <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
               {% if post.categories %}
-                <span class="post-categories">
-                  {% for category in post.categories %}
+              {% for category in post.categories %}
+                  <a href="/category/{{category | downcase}}" class="post-categories">
                     | {{ category }}
+                  </a>
                   {% endfor %}
-                </span>
               {% endif %}
             </div>
             <p>{{ post.excerpt | truncatewords: 25 }}</p>
