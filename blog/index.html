@@ -19,7 +19,7 @@ redirect_from:
       <h2>Latest cleaning tips & guides</h2>
       <p>Discover professional techniques and insider knowledge from Columbus's most experienced cleaning team.</p>
     </div>
-  
+    
     <div class="three_columns">
       {% for post in paginator.posts limit:3 %}
         <div class="categories__service card__contact">
@@ -43,13 +43,26 @@ redirect_from:
             <a href="{{ post.url | relative_url }}" class="buttons button-secondary">Read more →</a>
           </div>
         </div>
-      {% endfor %}
+        {% endfor %}
+      </div>
     </div>
-  </div>
 
   <div class="section wrapper bgr">
     <div class="text_center">
       <h2>More cleaning insights</h2>
+      <h3>The best cleaning categories</h3>
+      {% assign categories = site.posts | group_by: "category" %}
+      <div class="categories-container">
+        {% for category in categories %}
+          {% assign category_name = category.name | strip | remove: '["' | remove: '"]' | downcase %}
+          <a href="/category/{{ category_name | slugify }}" 
+            class="buttons button-secondary"
+            title="Ver todos los artículos de {{ category_name }}"
+            aria-label="Categoría {{ category_name }} con {{ category.items | size }} artículos">
+            {{ category_name | capitalize }} ({{ category.items | size }})
+          </a>
+        {% endfor %}
+      </div>
     </div>
 
     <div class="service-cards">

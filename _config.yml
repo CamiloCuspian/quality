@@ -35,6 +35,9 @@ collections:
   posts:
     output: true
     permalink: /blog/:slug
+  category:
+    output: true
+    permalink: /category/:name/
 
 defaults:
   - scope:

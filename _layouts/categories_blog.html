@@ -1,0 +1,69 @@
+---
+layout: default
+---
+<div class="blog-container">
+  <div class="wrapper">
+    <div class="text_center">
+      <small>Expert cleaning guides</small>
+      <h1>{{ page.category | capitalize }} articles</h1>
+      <p>Discover our comprehensive collection of <strong>professional {{ page.category | downcase }} guides</strong> and expert tips to maintain your home in perfect condition.</p>
+    </div>
+  </div>
+
+  <div class="section wrapper bgr">
+    <div class="service-cards">
+      {% assign category_posts = site.posts | where: "category", page.category %}
+      {% for post in category_posts %}
+        <article class="card">
+          {% if post.hero %}
+            <img 
+              src="{{ post.hero | relative_url }}" 
+              alt="{{ post.alt }}" 
+              class="card-image" 
+              loading="lazy"
+              width="400"
+              height="300">
+          {% endif %}
+          
+          <div class="card-content">
+            <div class="post-meta">
+              <span class="post-date">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                {{ post.date | date: "%B %d, %Y" }}
+              </span>
+            </div>
+            
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+            <a href="{{ post.url | relative_url }}" class="read-more">Read article →</a>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="section wrapper">
+    <div class="text_center">
+      <h2>Explore other categories</h2>
+      <p>Find more <strong>specialized cleaning guides</strong> and tips in our other categories</p>
+      
+      {% assign categories = site.posts | group_by: "category" %}
+      <div class="categories-container">
+        {% for category in categories %}
+          {% assign category_name = category.name | strip | remove: '["' | remove: '"]' | downcase %}
+          {% if category_name != page.category %}
+            <a href="/category/{{ category_name | slugify }}" 
+              class="buttons button-secondary"
+              title="View all {{ category_name }} articles"
+              aria-label="Category {{ category_name }} with {{ category.items | size }} articles">
+              {{ category_name | capitalize }} ({{ category.items | size }})
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+      </div>
+    </div>
+  </div>
+
+  {% include cta.html title="Get professional cleaning services today" %}
+</div>
