@@ -7,7 +7,6 @@ gem "webrick", "~> 1.8"  # Añadimos webrick explícitamente
 
 # Jekyll plugins
 group :jekyll_plugins do
-  gem "jekyll-redirect-from"
   gem "faraday-retry"
 end
 

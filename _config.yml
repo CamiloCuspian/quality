@@ -20,6 +20,8 @@ compress_html:
   startings: []
 
 collections:
+  redirects:
+    output: true
   specialized:
     output: true
     permalink: /specialized/:path
@@ -50,16 +52,3 @@ defaults:
 paginate: 10  # Número de posts por página
 paginate_path: "/blog/page/:num/"  # URL para las páginas
 
-plugins:
-  - jekyll-paginate
-  - jekyll-redirect-from
-
-# Whitelist
-whitelist:
-  - jekyll-redirect-from
-
-# Configuración de redirecciones
-redirect_from:
-  enabled: true
-  strip_index: true
-  collections: true
