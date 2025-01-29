@@ -21,15 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-document.querySelectorAll('.dropdown').forEach(dropdown => {
-  dropdown.querySelector('span').addEventListener('click', (e) => {
-    if (window.innerWidth <= 1200) {
-      e.preventDefault();
-      dropdown.classList.toggle('active');
-    }
-  });
-});
-
 document.addEventListener("DOMContentLoaded", function() {
   const dayElement = document.getElementById("current-day");
 

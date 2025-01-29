@@ -126,9 +126,9 @@
 .categories__service {
   box-shadow: var(--shadow);
 
-  img{
+  img {
     -o-object-position: top right;
-       object-position: top right;
+    object-position: top right;
   }
 
   div {
@@ -154,7 +154,6 @@
     text-underline-offset: 4px;
   }
 }
-
 
 .three_columns .card__contact {
   padding: 20px 8px;
@@ -356,16 +355,17 @@
   margin-top: 1.5em;
 }
 
-.post-content p, .post-content ul {
+.post-content p,
+.post-content ul {
   margin-bottom: 1.5em;
   line-height: 1.8;
 }
 
-.post-content li{
+.post-content li {
   margin-left: 1em;
 
-  &::marker{
-    content: '→';
+  &::marker {
+    content: "→";
   }
 }
 
@@ -385,7 +385,7 @@
   border-radius: var(--radius);
 }
 
-.post-content a:not(.buttons){
+.post-content a:not(.buttons) {
   text-decoration: underline;
   text-decoration-thickness: 2.4px;
   text-underline-offset: 4px;
@@ -428,7 +428,7 @@
   padding: 10px;
   background: white;
   border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -456,7 +456,7 @@
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
 
@@ -485,7 +485,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   transition: all 0.3s ease;
 }
@@ -605,7 +605,7 @@
 
 .checklist-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .checklist-card:hover .card-icon {
@@ -690,7 +690,7 @@
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .related-post-content {
@@ -725,7 +725,7 @@
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: var(--radius-cards) var(--radius-cards) 0 0;
   margin-bottom: 1rem;
 }
@@ -760,4 +760,17 @@
   margin-bottom: 2rem;
 }
 
+.dropdown-content .category {
+  color: var(--color-complement);
+  border-top: 1px solid var(--bg-grey);
+  margin-top: 8px;
+  padding-top: 8px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  transition: transform 0.3s ease;
+}
 
+.dropdown-content .category:hover {
+  transform: scale(1.05);
+}
