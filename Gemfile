@@ -3,7 +3,7 @@ source "https://rubygems.org"
 # Core gems
 gem "jekyll"
 gem "github-pages"
-gem "webrick", "~> 1.8"  # Añadimos webrick explícitamente
+gem "webrick", "~> 1.8"
 
 # Jekyll plugins
 group :jekyll_plugins do
