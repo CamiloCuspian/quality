@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "🚱 Columbus mold removal | Expert remediation services"
-description: "Expert mold removal and remediation in Columbus. Fast response, thorough treatment, and prevention strategies. Protect your property. Call now! 🛡️"
+title: "Columbus mold removal | Expert remediation services"
+description: "Expert mold removal and remediation in Columbus. Fast response, thorough treatment, and prevention strategies. Protect your property. Call now!"
 category: [Cleaning]
 tags: [Mold Removal, Home Services]
 h1: "What's the process to do a professional mold removal & remediation in Columbus"
