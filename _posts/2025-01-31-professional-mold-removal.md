@@ -143,7 +143,7 @@ Here's something they don't teach you in homeowner school: moisture problems usu
    - HVAC problems 
    - Appliance failures
   
-  ### Prevention strategies that actually work
+### Prevention strategies that actually work
 
 Look, I'll be straight with you - preventing mold isn't rocket science.
 
