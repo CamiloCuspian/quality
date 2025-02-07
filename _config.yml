@@ -8,6 +8,12 @@ email: "support@qualitystandardoh.com"
 
 markdown: kramdown
 
+plugins:
+  - jekyll-paginate
+
+paginate: 8
+paginate_path: "/blog/page:num/"
+
 permalink: :slug
 compress_html:
   clippings: []

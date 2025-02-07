@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "⚡ Columbus express cleaning | Same-day service available"
-description: "Need it clean ASAP? Book same-day cleaning services in Columbus. Perfect for busy professionals and last-minute needs. Quick, reliable & thorough! 🏃"
+title: "Columbus express cleaning | Same-day service available"
+description: "Need it clean ASAP? Book same-day cleaning services in Columbus. Perfect for busy professionals and last-minute needs. Quick, reliable & thorough!"
 category: [Services]
 tags: [Express Cleaning, Emergency Cleaning, Same Day Service]
 h1: "Same-day cleaning services in Columbus: Quick solutions for busy people"

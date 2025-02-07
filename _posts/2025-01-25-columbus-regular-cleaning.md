@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "📅 Columbus regular cleaning services | Custom cleaning plans"
-description: "Set up regular cleaning services in Columbus. Weekly, bi-weekly, or monthly plans available. Professional maids, consistent service, affordable rates ✨"
+title: "Columbus regular cleaning services | Custom cleaning plans"
+description: "Set up regular cleaning services in Columbus. Weekly, bi-weekly, or monthly plans available. Professional maids, consistent service, affordable rates"
 category: [Cleaning]
 tags: [Regular Cleaning, Maid Service, House Cleaning]
 h1: "Weekly & monthly cleaning services in Columbus: Find your perfect plan"

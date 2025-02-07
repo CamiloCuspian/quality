@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Columbus Pressure Washing 💦 | Expert Exterior Cleaning"
-description: "Transform your property with professional pressure washing in Columbus. Houses, driveways, decks & more. Safe, effective & guaranteed results! 🏠"
+title: "Columbus Pressure Washing | Expert Exterior Cleaning"
+description: "Transform your property with professional pressure washing in Columbus. Houses, driveways, decks & more. Safe, effective & guaranteed results!"
 category: [How-To]
 tags: [Pressure Washing, Property Maintenance, Exterior Cleaning]
 h1: "Professional pressure washing services Columbus OH"

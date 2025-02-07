@@ -4,6 +4,7 @@ source "https://rubygems.org"
 gem "jekyll"
 gem "github-pages"
 gem "webrick", "~> 1.8"
+gem "jekyll-paginate"
 
 # Jekyll plugins
 group :jekyll_plugins do
