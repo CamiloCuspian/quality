@@ -297,3 +297,5 @@ Want to learn more about keeping your facility clean and efficient? Check out ou
 Remember: A clean facility isn't just about appearance - it's about efficiency, safety, and success. Whether you handle cleaning in-house or partner with professionals, make sure you're giving it the attention it deserves.
 
 Need help with your facility's non-industrial cleaning needs? [Contact us today]({{'contact' | relative_url}}) to discover how we can help maintain the cleanliness of your office spaces and common areas while you focus on your core operations.
+
+[standard cleaning]({{'residential/regular'|relative_url}} "Algún comentario")
