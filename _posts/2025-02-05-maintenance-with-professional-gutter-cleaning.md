@@ -69,7 +69,8 @@ Remove the big stuff first. Those wet leaves? They're heavier than you think.
 Forget those fancy gutter cleaning gadgets you see on late-night TV.
 
 **What you really need:**
-A good ladder, reliable tools, and the right knowledge. Like when you're [maintaining other parts of your home]({{'blog/kitchen-and-bathroom-cleaning' | relative_url}} "Learn how to properly clean your kitchen and bathroom"), simple is often better.
+
+A good ladder, reliable tools, and the right knowledge. Like when you're [maintaining other parts of your home]({{'blog/kitchen-and-bathroom-cleaning-as-we-do' | relative_url }} "Learn how to properly clean your kitchen and bathroom"), simple is often better.
 
 Your garden hose is your best friend here. Use it to test your work.
 

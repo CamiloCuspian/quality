@@ -89,7 +89,7 @@ Here's a truth about carpet stains that most cleaning companies won't tell you:
 
 Not all stains are created equal.
 
-![Not all stains are created equal]({{'img/posts/Not-all-stains-are-created-equal.avif' | relative_url}} "Not all stains are created equal"){:width="800" height="360" loading="lazy" decoding="async"}
+![Not all stains are created equal]({{'img/posts/Not-all-stains-are-created-equal.avif'|relative_url}} "Not all stains are created equal"){:width="800" height="360" loading="lazy" decoding="async"}
 
 I learned this lesson the hard way when I first started cleaning carpets. Back then, I thought like every other cleaner - that one cleaning solution could handle everything.
 
@@ -151,7 +151,7 @@ Preventing the need for premature replacement
 
 But let me be clear about something: **this isn't about trying to sell you** on the most expensive service.
 
-In fact, sometimes **I tell clients they don't need our deep cleaning service**. Maybe a [standard cleaning]({{'residential/regular' | relative_url}} "regular home cleaning") is enough for their situation.
+In fact, sometimes **I tell clients they don't need our deep cleaning service**. Maybe a [standard cleaning]({{'residential/regular'|relative_url}} "regular home cleaning") is enough for their situation.
 
 Why would I do this?
 
@@ -190,7 +190,7 @@ This is where most carpet cleaners fail their clients.
 
 **They focus on surface** cleaning because it looks good immediately. But three weeks later? All those deep-set contaminants work their way back up, and your carpet looks dirty again.
 
-That's why we developed our [three-phase deep cleaning process]({{'deep-cleaning' | relative_url}} “Our deep cleaning solution”).
+That's why we developed our [three-phase deep cleaning process]({{ '/residential/deep-cleaning'|relative_url }} "Our deep cleaning solution").
 
 ## What makes our carpet cleaning different
 You know what frustrates me most about the carpet cleaning industry in Columbus?
@@ -203,7 +203,7 @@ Give me a break.
 
 Let me be straight with you: **not every stain can be removed**. Some carpets are too damaged to save. And the cheapest service usually ends up being the most expensive in the long run.
 
-That's why we do things differently at [Quality Standard Ohio]({{'about-us' | relative_url}} “Get to know us”).
+That's why we do things differently at [Quality Standard Ohio]({{'about-us'|relative_url}} "Get to know us").
 
 First, we actually inspect your carpet before making any promises. We test the fibers, check for damage, and identify what kind of soiling we're dealing with.
 
@@ -258,7 +258,7 @@ The real value of professional carpet cleaning isn't just in solving problems. I
 
 Think about it like dental care. You don't wait until you have a toothache to start brushing your teeth, right? The same principle applies to your carpets.
 
-This is why we created our [carpet maintenance program]({{'specialized/carpet-cleaning' | relative_url}} "professional carpet cleaning"). It's designed to keep your carpets looking great year-round, not just when there's a visible problem.
+This is why we created our [carpet maintenance program]({{'specialized/carpet-cleaning'|relative_url}} "´Professional carpet cleaning"). It's designed to keep your carpets looking great year-round, not just when there's a visible problem.
 
 ## Our quality guarantee (and why it's different)
 Let me tell you about something that happened last summer.
@@ -290,8 +290,8 @@ So here's my invitation:
 
 Let us show you what real professional carpet cleaning looks like. Let us demonstrate why so many Columbus families trust us with their homes.
 
-[Book your carpet cleaning service]({{'contact' | relative_url}} "Quality Standard Ohio contact") today and experience the difference proper carpet care can make.
+[Book your carpet cleaning service]({{'contact'|relative_url}} "Quality Standard Ohio contact") today and experience the difference proper carpet care can make.
 
-Want to learn more about our other cleaning services? [Check out our full range of specialized cleaning solutions]({{'specialized-services' | relative_url}} "Specialized cleaning services").
+Want to learn more about our other cleaning services? [Check out our full range of specialized cleaning solutions]({{'specialized-services'|relative_url}} "Specialized cleaning services").
 
 Don't let another day go by watching those stains mock you from your carpet. Let our professional team restore your carpets - and your peace of mind.
