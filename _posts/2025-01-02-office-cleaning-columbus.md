@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "💼 Columbus Office Cleaning | Professional Business Services"
-description: "Expert office cleaning services in Columbus. Daily, weekly, or custom plans. Keep your workspace professional & employees healthy. Get a quote! 🏢"
+title: "Columbus Office Cleaning | Professional Business Services"
+description: "Expert office cleaning services in Columbus. Daily, weekly, or custom plans. Keep your workspace professional & employees healthy. Get a quote!"
 category: [Cleaning]
 #tags: [Office Cleaning, Commercial Cleaning, Business Services]
 h1: "Professional Office Cleaning Services Columbus: Business Solutions"

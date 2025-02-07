@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "🛋️ Ultimate guide to upholstery cleaning | Expert tips & services"
-description: "Professional upholstery cleaning tips from Columbus experts. Learn DIY techniques plus when to trust professional furniture care. Local trusted service! 🪑"
+title: "Ultimate guide to upholstery cleaning | Expert tips & services"
+description: "Professional upholstery cleaning tips from Columbus experts. Learn DIY techniques plus when to trust professional furniture care. Local trusted service!"
 category: [How-To]
 tags: [Furniture Cleaning, Upholstery Care, Professional Cleaning, DIY Tips]
 h1: "Expert guide to furniture & upholstery cleaning: DIY tips & pro care"
