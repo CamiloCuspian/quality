@@ -161,6 +161,7 @@
   box-shadow: var(--shadow);
   border-radius: var(--radius-cards);
   overflow: hidden;
+  background-color: var(--color-white);
 
   div {
     padding: 12px;
