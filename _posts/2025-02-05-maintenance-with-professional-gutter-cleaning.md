@@ -40,11 +40,6 @@ A sturdy extension ladder, some rubber gloves, and safety glasses. Don't forget 
 
 But here's what's really important: a spotter. Get someone to hold that ladder and watch your back.
 
-{% raw %}{% include image.html 
-   url="img/ladder-safety.jpg"
-   alt="Proper ladder positioning for gutter cleaning"
-   description="Notice how the ladder extends above the gutter line? That's not just for show." %}{% endraw %}
-
 ![Proper ladder positioning for gutter cleaning]({{'img/posts/ladder-safety.avif' | relative_url}} "Notice how the ladder extends above the gutter line? That's not just for show"){:width="992" height="744" loading="lazy" decoding="async" }
 
 ## The right way to clean gutters
