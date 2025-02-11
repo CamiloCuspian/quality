@@ -45,7 +45,7 @@ collections:
     permalink: /blog/:slug
   category:
     output: true
-    permalink: /category/:name/
+    permalink: /category/:name
 
 defaults:
   - scope:

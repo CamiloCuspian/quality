@@ -94,7 +94,7 @@ The result?
 
 When businesses partner with us for office cleaning, they're not just getting a cleaning service - they're getting a complete workspace maintenance solution.
 
-Our [office cleaning service]({{'office-cleaning' | relative_url}} "Office Cleaning Columbus") starts with understanding your specific needs. 
+Our [office cleaning service]({{'office-cleaning'|relative_url}} "Office Cleaning Columbus") starts with understanding your specific needs. 
 
 Look, **every business is unique**. 
 
@@ -116,7 +116,7 @@ We developed a customized cleaning schedule that:
 
 *The result? Even during their peak season, their office remained immaculate.*
 
-[Take our office cleaning service in Columbus]({{'commercial-cleaning' | relative_url}} "Contact us"){:class="buttons button-secondary"}
+[Take our office cleaning service in Columbus]({{'commercial-cleaning'|relative_url}} "Contact us"){:class="buttons button-secondary"}
 
 ## Professional workspace maintenance plans that work
 
@@ -184,7 +184,7 @@ When situations arise that demand immediate attention, we're ready to help maint
 
 **Your business reputation is too important to leave to chance**.
 
-[Learn more about our comercial cleaning services]({{'commercial-cleaning' | relative_url}} "Contact us"){:class="buttons button-secondary"}
+[Learn more about our comercial cleaning services]({{'commercial-cleaning'|relative_url}} "Contact us"){:class="buttons button-secondary"}
 
 ## Why professional office cleaning isn't just about cleanliness
 
@@ -254,7 +254,7 @@ Your workspace speaks volumes about your business.
 
 Let us help you maintain an environment that impresses clients, motivates employees, and supports your business success.
 
-[Contact us]({{'contact' | relative_url}}) today for a customized office cleaning quote. 
+[Contact us]({{'contact'|relative_url}}) today for a customized office cleaning quote. 
 
 We'll show you why leading businesses trust us with their professional environments.
 
