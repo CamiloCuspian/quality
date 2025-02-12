@@ -5,11 +5,6 @@ description: "Expert cleaning advice and home maintenance tips from Columbus' tr
 h1: "Cleaning tips and guides"
 h2: "Latest home care advice"
 hero: 'img/servie_cleaning-columbus_ohio.avif'
-redirect_from:
-  - /blog
-  - /blog-category-cleaning-guides
-  - /cleaning-guides
-  - /blog/test
 ---
 
 <div class="blog-container">
@@ -20,13 +15,13 @@ redirect_from:
       <p>Discover professional techniques and insider knowledge from Columbus's most experienced cleaning team.</p>
     </div>
     
+
     <div class="three_columns">
       {% for post in paginator.posts limit:3 %}
         <div class="categories__service card__contact">
           {% if post.hero %}
             <img src="{{ post.hero | relative_url }}" alt="{{ post.alt }}" loading="lazy">
           {% endif %}
-          
           <div>
             <h3>{{ post.title }}</h3>
             <div class="post-meta">
@@ -95,10 +90,7 @@ redirect_from:
 
   {% if paginator.total_pages > 1 %}
     <div class="pagination">
-      {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | relative_url }}" class="previous">&laquo; Previous</a>
-      {% endif %}
-
+      
       {% for page in (1..paginator.total_pages) %}
         {% if page == paginator.page %}
           <span class="current-page">{{ page }}</span>
