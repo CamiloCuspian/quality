@@ -1,4 +1,4 @@
-# robots.txt for Quality Standard Ohio
+# robots.txt for Dra Tatiana Leal
 # {{ site.url }}{{ site.baseurl }}/
 
 # Allow legitimate search engines
@@ -76,16 +76,24 @@ Disallow: /
 # Main rules for all other bots
 User-agent: *
 Allow: /
-Allow: /blog/
-Allow: /areas/
-Allow: /residential/
-Allow: /commercial/
-Allow: /specialized/
+Allow: /es/
+Allow: /en/
+Allow: /es/blog/
+Allow: /en/blog/
+Allow: /es/tratamientos-faciales/
+Allow: /en/facial-treatments/
+Allow: /es/tratamientos-corporales/
+Allow: /en/body-treatments/
+Allow: /es/tratamientos-intimos/
+Allow: /en/intimate-treatments/
+Allow: /es/tecnologias/
+Allow: /en/technologies/
 
-# Protect sensitive areas
+# Protect sensitive areas and old URLs
 Disallow: /admin/
 Disallow: /includes/
 Disallow: /layouts/
+Disallow: /portfolio/
 Disallow: /data/
 Disallow: /wp-admin/
 Disallow: /wp-includes/
@@ -101,18 +109,24 @@ Disallow: /*.json$
 Disallow: /*.xml$
 Disallow: /cgi-bin/
 Disallow: /tmp/
+Disallow: /es_co/
+Disallow: /corporales/
+Disallow: /rejuvenecimiento-facial/
+Disallow: /ginecologia-estetica/
+Disallow: /services/
 
 # Media and resource protection
 Allow: /img/*.avif$ 
 Allow: /img/*.jpg$
 Allow: /img/*.png$
+Allow: /img/*.webp$
 Disallow: /css/
 Disallow: /js/
 Disallow: /fonts/
+Disallow: /images/
 
 # Critical files
 Allow: /sitemap.xml
-Allow: /feed.xml
 
 # Rate limiting
 Crawl-delay: 10
