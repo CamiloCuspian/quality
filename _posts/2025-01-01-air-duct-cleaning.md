@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Columbus Air Duct Cleaning | Professional HVAC Service"
-description: "Expert HVAC & duct cleaning in Columbus. Improve air quality, reduce allergens, and increase system efficiency. EPA-compliant service. Book now!"
+title: "Why & when to clean your air ducts? Columbus guide"
+description: "The truth about air duct cleaning in Columbus (no, you don't need it every month). Learn when it's really necessary and how to choose the right service."
 category: [Maintenance]
 #tags: [HVAC Cleaning, Air Duct Cleaning, Indoor Air Quality]
 h1: "Professional HVAC & Air Duct cleaning in Columbus: Why is it important?"
