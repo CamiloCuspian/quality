@@ -121,16 +121,18 @@ layout: default
         <small>Never miss a cleaning tip</small>
         <h2>Get expert advice in your inbox</h2>
         <p>Join our newsletter for professional cleaning tips, seasonal guides, and exclusive offers.</p>
-        {% include form.html %}
-      </div>
-      {% if page.author_image %}
-        <div class="author-bio">
-          <img src="{{ page.author_image }}" alt="{{ page.author }}" class="author-image">
-          <h3>About {{ page.author }}</h3>
-          <p>{{ page.author_bio }}</p>
+        <div>
+          {% include form.html %}
         </div>
-      {% endif %}
+      </div>
     </div>
+    {% if page.author_image %}
+      <div class="author-bio">
+        <img src="{{ page.author_image }}" alt="{{ page.author }}" class="author-image">
+        <h3>About {{ page.author }}</h3>
+        <p>{{ page.author_bio }}</p>
+      </div>
+    {% endif %}
   </div>
 </article>
 
