@@ -4,7 +4,7 @@ title: "The complete guide to office cleaning in Columbus"
 description: "Everything you need to know about keeping your office spotless. From daily maintenance to deep cleaning schedules. Tips from Columbus cleaning experts."
 category: [Cleaning]
 #tags: [Office Cleaning, Commercial Cleaning, Business Services]
-h1: "Professional Office Cleaning Services Columbus: Business Solutions"
+h1: "Commercial Office Cleaning Guide Columbus OH | Business Tips"
 hero: img/posts/office-cleaning.avif
 jpg: img/posts/office-cleaning.jpg
 alt: Professional office cleaning service team in Columbus Ohio

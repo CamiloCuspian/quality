@@ -4,7 +4,7 @@ title: "Why & when to clean your air ducts? Columbus guide"
 description: "The truth about air duct cleaning in Columbus (no, you don't need it every month). Learn when it's really necessary and how to choose the right service."
 category: [Maintenance]
 #tags: [HVAC Cleaning, Air Duct Cleaning, Indoor Air Quality]
-h1: "Professional HVAC & Air Duct cleaning in Columbus: Why is it important?"
+h1: "Air Duct Cleaning Guide Columbus OH | When & Why Guide"
 hero: img/posts/hvac-cleaning-columbus.avif
 jpg: img/posts/hvac-cleaning-columbus.jpg
 alt: Professional HVAC and air duct cleaning service in Columbus Ohio

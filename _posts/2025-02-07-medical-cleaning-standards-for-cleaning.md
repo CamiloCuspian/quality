@@ -4,7 +4,7 @@ title: "Medical facility cleaning Columbus: Standards your business needs"
 description: "Discover how Columbus medical cleaning standards can transform your business. Learn healthcare-level protocols that protect your employees & customers"
 category: [Cleaning]
 tags: [Medical Standards, Commercial Cleaning, Professional Standards]
-h1: "Medical facility cleaning standards Columbus: What your business should adopt"
+h1: "Medical Facility Cleaning Standards Columbus OH | Healthcare Guide"
 hero: img/posts/medical-cleaning-standards.avif
 jpg: img/posts/medical-cleaning-standards.jpg
 alt: Medical-grade cleaning standards implementation chart

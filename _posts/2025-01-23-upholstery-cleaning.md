@@ -4,7 +4,7 @@ title: "Ultimate guide to upholstery cleaning | Expert tips & services"
 description: "Professional upholstery cleaning tips from Columbus experts. Learn DIY techniques plus when to trust professional furniture care. Local trusted service!"
 category: [How-To]
 tags: [Furniture Cleaning, Upholstery Care, Professional Cleaning, DIY Tips]
-h1: "Expert guide to furniture & upholstery cleaning: DIY tips & pro care"
+h1: "Upholstery Cleaning Guide Columbus OH | Pro Tips & Methods"
 hero: img/posts/upholstery-cleaning.avif
 jpg: img/upholstery-cleaning.jpg
 alt: Step by step furniture cleaning guide and professional techniques

@@ -4,7 +4,7 @@ title: "Columbus regular cleaning services | Custom cleaning plans"
 description: "Set up regular cleaning services in Columbus. Weekly, bi-weekly, or monthly plans available. Professional maids, consistent service, affordable rates"
 category: [Cleaning]
 tags: [Regular Cleaning, Maid Service, House Cleaning]
-h1: "Weekly & monthly cleaning services in Columbus: Find your perfect plan"
+h1: "Professional House Cleaning Schedule Columbus OH | Custom Plans"
 hero: img/posts/regular-cleaning-service.avif
 jpg: img/regular-cleaning-service.jpg
 alt: Professional house cleaners maintaining a spotless home

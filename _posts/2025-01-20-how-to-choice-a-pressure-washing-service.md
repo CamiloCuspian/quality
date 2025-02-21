@@ -4,7 +4,7 @@ title: "Is pressure washing worth it? Columbus cleaning guide 💦"
 description: "Spoiler alert: it depends! Learn when to hire pressure washing in Columbus and when it's better to avoid it. Expert tips from local professionals."
 category: [How-To]
 tags: [Pressure Washing, Property Maintenance, Exterior Cleaning]
-h1: "Professional pressure washing services Columbus OH"
+h1: "Pressure Washing Guide Columbus OH | How to Choose the Best Service"
 hero: img/posts/pressure-washing.avif
 jpg: img/posts/pressure-washing.jpg
 alt: Professional pressure washing service in Columbus Ohio
