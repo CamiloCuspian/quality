@@ -4,7 +4,7 @@ title: "Columbus kitchen & bath cleaning | Deep clean experts"
 description: "Transform your kitchen & bathroom with professional deep cleaning in Columbus. Tile restoration, grout cleaning, and total sanitization. Book now!"
 category: [Cleaning]
 tags: [Kitchen Cleaning, Bathroom Cleaning, Deep Cleaning]
-h1: "How to deep clean your kitchen and bathroom like a professional"
+h1: "Kitchen & Bathroom Deep Cleaning Columbus OH | Pro Methods"
 hero: img/posts/kitchen-bath-cleaning.avif
 jpg: img/posts/kitchen-bath-cleaning.jpg
 alt: Professional deep cleaning process in kitchen and bathroom

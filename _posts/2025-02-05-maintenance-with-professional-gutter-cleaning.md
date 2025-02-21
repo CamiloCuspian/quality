@@ -4,7 +4,7 @@ title: "Columbus gutter cleaning | Professional Service"
 description: "Expert gutter cleaning in Columbus. Prevent water damage, maintain your home's integrity, and ensure proper drainage. Schedule service today!"
 category: [Maintenance]
 tags: [Gutter Cleaning, Home Care, DIY]
-h1: "Professional gutter cleaning services Columbus: Protect your home (the right way...)"
+h1: "Professional Gutter Cleaning Columbus OH | Maintenance Guide"
 hero: img/posts/gutter-guide.avif
 jpg: img/posts/gutter-guide.jpg
 alt: Step-by-step guide for proper gutter cleaning and maintenance

@@ -4,7 +4,7 @@ title: "Columbus industrial cleaning | Manufacturing specialists"
 description: "Professional industrial cleaning services in Columbus. OSHA-compliant, equipment-safe procedures, and efficient solutions. Maintain productivity!"
 category: [Cleaning]
 tags: [Industrial Cleaning, Manufacturing, Warehouse]
-h1: "Industrial & warehouse cleaning services Columbus OH"
+h1: "Industrial Cleaning Services Columbus OH | Factory & Plant Guide"
 hero: img/posts/industrial-cleaning-columbus.avif
 jpg: img/industrial-cleaning-columbus.jpg
 alt: Industrial cleaning specialist team in Columbus Ohio

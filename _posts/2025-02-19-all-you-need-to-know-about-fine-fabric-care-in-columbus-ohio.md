@@ -4,7 +4,7 @@ title: "All you need to know about fine fabric care in Columbus Ohio"
 description: "Expert care for your fine fabrics in Columbus. Specialized cleaning for delicate textiles, designer furniture, and custom upholstery. Trust the experts!"
 category: [Cleaning]
 tags: [Fine Fabric Cleaning, Upholstery Care, Designer Furniture]
-h1: "Facts about specialty fabric & fine textile cleaning in Columbus that you need to know"
+h1: "Fine Fabric Care Guide Columbus OH | Professional Tips & Services"
 hero: img/posts/fine-fabric-cleaning-columbus.avif
 jpg: img/posts/fine-fabric-cleaning-columbus.jpg
 alt: Professional fabric and textile cleaning service in Columbus Ohio

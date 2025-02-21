@@ -4,7 +4,7 @@ title: "Ultimate house cleaning guide: Tips from Columbus pros"
 description: "Want to clean like a pro? These are our best house cleaning secrets (don't tell anyone). Learn from Columbus cleaning experts or... just hire us."
 category: [Cleaning]
 #tags: [House Cleaning, Local Services]
-h1: "Columbus house cleaning services: Why local families trust us with their homes"
+h1: "Columbus House Cleaning Guide | Professional Tips & Checklist"
 hero: img/posts/cleaning-house-columbus-ohio.avif
 jpg: img/house-cleaning-columbus.jpg
 alt: Professional house cleaning service team in Columbus Ohio
