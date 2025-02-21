@@ -75,7 +75,7 @@ Ideal for:
 **The deep express**
 When you need thorough cleaning on a tight timeline. Yes, we can do deep cleaning same-day. 
 
-[Our deep cleaning process]({{'deep-cleaning' | relative_url}} "Deep cleaning service") has been optimized for speed without sacrificing quality.
+[Our deep cleaning process]({{'residential/deep-cleaning'|relative_url}} "Deep cleaning service") has been optimized for speed without sacrificing quality.
 
 **The emergency response**
 Sometimes disasters don't wait for business hours. Spills, accidents, or unexpected messes? We've got you covered with our emergency response team.
@@ -122,7 +122,7 @@ But here's what makes us different:
 
 **The secret?** We've invested in training teams specifically for rapid response situations.
 
-[Check our professional cleaning teams]({{'about-us' | relative_url}} "Learn about our team").
+[Check our professional cleaning teams]({{'about-us'|relative_url}} "Learn about our team").
 
 ## When is same-day cleaning the right choice?
 
@@ -136,7 +136,7 @@ Did your in-laws just text they're "in the area"?
 
 *We've all been there.*
 
-Our [residential cleaning service]({{'residential-cleaning' | relative_url}} "Take our residential cleaning service") can transform your home from "oh no" to "welcome in" in just hours.
+Our [residential cleaning service]({{'residential-cleaning'|relative_url}} "Take our residential cleaning service") can transform your home from "oh no" to "welcome in" in just hours.
 
 Perfect for:
 - Surprise visitors
@@ -148,7 +148,7 @@ Perfect for:
 
 That important client meeting you just learned about? Yeah, we've got you.
 
-Our [commercial cleaning service]({{'commercial-cleaning' | relative_url}} "Take our commercial cleaning service") understands business emergencies need business solutions.
+Our [commercial cleaning service]({{'commercial-cleaning'|relative_url}} "Take our commercial cleaning service") understands business emergencies need business solutions.
 
 We handle:
 - Urgent office cleanings
@@ -189,7 +189,7 @@ We've mapped out the most efficient cleaning patterns for every type of space. N
 
 Ready for that emergency rescue? Here's how simple it is:
 
-1. [Call us]({{'contact' | relative_url}} "Contact us") - Tell us your situation
+1. [Call us]({{'contact'|relative_url}} "Contact us") - Tell us your situation
 2. Get an instant quote - No hidden fees
 3. We arrive ready to work - Usually within 2 hours
 
@@ -213,9 +213,9 @@ We've handled thousands of express cleaning jobs. From "my landlord is coming in
 
 That's why we can confidently say: **If it can be cleaned today, we'll clean it today.**
 
-Want regular cleaning to avoid emergencies? Check out our [scheduled cleaning services]({{'regular' | relative_url}} "Regular cleaning service").
+Want regular cleaning to avoid emergencies? Check out our [scheduled cleaning services]({{'residential/regular'|relative_url}} "Regular cleaning service").
 
-Need it clean NOW? [Schedule your express cleaning now!]({{'contact' | relative_url}} "Contact us") - We're ready to help.
+Need it clean NOW? [Schedule your express cleaning now!]({{'contact'|relative_url}} "Contact us") - We're ready to help.
 
 Remember: Sometimes the best solution isn't the cheapest or the fastest - it's the one that actually solves your problem.
 

@@ -29,7 +29,7 @@ That innocent-looking water stain or that "harmless" musty odor?
 
 They're usually the tip of a much bigger problem.
 
-![Professional mold inspection in Columbus basement]({{'img/mold-inspection-columbus.jpg' | relative_url}} "Expert checking for hidden mold"){:width="800" height="360" loading="lazy" decoding="async"}
+![Professional mold inspection in Columbus basement]({{'img/mold-inspection-columbus.jpg'|relative_url}} "Expert checking for hidden mold"){:width="800" height="360" loading="lazy" decoding="async"}
 
 And let me tell you something that might surprise you: **that dehumidifier you bought? It's like bringing a knife to a gunfight.**
 
@@ -88,7 +88,7 @@ Remember that bleach solution I mentioned earlier? Here's why it doesn't work:
 
 When you use bleach on porous surfaces like wood or drywall, you're adding moisture - exactly what mold needs to thrive.
 
-![Hidden mold damage in Columbus home]({{'img/hidden-mold-damage.jpg' | relative_url}} "Mold damage behind drywall"){:width="800" height="360" loading="lazy" decoding="async"}
+![Hidden mold damage in Columbus home]({{'img/hidden-mold-damage.jpg'|relative_url}} "Mold damage behind drywall"){:width="800" height="360" loading="lazy" decoding="async"}
 
 ### The real dangers of ignoring mold
 

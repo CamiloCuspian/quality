@@ -26,7 +26,7 @@ But here's what made Sarah's situation different: while other cleaning services 
 
 Within two hours, her home was spotless, and she was actually excited to welcome her in-laws.
 
-That's the difference when you work with a local [house cleaning service]({{'residential-cleaning' | relative_url}} "Residential cleaning") that truly understands Columbus families.
+That's the difference when you work with a local [house cleaning service]({{'residential-cleaning'|relative_url}} "Residential cleaning") that truly understands Columbus families.
 
 You're rushing between meetings or juggling family activities?
 
@@ -84,7 +84,7 @@ When our team first cleaned her home, we showed her these issues. Not to scare h
 
 You see, every home faces unique challenges. 
 
-The historic homes in [German Village]({{'areas/german-village' | relative_url}} "German Village area service") need different care than modern condos in the [Short North]({{'areas/short-north' | relative_url}}  "Short North area service"). 
+The historic homes in [German Village]({{'areas/german-village'|relative_url}} "German Village area service") need different care than modern condos in the [Short North]({{'areas/short-north'|relative_url}}  "Short North area service"). 
 
 A family home in Upper Arlington has different needs than a professional's apartment downtown.
 
@@ -136,7 +136,7 @@ We even discovered and fixed a small mold issue behind her bathroom cabinet that
 
 *The result? Three months later, she's still texting me about how different her home feels.*
 
-[Take our house deep cleaning service]({{'residential/deep-cleaning' | relative_url}} "Deep cleaning service in Columbus"){:class="buttons button-main"}
+[Take our house deep cleaning service]({{'residential/deep-cleaning'|relative_url}} "Deep cleaning service in Columbus"){:class="buttons button-main"}
 
 ### Our signature maintenance service
 
@@ -158,7 +158,7 @@ We also understand that your time is valuable.
 
 That's why our maintenance service isn't just about cleaning - it's about maintaining your peace of mind.
 
-[Take our regular house cleaning service]({{'residential/regular' | relative_url}} "Regular cleaning service in Columbus"){:class="buttons button-main"}
+[Take our regular house cleaning service]({{'residential/regular'|relative_url}} "Regular cleaning service in Columbus"){:class="buttons button-main"}
 
 ### When you need more than just regular cleaning
 
@@ -182,12 +182,12 @@ Our specialized post-construction team worked through the evening to transform h
 
 The reception was a hit, and he didn't have to stress about cleanup.
 
-[Contac us for your home cleaning]({{'contact' | relative_url}} "Contact us"){:class="buttons button-secondary"}
+[Contac us for your home cleaning]({{'contact'|relative_url}} "Contact us"){:class="buttons button-secondary"}
 
 
 ## Our cleaning service prices (and why they reflect real value)
 
-Let me be upfront about something that's probably on your mind: [our prices]({{'pricing' | relative_url}}) aren't the lowest in Columbus.
+Let me be upfront about something that's probably on your mind: [our prices]({{'pricing'|relative_url}}) aren't the lowest in Columbus.
 
 *And there's a good reason for that.*
 
@@ -412,7 +412,7 @@ We understand these differences because we live and work here in Columbus.
 
 We've cleaned thousands of local homes, each with its own unique challenges and requirements.
 
-[Take our home cleanig service in Columbus]({{'residential-cleaning' | relative_url}} "Residential cleaning service in Columbus"){:class="buttons button-main"}
+[Take our home cleanig service in Columbus]({{'residential-cleaning'|relative_url}} "Residential cleaning service in Columbus"){:class="buttons button-main"}
 
 ### Our commitment to your satisfaction
 
@@ -444,11 +444,13 @@ Our professional care helps maintain its value while creating a healthier enviro
 
 If you're tired of cleaning services that disappoint, or if you're simply ready to reclaim your free time, we're here to help.
 
-[Book your first house cleaning service]({{'residential-cleaning' | relative_url}}) today and see why Ohio´s families trust us with their homes. 
+**Book your first house cleaning service** today and see why Ohio´s families trust us with their homes. 
+
+{% include button.html text="Schedule your clean →" %}
 
 Your satisfaction is guaranteed - if you're not completely happy with our service, we'll come back and make it right at no extra charge.
 
-*Want to learn more about our specific cleaning services?* [Check out our specialized cleaning services]({{'specialized-services' | relative_url}}).
+*Want to learn more about our specific cleaning services?* [Check out our specialized cleaning services]({{'specialized-services'|relative_url}}).
 
 Don't let another weekend be consumed by cleaning. 
 

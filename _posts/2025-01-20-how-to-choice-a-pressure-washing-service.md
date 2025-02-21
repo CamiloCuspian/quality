@@ -17,7 +17,7 @@ word_count: 1820
 time_to_read: 7
 ---
 
-Last week, I met Tom, a homeowner in [Clintonville]({{'areas/clintonville' | relative_url}}), staring frustratedly at his green-tinted siding. "I bought a pressure washer," he told me, "but after an hour, I barely cleaned one wall. And I'm pretty sure I damaged some of the vinyl."
+Last week, I met Tom, a homeowner in [Clintonville]({{'areas/clintonville'|relative_url}}), staring frustratedly at his green-tinted siding. "I bought a pressure washer," he told me, "but after an hour, I barely cleaned one wall. And I'm pretty sure I damaged some of the vinyl."
 
 I hear stories like this **every single week** in Columbus.
 
@@ -47,7 +47,7 @@ Here's what can go wrong:
 
 ### How professional pressure washing protects your investment
 
-When we [cleaned Mark's historic home in Victorian Village]({{'areas/victorian-villages' | relative_url}}), he couldn't believe the difference in our approach versus his previous attempts:
+When we [cleaned Mark's historic home in Victorian Village]({{'areas/victorian-villages'|relative_url}}), he couldn't believe the difference in our approach versus his previous attempts:
 
 | Amateur pressure washing | Professional service |
 |-------------------------|---------------------|
@@ -60,7 +60,7 @@ When we [cleaned Mark's historic home in Victorian Village]({{'areas/victorian-v
 
 ## Professional surface cleaning services: Our tried and true process
 
-Let me walk you through exactly how we transform your property with our [power washing service]({{'specialized/power-washing' | relative_url }}):
+Let me walk you through exactly how we transform your property with our [power washing service]({{'/specialized/power-washing'|relative_url}}):
 
 1. **Property assessment**
    - Surface material identification
@@ -159,8 +159,8 @@ Why? These periods offer:
 
 Whether you need your house siding refreshed, driveway cleaned, or deck restored, we're here to help. Our team brings decades of combined experience in proper pressure washing techniques for every surface type.
 
-[Contact us]({{'contact' | relative_url}}) for a free assessment and quote. We'll evaluate your property's specific needs and recommend the right cleaning approach.
+[Contact us]({{'contact'|relative_url}}) for a free assessment and quote. We'll evaluate your property's specific needs and recommend the right cleaning approach.
 
 Remember, proper pressure washing doesn't just clean - it protects your investment and enhances your property's value. Let's get it done right the first time.
 
-*Want to learn more about our exterior cleaning services? Check out our guide to [professional window cleaning]({{'window-cleaning' | relative_url}}) and [gutter maintenance]({{'gutter-cleaning' | relative_url}}).*
+*Want to learn more about our exterior cleaning services? Check out our guide to [professional window cleaning]({{'specialized/window-cleaning'|relative_url}}) and [handyman maintenance]({{'/specialized/handyman-service'|relative_url}}).*

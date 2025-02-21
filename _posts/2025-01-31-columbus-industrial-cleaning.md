@@ -23,7 +23,7 @@ You've got a 50,000 square foot warehouse that needs cleaning, and you're scratc
 
 **Trust me, you're not alone.**
 
-After a decade of providing [commercial cleaning services]({{'commercial-cleaning' | relative_url}} "Check out our commercial cleaning service") in Columbus, I've seen firsthand how overwhelming industrial cleaning can be.
+After a decade of providing [commercial cleaning services]({{'commercial-cleaning'|relative_url}} "Check out our commercial cleaning service") in Columbus, I've seen firsthand how overwhelming industrial cleaning can be.
 
 But here's the thing: whether you're managing a manufacturing plant, warehouse, or industrial facility, the principles of effective cleaning remain surprisingly simple.
 
@@ -31,7 +31,7 @@ Today, I'm going to share everything I've learned about industrial cleaning.
 
 No fluff, just practical advice that actually works.
 
-![Industrial cleaning professional using specialized equipment]({{'img/industrial-specialist-columbus.jpg' | relative_url}} "Professional industrial cleaner using OSHA-compliant equipment"){:width="800" height="360" loading="lazy" decoding="async"}
+![Industrial cleaning professional using specialized equipment]({{'img/industrial-specialist-columbus.jpg'|relative_url}} "Professional industrial cleaner using OSHA-compliant equipment"){:width="800" height="360" loading="lazy" decoding="async"}
 
 ## Industrial space cleaning solutions: A practical guide
 
@@ -53,7 +53,7 @@ Think about it: you're dealing with heavy machinery, potentially hazardous mater
 
 One wrong move, like using the wrong cleaning solution on sensitive equipment, and you could be looking at thousands in damages.
 
-![Industrial cleaning team performing deep cleaning]({{'img/industrial-deep-cleaning.jpg' | relative_url}} "Professional deep cleaning in progress"){:width="800" height="360" loading="lazy" decoding="async"}
+![Industrial cleaning team performing deep cleaning]({{'img/industrial-deep-cleaning.jpg'|relative_url}} "Professional deep cleaning in progress"){:width="800" height="360" loading="lazy" decoding="async"}
 
 ### Understanding your industrial space requirements
 
@@ -107,7 +107,7 @@ Let me put this in perspective with a practical comparison:
 
 Here's something I've learned the hard way: using the wrong tools not only makes the job harder but can actually create new problems.
 
-When we help businesses transition to professional cleaning services [(like our office cleaning service)]({{'commercial/office' | relative_url}}), one of the first things we look at is their existing cleaning equipment.
+When we help businesses transition to professional cleaning services [(like our office cleaning service)]({{'commercial/office'|relative_url}}), one of the first things we look at is their existing cleaning equipment.
 
 **Most facilities are using consumer-grade equipment for industrial-scale problems.** 
 
@@ -139,7 +139,7 @@ Using a one-size-fits-all cleaner is like trying to fix every home repair with d
 
 *Sometimes it works, but usually, it just makes things worse.*
 
-Here's what we've learned from our years of providing [specialized cleaning services]({{'specialized-services' | relative_url}}):
+Here's what we've learned from our years of providing [specialized cleaning services]({{'specialized-services'|relative_url}}):
 
 Your cleaning solutions need to match your specific challenges. For example, if you're dealing with heavy oil contamination, you need:
 
@@ -290,12 +290,12 @@ Whether you decide to handle cleaning in-house or partner with professionals, th
 
 ## Ready to elevate your facility's cleanliness?
 
-While we don't provide industrial cleaning services directly, we do offer comprehensive [commercial cleaning solutions]({{'commercial-cleaning' | relative_url}}) that might be perfect for your office areas, break rooms, and other non-industrial spaces.
+While we don't provide industrial cleaning services directly, we do offer comprehensive [commercial cleaning solutions]({{'commercial-cleaning'|relative_url}}) that might be perfect for your office areas, break rooms, and other non-industrial spaces.
 
-Want to learn more about keeping your facility clean and efficient? Check out our guide to [specialized cleaning services]({{'specialized-services' | relative_url}}) or contact us to discuss your specific needs.
+Want to learn more about keeping your facility clean and efficient? Check out our guide to [specialized cleaning services]({{'specialized-services'|relative_url}}) or contact us to discuss your specific needs.
 
 Remember: A clean facility isn't just about appearance - it's about efficiency, safety, and success. Whether you handle cleaning in-house or partner with professionals, make sure you're giving it the attention it deserves.
 
-Need help with your facility's non-industrial cleaning needs? [Contact us today]({{'contact' | relative_url}}) to discover how we can help maintain the cleanliness of your office spaces and common areas while you focus on your core operations.
+Need help with your facility's non-industrial cleaning needs? [Contact us today]({{'contact'|relative_url}}) to discover how we can help maintain the cleanliness of your office spaces and common areas while you focus on your core operations.
 
-[standard cleaning]({{'residential/regular'|relative_url}} "Algún comentario")
+{% include button.html text="Schedule your clean →" %}

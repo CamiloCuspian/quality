@@ -16,7 +16,6 @@ expertise: "15+ years in home maintenance"
 word_count: 800
 time_to_read: 4
 ---
-
 Hey, let's talk about something that probably gives you nightmares: gutter cleaning.
 
 You know that moment when you're lying in bed during a storm and hear water splashing where it shouldn't? Yeah, your gutters are crying for help.
@@ -27,7 +26,7 @@ You know that moment when you're lying in bed during a storm and hear water spla
 
 First, let me clear something up. Gutter maintenance isn't just about removing leaves.
 
-It's about protecting your entire home from water damage. Just like you take care of your home's interior with regular [cleaning]({{'residential-cleaning' | relative_url}}), your gutters need attention too.
+It's about protecting your entire home from water damage. Just like you take care of your home's interior with regular [cleaning]({{'residential-cleaning'|relative_url}}), your gutters need attention too.
 
 *Think of your gutters as your home's first line of defense.* When they fail, everything else is at risk.
 
@@ -40,7 +39,7 @@ A sturdy extension ladder, some rubber gloves, and safety glasses. Don't forget 
 
 But here's what's really important: a spotter. Get someone to hold that ladder and watch your back.
 
-![Proper ladder positioning for gutter cleaning]({{'img/posts/ladder-safety.avif' | relative_url}} "Notice how the ladder extends above the gutter line? That's not just for show"){:width="992" height="744" loading="lazy" decoding="async" }
+![Proper ladder positioning for gutter cleaning]({{'img/posts/ladder-safety.avif'|relative_url}} "Notice how the ladder extends above the gutter line? That's not just for show"){:width="992" height="744" loading="lazy" decoding="async" }
 
 ## The right way to clean gutters
 
@@ -65,7 +64,7 @@ Forget those fancy gutter cleaning gadgets you see on late-night TV.
 
 **What you really need:**
 
-A good ladder, reliable tools, and the right knowledge. Like when you're [maintaining other parts of your home]({{'blog/kitchen-and-bathroom-cleaning-as-we-do' | relative_url }} "Learn how to properly clean your kitchen and bathroom"), simple is often better.
+A good ladder, reliable tools, and the right knowledge. Like when you're [maintaining other parts of your home]({{'blog/kitchen-and-bathroom-cleaning-as-we-do'|relative_url }} "Learn how to properly clean your kitchen and bathroom"), simple is often better.
 
 Your garden hose is your best friend here. Use it to test your work.
 
@@ -77,7 +76,7 @@ Don't wait for fall. That green slime forming in your gutters? It's like a scien
 
 Check your gutters after heavy spring rains. You'll be surprised what you find up there.
 
-![Different gutter issues across seasons]({{'img/posts/seasonal-cleaning.avif' | relative_url}} "Each season brings unique challenges"){:width="992" height="744" loading="lazy" decoding="async" }
+![Different gutter issues across seasons]({{'img/posts/seasonal-cleaning.avif'|relative_url}} "Each season brings unique challenges"){:width="992" height="744" loading="lazy" decoding="async" }
 
 ### Summer maintenance is underrated
 
@@ -103,7 +102,7 @@ Ice dams form when heat escapes through your roof. The snow melts, then refreeze
 
 The solution? **Good attic insulation.** It's like a warm hat for your house.
 
-Need help with interior maintenance while you're at it? Check out our guide on [air duct cleaning]({{'blog/air-duct-cleaning' | relative_url}} "Learn how to deeply clean the ducts easily").
+Need help with interior maintenance while you're at it? Check out our guide on [air duct cleaning]({% post_url 2025-01-01-air-duct-cleaning %} "Learn how to deeply clean the ducts easily").
 
 ## Pro tips that actually work
 
@@ -133,6 +132,6 @@ Regular maintenance isn't exciting. Neither is paying for water damage repairs.
 
 If you want some help with your home cleaning and maintenance, this is how we can help you 👇...
 
-[Take our regular cleaning service]({{'residential/regular' | relative_url}} "It's worth it - I promise"){:class="buttons button-main"}
+[Take our regular cleaning service]({{'residential/regular'|relative_url}} "It's worth it - I promise"){:class="buttons button-main"}
 
 Keep your gutters clean, and your wallet will thank you later. Simple as that.

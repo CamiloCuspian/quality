@@ -17,7 +17,7 @@ layout: null
 
   <!-- Specialized Services -->
   {% for page in site.specialized %}
-    {% unless page.noindex %}
+    {% unless page.noindex or page.url contains '.js' or page.url contains '.css' or page.url contains '.xml' or page.url contains '.json' or page.url contains '.txt' or page.url contains '.md' or page.url contains 'assets/' or page.url contains 'images/' or page.url contains 'fonts/' or page.url contains 'wp-' or page.url contains 'admin' or page.url contains 'feed' %}
     <url>
       <loc>{{ site.url }}{{ site.baseurl }}{{ page.url }}</loc>
       <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
@@ -36,7 +36,7 @@ layout: null
 
   <!-- Commercial Services -->
   {% for page in site.commercial %}
-    {% unless page.noindex %}
+    {% unless page.noindex or page.url contains '.js' or page.url contains '.css' or page.url contains '.xml' or page.url contains '.json' or page.url contains '.txt' or page.url contains '.md' or page.url contains 'assets/' or page.url contains 'images/' or page.url contains 'fonts/' or page.url contains 'wp-' or page.url contains 'admin' or page.url contains 'feed' %}
     <url>
       <loc>{{ site.url }}{{ site.baseurl }}{{ page.url }}</loc>
       <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
@@ -55,7 +55,7 @@ layout: null
 
   <!-- Residential Services -->
   {% for page in site.residential %}
-    {% unless page.noindex %}
+    {% unless page.noindex or page.url contains '.js' or page.url contains '.css' or page.url contains '.xml' or page.url contains '.json' or page.url contains '.txt' or page.url contains '.md' or page.url contains 'assets/' or page.url contains 'images/' or page.url contains 'fonts/' or page.url contains 'wp-' or page.url contains 'admin' or page.url contains 'feed' %}
     <url>
       <loc>{{ site.url }}{{ site.baseurl }}{{ page.url }}</loc>
       <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
@@ -74,7 +74,7 @@ layout: null
 
   <!-- Service Areas -->
   {% for page in site.areas %}
-    {% unless page.noindex %}
+    {% unless page.noindex or page.url contains '.js' or page.url contains '.css' or page.url contains '.xml' or page.url contains '.json' or page.url contains '.txt' or page.url contains '.md' or page.url contains 'assets/' or page.url contains 'images/' or page.url contains 'fonts/' or page.url contains 'wp-' or page.url contains 'admin' or page.url contains 'feed' %}
     <url>
       <loc>{{ site.url }}{{ site.baseurl }}{{ page.url }}</loc>
       <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
@@ -93,7 +93,7 @@ layout: null
 
   <!-- Blog Posts -->
   {% for post in site.posts %}
-    {% unless post.noindex %}
+    {% unless post.noindex or post.url contains '.js' or post.url contains '.css' or post.url contains '.xml' or post.url contains '.json' or post.url contains '.txt' or post.url contains '.md' or post.url contains 'assets/' or post.url contains 'images/' or post.url contains 'fonts/' or post.url contains 'wp-' or post.url contains 'admin' or post.url contains 'feed' %}
     <url>
       <loc>{{ site.url }}{{ site.baseurl }}{{ post.url }}</loc>
       <lastmod>{% if post.last_modified_at %}{{ post.last_modified_at | date_to_xmlschema }}{% else %}{{ post.date | date_to_xmlschema }}{% endif %}</lastmod>
@@ -112,7 +112,7 @@ layout: null
 
   <!-- Regular Pages -->
   {% for page in site.html_pages %}
-    {% unless page.noindex or page.url contains '.xml' or page.url contains 'assets' or page.url contains '.css' or page.url contains '.js' %}
+    {% unless page.noindex or page.url contains '.js' or page.url contains '.css' or page.url contains '.xml' or page.url contains '.json' or page.url contains '.txt' or page.url contains '.md' or page.url contains 'assets/' or page.url contains 'images/' or page.url contains 'fonts/' or page.url contains 'wp-' or page.url contains 'admin' or page.url contains 'feed' %}
     <url>
       <loc>{{ site.url }}{{ site.baseurl }}{{ page.url | replace: 'index.html', '' }}</loc>
       <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>

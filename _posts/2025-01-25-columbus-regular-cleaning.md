@@ -57,7 +57,7 @@ You know those people who always seem to have their life together? The ones who 
 
 *Here's their secret:* They're not spending their evenings and weekends cleaning. They've outsourced that headache.
 
-![Professional cleaners maintaining a pristine home]({{'img/weekly-cleaning-service.jpg' | relative_url}} "Our weekly cleaning service keeps your home consistently spotless"){:width="800" height="360" loading="lazy" decoding="async"}
+![Professional cleaners maintaining a pristine home]({{'img/weekly-cleaning-service.jpg'|relative_url}} "Our weekly cleaning service keeps your home consistently spotless"){:width="800" height="360" loading="lazy" decoding="async"}
 
 Weekly cleaning isn't just about cleanliness. It's about:
 - Never worrying about cleaning again
@@ -73,7 +73,7 @@ It's not just half the service of weekly cleaning. It's strategically timed to m
 
 Think of it like this: You can handle the basic stuff - wiping counters, quick vacuuming. We come in every two weeks to do the heavy lifting.
 
-[Our bi-weekly service]({{'residential/regular' | relative_url}} "Check out our regular cleaning service") hits that perfect balance between professional care and value.
+[Our bi-weekly service]({{'residential/regular'|relative_url}} "Check out our regular cleaning service") hits that perfect balance between professional care and value.
 
 ## Monthly deep cleans: More than just surface cleaning
 
@@ -112,7 +112,7 @@ That antique coffee table that needs special care? We remember that.
 
 Those decorative pillows that have a specific order? Got it.
 
-Want to know how we handle other specific areas? Check out our [specialized cleaning services]({{'specialized-services' | relative_url}} "Here's what we can do for you...").
+Want to know how we handle other specific areas? Check out our [specialized cleaning services]({{'specialized-services'|relative_url}} "Here's what we can do for you...").
 
 ### Bathroom cleaning that goes beyond the basics
 
@@ -136,7 +136,7 @@ We pay special attention to:
 - Ceiling fans and light fixtures
 - All those little spots that collect dust
 
-![Detailed bedroom cleaning process]({{'img/bedroom-deep-cleaning.jpg' | relative_url}} "Creating your perfect sleep sanctuary through thorough cleaning"){:width="800" height="360" loading="lazy" decoding="async"}
+![Detailed bedroom cleaning process]({{'img/bedroom-deep-cleaning.jpg'|relative_url}} "Creating your perfect sleep sanctuary through thorough cleaning"){:width="800" height="360" loading="lazy" decoding="async"}
    
 ### The real benefits nobody talks about
 
@@ -178,7 +178,7 @@ Why? Because they learn your home. Your preferences. Your pets' names. (Yeah, we
 
 Know what's funny about cleaning? Most people notice it most when it's not done right.
 
-That's why consistency is our obsession. [Our regular clients]({{'about-us' | relative_url}} "Get to know us!") stay with us for years.
+That's why consistency is our obsession. [Our regular clients]({{'about-us'|relative_url}} "Get to know us!") stay with us for years.
 
 Why? Because we show up when we say we will. Do what we say we'll do. Every. Single. Time.
 
@@ -218,7 +218,7 @@ Maybe you've had bad experiences with cleaning services before.
 I get it. That's why we do things differently.
 
 When you're ready to try us:
-1. [Book a consultation]({{'contact' | relative_url}} "Take your service now")
+1. [Book a consultation]({{'contact'|relative_url}} "Take your service now")
 2. Tell us about your home
 3. Get a clear, detailed quote
 4. Schedule your first cleaning
@@ -241,9 +241,9 @@ You'll see a pattern:
 
 Life's too short to spend it cleaning.
 
-[Start your regular cleaning service]({{'regular-cleaning' | relative_url}} "Book your regular cleaning service ") today.
+[Start your regular cleaning service]({{'residential/regular'|relative_url}} "Book your regular cleaning service ") today.
 
-Want more info first? Check out our [deep cleaning service]({{'deep-cleaning' | relative_url}} "Regular deep cleaning") or [specialized cleaning options]({{'specialized-services' | relative_url}} "Regular specialized cleaning").
+Want more info first? Check out our [deep cleaning service]({{'residential/deep-cleaning'|relative_url}} "Regular deep cleaning") or [specialized cleaning options]({{'specialized-services'|relative_url}} "Regular specialized cleaning").
 
 Remember: Every moment you spend cleaning is a moment you could spend living.
 

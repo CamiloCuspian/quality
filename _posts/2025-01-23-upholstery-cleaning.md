@@ -37,7 +37,7 @@ And all that stuff? It's not just sitting on the surface.
 
 It's working its way deep into the fibers, breaking them down day by day.
 
-[Our upholstery cleaning service]({{'specialized/upholstery' | relative_url}} "Take our upholstery service") can help reverse this damage, but let's first look at what you can do at home.
+[Our upholstery cleaning service]({{'specialized/upholstery'|relative_url}} "Take our upholstery service") can help reverse this damage, but let's first look at what you can do at home.
 
 ### What you can do at home right now
 
@@ -146,7 +146,7 @@ Be honest - is your furniture dealing with:
 - Deep-set grime
 - Weakening fibers
 
-[Book a professional inspection]({{'contact' | relative_url}} "Get in touch with us")
+[Book a professional inspection]({{'contact'|relative_url}} "Get in touch with us")
 
 ### The real cost of waiting
 
@@ -188,7 +188,7 @@ Got a spill? Here's what to do:
 2. Don't use random cleaning products
 3. Call us if it's something serious
 
-[Emergency cleaning service]({{'contact' | relative_url}} "Get in touch with us")
+[Emergency cleaning service]({{'contact'|relative_url}} "Get in touch with us")
 
 ## Ready to restore your furniture?
 
@@ -200,10 +200,10 @@ You've got two options:
 
 Either way, your furniture needs attention now, not later.
 
-[Book your professional cleaning]({{'specialized/upholstery' | relative_url}} "Take our upholstery service")
+[Book your professional cleaning]({{'specialized/upholstery'|relative_url}} "Take our upholstery service")
 
 Remember: Good furniture isn't cheap. But replacing it is even more expensive.
 
 Don't wait until that stain becomes permanent. Take action now.
 
-Want more cleaning tips? Check out our guide on [professional air duct cleaning]({{'blog/air-duct-cleaning' | relative_url}} "Air duct cleaning in Columbus").
+Want more cleaning tips? Check out our guide on [professional air duct cleaning]({%post_url 2025-01-01-air-duct-cleaning%} "Air duct cleaning in Columbus").

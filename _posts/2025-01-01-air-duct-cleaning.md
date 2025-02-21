@@ -16,7 +16,6 @@ expertise: "15+ years providing specialized HVAC and air duct cleaning in Columb
 word_count: 2250
 time_to_read: 12
 ---
-
 Turn on your HVAC system. 
 
 Listen carefully. 
@@ -105,7 +104,7 @@ Your home functions as a complete system.
 
 It's like trying to keep a pool clean while leaves are constantly falling into it.
 
-Our [specialized cleaning services]({{'specialized-services' | relative_url}} "Our specialized cleaning services") are designed to support and maintain the benefits of your HVAC maintenance. 
+Our [specialized cleaning services]({{'specialized-services'|relative_url}} "Our specialized cleaning services") are designed to support and maintain the benefits of your HVAC maintenance. 
 
 We understand the interaction between your home's surfaces and its air quality.
 
@@ -153,7 +152,7 @@ Consider these scenarios where coordinating HVAC maintenance with professional c
 
 While we focus on providing superior cleaning services rather than HVAC maintenance, we understand the importance of both for maintaining a healthy home environment. 
 
-[Contact our team]({{'contact' | relative_url}} "Contact us!") to learn how our professional cleaning services can help maintain the benefits of your HVAC maintenance and create a cleaner, healthier living space for your family.
+[Contact our team]({{'contact'|relative_url}} "Contact us!") to learn how our professional cleaning services can help maintain the benefits of your HVAC maintenance and create a cleaner, healthier living space for your family.
 
 Remember, **good air quality isn't just about clean ducts** - **it's about maintaining a clean environment** that supports your HVAC system's efficiency. 
 

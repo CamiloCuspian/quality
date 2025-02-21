@@ -19,7 +19,7 @@ time_to_read: 6
 
 Let me guess: you've tried everything to get that stubborn grout clean.
 
-![Cleaning stubborn joints]({{'img/posts/cleaning-stubborn-joints.avif' | relative_url}} "Cleaning stubborn joints"){:width="800" height="360" loading="lazy" decoding="async"}
+![Cleaning stubborn joints]({{'img/posts/cleaning-stubborn-joints.avif'|relative_url}} "Cleaning stubborn joints"){:width="800" height="360" loading="lazy" decoding="async"}
 
 The Pinterest hacks? Failed.
 
@@ -33,7 +33,7 @@ But first, a warning: **Some of these techniques can damage your surfaces if don
 
 That's why I'll also show you exactly when to step back and 
 
-[Contáct the professionals]({{ 'contact' | relative_url }} "Contact Quality Standard Ohio!").
+[Contáct the professionals]({{'contact'|relative_url}} "Contact Quality Standard Ohio!").
 
 ## The truth about kitchen and bathroom deep cleaning
 
@@ -156,7 +156,7 @@ For tile backsplash:
 
 ### The truth about different cleaning methods
 
-![Deep bathroom cleaning]({{'img/posts/deep-bathroom-cleaning.avif' | relative_url}} "Deep bathroom cleaning"){:width="800" height="360" loading="lazy" decoding="async"}
+![Deep bathroom cleaning]({{'img/posts/deep-bathroom-cleaning.avif'|relative_url}} "Deep bathroom cleaning"){:width="800" height="360" loading="lazy" decoding="async"}
 
 Here's a real comparison of cleaning methods and their effectiveness:
 
@@ -171,7 +171,7 @@ Here's a real comparison of cleaning methods and their effectiveness:
 
 Now, let's tackle everyone's least favorite room: the bathroom.
 
-*But first, a reality check: If you have black mold, stop reading and [call us immediately]({{'contact' | relative_url}} "Contact Quality Standard Ohio!").*
+*But first, a reality check: If you have black mold, stop reading and [call us immediately]({{'contact'|relative_url}} "Contact Quality Standard Ohio!").*
 
 ### The real way to deep clean a bathroom
 
@@ -256,7 +256,7 @@ Here's what we bring that you can't get at the hardware store:
 | Professional-Grade Products | Stronger formulations | Better results, safer when used properly |
 | Specialized Tools | Gets into tight spaces | More thorough clean |
 
-[Take our deep cleaning service]({{'residential/deep-cleaning' | relative_url}} "Deep house cleaning"){:class="buttons button-main"}
+[Take our deep cleaning service]({{'residential/deep-cleaning'|relative_url}} "Deep house cleaning"){:class="buttons button-main"}
 
 ## Keep your spaces cleaner between deep cleans
 
@@ -293,11 +293,11 @@ Now you know the professional secrets to deep cleaning your kitchen and bathroom
 
 You can either:
 1. Take on the challenge yourself (and now you know how to do it right)
-2. [Let us handle it for you]({{'residential-cleaning' | relative_url}} "Take our residential cleaning service")
+2. [Let us handle it for you]({{'residential-cleaning'|relative_url}} "Take our residential cleaning service")
 
 Either way, your spaces will thank you.
 
-*Want more cleaning tips?* Check out our guide on [how to become an expert in exterior cleaning with pressure washing]({{'blog/how-to-choice-a-pressure-washing-service' | relative_url}} "You'll like it").
+*Want more cleaning tips?* Check out our guide on [how to become an expert in exterior cleaning with pressure washing]({{'blog/how-to-choice-a-pressure-washing-service'|relative_url}} "You'll like it").
 
 Remember: A clean home isn't just about appearances - it's about creating a healthy environment for you and your family.
 

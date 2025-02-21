@@ -144,10 +144,10 @@ How?
 
 Because when you clean your carpets the right way, you're not just removing stains. You're:
 
-Extending your carpet's life by years
-Maintaining your home's value
-Improving your indoor air quality
-Preventing the need for premature replacement
+- Extending your carpet's life by years
+- Maintaining your home's value
+- Improving your indoor air quality
+- Preventing the need for premature replacement
 
 But let me be clear about something: **this isn't about trying to sell you** on the most expensive service.
 
@@ -160,6 +160,7 @@ Because I've learned something important in my years of serving Columbus familie
 Take our carpet cleaning service in Columbus
 
 ## The science behind our success
+
 Let me share something that changed how I view carpet cleaning forever.
 
 Years ago, I was working with a client in the Short North - a pediatrician with two kids and a dog. She asked me a simple question that made me completely rethink our approach:
@@ -190,7 +191,7 @@ This is where most carpet cleaners fail their clients.
 
 **They focus on surface** cleaning because it looks good immediately. But three weeks later? All those deep-set contaminants work their way back up, and your carpet looks dirty again.
 
-That's why we developed our [three-phase deep cleaning process]({{ '/residential/deep-cleaning'|relative_url }} "Our deep cleaning solution").
+That's why we developed our [three-phase deep cleaning process]({{'/residential/deep-cleaning'|relative_url}} "Our deep cleaning solution").
 
 ## What makes our carpet cleaning different
 You know what frustrates me most about the carpet cleaning industry in Columbus?
@@ -216,6 +217,7 @@ When we inspected the property, we found that different rooms needed completely 
 This is the kind of attention to detail that makes the difference between a clean that lasts and one that doesn't.
 
 ## A promise about price (and why it matters)
+
 Let's talk about something that might be on your mind: cost.
 
 I'll be upfront - **we're not the cheapest carpet cleaning service in Columbus**.
@@ -226,10 +228,10 @@ When I started this business, I made a promise to myself: we would never comprom
 
 Just last month, I met with a homeowner in Dublin who had tried to save money with a discount carpet cleaner. They ended up with:
 
-Soaked carpets that took days to dry
-A musty smell that wouldn't go away
-Stains that reappeared within weeks
-Chemical residue that made their kids sneeze
+- Soaked carpets that took days to dry
+- A musty smell that wouldn't go away
+- Stains that reappeared within weeks
+- Chemical residue that made their kids sneeze
 
 In the end, they spent more trying to fix these problems than they would have paid for proper cleaning in the first place.
 
@@ -242,6 +244,7 @@ But more importantly? **You're investing in peace of mind**.
 Remember Jennifer from Bexley? After we cleaned her carpets properly, her son's asthma symptoms improved significantly. You can't put a price on that kind of result.
 
 ## Another truth about carpet maintenance
+
 Here's something that might surprise you:
 
 **The biggest enemy of your carpet** isn't dirt, stains, or even those mystery spots that appear out of nowhere.
@@ -261,6 +264,7 @@ Think about it like dental care. You don't wait until you have a toothache to st
 This is why we created our [carpet maintenance program]({{'specialized/carpet-cleaning'|relative_url}} "´Professional carpet cleaning"). It's designed to keep your carpets looking great year-round, not just when there's a visible problem.
 
 ## Our quality guarantee (and why it's different)
+
 Let me tell you about something that happened last summer.
 
 A new client called us, clearly frustrated. She had used another carpet cleaning service that offered a "satisfaction guarantee." But when the stains reappeared a week later, they wouldn't return her calls.
@@ -280,6 +284,7 @@ Why can we offer this kind of guarantee?
 Because we know our process works. We've tested it. We've refined it. We've proven it thousands of times in homes just like yours.
 
 ## Ready to experience the difference?
+
 Look, I get it. Choosing a carpet cleaning service can feel overwhelming.
 
 There are dozens of companies in Columbus promising the world. Most of them have fancy websites and big promises.

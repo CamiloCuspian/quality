@@ -16,7 +16,6 @@ expertise: "12+ years delivering premium commercial cleaning solutions"
 word_count: 1440
 time_to_read: 6
 ---
-
 Did you know the average office desk harbors **400 times more bacteria than a bathroom toilet seat**?
 
 *That's not just a shocking statistic - it's a wake-up call for every business owner.*
@@ -94,7 +93,7 @@ The result?
 
 When businesses partner with us for office cleaning, they're not just getting a cleaning service - they're getting a complete workspace maintenance solution.
 
-Our [office cleaning service]({{'office-cleaning'|relative_url}} "Office Cleaning Columbus") starts with understanding your specific needs. 
+Our [office cleaning service]({{'/commercial/office'|relative_url}} "Office Cleaning Columbus") starts with understanding your specific needs. 
 
 Look, **every business is unique**. 
 
