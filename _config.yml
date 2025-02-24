@@ -54,7 +54,3 @@ defaults:
     values:
       layout: "post"
       schema: "BlogPosting"
-
-paginate: 10  # Número de posts por página
-paginate_path: "/blog/page/:num/"  # URL para las páginas
-
