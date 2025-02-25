@@ -64,7 +64,7 @@ hero: 'img/servie_cleaning-columbus_ohio.avif'
       {% for post in paginator.posts offset:3 %}
         <div class="card">
           {% if post.image %}
-            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="card-image" loading="lazy">
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="card-image" loading="lazy" decoding="async">
           {% endif %}
           
           <div class="card-content">
@@ -114,7 +114,7 @@ hero: 'img/servie_cleaning-columbus_ohio.avif'
       <p>Join our newsletter for professional cleaning tips, seasonal guides, and exclusive offers.</p>
       {% include form.html %}
     </div>
-    <img src="{{ 'img/cleaning-tips.avif' | relative_url }}" alt="Professional cleaning tips from Quality Standard Ohio" loading="lazy">
+    <img src="{{ 'img/cleaning-tips.avif' | relative_url }}" alt="Professional cleaning tips from Quality Standard Ohio" loading="lazy" decoding="async">
   </div>
 </div>
 

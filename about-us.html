@@ -22,7 +22,7 @@ redirect_from:
     <div class="three_columns">
       {% for person in site.data.team %}
       <div class="card__contact">
-        <img src="{{ person.img | relative_url }}" width="360" height="200" alt="{{person.alt}}" loading="lazy" title="{{person.title}}">
+        <img src="{{ person.img | relative_url }}" width="360" height="200" loading="lazy" decoding="async" alt="{{person.alt}}"  title="{{person.title}}">
         <div>
           <h3>{{person.name | capitalize}}</h3>
           <p>{{person.text}}</p>
@@ -39,7 +39,7 @@ redirect_from:
 </section>
 
 <main class="two_columns wrapper about bgr">
-  <img src="{{'img/cleaning_services_about_as.avif' | relative_url}}" height="520" width="520" alt="Quality Standard Ohio's leadership team inspecting a freshly cleaned home">
+  <img src="{{'img/cleaning_services_about_as.avif' | relative_url}}" height="520" width="520" loading="lazy" decoding="async" alt="Quality Standard Ohio's leadership team inspecting a freshly cleaned home" title="Quality Standard Ohio Leadership | Inspecting a Freshly Cleaned Home">
   <div class="about_content">
     <small>Why we're different</small>
     <h2>The Quality Standard Promise</h2>
@@ -55,7 +55,7 @@ redirect_from:
 </main>
 
 <section class="two_columns wrapper about two_columns_left">
-  <img src="{{'img/cleaning_services_contact.avif' | relative_url}}" height="520" width="520" alt="Quality Standard Ohio team delivering exceptional results">
+  <img src="{{'img/cleaning_services_contact.avif' | relative_url}}" height="520" width="520" loading="lazy" decoding="async" alt="Quality Standard Ohio team delivering exceptional results" title="Quality Standard Ohio Team | Delivering Exceptional Cleaning Results">
   <div class="about_content">
     <small>Our commitment to excellence</small>
     <h2>Building lasting relationships</h2>
