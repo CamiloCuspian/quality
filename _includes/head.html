@@ -708,11 +708,7 @@ nav .icono-nav .line {
   
     <!-- Non-critical CSS -->
     <link rel="preload" href="{{ 'css/styles.css' | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preload" href="{{ 'css/services.css' | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-      <link rel="stylesheet" href="{{ 'css/styles.css' | relative_url }}">
-      <link rel="stylesheet" href="{{ 'css/services.css' | relative_url }}">
-    </noscript>
+    <noscript><link rel="stylesheet" href="{{ 'css/styles.css' | relative_url }}"></noscript>
     <!-- Structured Data -->
     {% if page.layout == "service" %}
       {% include schema.service.html %}

@@ -1,0 +1,53 @@
+<!-- _includes/breadcrumbs.html -->
+<nav aria-label="breadcrumb" class="breadcrumbs">
+  <ol vocab="https://schema.org/" typeof="BreadcrumbList">
+    <li property="itemListElement" typeof="ListItem">
+      <a property="item" typeof="WebPage" href="{{ site.url }}/">
+        <span property="name">Home</span>
+      </a>
+      <meta property="position" content="1">
+    </li>
+    
+    {% if page.service_category %}
+    <li property="itemListElement" typeof="ListItem">
+      <a property="item" typeof="WebPage" href="{{ site.url }}/{{ page.service_category | downcase }}">
+        <span property="name">{{ page.service_category }}</span>
+      </a>
+      <meta property="position" content="2">
+    </li>
+    <li property="itemListElement" typeof="ListItem">
+      <span property="name">{{ page.title | split: '|' | first | strip }}</span>
+      <meta property="position" content="3">
+    </li>
+    {% elsif page.layout == "post" %}
+    <li property="itemListElement" typeof="ListItem">
+      <a property="item" typeof="WebPage" href="{{ site.url }}/blog/">
+        <span property="name">Blog</span>
+      </a>
+      <meta property="position" content="2">
+    </li>
+    {% if page.category %}
+    <li property="itemListElement" typeof="ListItem">
+      <a property="item" typeof="WebPage" href="{{ site.url }}/category/{{ page.category[0] | downcase | replace: ' ', '-' }}">
+        <span property="name">{{ page.category[0] }}</span>
+      </a>
+      <meta property="position" content="3">
+    </li>
+    <li property="itemListElement" typeof="ListItem">
+      <span property="name">{{ page.title | split: '|' | first | strip }}</span>
+      <meta property="position" content="4">
+    </li>
+    {% else %}
+    <li property="itemListElement" typeof="ListItem">
+      <span property="name">{{ page.title | split: '|' | first | strip }}</span>
+      <meta property="position" content="3">
+    </li>
+    {% endif %}
+    {% else %}
+    <li property="itemListElement" typeof="ListItem">
+      <span property="name">{{ page.title | split: '|' | first | strip }}</span>
+      <meta property="position" content="2">
+    </li>
+    {% endif %}
+  </ol>
+</nav>

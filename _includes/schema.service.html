@@ -1,4 +1,3 @@
-<!-- _includes/schema.service.html -->
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -126,7 +125,7 @@
         "offers": {
           "@type": "AggregateOffer",
           "priceCurrency": "USD",
-          "lowPrice": "{{ page.price_low | default: '99.00' }}",
+          "lowPrice": "{{ page.price_low | default: '100.00' }}",
           "highPrice": "{{ page.price_high | default: '299.00' }}",
           "offerCount": "{{ page.offer_count | default: '3' }}",
           "offers": [
@@ -220,3 +219,4 @@
       }
     ]
   }
+</script>
