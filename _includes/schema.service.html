@@ -1,0 +1,222 @@
+<!-- _includes/schema.service.html -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "{{ site.url }}/#organization",
+        "name": "{{ site.title }}",
+        "url": "{{ site.url }}",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ 'img/logo-quality.avif' | absolute_url }}",
+          "width": 179,
+          "height": 75,
+          "caption": "{{ site.title }} logo"
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "{{ 'img/logo-quality.avif' | absolute_url }}",
+          "width": 179,
+          "height": 75
+        },
+        "description": "{{ site.description }}",
+        "foundingDate": "2010",
+        "foundingLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "{{ site.address }}",
+            "addressLocality": "Columbus",
+            "addressRegion": "OH",
+            "postalCode": "43228",
+            "addressCountry": "US"
+          }
+        },
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "{{ site.telefono }}",
+            "contactType": "customer service",
+            "areaServed": ["Columbus", "German Village", "Short North", "Victorian Village", "Dublin", "Worthington"],
+            "availableLanguage": ["English", "Spanish"],
+            "contactOption": ["TollFree", "HearingImpairedSupported"],
+            "hoursAvailable": "Mo-Su 00:00-23:59"
+          }
+        ],
+        "sameAs": [
+          "{{ site.social.facebook }}",
+          "{{ site.social.twitter }}",
+          "{{ site.social.instagram }}",
+          "{{ site.social.linkedin }}"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "{{ site.url }}/#website",
+        "url": "{{ site.url }}",
+        "name": "{{ site.title }}",
+        "description": "{{ site.description }}",
+        "publisher": {"@id": "{{ site.url }}/#organization"},
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "{{ site.url }}/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": ["LocalBusiness", "ProfessionalService", "CleaningService"],
+        "@id": "{{ page.url | absolute_url }}/#service",
+        "name": "{{ page.title }}",
+        "image": "{{ page.hero | default: page.image | absolute_url }}",
+        "description": "{{ page.description }}",
+        "url": "{{ page.url | absolute_url }}",
+        "telephone": "{{ site.telefono }}",
+        "priceRange": "{{ page.price_range | default: '$$' }}",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "{{ site.address }}",
+          "addressLocality": "Columbus",
+          "addressRegion": "OH",
+          "postalCode": "43228",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "{{ page.latitude | default: '39.9612' }}",
+          "longitude": "{{ page.longitude | default: '-82.9988' }}"
+        },
+        "areaServed": [
+          {% if page.areas_served %}
+          {% for area in page.areas_served %}
+          {
+            "@type": "City",
+            "name": "{{ area.name }}",
+            "sameAs": "{{ area.url | absolute_url }}"
+          }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+          {% else %}
+          {
+            "@type": "City",
+            "name": "Columbus",
+            "containedIn": {
+              "@type": "State",
+              "name": "Ohio"
+            }
+          }
+          {% endif %}
+        ],
+        "provider": {"@id": "{{ site.url }}/#organization"},
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "itemReviewed": {"@id": "{{ page.url | absolute_url }}/#service"},
+          "ratingValue": "{{ page.rating | default: '4.9' }}",
+          "ratingCount": "{{ page.rating_count | default: '1458' }}",
+          "reviewCount": "{{ page.review_count | default: '892' }}"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "00:00",
+            "closes": "23:59"
+          }
+        ],
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "USD",
+          "lowPrice": "{{ page.price_low | default: '99.00' }}",
+          "highPrice": "{{ page.price_high | default: '299.00' }}",
+          "offerCount": "{{ page.offer_count | default: '3' }}",
+          "offers": [
+            {% if page.service_offerings %}
+            {% for offer in page.service_offerings %}
+            {
+              "@type": "Offer",
+              "name": "{{ offer.name }}",
+              "description": "{{ offer.description }}",
+              "price": "{{ offer.price }}",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "url": "{{ page.url | absolute_url }}#pricing",
+              "validFrom": "{{ offer.valid_from | default: '2025-01-01' }}"
+            }{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+            {% else %}
+            {
+              "@type": "Offer",
+              "name": "Standard {{ page.service_type | default: 'Cleaning' }} Service",
+              "description": "Professional {{ page.service_type | default: 'cleaning' }} service in Columbus, OH",
+              "price": "149.00",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "url": "{{ page.url | absolute_url }}#pricing",
+              "validFrom": "2025-01-01"
+            }
+            {% endif %}
+          ]
+        },
+        "serviceOutput": {
+          "@type": "Thing",
+          "name": "{{ page.service_output_name | default: 'Professional Cleaning Result' }}",
+          "description": "{{ page.service_output_description | default: 'A thoroughly cleaned and sanitized space' }}"
+        }
+        {% if page.faqs %}
+        ,"mainEntity": [
+          {% for faq in page.faqs %}
+          {
+            "@type": "Question",
+            "name": "{{ faq.pregunta }}",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "{{ faq.respuesta }}"
+            }
+          }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ]
+        {% endif %}
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "{{ page.url | absolute_url }}/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "{{ site.url }}/",
+              "name": "Home"
+            }
+          },
+          {% if page.service_category %}
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "{{ site.url }}/{{ page.service_category | downcase }}",
+              "name": "{{ page.service_category }}"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@id": "{{ page.url | absolute_url }}",
+              "name": "{{ page.title | split: '|' | first | strip }}"
+            }
+          }
+          {% else %}
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "{{ page.url | absolute_url }}",
+              "name": "{{ page.title | split: '|' | first | strip }}"
+            }
+          }
+          {% endif %}
+        ]
+      }
+    ]
+  }

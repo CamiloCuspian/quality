@@ -1,10 +1,12 @@
 baseurl: ''
 url: 'https://qualitystandardohio.com'
 title: 'Quality Standard Ohio'
+description: 'Professional cleaning services in Columbus, OH. Expert residential, commercial and specialized cleaning with quality guaranteed.'
 telefono: "(614) 384-3087"
 whatsapp: "+16143843087"
 address: 2211 Dublin Rd Unit 467 Columbus, Ohio 43228
 email: "support@qualitystandardoh.com"
+emergency_phone: "(614) 384-3088"
 
 markdown: kramdown
 
@@ -54,3 +56,36 @@ defaults:
     values:
       layout: "post"
       schema: "BlogPosting"
+
+social:
+  facebook: "https://facebook.com/qualitystandardohio"
+  twitter: "https://twitter.com/qualitystandoh"
+  instagram: "https://instagram.com/qualitystandardohio"
+  linkedin: "https://linkedin.com/company/quality-standard-ohio"
+
+# SEO Global settings 
+seo:
+  default_image: 'img/quality-standard-ohio-logo.jpg'
+  default_image_width: 1200
+  default_image_height: 630
+  geo:
+    region: 'US-OH'
+    placename: 'Columbus'
+    position: '39.9612;-82.9988'
+  org:
+    name: 'Quality Standard Ohio'
+    logo: 'img/logo-quality.avif'
+    logo_width: 179
+    logo_height: 75
+  business:
+    type: 'LocalBusiness'
+    price_range: '$$'
+    opening_hours: 'Mo-Su 00:00-23:59'
+    areas_served:
+      - name: 'Columbus'
+      - name: 'German Village'
+      - name: 'Short North'
+      - name: 'Victorian Village'
+      - name: 'Dublin'
+      - name: 'Worthington'
+  default_author: 'Quality Standard Team'

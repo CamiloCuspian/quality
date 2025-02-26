@@ -15,6 +15,12 @@ h5 {
   letter-spacing: 0.05em;
 }
 
+p > a{
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2.4px;
+}
+
 ol li {
   margin-left: 3em;
   list-style: decimal;
