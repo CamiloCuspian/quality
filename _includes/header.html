@@ -5,7 +5,7 @@
   <div class="wrapper two_columns">
     <div class="header__home--text">
       <h1>Professional House Cleaning Columbus OH | Quality Standard Ohio</h1>
-      <h2>Professional house and commercial cleaning in Columbus</h2>
+      <p class="subtitulo">Professional house and commercial cleaning in Columbus</p>
       <p>Columbus' trusted cleaning service provides professional residential and commercial solutions. Schedule today!
       </p>
       {% include button.html text="Take our service →" %}
@@ -17,7 +17,7 @@
 {% when "post" %}
 <header class="wrapper bgr-hero flow header_post">
   <h1>{{ page.h1 }}</h1>
-  <p>{{ page.excerpt }}</p>
+  <p class="subtitulo">{{ page.excerpt }}</p>
   <img src="{{ page.hero | relative_url }}" height="680" width="1280" loading="eager" alt="{{page.alt}}">
 </header>
 {% else %}
