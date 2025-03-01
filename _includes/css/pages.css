@@ -299,11 +299,10 @@
 /* Paginación */
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 1em;
-  margin-top: 4em;
-  flex-wrap: wrap;
 }
 
 .pagination a,
@@ -678,20 +677,17 @@
   border-top: 1px solid var(--bg-grey);
 }
 
-/* Usamos tu clase text_center existente */
 .related-posts h2 {
   margin-bottom: 2rem;
   color: var(--color-main);
 }
 
-/* Usamos tu estilo de grid existente similar a .checklist-grid */
 .related-posts-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
 
-/* Usamos estilos similares a tus .card existentes */
 .related-post-card {
   background-color: var(--color-white);
   border-radius: var(--radius-cards);
@@ -715,7 +711,6 @@
   padding: 1.5rem;
 }
 
-/* Usamos tus estilos de título existentes */
 .related-post-content h3 {
   margin: 0 0 1rem 0;
   color: var(--color-main);
@@ -726,7 +721,6 @@
   text-decoration: none;
 }
 
-/* Usamos tus variables de color existentes */
 .related-post-meta {
   color: var(--grey-1);
   font-size: 0.9rem;
@@ -856,4 +850,32 @@
   .testimonials-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* prcessos */
+.process-flow{
+  background-image: none;
+}
+
+.process-icon span {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-main);
+}
+
+.steps > div {
+  transition: transform 0.3s ease;
+  padding: 2em 1em;
+}
+
+.steps > div:hover {
+  transform: translateY(-10px);
+}
+
+.steps > div:hover .process-icon {
+  background: var(--color-complement);
+}
+
+.steps > div:hover .process-icon span {
+  color: var(--color-white);
 }
