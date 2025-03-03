@@ -20,6 +20,7 @@ residential_cleaning_services:
     img: "img/apartment-cleaning-quality-service.avif"
     alt: "Professional apartment cleaning service in Columbus by Quality Standard Ohio"
     title_img: "Quality Standard Ohio Apartment Cleaning Service"
+  - url: "residential-cleaning"
 
 # Commercial cleaning services
 commercial_cleaning_services:
@@ -43,6 +44,7 @@ commercial_cleaning_services:
     img: "img/quality-service-restaurant-cleaning.avif"
     alt: "Restaurant cleaning service in Columbus by Quality Standard Ohio"
     title_img: "Quality Standard Ohio Restaurant Cleaning Service"
+  - url: "commercial-cleaning"
 
 # Specialized cleaning services
 specialized_cleaning_services:
@@ -66,3 +68,4 @@ specialized_cleaning_services:
     img: "img/quality-service-floor-care.avif"
     alt: "Professional floor care service in Columbus by Quality Standard Ohio"
     title_img: "Quality Standard Ohio Floor Care Service"
+  - url: "specialized-cleaning"

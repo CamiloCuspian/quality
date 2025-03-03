@@ -27,32 +27,36 @@ description: "Hello there! We are house cleaning experts in Columbus OH and you 
     <h2>Quality Standard Ohio increases your peace and reduces your stress with its cleaning services</h2>
   </div>
   
-    {% for category in site.data.services %}
-      <section class="services_home">
-        <h3>{{ category[0] | replace: '_', ' ' | capitalize }}</h3>
-        <div class="gallery-slider">
-          <div class="slider-container">
-          {% for service in category[1] %}
+  {% for category in site.data.services %}
+  <section class="services_home">
+    <h3>{{ category[0] | replace: '_', ' ' | capitalize }}</h3>
+    <div class="gallery-slider">
+      <div class="slider-container">
+        {% for service in category[1] %}
+          {% unless service.url %} <!-- Excluir la URL del bucle de servicios -->
             <article>
               <img 
-              src="{{ service.img }}" 
-              alt="{{ service.alt }}"
-              title="{{ service.title_img }}"
-              loading="lazy"
-              width="376"
-              height="200"
+                src="{{ service.img }}" 
+                alt="{{ service.alt }}"
+                title="{{ service.title_img }}"
+                loading="lazy"
+                width="376"
+                height="200"
               >
               <div class="slider-container__text">
-                <h4 >{{ service.title }}</h4>
+                <h4>{{ service.title }}</h4>
                 <p>{{ service.description }}</p>
               </div>
             </article>
-            {% endfor %}
-          </div>
-        </div>
-        <a href="{{'about-us'|relative_url}}" title="Quality Standard Ohio contact page" class="buttons button-secondary">More about {{ category[0] | replace: '_', ' ' | capitalize }} →</a>
-      </section>
-    {% endfor %}
+          {% endunless %}
+        {% endfor %}
+      </div>
+    </div>
+    <a href="{{ category[1].last.url | relative_url }}" title="Quality Standard Ohio contact page" class="buttons button-secondary">
+      More about {{ category[0] | replace: '_', ' ' | capitalize }} →
+    </a>
+  </section>
+{% endfor %}
 
   <div class="text_center flow">
     <p>Tired of inconsistent cleaning services in Columbus? Choose a <strong>house cleaning service</strong> that fits your schedule and budget with Quality Standard Ohio.
