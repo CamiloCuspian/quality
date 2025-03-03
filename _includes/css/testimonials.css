@@ -1,5 +1,10 @@
 /* Contenedor principal */
 .testimonials {
+  background-color: var(--bg-grey);
+  box-shadow: 0 0 0 100vmax var(--bg-grey);
+  -webkit-clip-path: inset(0-100vmax);
+  clip-path: inset(0-100vmax);
+  
   .wrapper {
     display: flex;
     flex-wrap: wrap;
