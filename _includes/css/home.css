@@ -2,19 +2,22 @@
   img {
     -webkit-filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
     filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+    width: min(100%, 520px);
   }
 
-  .about_content {
-    display: grid;
-    place-items: center left;
+  .about_content .benefits_item {
+    display: flex;
+    gap: 8px;
+    margin-top: 1em;
 
-    .benefits_item {
-      display: flex;
-      gap: 8px;
-
-      h3 {
-        margin-bottom: 8px;
-      }
+    cite{
+      color: var(--color-complement);
+      font-size: 1.4em;
+      margin: 12px;
+      text-decoration: underline;
+      text-indent: 4px;
+      text-decoration-thickness: 2.4px;
+      text-underline-offset: 4px;
     }
   }
 
