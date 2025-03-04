@@ -48,7 +48,7 @@ input[type="radio"] {
   bottom: 10%;
   left: 0;
   width: 100%;
-  background: rgb(21 75 38 / 60%); /* Fondo semitransparente */
+  background: rgb(21 75 38 / 60%);
   color: white;
   padding: 10px;
   text-align: center;
