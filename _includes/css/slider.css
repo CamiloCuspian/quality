@@ -34,6 +34,10 @@
           -ms-user-select: none;
               user-select: none;
     }
+     /* Permitir clics solo en los enlaces */
+  a {
+    pointer-events: auto !important;
+  }
   }
 }
 
