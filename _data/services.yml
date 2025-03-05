@@ -26,7 +26,7 @@ residential_cleaning_services:
     img: "img/apartment-cleaning-quality-service.avif"
     alt: "Professional apartment cleaning service in Columbus by Quality Standard Ohio"
     title_img: "Quality Standard Ohio Apartment Cleaning Service"
-    url_service: "residential/apartament"
+    url_service: "residential/apartment"
     url_text: "Clean apartments service"
   - url: "residential-cleaning"
 
