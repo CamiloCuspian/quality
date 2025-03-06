@@ -81,7 +81,7 @@ Monthly service isn't for everyone. But for some homes, it's perfect.
 
 | Service level | Best for | Includes |
 |--------------|----------|-----------|
-| Weekly | Busy families, pet owners | Full service, rotating deep clean tasks |
+| Weekly | Busy families, pet owners | Full service, rotating [Deep Clean Tasks]({{ '/residential/deep-cleaning' | relative_url }} "Deep Cleaning Tasks: Complete Checklist") |
 | Bi-weekly | Most households | Complete cleaning, monthly deep clean |
 | Monthly | Small homes, minimal traffic | Deep clean, detailed attention |
 
