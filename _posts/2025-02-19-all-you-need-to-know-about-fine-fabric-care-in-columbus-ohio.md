@@ -61,7 +61,7 @@ Here's what different cleaning methods actually do to your fabrics:
 
 | Method | What it Claims | What it Actually Does | Best For |
 |--------|---------------|----------------------|-----------|
-| Steam Cleaning | [Total Deep Cleaning Solution: We Clean Everything, Everywhere]({{'/blog/all-you-need-to-know-about-fine-fabric-care-in-columbus-ohio' | relative_url}} "Total Deep Cleaning Solution: We Clean Everything, Everywhere")"Deep cleans everything" | Can shrink or water-damage delicate fabrics | Synthetic fabrics only |
+| Steam Cleaning | [Deep Cleans Everything: Powerful & Effective]({{'/residential/deep-cleaning' | relative_url}} "Deep Cleans Everything: Powerful & Effective") | Can shrink or water-damage delicate fabrics | Synthetic fabrics only |
 | Dry Cleaning | "Safe for all fabrics" | Uses chemicals that can fade colors | Structured garments |
 | Low-moisture Extraction | "Professional-grade clean" | Removes dirt without saturating | Most upholstery |
 | DIY Spot Cleaners | "Removes all stains" | Often leaves rings or damages fabric | Nothing valuable |

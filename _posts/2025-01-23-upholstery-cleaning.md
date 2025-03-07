@@ -163,7 +163,7 @@ It might cost you $2,000 in replacement furniture.
 When you hire us, you get:
 
 Pre-inspection and testing.
-Stain removal and deep cleaning.
+Stain removal and [deep cleaning]({{'/residential/deep-cleaning' | relative_url}} "Pre-Inspection & Testing | Ensure Quality Results").
 Fabric protection treatment.
 Post-cleaning inspection.
 
