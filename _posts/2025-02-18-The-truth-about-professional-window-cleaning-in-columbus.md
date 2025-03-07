@@ -276,7 +276,7 @@ Just honest advice about what your windows actually need.
 
 Check other of our specialized cleaning solutions in Columbus Ohio:
 
-- [Floor care service]({{'specialized/floor-care' | relative_url}}).
+- [Floor care service]({{'specialized/floor-care' | relative_url}} "Floor cleaning service in Columbus Ohio for Quality Standard Ohio").
 - [Power washing cleaning]({{'specialized/power-washing' | relative_url}}).
 
 Remember: Your windows are an investment in your property's value and your daily comfort.
