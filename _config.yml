@@ -17,6 +17,7 @@ paginate: 8
 paginate_path: "/blog/page:num/"
 
 permalink: :slug
+
 compress_html:
   clippings: []
   comments: []
