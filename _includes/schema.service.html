@@ -88,22 +88,18 @@
         },
         "areaServed": [
           {% if page.areas_served %}
-          {% for area in page.areas_served %}
-          {
-            "@type": "City",
-            "name": "{{ area.name }}",
-            "sameAs": "{{ area.url | absolute_url }}"
-          }{% unless forloop.last %},{% endunless %}
-          {% endfor %}
+            {% for area in page.areas_served %}
+              {
+                "@type": "City",
+                "name": "{{ area.name }}",
+                "sameAs": "{{ area.url | absolute_url }}"
+              }{% unless forloop.last %},{% endunless %}
+            {% endfor %}
           {% else %}
-          {
-            "@type": "City",
-            "name": "Columbus",
-            "containedIn": {
-              "@type": "State",
-              "name": "Ohio"
+            {
+              "@type": "City",
+              "name": "Columbus"
             }
-          }
           {% endif %}
         ],
         "provider": {"@id": "{{ site.url }}/#organization"},
@@ -130,29 +126,29 @@
           "offerCount": "{{ page.offer_count | default: '3' }}",
           "offers": [
             {% if page.service_offerings %}
-            {% for offer in page.service_offerings %}
-            {
-              "@type": "Offer",
-              "name": "{{ offer.name }}",
-              "description": "{{ offer.description }}",
-              "price": "{{ offer.price }}",
-              "priceCurrency": "USD",
-              "availability": "https://schema.org/InStock",
-              "url": "{{ page.url | absolute_url }}#pricing",
-              "validFrom": "{{ offer.valid_from | default: '2025-01-01' }}"
-            }{% unless forloop.last %},{% endunless %}
-            {% endfor %}
+              {% for offer in page.service_offerings %}
+                {
+                  "@type": "Offer",
+                  "name": "{{ offer.name }}",
+                  "description": "{{ offer.description }}",
+                  "price": "{{ offer.price }}",
+                  "priceCurrency": "USD",
+                  "availability": "https://schema.org/InStock",
+                  "url": "{{ page.url | absolute_url }}#pricing",
+                  "validFrom": "{{ offer.valid_from | default: '2025-01-01' }}"
+                }{% unless forloop.last %},{% endunless %}
+              {% endfor %}
             {% else %}
-            {
-              "@type": "Offer",
-              "name": "Standard {{ page.service_type | default: 'Cleaning' }} Service",
-              "description": "Professional {{ page.service_type | default: 'cleaning' }} service in Columbus, OH",
-              "price": "149.00",
-              "priceCurrency": "USD",
-              "availability": "https://schema.org/InStock",
-              "url": "{{ page.url | absolute_url }}#pricing",
-              "validFrom": "2025-01-01"
-            }
+              {
+                "@type": "Offer",
+                "name": "Standard {{ page.service_type | default: 'Cleaning' }} Service",
+                "description": "Professional {{ page.service_type | default: 'cleaning' }} service in Columbus, OH",
+                "price": "149.00",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "url": "{{ page.url | absolute_url }}#pricing",
+                "validFrom": "2025-01-01"
+              }
             {% endif %}
           ]
         },
@@ -161,17 +157,17 @@
           "name": "{{ page.service_output_name | default: 'Professional Cleaning Result' }}",
           "description": "{{ page.service_output_description | default: 'A thoroughly cleaned and sanitized space' }}"
         }
-        {% if page.faqs %}
-        ,"mainEntity": [
+        {% if page.faqs %},
+        "mainEntity": [
           {% for faq in page.faqs %}
-          {
-            "@type": "Question",
-            "name": "{{ faq.pregunta }}",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "{{ faq.respuesta }}"
-            }
-          }{% unless forloop.last %},{% endunless %}
+            {
+              "@type": "Question",
+              "name": "{{ faq.pregunta }}",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "{{ faq.respuesta }}"
+              }
+            }{% unless forloop.last %},{% endunless %}
           {% endfor %}
         ]
         {% endif %}
@@ -187,8 +183,8 @@
               "@id": "{{ site.url }}/",
               "name": "Home"
             }
-          },
-          {% if page.service_category %}
+          }
+          {% if page.service_category %},
           {
             "@type": "ListItem",
             "position": 2,
@@ -205,7 +201,7 @@
               "name": "{{ page.title | split: '|' | first | strip }}"
             }
           }
-          {% else %}
+          {% else %},
           {
             "@type": "ListItem",
             "position": 2,
@@ -219,4 +215,4 @@
       }
     ]
   }
-</script>
+  </script>
