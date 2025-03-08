@@ -3,6 +3,35 @@ layout: default
 ---
 {{ content }}
 
+{% assign current_collection = page.collection %}
+{% if current_collection %}
+  {% assign related_services = site[current_collection] | where_exp: "item", "item.url != page.url" | sample: 3 %}
+  
+  {% if related_services.size > 0 %}
+  <section class="wrapper">
+    <div class="text_center">
+      <h2>Related services you might like</h2>
+      <p>Discover other services that complement your needs</p>
+    </div>
+    
+    <div class="three_columns">
+      {% for service in related_services %}
+      <div class="categories__service">
+        {% if service.image %}
+          <img src="{{ service.image | relative_url }}" width="376" height="200" loading="lazy" decoding="async" alt="{{ service.title }}" title="{{ service.title }}">
+        {% endif %}
+        <div>
+          <h3>{{ service.title | truncate: 60 }}</h3>
+          <p>{{ service.description | strip_html | truncate: 120 }}</p>
+          <a href="{{ service.url }}" class="buttons button-secondary">Learn more →</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+{% endif %}
+
 <section class="wrapper two_columns">
   <div>
     <h3>{% if page.final_cta %}{{page.final_cta}}{% else %}{{page.title}}{% endif %}</h3>
