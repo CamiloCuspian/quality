@@ -36,10 +36,10 @@ collections:
     permalink: /specialized-services/:path
   commercial:
     output: true
-    permalink: /commercial/:path
+    permalink: /commercial-cleaning/:path
   residential:
     output: true
-    permalink: /residential/:path
+    permalink: /residential-cleaning/:path
   areas:
     output: true
     permalink: /areas/:path
