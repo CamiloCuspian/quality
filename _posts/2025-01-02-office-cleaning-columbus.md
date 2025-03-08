@@ -161,7 +161,7 @@ We pay particular attention to those frequently touched areas that most cleaners
 
 Door handles, elevator buttons, shared equipment - each receives specialized treatment with commercial-grade sanitizers that eliminate germs without leaving harsh chemical residues.
 
-Then there's **floor maintenance**. 
+Then there's [**floor maintenance**.]({{'specialized/floor-care' | relative_url}} "Expert Floor Maintenance Services.") 
 
 Nothing undermines a professional image faster than worn, dirty flooring. 
 

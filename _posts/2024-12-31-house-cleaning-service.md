@@ -199,7 +199,7 @@ Because I've seen what "budget" cleaning services do to homes.
 
 ### The real cost of cheap cleaning services
 
-Some time ago, a client showed me the damage a discount home cleaning service had done to her hardwood floors. 
+Some time ago, a client showed me the damage a discount home [Hardwood Floor Cleaning Done Right.]({{'specialized/floor-care' | relative_url}} "cleaning service had done to her hardwood floors.")
 
 They'd used harsh chemicals that stripped the finish, causing $3,000 worth of damage.
 
