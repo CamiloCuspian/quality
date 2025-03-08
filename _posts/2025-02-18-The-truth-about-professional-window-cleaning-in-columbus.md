@@ -16,7 +16,7 @@ expertise: "Making homes and buildings shine with crystal-clear windows that las
 word_count: 1300
 time_to_read: 5
 ---
-Want to know the biggest lie in window cleaning?
+Want to know the biggest lie in [window cleaning]({{'specialized/window-cleaning' | relative_url}} "Windows cleaning service in Columbus")?
 
 That streak-free shine you're chasing? It's not about the cleaning product.
 
@@ -34,7 +34,7 @@ Those are about as useful as a chocolate teapot.
 
 Instead, I'm going to show you exactly what makes professional window cleaning different. The techniques we use. The technology that matters. And yes, even some stuff you can actually do yourself.
 
-[Our window cleaning specialists]({{'specialized/window-cleaning' | relative_url}} "Make your windows spotless") see the same mistakes every day. The same problems. The same frustrated attempts at DIY solutions.
+[Our window cleaning specialists]({{'about-us' | relative_url}} "Team Quality Standard Ohio who makes your windows spotless") see the same mistakes every day. The same problems. The same frustrated attempts at DIY solutions.
 
 **The good news?** Most of these issues are completely avoidable.
 
