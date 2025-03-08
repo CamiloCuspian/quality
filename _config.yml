@@ -33,7 +33,7 @@ collections:
     output: true
   specialized:
     output: true
-    permalink: /specialized/:path
+    permalink: /specialized-services/:path
   commercial:
     output: true
     permalink: /commercial/:path
