@@ -119,7 +119,7 @@ Look, I'm not going to bore you with a massive list of every piece of equipment 
 
 Instead, let me share what I consider the game-changers - the equipment that actually makes a difference in industrial cleaning.
 
-First up, let's talk about [floor cleaning]({{'specialized/floor-care' | relative_url}} "Expert Floor Cleaning Services") machines. **This is where most facilities waste thousands of dollars.** 
+First up, let's talk about [**floor maintenance**.]({{'specialized/floor-care' | relative_url}} "Expert Floor Maintenance Services.") floor cleaning machines. **This is where most facilities waste thousands of dollars.** 
 
 They either buy equipment that's too small (making the job take forever) or too large (making it impossible to clean tight spaces).
 

@@ -310,7 +310,7 @@ You know what really frustrates me?
 When cleaning services nickel-and-dime you for every little thing.
 
 That's why we include services that others charge extra for:
-- Inside window cleaning? Standard with every visit.
+- [Inside window cleaning?]({{'/specialized/window-cleaning' | relative_url}} "Crystal Clear Indoor Windows") Standard with every visit.
 - Baseboard wiping? Always included.
 - Under furniture cleaning? Of course.
 

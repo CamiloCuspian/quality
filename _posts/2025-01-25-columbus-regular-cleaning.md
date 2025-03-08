@@ -132,7 +132,7 @@ Your bedroom should be your sanctuary. Not a dust factory.
 
 We pay special attention to:
 - Under-bed areas (where dust bunnies breed)
-- Window sills and tracks
+- [Window sills]({{'/specialized/window-cleaning' | relative_url}} "Spotless Window Sills, Guaranteed.") and tracks
 - Ceiling fans and light fixtures
 - All those little spots that collect dust
 
