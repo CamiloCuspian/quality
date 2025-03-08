@@ -80,7 +80,7 @@ They used to view it as a basic maintenance task - until they saw this compariso
 | Standard vacuuming | Deep carpet cleaning with allergen removal |
 | Empty trash bins | Waste management with sanitization |
 | Basic dusting | Comprehensive dust removal including vents and hard-to-reach areas |
-| Window spot cleaning | Full glass and window cleaning with streak-free results |
+| [Window spot cleaning ]({{'/specialized/window-cleaning' | relative_url}} "Goodbye Streaks & Spots.") | Full glass and window cleaning with streak-free results |
 | Bathroom basics | Hospital-grade bathroom sanitization |
 
 Understanding these differences led them to completely rethink their approach to office cleanliness. 
