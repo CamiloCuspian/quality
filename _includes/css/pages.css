@@ -305,6 +305,11 @@
   width: 100%;
 }
 
+.card-content > p{
+  font-size: 16px;
+  color: var(--grey-2);
+}
+
 /* Paginación */
 .pagination {
   display: flex;
