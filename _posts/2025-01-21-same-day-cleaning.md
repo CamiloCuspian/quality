@@ -148,7 +148,7 @@ Perfect for:
 
 That important client meeting you just learned about? Yeah, we've got you.
 
-Our [commercial cleaning service]({{'commercial-cleaning'|relative_url}} "Take our commercial cleaning service") understands business emergencies need business solutions.
+Our [commercial cleaning service]({{'/commercial-cleaning'|relative_url}} "Take our commercial cleaning service") understands business emergencies need business solutions.
 
 We handle:
 - Urgent office cleanings

@@ -202,7 +202,7 @@ Here's what actually works:
    - Fixtures (don't forget the shower head)
    - Tub or shower base last
 
-**For glass doors:**
+**For glass doors:**  
 Mix equal parts vinegar and dish soap in a spray bottle.
 
 *This combo breaks down hard water and soap scum better than most commercial cleaners.*
