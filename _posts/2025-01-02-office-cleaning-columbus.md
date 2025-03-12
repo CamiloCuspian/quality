@@ -3,7 +3,6 @@ layout: post
 title: "The complete guide to office cleaning in Columbus"
 description: "Everything you need to know about keeping your office spotless. From daily maintenance to deep cleaning schedules. Tips from Columbus cleaning experts."
 category: [Cleaning]
-#tags: [Office Cleaning, Commercial Cleaning, Business Services]
 h1: "Commercial Office Cleaning Guide Columbus OH | Business Tips"
 hero: img/posts/office-cleaning.avif
 jpg: img/posts/office-cleaning.jpg
@@ -80,7 +79,7 @@ They used to view it as a basic maintenance task - until they saw this compariso
 | Standard vacuuming | Deep carpet cleaning with allergen removal |
 | Empty trash bins | Waste management with sanitization |
 | Basic dusting | Comprehensive dust removal including vents and hard-to-reach areas |
-| [Window spot cleaning ]({{'/specialized/window-cleaning' | relative_url}} "Goodbye Streaks & Spots.") | Full glass and window cleaning with streak-free results |
+| [Window spot cleaning ]({{'/specialized-services/window-cleaning'|relative_url}} "Goodbye Streaks & Spots.") | Full glass and window cleaning with streak-free results |
 | Bathroom basics | Hospital-grade bathroom sanitization |
 
 Understanding these differences led them to completely rethink their approach to office cleanliness. 
@@ -93,7 +92,7 @@ The result?
 
 When businesses partner with us for office cleaning, they're not just getting a cleaning service - they're getting a complete workspace maintenance solution.
 
-Our [office cleaning service]({{'/commercial/office'|relative_url}} "Office Cleaning Columbus") starts with understanding your specific needs. 
+Our [office cleaning service]({{'/commercial-cleaning/office'|relative_url}} "Office Cleaning Columbus") starts with understanding your specific needs. 
 
 Look, **every business is unique**. 
 
@@ -115,7 +114,7 @@ We developed a customized cleaning schedule that:
 
 *The result? Even during their peak season, their office remained immaculate.*
 
-[Take our office cleaning service in Columbus]({{'commercial-cleaning'|relative_url}} "Contact us"){:class="buttons button-secondary"}
+[Take our office cleaning service in Columbus]({{'/commercial-cleaning'|relative_url}} "Contact us"){:class="buttons button-secondary"}
 
 ## Professional workspace maintenance plans that work
 
@@ -161,7 +160,7 @@ We pay particular attention to those frequently touched areas that most cleaners
 
 Door handles, elevator buttons, shared equipment - each receives specialized treatment with commercial-grade sanitizers that eliminate germs without leaving harsh chemical residues.
 
-Then there's [**floor maintenance**.]({{'specialized/floor-care' | relative_url}} "Expert Floor Maintenance Services.") 
+Then there's [**floor maintenance**.]({{'/specialized-services/floor-care'|relative_url}} "Expert Floor Maintenance Services.") 
 
 Nothing undermines a professional image faster than worn, dirty flooring. 
 
@@ -183,7 +182,7 @@ When situations arise that demand immediate attention, we're ready to help maint
 
 **Your business reputation is too important to leave to chance**.
 
-[Learn more about our comercial cleaning services]({{'commercial-cleaning'|relative_url}} "Contact us"){:class="buttons button-secondary"}
+[Learn more about our comercial cleaning services]({{'/commercial-cleaning'|relative_url}} "Get our commercial cleaning service"){:class="buttons button-secondary"}
 
 ## Why professional office cleaning isn't just about cleanliness
 

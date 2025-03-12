@@ -121,6 +121,7 @@
   margin-bottom: 1rem;
   font-size: 1.5rem;
   color: var(--grey-2);
+  text-align: center;
 }
 
 .card ul li {
@@ -199,6 +200,14 @@
   width: min(calc(100% - 2rem), 1320px);
   margin-inline: auto;
   padding: 4em 0;
+}
+
+/* Estilos para las categorías del blog */
+.categories-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-evenly;
 }
 
 /* Lista de posts */
@@ -294,6 +303,11 @@
 
 .read-more:hover::after {
   width: 100%;
+}
+
+.card-content > p{
+  font-size: 16px;
+  color: var(--grey-2);
 }
 
 /* Paginación */

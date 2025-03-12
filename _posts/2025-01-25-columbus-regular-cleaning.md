@@ -3,7 +3,6 @@ layout: post
 title: "Columbus regular cleaning services | Custom cleaning plans"
 description: "Set up regular cleaning services in Columbus. Weekly, bi-weekly, or monthly plans available. Professional maids, consistent service, affordable rates"
 category: [Cleaning]
-tags: [Regular Cleaning, Maid Service, House Cleaning]
 h1: "Professional House Cleaning Schedule Columbus OH | Custom Plans"
 hero: img/posts/regular-cleaning-service.avif
 jpg: img/regular-cleaning-service.jpg
@@ -73,7 +72,7 @@ It's not just half the service of weekly cleaning. It's strategically timed to m
 
 Think of it like this: You can handle the basic stuff - wiping counters, quick vacuuming. We come in every two weeks to do the heavy lifting.
 
-[Our bi-weekly service]({{'residential/regular'|relative_url}} "Check out our regular cleaning service") hits that perfect balance between professional care and value.
+[Our bi-weekly service]({{'residential-cleaning/regular'|relative_url}} "Check out our regular cleaning service") hits that perfect balance between professional care and value.
 
 ## Monthly deep cleans: More than just surface cleaning
 
@@ -112,7 +111,7 @@ That antique coffee table that needs special care? We remember that.
 
 Those decorative pillows that have a specific order? Got it.
 
-Want to know how we handle other specific areas? Check out our [specialized cleaning services]({{'specialized-services'|relative_url}} "Here's what we can do for you...").
+Want to know how we handle other specific areas? Check out our [specialized cleaning services]({{'/specialized-services'|relative_url}} "Special cleaning service").
 
 ### Bathroom cleaning that goes beyond the basics
 
@@ -132,7 +131,7 @@ Your bedroom should be your sanctuary. Not a dust factory.
 
 We pay special attention to:
 - Under-bed areas (where dust bunnies breed)
-- [Window sills]({{'/specialized/window-cleaning' | relative_url}} "Spotless Window Sills, Guaranteed.") and tracks
+- [Window sills]({{'/specialized-services/window-cleaning'|relative_url}} "Spotless Window Sills, Guaranteed.") and tracks
 - Ceiling fans and light fixtures
 - All those little spots that collect dust
 
@@ -241,9 +240,9 @@ You'll see a pattern:
 
 Life's too short to spend it cleaning.
 
-[Start your regular cleaning service]({{'residential/regular'|relative_url}} "Book your regular cleaning service ") today.
+[Start your regular cleaning service]({{'residential-cleaning/regular'|relative_url}} "Book your regular cleaning service ") today.
 
-Want more info first? Check out our [deep cleaning service]({{'residential/deep-cleaning'|relative_url}} "Regular deep cleaning") or [specialized cleaning options]({{'specialized-services'|relative_url}} "Regular specialized cleaning").
+Want more info first? Check out our [deep cleaning service]({{'residential-cleaning/deep-cleaning'|relative_url}} "Regular deep cleaning") or [specialized cleaning options]({{'specialized-services'|relative_url}} "Regular specialized cleaning").
 
 Remember: Every moment you spend cleaning is a moment you could spend living.
 

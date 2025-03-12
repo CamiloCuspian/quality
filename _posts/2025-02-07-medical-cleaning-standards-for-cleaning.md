@@ -3,7 +3,6 @@ layout: post
 title: "Medical facility cleaning Columbus: Standards your business needs"
 description: "Discover how Columbus medical cleaning standards can transform your business. Learn healthcare-level protocols that protect your employees & customers"
 category: [Cleaning]
-tags: [Medical Standards, Commercial Cleaning, Professional Standards]
 h1: "Medical Facility Cleaning Standards Columbus OH | Healthcare Guide"
 hero: img/posts/medical-cleaning-standards.avif
 jpg: img/posts/medical-cleaning-standards.jpg
@@ -50,7 +49,7 @@ Let me break this down for you:
 
 *Your business probably needs to be at level 3, but you might be stuck at level 1 or 2.*
 
-[Our commercial cleaning service]({{'commercial-cleaning' | relative_url}} "Your business as clean as medical facility") operates at level 3, incorporating medical-inspired standards.
+[Our commercial cleaning service]({{'/commercial-cleaning'|relative_url}} "Your business as clean as medical facility") operates at level 3, incorporating medical-inspired standards.
 
 ### Why your business needs more than just "clean"
 

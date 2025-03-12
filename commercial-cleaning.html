@@ -33,7 +33,7 @@ button: true
 <aside class="bgr_cta">
   <div class="wrapper two_columns">
     <h2>We don't just clean. We provide a service that lets you focus on what you do best—running your business.</h2>
-    <a href="#" id="lead_whatsapp"  class="buttons button-main">→ Take our services'</a>
+    {% include button.html text="Take our service →" %}
   </div>
 </aside>
 
@@ -51,9 +51,7 @@ button: true
     </ul>
     <h3>Are your cleaning professionals insured and background-checked?</h3>
     <p>100% yes. All our team members undergo rigorous background checks and are fully insured, giving you peace of mind about the professionals entering your workspace.</p>
-    <a href="#" id="lead_whatsapp" title="Get a quote for retail cleaning" class="buttons button-secondary"> → Save 20% on your first clean</a>
-
-
+    {% include button.html text="Take our service →" %}
   </div>
 </section>
 <section class="two_columns two_columns_left wrapper about bgr">
@@ -99,14 +97,14 @@ button: true
     <ul class="about_list">
       <li><span>&check;</span> Offices: 2-3 times per week. </li>
       <li><span>&check;</span> Medical facilities: Daily or after each shift. </li>
-      <li><span>&check;</span> Retail spaces: Daily, with <a href=""></a><a href="{{'/residential/deep-cleaning' | relative_url }}" title="Deep Cleaning Week: Intense Home Refresh">deep cleaning week.</a> </li>
+      <li><span>&check;</span> Retail spaces: Daily, with <a href=""></a><a href="{{'/residential-cleaning/deep-cleaning' | relative_url }}" title="Deep Cleaning Week: Intense Home Refresh">deep cleaning week.</a> </li>
       <li><span>&check;</span> Restaurants: Daily, with intensive sanitization. </li>
 
     </ul>
     <h3>Do you offer flexible scheduling?</h3>
     <p>Yes. We understand businesses run on different schedules. Our cleaning services can be arranged during off-hours to minimize disruption to your operations.</p>
-    <a href="#"  id="lead_whatsapp"title="Quality Standard Ohio contact page" class="buttons button-secondary">→ Book your cleaning</a>
-    
+    <a href="#"  id="lead_whatsapp"title="Quality Standard Ohio contact page" class="buttons button-secondary">→ Write Us </a>
+    {% include button.html text="Take our service →" %}
   </div>
 </section>
 
@@ -115,9 +113,9 @@ button: true
     <h2>{{page.title}}</h2>
     <p>{{page.description}}</p>
     <div>
-      <a href="{{'faqs' | relative_url}}" title="FAQs Quality section" class="buttons button-secondary">→ FAQ's section</a>
-      <a href="{{'about-us' | relative_url}}" title="About Quality Standard Ohio in Columbus" class="buttons button-secondary">→ About us</a>
-      <a href="#" id="lead_whatsapp" title="Quality Standard Ohio WhatsApp" class="buttons button-secondary" target="_blank" rel="nofollo noopener noreferrer">→ Let's chat</a>
+      <a href="{{'/faqs' | relative_url}}" title="FAQs Quality section" class="buttons button-secondary">→ FAQ's section</a>
+      <a href="{{'/about-us' | relative_url}}" title="About Quality Standard Ohio in Columbus" class="buttons button-secondary">→ About us</a>
+      <a href="#" id="lead_whatsapp" title="Quality Standard Ohio WhatsApp" class="buttons button-secondary" target="_blank" rel="nofollow noopener noreferrer">→ Let's chat</a>
       {% include button.html text="Take our service →" %}
     </div>
   </div>

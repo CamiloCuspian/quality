@@ -23,7 +23,7 @@ That "all-purpose" cleaner you're thinking of using on your expensive couch? Put
 
 **Here's what most people don't realize about fine fabrics**: they're like high-performance cars. Sure, you can do basic maintenance yourself, but one wrong move and you're looking at serious damage.
 
-I've spent the past 10 years [cleaning and restoring fine fabrics]({{'specialized/upholstery' | relative_url}} "Restore your fine fabrics with us") and trust me, there's a right way and a wrong way to do this.
+I've spent the past 10 years [cleaning and restoring fine fabrics]({{'/specialized-services/upholstery'|relative_url}} "Upholstery service Columbus OH") and trust me, there's a right way and a wrong way to do this.
 
 Want to know the difference between protecting your investment and accidentally ruining it? 
 
@@ -33,7 +33,7 @@ This isn't your typical cleaning guide. We're going to get into the nitty-gritty
 
 Think of this as a chat with your friend who happens to know everything about keeping your fancy furniture looking fantastic.
 
-[Our specialized cleaning approach]({{'specialized-services' | relative_url}} "Check our specialized services") has saved countless pieces of furniture. But before we get into that, let's talk about what you can (and definitely shouldn't) do on your own.
+[Our specialized cleaning approach]({{'/specialized-services'|relative_url}} "Check our specialized services") has saved countless pieces of furniture. But before we get into that, let's talk about what you can (and definitely shouldn't) do on your own.
 
 ## Fine fabric cleaning technologies: What really works (and what doesn't)
 

@@ -52,7 +52,7 @@ layout: default
         {% for category in categories %}
           {% assign category_name = category.name | strip | remove: '["' | remove: '"]' | downcase %}
           {% if category_name != page.category %}
-            <a href="/category/{{ category_name | slugify }}" 
+            <a href="/{{ category_name | slugify }}" 
               class="buttons button-secondary"
               title="View all {{ category_name }} articles"
               aria-label="Category {{ category_name }} with {{ category.items | size }} articles">
