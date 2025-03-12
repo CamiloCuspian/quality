@@ -3,12 +3,11 @@ layout: post
 title: "Columbus Carpet Cleaning | Professional Deep Clean Service"
 description: "Transform your carpets with professional deep cleaning in Columbus. Steam cleaning, stain removal, and long-lasting results. Same-day service available!"
 category: [Cleaning]
-tags: [Carpet Cleaning, Deep Cleaning, Local Services]
 h1: "Expert Carpet Cleaning Guide Columbus OH | Pro Tips & Tricks"
 hero: img/posts/cleaning-columbus.avif
 jpg: img/posts/cleaning-columbus.jpg
 alt: Professional carpet cleaning service team in Columbus Ohio
-excerpt: 'Discover why Columbus homeowners trust our advanced carpet cleaning technology for <a href="/residential/deep-cleaning" title="Deeper Cleans for Lasting Freshness">deeper cleans</a> and longer-lasting results'
+excerpt: 'Discover why Columbus homeowners trust our advanced carpet cleaning technology for deeper cleans and longer-lasting results'
 date: 2025-01-23 10:00:00 -0500
 last_modified_at: 2025-01-23 10:00:00 -0500
 author: Angelo Torres 

@@ -2,9 +2,10 @@
 layout: general
 title: "Columbus cleaning blog: Pro tips & local home care secrets"
 description: "Your go-to resource for everything about home cleaning in Columbus. Expert advice, maintenance guides, and local tips to keep your space spotless (or let us do it for you)"
-h1: "Columbus House Cleaning Tips & Guides | Expert Local Advice"
-h2: "Latest home care advice"
+h1: "Columbus House Cleaning Tips & Guides | Expert Local Advices"
+h2: "Latest home care advice in Quality Standard Ohio's blog"
 hero: 'img/servie_cleaning-columbus_ohio.avif'
+alt: "Quality Standard Ohio's cleaning blog"
 ---
 
 <main class="blog-container">
@@ -28,7 +29,7 @@ hero: 'img/servie_cleaning-columbus_ohio.avif'
               <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
               {% if post.categories %}
               {% for category in post.categories %}
-                  <a href="/category/{{category | downcase}}" class="post-categories">
+                  <a href="/{{category | downcase}}" class="post-categories">
                     | {{ category }}
                   </a>
                   {% endfor %}
@@ -45,15 +46,15 @@ hero: 'img/servie_cleaning-columbus_ohio.avif'
   <div class="section wrapper bgr">
     <div class="text_center">
       <h2>More cleaning insights</h2>
-      <h3>The best cleaning categories</h3>
+      <h3>The best Quality Standard Ohio blog categories</h3>
       {% assign categories = site.posts | group_by: "category" %}
       <div class="categories-container">
         {% for category in categories %}
           {% assign category_name = category.name | strip | remove: '["' | remove: '"]' | downcase %}
-          <a href="/category/{{ category_name | slugify }}" 
+          <a href="/{{ category_name | slugify }}" 
             class="buttons button-secondary"
-            title="Ver todos los artículos de {{ category_name }}"
-            aria-label="Categoría {{ category_name }} con {{ category.items | size }} artículos">
+            title="See all {{ category_name }} posts"
+            aria-label="Category {{ category_name }} with {{ category.items | size }} posts">
             {{ category_name | capitalize }} ({{ category.items | size }})
           </a>
         {% endfor %}
@@ -73,7 +74,7 @@ hero: 'img/servie_cleaning-columbus_ohio.avif'
               {% if post.categories %}
                 <span class="post-categories">
                   {% for category in post.categories limit:1 %}
-                    <a href="{{ '/blog/category/' | append: category | slugify | relative_url }}">{{ category }}</a>
+                    <a href="{{ '/' | append: category | slugify | relative_url }}">{{ category }}</a>
                   {% endfor %}
                 </span>
               {% endif %}
