@@ -1,0 +1,31 @@
+---
+permalink: /404.html
+sitemap: false
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Page not found | {{site.title}}</title>
+    <script>
+    // Función para redireccionar automáticamente URLs con trailing slash
+    (function() {
+        var path = window.location.pathname;
+        
+        // Si la URL termina con "/", intentar redireccionar a la versión sin barra
+        if (path.endsWith('/') && path !== '/') {
+            var newPath = path.slice(0, -1);
+            window.location.href = newPath;
+        }
+    })();
+    </script>
+</head>
+<body>
+    <div style="text-align: center; padding: 50px;">
+        <h1>File not found</h1>
+        <p>The site configured at this address does not contain the requested file.</p>
+        <p><a href="/">Back to home page</a></p>
+    </div>
+</body>
+</html>

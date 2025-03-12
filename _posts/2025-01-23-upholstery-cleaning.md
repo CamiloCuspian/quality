@@ -37,7 +37,7 @@ And all that stuff? It's not just sitting on the surface.
 
 It's working its way deep into the fibers, breaking them down day by day.
 
-[Our upholstery cleaning service]({{'specialized/upholstery'|relative_url}} "Take our upholstery service") can help reverse this damage, but let's first look at what you can do at home.
+[Our upholstery cleaning service]({{'/specialized-services/upholstery'|relative_url}} "Take our upholstery service") can help reverse this damage, but let's first look at what you can do at home.
 
 ### What you can do at home right now
 
@@ -95,7 +95,7 @@ Listen, no cleaning product works instantly.
 
 **Chemistry needs time.**
 
-We use specialized spotting solutions that:
+We use [specialized spotting solutions]({{'/specialized-services'|relative_url}} "Specialized cleaning Columbus OH") that:
 - Break down stains
 - Loosen dirt
 - Prepare fibers for cleaning
@@ -200,7 +200,7 @@ You've got two options:
 
 Either way, your furniture needs attention now, not later.
 
-[Book your professional cleaning]({{'specialized/upholstery'|relative_url}} "Take our upholstery service")
+[Book your professional cleaning]({{'/specialized-services/upholstery'|relative_url}} "Take our upholstery service")
 
 Remember: Good furniture isn't cheap. But replacing it is even more expensive.
 

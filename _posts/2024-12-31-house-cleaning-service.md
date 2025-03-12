@@ -199,7 +199,7 @@ Because I've seen what "budget" cleaning services do to homes.
 
 ### The real cost of cheap cleaning services
 
-Some time ago, a client showed me the damage a discount home [Hardwood Floor Cleaning Done Right.]({{'specialized/floor-care' | relative_url}} "cleaning service had done to her hardwood floors.")
+Some time ago, a client showed me the damage a discount home [Hardwood Floor Cleaning Done Right.]({{'/specialized-services/floor-care'|relative_url}} "Cleaning service had done to her hardwood floors.")
 
 They'd used harsh chemicals that stripped the finish, causing $3,000 worth of damage.
 
@@ -310,7 +310,7 @@ You know what really frustrates me?
 When cleaning services nickel-and-dime you for every little thing.
 
 That's why we include services that others charge extra for:
-- [Inside window cleaning?]({{'/specialized/window-cleaning' | relative_url}} "Crystal Clear Indoor Windows") Standard with every visit.
+- [Inside window cleaning?]({{'/specialized-services/window-cleaning'|relative_url}} "Crystal Clear Indoor Windows") Standard with every visit.
 - Baseboard wiping? Always included.
 - Under furniture cleaning? Of course.
 
@@ -450,7 +450,7 @@ If you're tired of cleaning services that disappoint, or if you're simply ready 
 
 Your satisfaction is guaranteed - if you're not completely happy with our service, we'll come back and make it right at no extra charge.
 
-*Want to learn more about our specific cleaning services?* [Check out our specialized cleaning services]({{'specialized-services'|relative_url}}).
+*Want to learn more about our specific cleaning services?* [Check out our specialized cleaning services]({{'/specialized-services'|relative_url}}).
 
 Don't let another weekend be consumed by cleaning. 
 

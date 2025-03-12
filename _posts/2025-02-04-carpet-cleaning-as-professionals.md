@@ -261,7 +261,7 @@ The real value of professional carpet cleaning isn't just in solving problems. I
 
 Think about it like dental care. You don't wait until you have a toothache to start brushing your teeth, right? The same principle applies to your carpets.
 
-This is why we created our [carpet maintenance program]({{'specialized/carpet-cleaning'|relative_url}} "´Professional carpet cleaning"). It's designed to keep your carpets looking great year-round, not just when there's a visible problem.
+This is why we created our [carpet maintenance program]({{'/specialized-services/carpet-cleaning'|relative_url}} "´Professional carpet cleaning"). It's designed to keep your carpets looking great year-round, not just when there's a visible problem.
 
 ## Our quality guarantee (and why it's different)
 
@@ -297,6 +297,6 @@ Let us show you what real professional carpet cleaning looks like. Let us demons
 
 [Book your carpet cleaning service]({{'contact'|relative_url}} "Quality Standard Ohio contact") today and experience the difference proper carpet care can make.
 
-Want to learn more about our other cleaning services? [Check out our full range of specialized cleaning solutions]({{'specialized-services'|relative_url}} "Specialized cleaning services").
+Want to learn more about our other cleaning services? [Check out our full range of specialized cleaning solutions]({{'/specialized-services'|relative_url}} "Specialized cleaning services").
 
 Don't let another day go by watching those stains mock you from your carpet. Let our professional team restore your carpets - and your peace of mind.

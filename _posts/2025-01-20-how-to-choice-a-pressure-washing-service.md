@@ -60,7 +60,7 @@ When we [cleaned Mark's historic home in Victorian Village]({{'areas/victorian-v
 
 ## Professional surface cleaning services: Our tried and true process
 
-Let me walk you through exactly how we transform your property with our [power washing service]({{'/specialized/power-washing'|relative_url}}):
+Let me walk you through exactly how we transform your property with our [power washing service]({{'/specialized-services/power-washing'|relative_url}}):
 
 1. **Property assessment**
    - Surface material identification
@@ -163,4 +163,4 @@ Whether you need your house siding refreshed, driveway cleaned, or deck restored
 
 Remember, proper pressure washing doesn't just clean - it protects your investment and enhances your property's value. Let's get it done right the first time.
 
-*Want to learn more about our exterior cleaning services? Check out our guide to [professional window cleaning]({{'specialized/window-cleaning'|relative_url}}) and [handyman maintenance]({{'/specialized/handyman-service'|relative_url}}).*
+*Want to learn more about our exterior cleaning services? Check out our guide to [professional window cleaning]({{'/specialized-services/window-cleaning'|relative_url}}) and [handyman maintenance]({{'/specialized-services/handyman-service'|relative_url}}).*

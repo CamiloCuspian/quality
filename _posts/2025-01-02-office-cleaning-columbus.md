@@ -80,7 +80,7 @@ They used to view it as a basic maintenance task - until they saw this compariso
 | Standard vacuuming | Deep carpet cleaning with allergen removal |
 | Empty trash bins | Waste management with sanitization |
 | Basic dusting | Comprehensive dust removal including vents and hard-to-reach areas |
-| [Window spot cleaning ]({{'/specialized/window-cleaning' | relative_url}} "Goodbye Streaks & Spots.") | Full glass and window cleaning with streak-free results |
+| [Window spot cleaning ]({{'/specialized-services/window-cleaning'|relative_url}} "Goodbye Streaks & Spots.") | Full glass and window cleaning with streak-free results |
 | Bathroom basics | Hospital-grade bathroom sanitization |
 
 Understanding these differences led them to completely rethink their approach to office cleanliness. 
@@ -161,7 +161,7 @@ We pay particular attention to those frequently touched areas that most cleaners
 
 Door handles, elevator buttons, shared equipment - each receives specialized treatment with commercial-grade sanitizers that eliminate germs without leaving harsh chemical residues.
 
-Then there's [**floor maintenance**.]({{'specialized/floor-care' | relative_url}} "Expert Floor Maintenance Services.") 
+Then there's [**floor maintenance**.]({{'/specialized-services/floor-care'|relative_url}} "Expert Floor Maintenance Services.") 
 
 Nothing undermines a professional image faster than worn, dirty flooring. 
 

@@ -168,19 +168,19 @@ It's like the difference between a home cook and a professional chef. Both can m
 
 When you book our express service, you're getting:
 
-**Prioritized tasks**
+**Prioritized tasks**  
 We focus on what matters most for your specific situation.
 
 Need the office ready for a client meeting? We'll prioritize client-facing areas.
 
 Having guests for dinner? We'll ensure your entertaining spaces shine.
 
-**Specialized equipment**
+**Specialized equipment**  
 Regular vacuum? Nope. We bring industrial-grade equipment that gets the job done faster.
 
 *Because when time is tight, having the right tools makes all the difference.*
 
-**Optimized workflow**
+**Optimized workflow**  
 Our teams don't just clean fast - they clean smart.
 
 We've mapped out the most efficient cleaning patterns for every type of space. No wasted motion, no missed spots.

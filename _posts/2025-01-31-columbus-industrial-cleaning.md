@@ -119,7 +119,7 @@ Look, I'm not going to bore you with a massive list of every piece of equipment 
 
 Instead, let me share what I consider the game-changers - the equipment that actually makes a difference in industrial cleaning.
 
-First up, let's talk about [**floor maintenance**.]({{'specialized/floor-care' | relative_url}} "Expert Floor Maintenance Services.") floor cleaning machines. **This is where most facilities waste thousands of dollars.** 
+First up, let's talk about [**floor maintenance**.]({{'/specialized-services/floor-care'|relative_url}} "Expert Floor Maintenance Services.") floor cleaning machines. **This is where most facilities waste thousands of dollars.** 
 
 They either buy equipment that's too small (making the job take forever) or too large (making it impossible to clean tight spaces).
 
@@ -139,7 +139,7 @@ Using a one-size-fits-all cleaner is like trying to fix every home repair with d
 
 *Sometimes it works, but usually, it just makes things worse.*
 
-Here's what we've learned from our years of providing [specialized cleaning services]({{'specialized-services'|relative_url}}):
+Here's what we've learned from our years of providing [specialized cleaning services]({{'/specialized-services'|relative_url}} "Specialized cleaning Columbus"):
 
 Your cleaning solutions need to match your specific challenges. For example, if you're dealing with heavy oil contamination, you need:
 
@@ -292,7 +292,7 @@ Whether you decide to handle cleaning in-house or partner with professionals, th
 
 While we don't provide industrial cleaning services directly, we do offer comprehensive [commercial cleaning solutions]({{'commercial-cleaning'|relative_url}}) that might be perfect for your office areas, break rooms, and other non-industrial spaces.
 
-Want to learn more about keeping your facility clean and efficient? Check out our guide to [specialized cleaning services]({{'specialized-services'|relative_url}}) or contact us to discuss your specific needs.
+Want to learn more about keeping your facility clean and efficient? Check out our guide to [specialized cleaning services]({{'/specialized-services'|relative_url}} "Specialized cleaning services") or contact us to discuss your specific needs.
 
 Remember: A clean facility isn't just about appearance - it's about efficiency, safety, and success. Whether you handle cleaning in-house or partner with professionals, make sure you're giving it the attention it deserves.
 

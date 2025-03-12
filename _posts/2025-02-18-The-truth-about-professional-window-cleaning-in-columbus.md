@@ -16,7 +16,7 @@ expertise: "Making homes and buildings shine with crystal-clear windows that las
 word_count: 1300
 time_to_read: 5
 ---
-Want to know the biggest lie in [window cleaning]({{'specialized/window-cleaning' | relative_url}} "Windows cleaning service in Columbus")?
+Want to know the biggest lie in [window cleaning]({{'/specialized-services/window-cleaning'|relative_url}} "Windows cleaning service in Columbus")?
 
 That streak-free shine you're chasing? It's not about the cleaning product.
 
@@ -178,7 +178,7 @@ You notice scratches or pitting. DIY attempts at fixing these usually make them 
 
 You're dealing with post-construction cleanup. That's not regular dirt on those windows - it's potentially abrasive material that can damage glass.
 
-[Our specialized cleaning solutions]({{'specialized/cleaning-and-disinfecting' | relative_url}} "Take a look at them") are designed for exactly these situations.
+[Our specialized cleaning solutions]({{'/specialized-services/cleaning-and-disinfecting'|relative_url}} "Special desinfecting service") are designed for exactly these situations.
 
 *And here's the thing about professional service*:
 
@@ -270,14 +270,14 @@ No pressure, no sales pitch.
 
 Just honest advice about what your windows actually need.
 
-[You can find our professional cleaning service for Columbus here]({{'specialized/window-cleaning' | relative_url}}). 
+[You can find our professional cleaning service for Columbus here]({{'/specialized-services/window-cleaning'|relative_url}} "Specialized cleaning window service"). 
 
 ### Additional resources
 
 Check other of our specialized cleaning solutions in Columbus Ohio:
 
-- [Floor care service]({{'specialized/floor-care' | relative_url}} "Floor cleaning service in Columbus Ohio for Quality Standard Ohio").
-- [Power washing cleaning]({{'specialized/power-washing' | relative_url}}).
+- [Floor care service]({{'/specialized-services/floor-care'|relative_url}} "Floor cleaning service in Columbus Ohio for Quality Standard Ohio").
+- [Power washing cleaning]({{'/specialized-services/power-washing'|relative_url}} "Power washing Columbus").
 
 Remember: Your windows are an investment in your property's value and your daily comfort.
 
