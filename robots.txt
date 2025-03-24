@@ -115,14 +115,8 @@ Disallow: /fonts/
 Allow: /sitemap.xml
 Allow: /feed.xml
 
-# Rate limiting
-Crawl-delay: 10
-
 # Sitemaps
 Sitemap: https://qualitystandardohio.com//sitemap.xml
-
-# Define preferred domain
-Host: qualitystandardohio.com
 
 # Additional Security Headers (add these to your .htaccess or server config)
 # X-Robots-Tag: noarchive, noimageindex
