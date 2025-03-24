@@ -1,5 +1,5 @@
 # robots.txt for Quality Standard Ohio
-# {{ site.url }}{{ site.baseurl }}/
+# https://qualitystandardohio.com/
 
 # Allow legitimate search engines
 User-agent: Googlebot
@@ -17,9 +17,10 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
-# Block known malicious bots and crawlers
 User-agent: AhrefsBot
-Disallow: /
+Allow: /
+
+# Block known malicious bots and crawlers
 
 User-agent: SemrushBot
 Disallow: /
@@ -118,10 +119,10 @@ Allow: /feed.xml
 Crawl-delay: 10
 
 # Sitemaps
-Sitemap: {{ site.url }}{{ site.baseurl }}/sitemap.xml
+Sitemap: https://qualitystandardohio.com//sitemap.xml
 
 # Define preferred domain
-Host: {{ site.url | replace: 'https://', '' | replace: 'http://', '' }}
+Host: qualitystandardohio.com
 
 # Additional Security Headers (add these to your .htaccess or server config)
 # X-Robots-Tag: noarchive, noimageindex
