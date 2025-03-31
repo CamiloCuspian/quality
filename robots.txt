@@ -116,7 +116,7 @@ Allow: /sitemap.xml
 Allow: /feed.xml
 
 # Sitemaps
-Sitemap: https://qualitystandardohio.com//sitemap.xml
+Sitemap: https://qualitystandardohio.com/sitemap.xml
 
 # Additional Security Headers (add these to your .htaccess or server config)
 # X-Robots-Tag: noarchive, noimageindex
