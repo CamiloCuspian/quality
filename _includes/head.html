@@ -6,14 +6,14 @@
     <meta name="robots" content="index, follow">
     {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+    <title>{{ page.title | default: site.title }}</title>
+    <meta name="description" content="{% if page.seo_description %}{{ page.seo_description | strip_html | strip_newlines | truncate: 155 }}{% elsif page.description %}{{ page.description | strip_html | strip_newlines | truncate: 155 }}{% else %}{{ site.description }}{% endif %}">
     {% if page.layout == "service" %}
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="service-type" content="{{ page.service_type | default: 'Cleaning Service' }}">
     <meta name="service-area" content="{{ page.service_area | default: 'Columbus, OH' }}">
     <meta name="price-range" content="{{ page.price_range | default: '$100-$600' }}">
     {% endif %}
-    <title>{{ page.title | default: site.title }}</title>
-    <meta name="description" content="{% if page.seo_description %}{{ page.seo_description | strip_html | strip_newlines | truncate: 155 }}{% elsif page.description %}{{ page.description | strip_html | strip_newlines | truncate: 155 }}{% else %}{{ site.description }}{% endif %}">
     <meta name="geo.region" content="US-OH">
     <meta name="geo.placename" content="Columbus">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
