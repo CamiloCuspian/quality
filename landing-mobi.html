@@ -121,7 +121,7 @@ faqs:
 </section>
 
 <section class="section wrapper two_columns about">
-  <img src="img/antes-despues-limpieza.avif" height="520" width="520" loading="lazy" decoding="async" 
+  <img src="img/antes-despues-limpieza-sofa.avif" height="556" width="440" loading="lazy" decoding="async" 
        alt="Antes y después de limpieza profesional de un sofá" title="Antes y Después | Resultados Visibles de Limpieza Profesional">
   
   <div class="about_content">
@@ -342,7 +342,7 @@ faqs:
   <div class="wrapper">
     <div class="testimonial-card">
       <div class="profile">
-        <img src="{{ 'img/cliente-carlos.avif' | relative_url }}" width="80" height="80" loading="lazy" decoding="async" alt="Carlos R. - Cliente satisfecho de Bogotá" title="Carlos R. | Cliente Satisfecho - Bogotá">
+        <img src="{{ 'img/logo_quality.avif' | relative_url }}" width="80" height="80" loading="lazy" decoding="async" alt="Carlos R. - Cliente satisfecho de Bogotá" title="Carlos R. | Cliente Satisfecho - Bogotá">
         <div>
           <h3>Carlos R.</h3>
           <span>Bogotá, Ejecutivo</span>
@@ -354,7 +354,7 @@ faqs:
 
     <div class="testimonial-card">
       <div class="profile">
-        <img src="{{ 'img/cliente-adriana.avif' | relative_url }}" width="80" height="80" loading="lazy" decoding="async" alt="Adriana T. - Cliente satisfecha de Medellín" title="Adriana T. | Cliente Satisfecha - Medellín">
+        <img src="{{ 'img/logo_quality.avif' | relative_url }}" width="80" height="80" loading="lazy" decoding="async" alt="Adriana T. - Cliente satisfecha de Medellín" title="Adriana T. | Cliente Satisfecha - Medellín">
         <div>
           <h3>Adriana T.</h3>
           <span>Medellín, Madre de familia</span>
@@ -412,7 +412,12 @@ faqs:
   </div>
 </section>
 
-{% include cta.html title="¡Transforma tus muebles y vehículo hoy mismo! Agenda tu servicio y recibe 15% de descuento en tu primera limpieza" %}
+<aside class="bgr_cta">
+  <div class="wrapper two_columns">
+    <h2>¡Transforma tus muebles y vehículo hoy mismo! Agenda tu servicio y recibe 15% de descuento en tu primera limpieza</h2>
+    <a href="https://wa.me/" title="Contacto por WhatsApp" class="buttons button-main" target="_blank" rel="nofollow noopener noreferrer">→ Agenda tu servicio</a>
+  </div>
+</aside>
 
 <section class="two_columns wrapper about">
   <img src="{{'img/servicio-a-domicilio.avif' | relative_url}}" height="520" width="520" loading="lazy" decoding="async" alt="Servicio de limpieza a domicilio en toda Colombia" title="Servicio a Domicilio | Cobertura en Toda Colombia">
@@ -442,9 +447,7 @@ faqs:
       <li><span>&check;</span>Garantía de satisfacción 100%</li>
     </ul>
     <div>
-      <a href="{{'faqs' | relative_url}}" title="Sección de preguntas frecuentes" class="buttons button-secondary">→ Más preguntas frecuentes</a>
       <a href="#" id="lead_whatsapp" title="Contacto por WhatsApp" class="buttons button-secondary" target="_blank" rel="nofollow noopener noreferrer">→ Hablar por WhatsApp</a>
-      {% include button.html text="Agendar mi servicio →" %}
     </div>
   </div>
 </section>
