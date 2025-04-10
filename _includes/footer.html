@@ -35,6 +35,8 @@
       <img src="{{'img/logo-quality.avif'|relative_url}}" alt="Quality Standard Ohio Logo's" width="240" height="100" loading="lazy" title="Quality Standard Ohio"/>
     </a>
     <p>&copy; Quality Standard Ohio {{ "now" | date:"%Y"}} - All rights reserved.</p>
+    {% if page.url == "/" %}
     <small>Website developed by <a href="https://juli.com.co">Juli</a></small>
+    {% endif %}
   </div>
 </footer>
