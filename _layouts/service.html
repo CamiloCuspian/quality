@@ -10,7 +10,7 @@ layout: default
   {% if related_services.size > 0 %}
   <section class="wrapper">
     <div class="text_center">
-      <h2>Related services you might like</h2>
+      <h3>Related services you might like</h3>
       <p>Discover other services that complement your needs</p>
     </div>
     
@@ -21,8 +21,8 @@ layout: default
           <img src="{{ service.image | relative_url }}" width="376" height="200" loading="lazy" decoding="async" alt="{{ service.title }}" title="{{ service.title }}">
         {% endif %}
         <div>
-          <h3>{{ service.title | truncate: 60 }}</h3>
-          <p>{{ service.description | strip_html | truncate: 120 }}</p>
+          <h4>{{ service.title }}</h4>
+          <p>{{ service.description | strip_html }}</p>
           <a href="{{ service.url }}" class="buttons button-secondary">Learn more →</a>
         </div>
       </div>
