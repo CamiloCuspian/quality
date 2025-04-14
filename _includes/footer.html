@@ -2,10 +2,10 @@
   <div class="footer_links">
     <div>
       <h5>Quick Links</h5>
+      <a href="{{'blog'|relative_url}}" title="Quality Standard Ohio blog page">Blog</a>
       <a href="{{'about-us'|relative_url}}" title="Quality Standard Ohio about page">About</a>
       <a href="{{'princing'|relative_url}}" title="Quality Standard Ohio pricing page">Pricing</a>
       <a href="{{'contact'|relative_url}}" title="Quality Standard Ohio contact page">Contact Us</a>
-      <a href="{{'blog'|relative_url}}" title="Quality Standard Ohio blog page">Blog</a>
     </div>
     <div>
       <h5>Top Services</h5>
@@ -32,11 +32,11 @@
   </div>
   <div class="footer_legal">
     <a href="{{site.baseurl}}/" target="_blank" title="Quality Standard Ohio home">
-      <img src="{{'img/logo-quality.avif'|relative_url}}" alt="Quality Standard Ohio Logo's" width="240" height="100" loading="lazy" title="Quality Standard Ohio"/>
+      <img src="{{'img/logo-quality.avif'|relative_url}}" alt="Quality Standard Ohio Logo's" width="240" height="100" loading="lazy" title="Quality Standard Ohio" decoding="async">
     </a>
     <p>&copy; Quality Standard Ohio {{ "now" | date:"%Y"}} - All rights reserved.</p>
     {% if page.url == "/" %}
-    <small>Website developed by <a href="https://juli.com.co">Juli</a></small>
+    <small>Website developed by <a href="https://juli.com.co" target="_blank">Juli</a></small>
     {% endif %}
   </div>
 </footer>
