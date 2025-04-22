@@ -416,7 +416,12 @@ nav .icono-nav .line {
 }
 
 .wrapper {
-  padding: 8em 0 4em;
+  padding: 7em 0 4em;
+  width: min(calc(100% - 2rem), 1320px);
+  margin-inline: auto;
+}
+
+.wrapper_no_padding {
   width: min(calc(100% - 2rem), 1320px);
   margin-inline: auto;
 }
