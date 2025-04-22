@@ -133,13 +133,15 @@
 .two_columns {
   .faq-item {
     margin-bottom: 12px;
+    font-size: 1.5em;
 
     &::before {
-      content: "?";
+      content: "•";
       margin-right: 0.2em;
       color: #ffce00;
-      font-size: 1.5em;
+      font-weight: 700;
       vertical-align: middle;
+      transform: rotate(-25deg);
     }
   }
 }

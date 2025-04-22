@@ -23,19 +23,14 @@ faqs:
     respuesta: Absolutamente. Ofrecemos una <strong>garantía de satisfacción del 100%</strong>. Si no estás completamente satisfecho con los resultados en las primeras 48 horas después del servicio, volveremos a realizar la limpieza sin costo adicional.
 ---
 
-<section class="section wrapper text_center">
+<section class="flow wrapper text_center">
   <small>Servicio Premium de Limpieza</small>
   <h2>Expertos en recuperar la belleza de tus espacios</h2>
   <p>Utilizamos tecnología avanzada de extracción profunda para eliminar manchas, bacterias, ácaros y alérgenos que los métodos convencionales no pueden eliminar. Devolvemos vida a tus muebles y el interior de tu vehículo.</p>
+  <h3>Paquetes de Limpieza Profesional - Precios Transparentes</h3>
 </section>
 
 <section class="wrapper_no_padding">
-  <div>
-    <div class="text_center">
-      <h3>Paquetes de Limpieza Profesional - Precios Transparentes</h3>
-      <p>Selecciona el servicio perfecto para tus necesidades con nuestra tarifa sencilla y sin sorpresas.</p>
-    </div>
-    
     <div class="pricing-plans-grid">
       <!-- Limpieza Básica de Muebles -->
       <div class="price-plan-item">
@@ -53,7 +48,6 @@ faqs:
           <li>Desmanchado básico</li>
           <li>Tratamiento antiácaros</li>
         </ul>
-        {% include button.html text="Reservar ahora" %}
       </div>
  
       <!-- Juego de Sala Completo -->
@@ -72,7 +66,6 @@ faqs:
           <li>Desinfección completa</li>
           <li>Protección antimanchas</li>
         </ul>
-        {% include button.html text="Reservar ahora" %}
       </div>
  
       <!-- Limpieza Vehículo -->
@@ -92,7 +85,6 @@ faqs:
           <li>Techo y paneles</li>
           <li>Desinfección completa</li>
         </ul>
-        {% include button.html text="Reservar ahora" %}
       </div>
  
       <!-- Paquete Premium -->
@@ -111,19 +103,14 @@ faqs:
           <li>Interior de 1 vehículo</li>
           <li>Tratamiento premium antiolor</li>
         </ul>
-        {% include button.html text="Reservar ahora" %}
       </div>
     </div>
     <div class="text_center">
-      <a href="/faqs" class="buttons button-secundary">→ Resuelve tus dudas</a>
+      {% include button-landing.html text='Solicita tu servicio →' %}
     </div>
-  </div>
 </section>
 
 <section class="section wrapper two_columns about">
-  <img src="img/antes-despues-limpieza-sofa.avif" height="556" width="440" loading="lazy" decoding="async" 
-       alt="Antes y después de limpieza profesional de un sofá" title="Antes y Después | Resultados Visibles de Limpieza Profesional">
-  
   <div class="about_content">
     <small>Historia real de transformación</small>
     <h2>De la desesperación al alivio en solo horas</h2>
@@ -137,8 +124,9 @@ faqs:
       <li><span>&check;</span> <b>Eliminamos completamente</b> el olor a mascota</li>
     </ul>
     <p>"No solo ahorramos el costo de un sofá nuevo, sino que recuperamos nuestro espacio favorito para las noches de película en familia", concluye María.</p>
-    {% include button.html text="Transforma tus muebles →" %}
+    {% include button-landing.html text='Transforma tu mueble →' %}
   </div>
+  <img src="img/antes-despues-limpieza-sofa.avif" height="556" width="440" loading="lazy" decoding="async" alt="Antes y después de limpieza profesional de un sofá" title="Antes y Después | Resultados Visibles de Limpieza Profesional">
 </section>
 
 <section class="bgr wrapper cards__bg">
@@ -164,7 +152,6 @@ faqs:
           <li>Hidratación profesional</li>
           <li>Protección UV y desgaste</li>
         </ul>
-        <a href="/contact" class="buttons button-main">Agendar Ahora</a>
       </div>
 
       <div class="price-plan-item price-plan-item--featured">
@@ -183,7 +170,6 @@ faqs:
           <li>Orina de mascotas</li>
           <li>Sin daño a la tapicería</li>
         </ul>
-        <a href="/contact" class="buttons button-main">Agendar Ahora</a>
       </div>
 
       <div class="price-plan-item">
@@ -201,28 +187,24 @@ faqs:
           <li>Restaurantes y hoteles</li>
           <li>Contratos de mantenimiento</li>
         </ul>
-        <a href="/contact" class="buttons button-secundary">Solicitar Cotización</a>
       </div>
     </div>
   </div>
   <div class="text_center">
-    {% include button.html
-    text = '→ Obtén tu cotización personalizada'
-    %}
+    {% include button-landing.html text='→ Obtén tu cotización personalizada' %}
   </div>
 </section>
 
-<section class="section wrapper">
-  <small>Personaliza tu experiencia de limpieza</small>
-  <h2>SERVICIOS ADICIONALES</h2>
-  <p class="service-subtitle">Mejora tu servicio básico con estos tratamientos especializados</p>
-  <p class="service-price">Cada servicio adicional por solo $45.000</p>
-
+<section class="flow wrapper two_columns">
   <div>
+    <small>Personaliza tu experiencia de limpieza</small>
+    <h2>SERVICIOS ADICIONALES</h2>
+    <p class="service-subtitle">Mejora tu servicio básico con estos tratamientos especializados</p>
+    <p class="service-price">Cada servicio adicional por solo $45.000</p>
     <p>Complementa tu servicio de limpieza con nuestros tratamientos especializados realizados por profesionales utilizando productos ecológicos y técnicas comprobadas para resultados excepcionales.</p>
-    
     <p>Ya sea que necesites un tratamiento antimanchas para prevenir futuros accidentes, desodorización para eliminar olores persistentes, o protección UV para muebles expuestos al sol, nuestro equipo está preparado para ofrecerte estas soluciones premium.</p>
-
+  </div>
+  <div>
     <h4>¿Por qué elegir nuestros servicios adicionales?</h4>
     <ul class="flow span-li">
       <li><span>&check;</span>Productos de grado profesional y equipos especializados</li>
@@ -269,7 +251,7 @@ faqs:
       </div>
     </div>
     <div class="text_center" style="padding-top: 2em;">
-      {% include button.html text = '→ Agenda tu servicio hoy mismo'%}
+      {% include button-landing.html text='Agenda tu servicio hoy mismo →' %}
     </div>
   </div>
   
@@ -279,7 +261,7 @@ faqs:
   <div class="text_center">
     <small>Nuestro Proceso de Limpieza Profesional</small>
     <h2>Tecnología de Última Generación para Resultados Excepcionales</h2>
-    <p>Contamos con <a href="{{'/specialized-services'|relative_url}}" title="Servicios especializados de limpieza">equipos especializados</a> y técnicas avanzadas que garantizan una limpieza profunda, desinfección completa y protección duradera.</p>
+    <p>Contamos con equipos especializados y técnicas avanzadas que garantizan una limpieza profunda, desinfección completa y protección duradera.</p>
   </div>
 
   <section class="steps">
@@ -329,7 +311,7 @@ faqs:
       <li><span>&check;</span> Desinfección que elimina el 99.9% de bacterias y virus</li>
       <li><span>&check;</span> Secado acelerado que evita la humedad residual</li>
     </ul>
-    <a href="/contact" title="Solicitar demostración gratuita" class="buttons button-secondary">Solicitar demostración gratuita →</a>
+    {% include button-landing.html text='Agenda tu servicio hoy mismo →' %}
   </div>
 </section>
 
@@ -378,7 +360,6 @@ faqs:
       <li><span>&check;</span> <b>Garantía de satisfacción</b> del 100% en todos los servicios</li>
     </ul>
     <p>A diferencia de métodos caseros o servicios básicos, nuestra limpieza profunda elimina la suciedad acumulada durante años, prolonga la vida útil de tus muebles y elimina microorganismos que causan alergias y malos olores.</p>
-    <a href="/contact" class="buttons button-secondary">Contáctanos ahora →</a>
   </div>
   <img src="{{'img/limpieza-profesional-vs-casera.avif' | relative_url}}" height="520" width="520" loading="lazy" decoding="async" alt="Comparación de limpieza profesional vs casera" title="Limpieza Profesional vs Casera | Diferencia Visible">
 </section>
@@ -390,23 +371,23 @@ faqs:
   </div>
   <div class="two_columns">
     <div>
-      <p class="faq-item">¿Puedo usar mis muebles inmediatamente después de la limpieza?</p>
+      <p class="faq-item"><b>¿Puedo usar mis muebles inmediatamente después de la limpieza?</b></p>
       <p>Recomendamos esperar entre 4-8 horas para asegurar que la tapicería esté completamente seca. Nuestros equipos de secado acelerado reducen significativamente el tiempo de espera en comparación con otros servicios.</p>
       
-      <p class="faq-item">¿El servicio elimina ácaros y alérgenos?</p>
+      <p class="faq-item"><b>¿El servicio elimina ácaros y alérgenos?</b></p>
       <p>¡Absolutamente! Nuestro proceso de extracción profunda elimina hasta el 98% de ácaros, polen y otros alérgenos comunes. Esto hace que nuestro servicio sea ideal para personas con alergias, asma o sensibilidades respiratorias.</p>
       
-      <p class="faq-item">¿Cuánto tiempo dura el efecto del servicio?</p>
+      <p class="faq-item"><b>¿Cuánto tiempo dura el efecto del servicio?</b></p>
       <p>Los resultados visuales son inmediatos y duraderos. Dependiendo del uso, la limpieza profesional mantiene tus muebles y vehículo en óptimas condiciones por 6-12 meses. Los tratamientos protectores pueden extender este período considerablemente.</p>
     </div>
     <div>
-      <p class="faq-item">¿Trabajan con todo tipo de tapicerías?</p>
+      <p class="faq-item"><b>¿Trabajan con todo tipo de tapicerías?</b></p>
       <p>Sí, nuestro equipo está capacitado para trabajar con todos los tipos de tapicerías: tela, microfibra, cuero, gamuza, terciopelo y sintéticos. Adaptamos nuestros productos y técnicas según el material específico.</p>
       
-      <p class="faq-item">¿Cómo puedo mantener los resultados por más tiempo?</p>
+      <p class="faq-item"><b>¿Cómo puedo mantener los resultados por más tiempo?</b></p>
       <p>Después del servicio, te proporcionamos una guía de cuidado personalizada. En general, recomendamos aspirar regularmente, limpiar derrames inmediatamente, y aplicar nuestro tratamiento protector para extender la vida útil de la limpieza.</p>
       
-      <p class="faq-item">¿Ofrecen garantía por su servicio?</p>
+      <p class="faq-item"><b>¿Ofrecen garantía por su servicio?</b></p>
       <p>Sí, todos nuestros servicios incluyen garantía de satisfacción. Si no estás completamente satisfecho con los resultados dentro de las 48 horas posteriores al servicio, volveremos a realizar la limpieza sin costo adicional.</p>
     </div>
   </div>
@@ -415,7 +396,7 @@ faqs:
 <aside class="bgr_cta">
   <div class="wrapper two_columns">
     <h2>¡Transforma tus muebles y vehículo hoy mismo! Agenda tu servicio y recibe 15% de descuento en tu primera limpieza</h2>
-    <a href="https://wa.me/" title="Contacto por WhatsApp" class="buttons button-main" target="_blank" rel="nofollow noopener noreferrer">→ Agenda tu servicio</a>
+    {% include button-landing.html text='Agenda tu servicio hoy mismo →' %}
   </div>
 </aside>
 
@@ -432,7 +413,6 @@ faqs:
       <li><span>&check;</span> <b>Barranquilla:</b> Área metropolitana completa</li>
       <li><span>&check;</span> <b>Otras ciudades:</b> Consulta disponibilidad</li>
     </ul>
-    <a href="/contact" class="buttons button-secondary">Verificar disponibilidad →</a>
   </div>
 </section>
 
@@ -446,63 +426,34 @@ faqs:
       <li><span>&check;</span>Diagnóstico sin costo</li>
       <li><span>&check;</span>Garantía de satisfacción 100%</li>
     </ul>
-    <div>
-      <a href="#" id="lead_whatsapp" title="Contacto por WhatsApp" class="buttons button-secondary" target="_blank" rel="nofollow noopener noreferrer">→ Hablar por WhatsApp</a>
-    </div>
+  </div>
+  <div>
+    <h3>Contáctanos ahora</h3>
+    <p><b>Celular:</b> 3108856530</p>
+    <p><b>WhatsApp:</b> +573108856530</p>
+    {% include button-landing.html text='Agenda tu servicio hoy mismo →' %}
   </div>
 </section>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Limpieza Profesional de Muebles y Vehículos",
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "Quality Standard Colombia",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Bogotá",
-      "addressRegion": "Cundinamarca",
-      "addressCountry": "CO"
-    }
-  },
-  "description": "Servicio profesional de limpieza profunda para muebles, sofás, colchones e interiores de vehículos. Utilizamos tecnología de extracción avanzada para eliminar manchas, ácaros, alérgenos y malos olores.",
-  "areaServed": ["Bogotá", "Medellín", "Cali", "Barranquilla"],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Servicios de Limpieza",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Limpieza de Sofá Individual"
-        },
-        "price": "120000",
-        "priceCurrency": "COP"
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Limpieza de Juego de Sala Completo"
-        },
-        "price": "250000",
-        "priceCurrency": "COP"
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Limpieza Interior de Vehículo"
-        },
-        "price": "180000",
-        "priceCurrency": "COP"
-      }
-    ]
-  }
-}
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded",function(){var e=/iPhone|Android|iPad|iPod|Windows Phone|webOS|BlackBerry|Opera Mini|IEMobile|Mobile/i.test(navigator.userAgent),t=window.location.href,o=document.querySelectorAll("a#whatsapp_colombia");o.forEach(function(o){var n="Hola! Por favor, regálame más información sobre el servicio de limpieza de Mobi.",a="https://wa.me/573108856530?text="+n,r="https://web.whatsapp.com/send?phone=573108856530&text="+n;e?o.setAttribute("href",a):o.setAttribute("href",r)})});
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    const arrows = document.querySelectorAll('.toggle-arrow');
+  
+    arrows.forEach(arrow => {
+      arrow.addEventListener('click', () => {
+        const submenuWrapper = arrow.nextElementSibling;
+  
+        if (submenuWrapper && submenuWrapper.querySelector('.submenu')) {
+          const submenu = submenuWrapper.querySelector('.submenu');
+          submenu.classList.toggle('open');
+  
+          arrow.classList.toggle('rotated');
+        }
+      });
+    });
+  });
 </script>
 
 
