@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     {% if page.layout != "service" %}
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="{% if page.noindex %}noindex, nofollow{% else %}index, follow{% endif %}">
     {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
     <title>{{ page.title | default: site.title }}</title>
