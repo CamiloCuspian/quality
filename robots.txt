@@ -110,6 +110,7 @@ Allow: /img/*.png$
 Disallow: /css/
 Disallow: /js/
 Disallow: /fonts/
+Disallow: /landing-mobi
 
 # Critical files
 Allow: /sitemap.xml
